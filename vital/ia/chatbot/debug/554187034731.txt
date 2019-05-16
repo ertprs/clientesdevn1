@@ -1,0 +1,1524 @@
+30-04-2019 12:12:40.26198[0][4] - Elapsed time: 2.909 milliseconds
+[conversation_start.php][Called outside of function][91]
+Conversation starting. Current system specs:
+Program O version:            2.6.11
+Server Software:              Apache
+PHP Version:                  5.6.40
+OS:                           Linux
+OS Version:                   #1 SMP Wed Sep 26 15:12:11 UTC 2018
+MySQL Version:                5.7.26
+Multi-byte functions enabled: true 
+-----------------------
+30-04-2019 12:12:40.26544[4][4] - Elapsed time: 3.464 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+30-04-2019 12:12:40.26660[4][4] - Elapsed time: 1.153 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+30-04-2019 12:12:40.26683[4][4] - Elapsed time: 0.230 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+30-04-2019 12:12:40.26787[4][4] - Elapsed time: 1.042 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+30-04-2019 12:12:40.26789[4][4] - Elapsed time: 0.019 milliseconds
+[conversation_start.php][Called outside of function][104]
+Loaded all Includes 
+-----------------------
+30-04-2019 12:12:40.26805[0][4] - Elapsed time: 0.167 milliseconds
+[conversation_start.php][Called outside of function][159]
+Debug level: 4
+session ID = 554187034731 
+-----------------------
+30-04-2019 12:12:40.26807[4][4] - Elapsed time: 0.016 milliseconds
+[conversation_start.php][Called outside of function][162]
+Conversation continuing. User said '[19:11, 29/4/2019] MARCOS BISS: Boa noite
+[19:12, 29/4/2019] MARCOS BISS: Quarta feira e aniversário de um amigo meu
+[19:12, 29/4/2019] MARCOS BISS: Eu indiquei ele a comemorar aí na golden
+[19:12, 29/4/2019] MARCOS BISS: O que vcs oferecem a um aniversáriante
+[19:13, 29/4/2019] MARCOS BISS: Agradeço a resposta'. 
+-----------------------
+30-04-2019 12:12:40.26815[4][4] - Elapsed time: 0.075 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+30-04-2019 12:12:40.26817[4][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+30-04-2019 12:12:40.26819[3][4] - Elapsed time: 0.024 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `devncom_ia_golden`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+30-04-2019 12:12:40.26850[4][4] - Elapsed time: 0.307 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: 554187034731 
+-----------------------
+30-04-2019 12:12:40.26852[2][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+30-04-2019 12:12:40.26853[3][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+30-04-2019 12:12:40.26873[2][4] - Elapsed time: 0.202 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+30-04-2019 12:12:40.26875[2][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+30-04-2019 12:12:40.26912[2][4] - Elapsed time: 0.375 milliseconds
+[handle_user.php][intisaliseUser][82]
+Initializing user. 
+-----------------------
+30-04-2019 12:12:40.26931[3][4] - Elapsed time: 0.181 milliseconds
+[handle_user.php][intisaliseUser][128]
+intisaliseUser #1015 SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, 'Entrou'  , 554187034731   , 1 , '0'        , '35.236.35.236', ''      , 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0)'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     ); 
+-----------------------
+30-04-2019 12:12:40.26952[3][4] - Elapsed time: 0.216 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `devncom_ia_golden`.`client_properties` WHERE `user_id` = 1015 AND `bot_id` = 1; 
+-----------------------
+30-04-2019 12:12:40.27113[2][4] - Elapsed time: 1.609 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+30-04-2019 12:12:40.27126[2][4] - Elapsed time: 0.127 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+30-04-2019 12:12:40.27129[2][4] - Elapsed time: 0.031 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+30-04-2019 12:12:40.27158[2][4] - Elapsed time: 0.292 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+30-04-2019 12:12:40.27166[2][4] - Elapsed time: 0.079 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+30-04-2019 12:12:40.27174[2][4] - Elapsed time: 0.079 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+30-04-2019 12:12:40.27180[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+30-04-2019 12:12:40.27186[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+30-04-2019 12:12:40.27193[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+30-04-2019 12:12:40.27198[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27204[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+30-04-2019 12:12:40.27210[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+30-04-2019 12:12:40.27218[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+30-04-2019 12:12:40.27223[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+30-04-2019 12:12:40.27231[2][4] - Elapsed time: 0.084 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+30-04-2019 12:12:40.27238[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+30-04-2019 12:12:40.27244[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+30-04-2019 12:12:40.27251[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+30-04-2019 12:12:40.27258[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+30-04-2019 12:12:40.27265[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+30-04-2019 12:12:40.27271[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27277[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on MARCOS. 
+-----------------------
+30-04-2019 12:12:40.27303[2][4] - Elapsed time: 0.266 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27309[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on BISS. 
+-----------------------
+30-04-2019 12:12:40.27316[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+30-04-2019 12:12:40.27321[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27328[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Boa. 
+-----------------------
+30-04-2019 12:12:40.27337[2][4] - Elapsed time: 0.093 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27343[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on noite. 
+-----------------------
+30-04-2019 12:12:40.27349[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+30-04-2019 12:12:40.27354[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+30-04-2019 12:12:40.27360[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+30-04-2019 12:12:40.27366[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+30-04-2019 12:12:40.27373[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+30-04-2019 12:12:40.27379[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+30-04-2019 12:12:40.27385[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+30-04-2019 12:12:40.27391[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+30-04-2019 12:12:40.27397[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27402[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+30-04-2019 12:12:40.27409[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+30-04-2019 12:12:40.27415[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+30-04-2019 12:12:40.27420[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+30-04-2019 12:12:40.27427[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+30-04-2019 12:12:40.27433[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+30-04-2019 12:12:40.27440[2][4] - Elapsed time: 0.077 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+30-04-2019 12:12:40.27448[2][4] - Elapsed time: 0.075 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+30-04-2019 12:12:40.27454[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+30-04-2019 12:12:40.27461[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+30-04-2019 12:12:40.27466[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27472[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on MARCOS. 
+-----------------------
+30-04-2019 12:12:40.27479[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27485[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on BISS. 
+-----------------------
+30-04-2019 12:12:40.27491[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+30-04-2019 12:12:40.27496[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27501[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Quarta. 
+-----------------------
+30-04-2019 12:12:40.27508[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27514[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on feira. 
+-----------------------
+30-04-2019 12:12:40.27520[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27525[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on e. 
+-----------------------
+30-04-2019 12:12:40.27531[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27537[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on aniversário. 
+-----------------------
+30-04-2019 12:12:40.27544[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27550[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on de. 
+-----------------------
+30-04-2019 12:12:40.27556[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27561[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on um. 
+-----------------------
+30-04-2019 12:12:40.27567[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27573[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on amigo. 
+-----------------------
+30-04-2019 12:12:40.27579[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27584[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on meu. 
+-----------------------
+30-04-2019 12:12:40.27590[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+30-04-2019 12:12:40.27595[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+30-04-2019 12:12:40.27601[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+30-04-2019 12:12:40.27607[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+30-04-2019 12:12:40.27614[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+30-04-2019 12:12:40.27620[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+30-04-2019 12:12:40.27626[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+30-04-2019 12:12:40.27633[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+30-04-2019 12:12:40.27639[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27645[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+30-04-2019 12:12:40.27652[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+30-04-2019 12:12:40.27658[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+30-04-2019 12:12:40.27664[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+30-04-2019 12:12:40.27671[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+30-04-2019 12:12:40.27677[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+30-04-2019 12:12:40.27684[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+30-04-2019 12:12:40.27690[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+30-04-2019 12:12:40.27697[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+30-04-2019 12:12:40.27703[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+30-04-2019 12:12:40.27709[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27715[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on MARCOS. 
+-----------------------
+30-04-2019 12:12:40.27722[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27727[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on BISS. 
+-----------------------
+30-04-2019 12:12:40.27734[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+30-04-2019 12:12:40.27740[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27747[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Eu. 
+-----------------------
+30-04-2019 12:12:40.27754[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27760[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on indiquei. 
+-----------------------
+30-04-2019 12:12:40.27768[2][4] - Elapsed time: 0.082 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27775[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ele. 
+-----------------------
+30-04-2019 12:12:40.27780[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27786[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on a. 
+-----------------------
+30-04-2019 12:12:40.27790[2][4] - Elapsed time: 0.037 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27795[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on comemorar. 
+-----------------------
+30-04-2019 12:12:40.27802[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27808[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on aí. 
+-----------------------
+30-04-2019 12:12:40.27814[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27820[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on na. 
+-----------------------
+30-04-2019 12:12:40.27825[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27832[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on golden. 
+-----------------------
+30-04-2019 12:12:40.27839[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+30-04-2019 12:12:40.27846[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+30-04-2019 12:12:40.27852[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+30-04-2019 12:12:40.27859[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+30-04-2019 12:12:40.27866[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+30-04-2019 12:12:40.27872[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+30-04-2019 12:12:40.27879[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+30-04-2019 12:12:40.27886[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+30-04-2019 12:12:40.27891[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27897[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+30-04-2019 12:12:40.27904[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+30-04-2019 12:12:40.27911[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+30-04-2019 12:12:40.27916[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+30-04-2019 12:12:40.27923[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+30-04-2019 12:12:40.27928[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+30-04-2019 12:12:40.27936[2][4] - Elapsed time: 0.077 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+30-04-2019 12:12:40.27943[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+30-04-2019 12:12:40.27952[2][4] - Elapsed time: 0.089 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+30-04-2019 12:12:40.27960[2][4] - Elapsed time: 0.083 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+30-04-2019 12:12:40.27966[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27973[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on MARCOS. 
+-----------------------
+30-04-2019 12:12:40.27980[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.27985[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on BISS. 
+-----------------------
+30-04-2019 12:12:40.27992[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+30-04-2019 12:12:40.27997[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.28007[2][4] - Elapsed time: 0.098 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on O. 
+-----------------------
+30-04-2019 12:12:40.28014[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.28020[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on que. 
+-----------------------
+30-04-2019 12:12:40.28026[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.28033[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on vcs. 
+-----------------------
+30-04-2019 12:12:40.28039[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.28044[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on oferecem. 
+-----------------------
+30-04-2019 12:12:40.28053[2][4] - Elapsed time: 0.086 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.28059[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on a. 
+-----------------------
+30-04-2019 12:12:40.28063[2][4] - Elapsed time: 0.038 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.28069[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on um. 
+-----------------------
+30-04-2019 12:12:40.28075[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.28081[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on aniversáriante. 
+-----------------------
+30-04-2019 12:12:40.28088[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+30-04-2019 12:12:40.28094[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+30-04-2019 12:12:40.28099[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+30-04-2019 12:12:40.28107[2][4] - Elapsed time: 0.075 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+30-04-2019 12:12:40.28115[2][4] - Elapsed time: 0.077 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+30-04-2019 12:12:40.28123[2][4] - Elapsed time: 0.082 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+30-04-2019 12:12:40.28133[2][4] - Elapsed time: 0.100 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 3. 
+-----------------------
+30-04-2019 12:12:40.28140[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+30-04-2019 12:12:40.28146[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.28153[2][4] - Elapsed time: 0.075 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+30-04-2019 12:12:40.28160[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+30-04-2019 12:12:40.28168[2][4] - Elapsed time: 0.073 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+30-04-2019 12:12:40.28174[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+30-04-2019 12:12:40.28181[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+30-04-2019 12:12:40.28187[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+30-04-2019 12:12:40.28194[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+30-04-2019 12:12:40.28201[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+30-04-2019 12:12:40.28208[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+30-04-2019 12:12:40.28215[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+30-04-2019 12:12:40.28221[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.28227[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on MARCOS. 
+-----------------------
+30-04-2019 12:12:40.28235[2][4] - Elapsed time: 0.080 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.28240[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on BISS. 
+-----------------------
+30-04-2019 12:12:40.28247[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+30-04-2019 12:12:40.28253[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.28261[2][4] - Elapsed time: 0.078 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Agradeço. 
+-----------------------
+30-04-2019 12:12:40.28269[2][4] - Elapsed time: 0.081 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.28276[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on a. 
+-----------------------
+30-04-2019 12:12:40.28280[2][4] - Elapsed time: 0.041 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+30-04-2019 12:12:40.28286[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on resposta. 
+-----------------------
+30-04-2019 12:12:40.28295[4][4] - Elapsed time: 0.083 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '[19:11, 29/4/2019] MARCOS BISS: Boa noite
+[19:12, 29/4/2019] MARCOS BISS: Quarta feira e aniversário de um amigo meu
+[19:12, 29/4/2019] MARCOS BISS: Eu indiquei ele a comemorar aí na golden
+[19:12, 29/4/2019] MARCOS BISS: O que vcs oferecem a um aniversáriante
+[19:13, 29/4/2019] MARCOS BISS: Agradeço a resposta' 
+-----------------------
+30-04-2019 12:12:40.28315[4][4] - Elapsed time: 0.203 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '19 11 29 DIVIDEDBY 4 2019 MARCOS BISS BOA NOITE 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS QUARTA FEIRA E ANIVERSÁRIO DE UM AMIGO MEU 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS EU INDIQUEI ELE A COMEMORAR AÍ NA GOLDEN 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS O QUE VCS OFERECEM A UM ANIVERSÁRIANTE 19 13 29 DIVIDEDBY 4 2019 MARCOS BISS AGRADEÇO A RESPOSTA' 
+-----------------------
+30-04-2019 12:12:40.28318[2][4] - Elapsed time: 0.027 milliseconds
+[conversation_start.php][Called outside of function][237]
+Details:
+User say: 19 11 29 DIVIDEDBY 4 2019 MARCOS BISS BOA NOITE 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS QUARTA FEIRA E ANIVERSÁRIO DE UM AMIGO MEU 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS EU INDIQUEI ELE A COMEMORAR AÍ NA GOLDEN 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS O QUE VCS OFERECEM A UM ANIVERSÁRIANTE 19 13 29 DIVIDEDBY 4 2019 MARCOS BISS AGRADEÇO A RESPOSTA
+Convo id: 554187034731
+Bot id: 1
+Format: html 
+-----------------------
+30-04-2019 12:12:40.28320[4][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: html 
+-----------------------
+30-04-2019 12:12:40.28322[2][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+30-04-2019 12:12:40.28324[3][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `devncom_ia_golden`.`conversation_log` WHERE `user_id` = 1015 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+30-04-2019 12:12:40.32149[4][4] - Elapsed time: 38.241 milliseconds
+[intialise_conversation.php][load_that][856]
+Couldn't find any previous inputs or responses. 
+-----------------------
+30-04-2019 12:12:40.32238[2][4] - Elapsed time: 0.897 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+30-04-2019 12:12:40.32242[3][4] - Elapsed time: 0.039 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1; 
+-----------------------
+30-04-2019 12:12:40.32262[4][4] - Elapsed time: 0.203 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+30-04-2019 12:12:40.32266[0][4] - Elapsed time: 0.033 milliseconds
+[conversation_start.php][Called outside of function][257]
+Default debug level = 4 
+-----------------------
+30-04-2019 12:12:40.32267[0][4] - Elapsed time: 0.018 milliseconds
+[conversation_start.php][Called outside of function][259]
+Current debug level = 4 
+-----------------------
+30-04-2019 12:12:40.32273[0][4] - Elapsed time: 0.056 milliseconds
+[conversation_start.php][Called outside of function][272]
+Say = 19 11 29 DIVIDEDBY 4 2019 MARCOS BISS BOA NOITE 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS QUARTA FEIRA E ANIVERSÁRIO DE UM AMIGO MEU 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS EU INDIQUEI ELE A COMEMORAR AÍ NA GOLDEN 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS O QUE VCS OFERECEM A UM ANIVERSÁRIANTE 19 13 29 DIVIDEDBY 4 2019 MARCOS BISS AGRADEÇO A RESPOSTA: raw say = [19:11, 29/4/2019] MARCOS BISS: Boa noite
+[19:12, 29/4/2019] MARCOS BISS: Quarta feira e aniversário de um amigo meu
+[19:12, 29/4/2019] MARCOS BISS: Eu indiquei ele a comemorar aí na golden
+[19:12, 29/4/2019] MARCOS BISS: O que vcs oferecem a um aniversáriante
+[19:13, 29/4/2019] MARCOS BISS: Agradeço a resposta 
+-----------------------
+30-04-2019 12:12:40.32275[4][4] - Elapsed time: 0.022 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+30-04-2019 12:12:40.32277[2][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '19 11 29 DIVIDEDBY 4 2019 MARCOS BISS BOA NOITE 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS QUARTA FEIRA E ANIVERSÁRIO DE UM AMIGO MEU 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS EU INDIQUEI ELE A COMEMORAR AÍ NA GOLDEN 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS O QUE VCS OFERECEM A UM ANIVERSÁRIANTE 19 13 29 DIVIDEDBY 4 2019 MARCOS BISS AGRADEÇO A RESPOSTA' to the front of the [user_say] array 
+-----------------------
+30-04-2019 12:12:40.32300[4][4] - Elapsed time: 0.233 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+30-04-2019 12:12:40.32305[0][4] - Elapsed time: 0.041 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = [19:11, 29/4/2019] MARCOS BISS: Boa noite
+[19:12, 29/4/2019] MARCOS BISS: Quarta feira e aniversário de um amigo meu
+[19:12, 29/4/2019] MARCOS BISS: Eu indiquei ele a comemorar aí na golden
+[19:12, 29/4/2019] MARCOS BISS: O que vcs oferecem a um aniversáriante
+[19:13, 29/4/2019] MARCOS BISS: Agradeço a resposta, RAW say = [19:11, 29/4/2019] MARCOS BISS: Boa noite
+[19:12, 29/4/2019] MARCOS BISS: Quarta feira e aniversário de um amigo meu
+[19:12, 29/4/2019] MARCOS BISS: Eu indiquei ele a comemorar aí na golden
+[19:12, 29/4/2019] MARCOS BISS: O que vcs oferecem a um aniversáriante
+[19:13, 29/4/2019] MARCOS BISS: Agradeço a resposta 
+-----------------------
+30-04-2019 12:12:40.32307[2][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '[19:11, 29/4/2019] MARCOS BISS: Boa noite
+[19:12, 29/4/2019] MARCOS BISS: Quarta feira e aniversário de um amigo meu
+[19:12, 29/4/2019] MARCOS BISS: Eu indiquei ele a comemorar aí na golden
+[19:12, 29/4/2019] MARCOS BISS: O que vcs oferecem a um aniversáriante
+[19:13, 29/4/2019] MARCOS BISS: Agradeço a resposta' to the front of the [input] array 
+-----------------------
+30-04-2019 12:12:40.32309[4][4] - Elapsed time: 0.027 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+30-04-2019 12:12:40.32312[4][4] - Elapsed time: 0.025 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+30-04-2019 12:12:40.32313[4][4] - Elapsed time: 0.018 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '19 11 29 DIVIDEDBY 4 2019 MARCOS BISS BOA NOITE 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS QUARTA FEIRA E ANIVERSÁRIO DE UM AMIGO MEU 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS EU INDIQUEI ELE A COMEMORAR AÍ NA GOLDEN 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS O QUE VCS OFERECEM A UM ANIVERSÁRIANTE 19 13 29 DIVIDEDBY 4 2019 MARCOS BISS AGRADEÇO A RESPOSTA' 
+-----------------------
+30-04-2019 12:12:40.32320[4][4] - Elapsed time: 0.070 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '19 11 29 DIVIDEDBY 4 2019 MARCOS BISS BOA NOITE 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS QUARTA FEIRA E ANIVERSÁRIO DE UM AMIGO MEU 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS EU INDIQUEI ELE A COMEMORAR AÍ NA GOLDEN 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS O QUE VCS OFERECEM A UM ANIVERSÁRIANTE 19 13 29 DIVIDEDBY 4 2019 MARCOS BISS AGRADEÇO A RESPOSTA' 
+-----------------------
+30-04-2019 12:12:40.32322[4][4] - Elapsed time: 0.019 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+30-04-2019 12:12:40.32491[4][4] - Elapsed time: 1.682 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+30-04-2019 12:12:40.32498[3][4] - Elapsed time: 0.073 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `devncom_ia_golden`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = 554187034731
+    AND (
+        '19 11 29 DIVIDEDBY 4 2019 MARCOS BISS BOA NOITE 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS QUARTA FEIRA E ANIVERSÁRIO DE UM AMIGO MEU 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS EU INDIQUEI ELE A COMEMORAR AÍ NA GOLDEN 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS O QUE VCS OFERECEM A UM ANIVERSÁRIANTE 19 13 29 DIVIDEDBY 4 2019 MARCOS BISS AGRADEÇO A RESPOSTA' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+30-04-2019 12:12:40.32521[2][4] - Elapsed time: 0.230 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+30-04-2019 12:12:40.32524[4][4] - Elapsed time: 0.029 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+30-04-2019 12:12:40.32526[4][4] - Elapsed time: 0.019 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = 1. 
+-----------------------
+30-04-2019 12:12:40.32696[4][4] - Elapsed time: 1.705 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+30-04-2019 12:12:40.32702[3][4] - Elapsed time: 0.056 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `devncom_ia_golden`.`aiml` WHERE
+    bot_id = 1 AND (
+        '19 11 29 DIVIDEDBY 4 2019 MARCOS BISS BOA NOITE 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS QUARTA FEIRA E ANIVERSÁRIO DE UM AMIGO MEU 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS EU INDIQUEI ELE A COMEMORAR AÍ NA GOLDEN 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS O QUE VCS OFERECEM A UM ANIVERSÁRIANTE 19 13 29 DIVIDEDBY 4 2019 MARCOS BISS AGRADEÇO A RESPOSTA' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE 'LINHA DE RECOLHA ALEATÓRIA2'
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+30-04-2019 12:12:40.32728[3][4] - Elapsed time: 0.258 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+30-04-2019 12:12:40.32733[1][4] - Elapsed time: 0.050 milliseconds
+[find_aiml.php][find_aiml_matches][1082]
+Error: FOUND NO AIML matches in DB. 
+-----------------------
+30-04-2019 12:12:40.32736[4][4] - Elapsed time: 0.034 milliseconds
+[find_aiml.php][get_convo_var][727]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] 
+-----------------------
+30-04-2019 12:12:40.32738[4][4] - Elapsed time: 0.025 milliseconds
+[find_aiml.php][get_convo_var][757]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] FOUND: ConvoArr Value = 'LINHA DE RECOLHA ALEATÓRIA2' 
+-----------------------
+30-04-2019 12:12:40.32762[2][4] - Elapsed time: 0.232 milliseconds
+[misc_functions.php][addUnknownInput][232]
+Entry successfully added! 
+-----------------------
+30-04-2019 12:12:40.32765[1][4] - Elapsed time: 0.028 milliseconds
+[find_aiml.php][find_aiml_matches][1084]
+Added input '19 11 29 DIVIDEDBY 4 2019 MARCOS BISS BOA NOITE 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS QUARTA FEIRA E ANIVERSÁRIO DE UM AMIGO MEU 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS EU INDIQUEI ELE A COMEMORAR AÍ NA GOLDEN 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS O QUE VCS OFERECEM A UM ANIVERSÁRIANTE 19 13 29 DIVIDEDBY 4 2019 MARCOS BISS AGRADEÇO A RESPOSTA' to the unknown_inputs table. 
+-----------------------
+30-04-2019 12:12:40.32931[4][4] - Elapsed time: 1.663 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 1 rows to unset bad matches 
+-----------------------
+30-04-2019 12:12:40.32934[1][4] - Elapsed time: 0.035 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][56]
+Returning error as no results where found 
+-----------------------
+30-04-2019 12:12:40.32937[4][4] - Elapsed time: 0.026 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+30-04-2019 12:12:40.33123[4][4] - Elapsed time: 1.865 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+ 
+-----------------------
+30-04-2019 12:12:40.33129[2][4] - Elapsed time: 0.052 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+
+ 
+-----------------------
+30-04-2019 12:12:40.33188[4][4] - Elapsed time: 0.590 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [aiml_id] => -1
+    [bot_id] => 1
+    [pattern] => no results
+    [thatpattern] => 
+    [template] => SEM RESPOSTA
+    [topic] => 
+    [score] => 261
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+)
+ 
+-----------------------
+30-04-2019 12:12:40.33190[2][4] - Elapsed time: 0.024 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+30-04-2019 12:12:40.33199[4][4] - Elapsed time: 0.092 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:-1 (no results) 
+-----------------------
+30-04-2019 12:12:40.33201[3][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+30-04-2019 12:12:40.33204[2][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = 'no results' 
+-----------------------
+30-04-2019 12:12:40.33206[4][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+30-04-2019 12:12:40.33208[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+30-04-2019 12:12:40.33212[2][4] - Elapsed time: 0.036 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => -1
+    [html_template] => 
+    [lookingfor] => 19 11 29 DIVIDEDBY 4 2019 MARCOS BISS BOA NOITE 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS QUARTA FEIRA E ANIVERSÁRIO DE UM AMIGO MEU 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS EU INDIQUEI ELE A COMEMORAR AÍ NA GOLDEN 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS O QUE VCS OFERECEM A UM ANIVERSÁRIANTE 19 13 29 DIVIDEDBY 4 2019 MARCOS BISS AGRADEÇO A RESPOSTA
+    [pattern] => no results
+    [score] => 261
+    [stars] => Array
+        (
+        )
+
+    [template] => SEM RESPOSTA
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => [19:11, 29/4/2019] MARCOS BISS: Boa noite
+[19:12, 29/4/2019] MARCOS BISS: Quarta feira e aniversário de um amigo meu
+[19:12, 29/4/2019] MARCOS BISS: Eu indiquei ele a comemorar aí na golden
+[19:12, 29/4/2019] MARCOS BISS: O que vcs oferecem a um aniversáriante
+[19:13, 29/4/2019] MARCOS BISS: Agradeço a resposta
+)
+ 
+-----------------------
+30-04-2019 12:12:40.33214[2][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+30-04-2019 12:12:40.33216[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+30-04-2019 12:12:40.33221[4][4] - Elapsed time: 0.049 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>SEM RESPOSTA</text></template> 
+-----------------------
+30-04-2019 12:12:40.33243[2][4] - Elapsed time: 0.223 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+30-04-2019 12:12:40.33252[4][4] - Elapsed time: 0.088 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>SEM RESPOSTA</text></template>
+ 
+-----------------------
+30-04-2019 12:12:40.33254[4][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+30-04-2019 12:12:40.33257[2][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+30-04-2019 12:12:40.33261[4][4] - Elapsed time: 0.035 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>SEM RESPOSTA</text> 
+-----------------------
+30-04-2019 12:12:40.33263[4][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+30-04-2019 12:12:40.33265[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+30-04-2019 12:12:40.33267[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+30-04-2019 12:12:40.33269[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'SEM RESPOSTA' to the response array. tag name is text 
+-----------------------
+30-04-2019 12:12:40.33272[2][4] - Elapsed time: 0.033 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+30-04-2019 12:12:40.33275[2][4] - Elapsed time: 0.035 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+30-04-2019 12:12:40.33278[4][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+30-04-2019 12:12:40.33280[4][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+30-04-2019 12:12:40.33282[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'SEM RESPOSTA' to the response array. tag name is template. 
+-----------------------
+30-04-2019 12:12:40.33285[2][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+30-04-2019 12:12:40.33287[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+30-04-2019 12:12:40.33288[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+30-04-2019 12:12:40.33290[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+30-04-2019 12:12:40.33293[4][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: SEM RESPOSTA 
+-----------------------
+30-04-2019 12:12:40.33295[4][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+30-04-2019 12:12:40.33297[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+30-04-2019 12:12:40.33299[2][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that_raw] array 
+-----------------------
+30-04-2019 12:12:40.33301[4][4] - Elapsed time: 0.025 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+30-04-2019 12:12:40.33307[2][4] - Elapsed time: 0.056 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that] array 
+-----------------------
+30-04-2019 12:12:40.33309[4][4] - Elapsed time: 0.025 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+30-04-2019 12:12:40.33312[4][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+30-04-2019 12:12:40.33314[4][4] - Elapsed time: 0.021 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+30-04-2019 12:12:40.33317[4][4] - Elapsed time: 0.031 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+30-04-2019 12:12:40.33319[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+30-04-2019 12:12:40.33322[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [parsed_template] array 
+-----------------------
+30-04-2019 12:12:40.33324[4][4] - Elapsed time: 0.022 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+30-04-2019 12:12:40.33326[2][4] - Elapsed time: 0.025 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [template] array 
+-----------------------
+30-04-2019 12:12:40.33329[4][4] - Elapsed time: 0.022 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+30-04-2019 12:12:40.33333[2][4] - Elapsed time: 0.042 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+30-04-2019 12:12:40.33336[3][4] - Elapsed time: 0.032 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `devncom_ia_golden`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      '[19:11, 29/4/2019] MARCOS BISS: Boa noite
+[19:12, 29/4/2019] MARCOS BISS: Quarta feira e aniversário de um amigo meu
+[19:12, 29/4/2019] MARCOS BISS: Eu indiquei ele a comemorar aí na golden
+[19:12, 29/4/2019] MARCOS BISS: O que vcs oferecem a um aniversáriante
+[19:13, 29/4/2019] MARCOS BISS: Agradeço a resposta',
+      'SEM RESPOSTA',
+      1015,
+      554187034731,
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+30-04-2019 12:12:40.36840[4][4] - Elapsed time: 35.038 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+30-04-2019 12:12:40.36863[3][4] - Elapsed time: 0.235 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `devncom_ia_golden`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  LIMIT 1 
+-----------------------
+30-04-2019 12:12:40.36884[2][4] - Elapsed time: 0.206 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '1' lines of conversation 
+-----------------------
+30-04-2019 12:12:40.36888[4][4] - Elapsed time: 0.037 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as html 
+-----------------------
+30-04-2019 12:12:40.36891[4][4] - Elapsed time: 0.031 milliseconds
+[display_conversation.php][get_html][135]
+Returning HTML 
+-----------------------
+30-04-2019 12:12:40.37001[2][4] - Elapsed time: 1.099 milliseconds
+[conversation_start.php][Called outside of function][297]
+Closing Database 
+-----------------------
+30-04-2019 12:12:40.37005[0][4] - Elapsed time: 0.047 milliseconds
+[conversation_start.php][Called outside of function][303]
+Conversation Ending. Elapsed time: 110.965 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => [19:11, 29/4/2019] MARCOS BISS: Boa noite
+[19:12, 29/4/2019] MARCOS BISS: Quarta feira e aniversário de um amigo meu
+[19:12, 29/4/2019] MARCOS BISS: Eu indiquei ele a comemorar aí na golden
+[19:12, 29/4/2019] MARCOS BISS: O que vcs oferecem a um aniversáriante
+[19:13, 29/4/2019] MARCOS BISS: Agradeço a resposta
+    [conversation] => Array
+        (
+            [convo_id] => 554187034731
+            [bot_name] => Net Bot
+            [bot_id] => 1
+            [format] => html
+            [unknown_user] => Entrou
+            [user_id] => 1015
+            [totallines] => 1
+            [user_name] => Entrou
+            [rawSay] => [19:11, 29/4/2019] MARCOS BISS: Boa noite
+[19:12, 29/4/2019] MARCOS BISS: Quarta feira e aniversário de um amigo meu
+[19:12, 29/4/2019] MARCOS BISS: Eu indiquei ele a comemorar aí na golden
+[19:12, 29/4/2019] MARCOS BISS: O que vcs oferecem a um aniversáriante
+[19:13, 29/4/2019] MARCOS BISS: Agradeço a resposta
+            [conversation_lines] => 1
+            [remember_up_to] => 10
+            [debugemail] => contato@devn1.com.br
+            [debug_level] => 4
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => LINHA DE RECOLHA ALEATÓRIA2
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [aiml_id] => -1
+                    [bot_id] => 1
+                    [pattern] => no results
+                    [thatpattern] => 
+                    [template] => SEM RESPOSTA
+                    [topic] => 
+                    [score] => 261
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => [19:11, 29/4/2019] MARCOS BISS: Boa noite
+[19:12, 29/4/2019] MARCOS BISS: Quarta feira e aniversário de um amigo meu
+[19:12, 29/4/2019] MARCOS BISS: Eu indiquei ele a comemorar aí na golden
+[19:12, 29/4/2019] MARCOS BISS: O que vcs oferecem a um aniversáriante
+[19:13, 29/4/2019] MARCOS BISS: Agradeço a resposta
+            [lookingfor] => 19 11 29 DIVIDEDBY 4 2019 MARCOS BISS BOA NOITE 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS QUARTA FEIRA E ANIVERSÁRIO DE UM AMIGO MEU 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS EU INDIQUEI ELE A COMEMORAR AÍ NA GOLDEN 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS O QUE VCS OFERECEM A UM ANIVERSÁRIANTE 19 13 29 DIVIDEDBY 4 2019 MARCOS BISS AGRADEÇO A RESPOSTA
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [html_template] => 
+            [topic] => 
+            [score] => 261
+            [aiml_id] => -1
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => SEM RESPOSTA
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 35.236.35.236
+            [name] => Entrou
+        )
+
+    [time_start] => 1556637160.2591
+    [user_say] => Array
+        (
+            [1] => 19 11 29 DIVIDEDBY 4 2019 MARCOS BISS BOA NOITE 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS QUARTA FEIRA E ANIVERSÁRIO DE UM AMIGO MEU 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS EU INDIQUEI ELE A COMEMORAR AÍ NA GOLDEN 19 12 29 DIVIDEDBY 4 2019 MARCOS BISS O QUE VCS OFERECEM A UM ANIVERSÁRIANTE 19 13 29 DIVIDEDBY 4 2019 MARCOS BISS AGRADEÇO A RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [input] => Array
+        (
+            [1] => [19:11, 29/4/2019] MARCOS BISS: Boa noite
+[19:12, 29/4/2019] MARCOS BISS: Quarta feira e aniversário de um amigo meu
+[19:12, 29/4/2019] MARCOS BISS: Eu indiquei ele a comemorar aí na golden
+[19:12, 29/4/2019] MARCOS BISS: O que vcs oferecem a um aniversáriante
+[19:13, 29/4/2019] MARCOS BISS: Agradeço a resposta
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => <div class="usersay">Entrou: [19:11, 29/4/2019] MARCOS BISS: Boa noite
+[19:12, 29/4/2019] MARCOS BISS: Quarta feira e aniversário de um amigo meu
+[19:12, 29/4/2019] MARCOS BISS: Eu indiquei ele a comemorar aí na golden
+[19:12, 29/4/2019] MARCOS BISS: O que vcs oferecem a um aniversáriante
+[19:13, 29/4/2019] MARCOS BISS: Agradeço a resposta</div><div class="botsay">Net Bot: SEM RESPOSTA</div>
+)
+
+-----------------------
+Total execution time: 110.965 Milliseconds. Goodbye.

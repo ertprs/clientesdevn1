@@ -1,0 +1,1486 @@
+13-04-2019 20:20:35.71314[0][4] - Elapsed time: 1.489 milliseconds
+[conversation_start.php][Called outside of function][91]
+Conversation starting. Current system specs:
+Program O version:            2.6.11
+Server Software:              Apache
+PHP Version:                  5.6.40
+OS:                           Linux
+OS Version:                   #1 SMP Wed Sep 26 15:12:11 UTC 2018
+MySQL Version:                5.7.25
+Multi-byte functions enabled: true 
+-----------------------
+13-04-2019 20:20:35.71355[4][4] - Elapsed time: 0.410 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+13-04-2019 20:20:35.71375[4][4] - Elapsed time: 0.199 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+13-04-2019 20:20:35.71382[4][4] - Elapsed time: 0.077 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+13-04-2019 20:20:35.71431[4][4] - Elapsed time: 0.483 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+13-04-2019 20:20:35.71432[4][4] - Elapsed time: 0.014 milliseconds
+[conversation_start.php][Called outside of function][104]
+Loaded all Includes 
+-----------------------
+13-04-2019 20:20:35.71451[0][4] - Elapsed time: 0.189 milliseconds
+[conversation_start.php][Called outside of function][159]
+Debug level: 4
+session ID = 554197018815 
+-----------------------
+13-04-2019 20:20:35.71452[4][4] - Elapsed time: 0.012 milliseconds
+[conversation_start.php][Called outside of function][162]
+Conversation continuing. User said '[19:58, 13/4/2019] JULIANA WOSCH: Queria colocar nome na lista ...  Ainda dá tempo?
+[14:30, 13/4/2019] Golden: Aooow, JULIANA! Tudo bem???
+
+Hoje é dia de escutar e dançar UM MODÃO ATRÁS DO OUTRO pra arrastar o chifre no asfalto no melhor lounge bar de Curitiba com o nosso queridinho Matheus Petriv!
+
+Mande seu nome pra lista pra ter aquele valor especial'. 
+-----------------------
+13-04-2019 20:20:35.71460[4][4] - Elapsed time: 0.076 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+13-04-2019 20:20:35.71462[4][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+13-04-2019 20:20:35.71464[3][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `devncom_ia_golden`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+13-04-2019 20:20:35.71492[4][4] - Elapsed time: 0.280 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: 554197018815 
+-----------------------
+13-04-2019 20:20:35.71495[2][4] - Elapsed time: 0.030 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+13-04-2019 20:20:35.71496[3][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+13-04-2019 20:20:35.71516[2][4] - Elapsed time: 0.205 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+13-04-2019 20:20:35.71518[2][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+13-04-2019 20:20:35.71555[2][4] - Elapsed time: 0.368 milliseconds
+[handle_user.php][intisaliseUser][82]
+Initializing user. 
+-----------------------
+13-04-2019 20:20:35.71579[3][4] - Elapsed time: 0.235 milliseconds
+[handle_user.php][intisaliseUser][128]
+intisaliseUser #820 SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, 'Entrou'  , 554197018815   , 1 , '0'        , '35.231.211.24', ''      , 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0)'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     ); 
+-----------------------
+13-04-2019 20:20:35.71602[3][4] - Elapsed time: 0.231 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `devncom_ia_golden`.`client_properties` WHERE `user_id` = 820 AND `bot_id` = 1; 
+-----------------------
+13-04-2019 20:20:35.71656[2][4] - Elapsed time: 0.548 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+13-04-2019 20:20:35.71669[2][4] - Elapsed time: 0.121 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+13-04-2019 20:20:35.71672[2][4] - Elapsed time: 0.034 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+13-04-2019 20:20:35.71698[2][4] - Elapsed time: 0.262 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+13-04-2019 20:20:35.71707[2][4] - Elapsed time: 0.088 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+13-04-2019 20:20:35.71713[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+13-04-2019 20:20:35.71719[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 5. 
+-----------------------
+13-04-2019 20:20:35.71725[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 8. 
+-----------------------
+13-04-2019 20:20:35.71731[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+13-04-2019 20:20:35.71736[2][4] - Elapsed time: 0.051 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.71741[2][4] - Elapsed time: 0.051 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+13-04-2019 20:20:35.71748[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 3. 
+-----------------------
+13-04-2019 20:20:35.71755[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+13-04-2019 20:20:35.71763[2][4] - Elapsed time: 0.083 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+13-04-2019 20:20:35.71771[2][4] - Elapsed time: 0.077 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+13-04-2019 20:20:35.71798[2][4] - Elapsed time: 0.277 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+13-04-2019 20:20:35.71808[2][4] - Elapsed time: 0.093 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+13-04-2019 20:20:35.71816[2][4] - Elapsed time: 0.081 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+13-04-2019 20:20:35.71822[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+13-04-2019 20:20:35.71828[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+13-04-2019 20:20:35.71834[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.71839[2][4] - Elapsed time: 0.051 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on JULIANA. 
+-----------------------
+13-04-2019 20:20:35.71846[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.71851[2][4] - Elapsed time: 0.051 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on WOSCH. 
+-----------------------
+13-04-2019 20:20:35.71857[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+13-04-2019 20:20:35.71863[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.71869[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Queria. 
+-----------------------
+13-04-2019 20:20:35.71878[2][4] - Elapsed time: 0.091 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.71884[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on colocar. 
+-----------------------
+13-04-2019 20:20:35.71891[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.71898[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on nome. 
+-----------------------
+13-04-2019 20:20:35.71906[2][4] - Elapsed time: 0.083 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.71912[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on na. 
+-----------------------
+13-04-2019 20:20:35.71917[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.71923[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on lista. 
+-----------------------
+13-04-2019 20:20:35.71929[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.71935[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on .. 
+-----------------------
+13-04-2019 20:20:35.71940[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on .. 
+-----------------------
+13-04-2019 20:20:35.71946[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on .. 
+-----------------------
+13-04-2019 20:20:35.71951[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.71956[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.71961[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Ainda. 
+-----------------------
+13-04-2019 20:20:35.71970[2][4] - Elapsed time: 0.083 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.71975[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on dá. 
+-----------------------
+13-04-2019 20:20:35.71981[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.71986[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on tempo. 
+-----------------------
+13-04-2019 20:20:35.71992[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ?. 
+-----------------------
+13-04-2019 20:20:35.71998[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+13-04-2019 20:20:35.72004[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+13-04-2019 20:20:35.72010[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+13-04-2019 20:20:35.72017[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+13-04-2019 20:20:35.72024[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+13-04-2019 20:20:35.72029[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 3. 
+-----------------------
+13-04-2019 20:20:35.72035[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+13-04-2019 20:20:35.72042[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+13-04-2019 20:20:35.72047[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72053[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+13-04-2019 20:20:35.72059[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 3. 
+-----------------------
+13-04-2019 20:20:35.72067[2][4] - Elapsed time: 0.077 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+13-04-2019 20:20:35.72072[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+13-04-2019 20:20:35.72078[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+13-04-2019 20:20:35.72084[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+13-04-2019 20:20:35.72090[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+13-04-2019 20:20:35.72097[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+13-04-2019 20:20:35.72105[2][4] - Elapsed time: 0.079 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+13-04-2019 20:20:35.72112[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+13-04-2019 20:20:35.72117[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72123[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Golden. 
+-----------------------
+13-04-2019 20:20:35.72130[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+13-04-2019 20:20:35.72135[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72141[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Aooow. 
+-----------------------
+13-04-2019 20:20:35.72147[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+13-04-2019 20:20:35.72152[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72159[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on JULIANA. 
+-----------------------
+13-04-2019 20:20:35.72167[2][4] - Elapsed time: 0.081 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on !. 
+-----------------------
+13-04-2019 20:20:35.72173[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72179[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Tudo. 
+-----------------------
+13-04-2019 20:20:35.72185[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72191[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on bem. 
+-----------------------
+13-04-2019 20:20:35.72196[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ?. 
+-----------------------
+13-04-2019 20:20:35.72204[2][4] - Elapsed time: 0.075 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ?. 
+-----------------------
+13-04-2019 20:20:35.72211[2][4] - Elapsed time: 0.073 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ?. 
+-----------------------
+13-04-2019 20:20:35.72217[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+13-04-2019 20:20:35.72222[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+13-04-2019 20:20:35.72228[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Hoje. 
+-----------------------
+13-04-2019 20:20:35.72235[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72240[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on é. 
+-----------------------
+13-04-2019 20:20:35.72247[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72252[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on dia. 
+-----------------------
+13-04-2019 20:20:35.72258[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72264[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on de. 
+-----------------------
+13-04-2019 20:20:35.72270[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72276[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on escutar. 
+-----------------------
+13-04-2019 20:20:35.72283[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72288[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on e. 
+-----------------------
+13-04-2019 20:20:35.72294[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72302[2][4] - Elapsed time: 0.083 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on dançar. 
+-----------------------
+13-04-2019 20:20:35.72309[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72315[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on UM. 
+-----------------------
+13-04-2019 20:20:35.72321[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72327[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on MODÃO. 
+-----------------------
+13-04-2019 20:20:35.72334[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72340[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ATRÁS. 
+-----------------------
+13-04-2019 20:20:35.72347[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72353[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on DO. 
+-----------------------
+13-04-2019 20:20:35.72357[2][4] - Elapsed time: 0.041 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72363[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on OUTRO. 
+-----------------------
+13-04-2019 20:20:35.72370[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72376[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on pra. 
+-----------------------
+13-04-2019 20:20:35.72382[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72388[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on arrastar. 
+-----------------------
+13-04-2019 20:20:35.72395[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72403[2][4] - Elapsed time: 0.078 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on o. 
+-----------------------
+13-04-2019 20:20:35.72410[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72417[2][4] - Elapsed time: 0.076 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on chifre. 
+-----------------------
+13-04-2019 20:20:35.72424[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72430[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on no. 
+-----------------------
+13-04-2019 20:20:35.72435[2][4] - Elapsed time: 0.046 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72440[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on asfalto. 
+-----------------------
+13-04-2019 20:20:35.72447[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72453[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on no. 
+-----------------------
+13-04-2019 20:20:35.72458[2][4] - Elapsed time: 0.046 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72464[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on melhor. 
+-----------------------
+13-04-2019 20:20:35.72471[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72477[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on lounge. 
+-----------------------
+13-04-2019 20:20:35.72484[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72489[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on bar. 
+-----------------------
+13-04-2019 20:20:35.72494[2][4] - Elapsed time: 0.042 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72501[2][4] - Elapsed time: 0.077 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on de. 
+-----------------------
+13-04-2019 20:20:35.72507[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72515[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Curitiba. 
+-----------------------
+13-04-2019 20:20:35.72523[2][4] - Elapsed time: 0.084 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72529[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on com. 
+-----------------------
+13-04-2019 20:20:35.72535[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72541[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on o. 
+-----------------------
+13-04-2019 20:20:35.72548[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72554[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on nosso. 
+-----------------------
+13-04-2019 20:20:35.72561[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72568[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on queridinho. 
+-----------------------
+13-04-2019 20:20:35.72575[2][4] - Elapsed time: 0.073 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72581[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Matheus. 
+-----------------------
+13-04-2019 20:20:35.72588[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72595[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Petriv. 
+-----------------------
+13-04-2019 20:20:35.72604[2][4] - Elapsed time: 0.084 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on !. 
+-----------------------
+13-04-2019 20:20:35.72611[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+13-04-2019 20:20:35.72617[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+13-04-2019 20:20:35.72623[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Mande. 
+-----------------------
+13-04-2019 20:20:35.72632[2][4] - Elapsed time: 0.085 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72638[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on seu. 
+-----------------------
+13-04-2019 20:20:35.72644[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72650[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on nome. 
+-----------------------
+13-04-2019 20:20:35.72657[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72663[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on pra. 
+-----------------------
+13-04-2019 20:20:35.72670[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72676[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on lista. 
+-----------------------
+13-04-2019 20:20:35.72682[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72689[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on pra. 
+-----------------------
+13-04-2019 20:20:35.72695[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72702[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ter. 
+-----------------------
+13-04-2019 20:20:35.72708[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72714[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on aquele. 
+-----------------------
+13-04-2019 20:20:35.72723[2][4] - Elapsed time: 0.091 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72729[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on valor. 
+-----------------------
+13-04-2019 20:20:35.72736[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 20:20:35.72742[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on especial. 
+-----------------------
+13-04-2019 20:20:35.72750[4][4] - Elapsed time: 0.082 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '[19:58, 13/4/2019] JULIANA WOSCH: Queria colocar nome na lista ...  Ainda dá tempo?
+[14:30, 13/4/2019] Golden: Aooow, JULIANA! Tudo bem???
+
+Hoje é dia de escutar e dançar UM MODÃO ATRÁS DO OUTRO pra arrastar o chifre no asfalto no melhor lounge bar de Curitiba com o nosso queridinho Matheus Petriv!
+
+Mande seu nome pra lista pra ter aquele valor especial' 
+-----------------------
+13-04-2019 20:20:35.72765[4][4] - Elapsed time: 0.146 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '19 58 13 DIVIDEDBY 4 2019 JULIANA WOSCH QUERIA COLOCAR NOME NA LISTA AINDA DÁ TEMPO 14 30 13 DIVIDEDBY 4 2019 GOLDEN AOOOW JULIANA TUDO BEM HOJE É DIA DE ESCUTAR E DANÇAR UM MODÃO ATRÁS DO OUTRO PRA ARRASTAR O CHIFRE NO ASFALTO NO MELHOR LOUNGE BAR DE CURITIBA COM O NOSSO QUERIDINHO MATHEUS PETRIV MANDE SEU NOME PRA LISTA PRA TER AQUELE VALOR ESPECIAL' 
+-----------------------
+13-04-2019 20:20:35.72768[2][4] - Elapsed time: 0.029 milliseconds
+[conversation_start.php][Called outside of function][237]
+Details:
+User say: 19 58 13 DIVIDEDBY 4 2019 JULIANA WOSCH QUERIA COLOCAR NOME NA LISTA AINDA DÁ TEMPO 14 30 13 DIVIDEDBY 4 2019 GOLDEN AOOOW JULIANA TUDO BEM HOJE É DIA DE ESCUTAR E DANÇAR UM MODÃO ATRÁS DO OUTRO PRA ARRASTAR O CHIFRE NO ASFALTO NO MELHOR LOUNGE BAR DE CURITIBA COM O NOSSO QUERIDINHO MATHEUS PETRIV MANDE SEU NOME PRA LISTA PRA TER AQUELE VALOR ESPECIAL
+Convo id: 554197018815
+Bot id: 1
+Format: html 
+-----------------------
+13-04-2019 20:20:35.72771[4][4] - Elapsed time: 0.029 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: html 
+-----------------------
+13-04-2019 20:20:35.72772[2][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+13-04-2019 20:20:35.72775[3][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `devncom_ia_golden`.`conversation_log` WHERE `user_id` = 820 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+13-04-2019 20:20:35.73522[4][4] - Elapsed time: 7.476 milliseconds
+[intialise_conversation.php][load_that][856]
+Couldn't find any previous inputs or responses. 
+-----------------------
+13-04-2019 20:20:35.73642[2][4] - Elapsed time: 1.199 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+13-04-2019 20:20:35.73648[3][4] - Elapsed time: 0.064 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1; 
+-----------------------
+13-04-2019 20:20:35.73671[4][4] - Elapsed time: 0.223 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+13-04-2019 20:20:35.73675[0][4] - Elapsed time: 0.039 milliseconds
+[conversation_start.php][Called outside of function][257]
+Default debug level = 4 
+-----------------------
+13-04-2019 20:20:35.73677[0][4] - Elapsed time: 0.020 milliseconds
+[conversation_start.php][Called outside of function][259]
+Current debug level = 4 
+-----------------------
+13-04-2019 20:20:35.73678[0][4] - Elapsed time: 0.019 milliseconds
+[conversation_start.php][Called outside of function][272]
+Say = 19 58 13 DIVIDEDBY 4 2019 JULIANA WOSCH QUERIA COLOCAR NOME NA LISTA AINDA DÁ TEMPO 14 30 13 DIVIDEDBY 4 2019 GOLDEN AOOOW JULIANA TUDO BEM HOJE É DIA DE ESCUTAR E DANÇAR UM MODÃO ATRÁS DO OUTRO PRA ARRASTAR O CHIFRE NO ASFALTO NO MELHOR LOUNGE BAR DE CURITIBA COM O NOSSO QUERIDINHO MATHEUS PETRIV MANDE SEU NOME PRA LISTA PRA TER AQUELE VALOR ESPECIAL: raw say = [19:58, 13/4/2019] JULIANA WOSCH: Queria colocar nome na lista ...  Ainda dá tempo?
+[14:30, 13/4/2019] Golden: Aooow, JULIANA! Tudo bem???
+
+Hoje é dia de escutar e dançar UM MODÃO ATRÁS DO OUTRO pra arrastar o chifre no asfalto no melhor lounge bar de Curitiba com o nosso queridinho Matheus Petriv!
+
+Mande seu nome pra lista pra ter aquele valor especial 
+-----------------------
+13-04-2019 20:20:35.73681[4][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+13-04-2019 20:20:35.73682[2][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '19 58 13 DIVIDEDBY 4 2019 JULIANA WOSCH QUERIA COLOCAR NOME NA LISTA AINDA DÁ TEMPO 14 30 13 DIVIDEDBY 4 2019 GOLDEN AOOOW JULIANA TUDO BEM HOJE É DIA DE ESCUTAR E DANÇAR UM MODÃO ATRÁS DO OUTRO PRA ARRASTAR O CHIFRE NO ASFALTO NO MELHOR LOUNGE BAR DE CURITIBA COM O NOSSO QUERIDINHO MATHEUS PETRIV MANDE SEU NOME PRA LISTA PRA TER AQUELE VALOR ESPECIAL' to the front of the [user_say] array 
+-----------------------
+13-04-2019 20:20:35.73687[4][4] - Elapsed time: 0.043 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+13-04-2019 20:20:35.73692[0][4] - Elapsed time: 0.049 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = [19:58, 13/4/2019] JULIANA WOSCH: Queria colocar nome na lista ...  Ainda dá tempo?
+[14:30, 13/4/2019] Golden: Aooow, JULIANA! Tudo bem???
+
+Hoje é dia de escutar e dançar UM MODÃO ATRÁS DO OUTRO pra arrastar o chifre no asfalto no melhor lounge bar de Curitiba com o nosso queridinho Matheus Petriv!
+
+Mande seu nome pra lista pra ter aquele valor especial, RAW say = [19:58, 13/4/2019] JULIANA WOSCH: Queria colocar nome na lista ...  Ainda dá tempo?
+[14:30, 13/4/2019] Golden: Aooow, JULIANA! Tudo bem???
+
+Hoje é dia de escutar e dançar UM MODÃO ATRÁS DO OUTRO pra arrastar o chifre no asfalto no melhor lounge bar de Curitiba com o nosso queridinho Matheus Petriv!
+
+Mande seu nome pra lista pra ter aquele valor especial 
+-----------------------
+13-04-2019 20:20:35.73693[2][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '[19:58, 13/4/2019] JULIANA WOSCH: Queria colocar nome na lista ...  Ainda dá tempo?
+[14:30, 13/4/2019] Golden: Aooow, JULIANA! Tudo bem???
+
+Hoje é dia de escutar e dançar UM MODÃO ATRÁS DO OUTRO pra arrastar o chifre no asfalto no melhor lounge bar de Curitiba com o nosso queridinho Matheus Petriv!
+
+Mande seu nome pra lista pra ter aquele valor especial' to the front of the [input] array 
+-----------------------
+13-04-2019 20:20:35.73696[4][4] - Elapsed time: 0.031 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+13-04-2019 20:20:35.73699[4][4] - Elapsed time: 0.024 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+13-04-2019 20:20:35.73702[4][4] - Elapsed time: 0.031 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '19 58 13 DIVIDEDBY 4 2019 JULIANA WOSCH QUERIA COLOCAR NOME NA LISTA AINDA DÁ TEMPO 14 30 13 DIVIDEDBY 4 2019 GOLDEN AOOOW JULIANA TUDO BEM HOJE É DIA DE ESCUTAR E DANÇAR UM MODÃO ATRÁS DO OUTRO PRA ARRASTAR O CHIFRE NO ASFALTO NO MELHOR LOUNGE BAR DE CURITIBA COM O NOSSO QUERIDINHO MATHEUS PETRIV MANDE SEU NOME PRA LISTA PRA TER AQUELE VALOR ESPECIAL' 
+-----------------------
+13-04-2019 20:20:35.73709[4][4] - Elapsed time: 0.072 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '19 58 13 DIVIDEDBY 4 2019 JULIANA WOSCH QUERIA COLOCAR NOME NA LISTA AINDA DÁ TEMPO 14 30 13 DIVIDEDBY 4 2019 GOLDEN AOOOW JULIANA TUDO BEM HOJE É DIA DE ESCUTAR E DANÇAR UM MODÃO ATRÁS DO OUTRO PRA ARRASTAR O CHIFRE NO ASFALTO NO MELHOR LOUNGE BAR DE CURITIBA COM O NOSSO QUERIDINHO MATHEUS PETRIV MANDE SEU NOME PRA LISTA PRA TER AQUELE VALOR ESPECIAL' 
+-----------------------
+13-04-2019 20:20:35.73711[4][4] - Elapsed time: 0.020 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+13-04-2019 20:20:35.73775[4][4] - Elapsed time: 0.636 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+13-04-2019 20:20:35.73785[3][4] - Elapsed time: 0.099 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `devncom_ia_golden`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = 554197018815
+    AND (
+        '19 58 13 DIVIDEDBY 4 2019 JULIANA WOSCH QUERIA COLOCAR NOME NA LISTA AINDA DÁ TEMPO 14 30 13 DIVIDEDBY 4 2019 GOLDEN AOOOW JULIANA TUDO BEM HOJE É DIA DE ESCUTAR E DANÇAR UM MODÃO ATRÁS DO OUTRO PRA ARRASTAR O CHIFRE NO ASFALTO NO MELHOR LOUNGE BAR DE CURITIBA COM O NOSSO QUERIDINHO MATHEUS PETRIV MANDE SEU NOME PRA LISTA PRA TER AQUELE VALOR ESPECIAL' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+13-04-2019 20:20:35.73808[2][4] - Elapsed time: 0.231 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+13-04-2019 20:20:35.73811[4][4] - Elapsed time: 0.030 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+13-04-2019 20:20:35.73813[4][4] - Elapsed time: 0.019 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = 1. 
+-----------------------
+13-04-2019 20:20:35.73867[4][4] - Elapsed time: 0.540 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+13-04-2019 20:20:35.73871[3][4] - Elapsed time: 0.044 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `devncom_ia_golden`.`aiml` WHERE
+    bot_id = 1 AND (
+        '19 58 13 DIVIDEDBY 4 2019 JULIANA WOSCH QUERIA COLOCAR NOME NA LISTA AINDA DÁ TEMPO 14 30 13 DIVIDEDBY 4 2019 GOLDEN AOOOW JULIANA TUDO BEM HOJE É DIA DE ESCUTAR E DANÇAR UM MODÃO ATRÁS DO OUTRO PRA ARRASTAR O CHIFRE NO ASFALTO NO MELHOR LOUNGE BAR DE CURITIBA COM O NOSSO QUERIDINHO MATHEUS PETRIV MANDE SEU NOME PRA LISTA PRA TER AQUELE VALOR ESPECIAL' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE 'LINHA DE RECOLHA ALEATÓRIA2'
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+13-04-2019 20:20:35.73895[3][4] - Elapsed time: 0.235 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+13-04-2019 20:20:35.73898[1][4] - Elapsed time: 0.030 milliseconds
+[find_aiml.php][find_aiml_matches][1082]
+Error: FOUND NO AIML matches in DB. 
+-----------------------
+13-04-2019 20:20:35.73901[4][4] - Elapsed time: 0.030 milliseconds
+[find_aiml.php][get_convo_var][727]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] 
+-----------------------
+13-04-2019 20:20:35.73904[4][4] - Elapsed time: 0.033 milliseconds
+[find_aiml.php][get_convo_var][757]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] FOUND: ConvoArr Value = 'LINHA DE RECOLHA ALEATÓRIA2' 
+-----------------------
+13-04-2019 20:20:35.73930[2][4] - Elapsed time: 0.257 milliseconds
+[misc_functions.php][addUnknownInput][232]
+Entry successfully added! 
+-----------------------
+13-04-2019 20:20:35.73933[1][4] - Elapsed time: 0.035 milliseconds
+[find_aiml.php][find_aiml_matches][1084]
+Added input '19 58 13 DIVIDEDBY 4 2019 JULIANA WOSCH QUERIA COLOCAR NOME NA LISTA AINDA DÁ TEMPO 14 30 13 DIVIDEDBY 4 2019 GOLDEN AOOOW JULIANA TUDO BEM HOJE É DIA DE ESCUTAR E DANÇAR UM MODÃO ATRÁS DO OUTRO PRA ARRASTAR O CHIFRE NO ASFALTO NO MELHOR LOUNGE BAR DE CURITIBA COM O NOSSO QUERIDINHO MATHEUS PETRIV MANDE SEU NOME PRA LISTA PRA TER AQUELE VALOR ESPECIAL' to the unknown_inputs table. 
+-----------------------
+13-04-2019 20:20:35.73989[4][4] - Elapsed time: 0.564 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 1 rows to unset bad matches 
+-----------------------
+13-04-2019 20:20:35.73992[1][4] - Elapsed time: 0.031 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][56]
+Returning error as no results where found 
+-----------------------
+13-04-2019 20:20:35.73995[4][4] - Elapsed time: 0.024 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+13-04-2019 20:20:35.74078[4][4] - Elapsed time: 0.836 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 262
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), direct word match: no (2 points), uncommon word match: results (8 points)
+        )
+
+)
+ 
+-----------------------
+13-04-2019 20:20:35.74085[2][4] - Elapsed time: 0.066 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 262
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), direct word match: no (2 points), uncommon word match: results (8 points)
+        )
+
+)
+
+ 
+-----------------------
+13-04-2019 20:20:35.74153[4][4] - Elapsed time: 0.681 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [aiml_id] => -1
+    [bot_id] => 1
+    [pattern] => no results
+    [thatpattern] => 
+    [template] => SEM RESPOSTA
+    [topic] => 
+    [score] => 262
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), direct word match: no (2 points), uncommon word match: results (8 points)
+)
+ 
+-----------------------
+13-04-2019 20:20:35.74156[2][4] - Elapsed time: 0.025 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+13-04-2019 20:20:35.74165[4][4] - Elapsed time: 0.093 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:-1 (no results) 
+-----------------------
+13-04-2019 20:20:35.74168[3][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+13-04-2019 20:20:35.74171[2][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = 'no results' 
+-----------------------
+13-04-2019 20:20:35.74173[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+13-04-2019 20:20:35.74175[4][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+13-04-2019 20:20:35.74180[2][4] - Elapsed time: 0.048 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => -1
+    [html_template] => 
+    [lookingfor] => 19 58 13 DIVIDEDBY 4 2019 JULIANA WOSCH QUERIA COLOCAR NOME NA LISTA AINDA DÁ TEMPO 14 30 13 DIVIDEDBY 4 2019 GOLDEN AOOOW JULIANA TUDO BEM HOJE É DIA DE ESCUTAR E DANÇAR UM MODÃO ATRÁS DO OUTRO PRA ARRASTAR O CHIFRE NO ASFALTO NO MELHOR LOUNGE BAR DE CURITIBA COM O NOSSO QUERIDINHO MATHEUS PETRIV MANDE SEU NOME PRA LISTA PRA TER AQUELE VALOR ESPECIAL
+    [pattern] => no results
+    [score] => 262
+    [stars] => Array
+        (
+        )
+
+    [template] => SEM RESPOSTA
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => [19:58, 13/4/2019] JULIANA WOSCH: Queria colocar nome na lista ...  Ainda dá tempo?
+[14:30, 13/4/2019] Golden: Aooow, JULIANA! Tudo bem???
+
+Hoje é dia de escutar e dançar UM MODÃO ATRÁS DO OUTRO pra arrastar o chifre no asfalto no melhor lounge bar de Curitiba com o nosso queridinho Matheus Petriv!
+
+Mande seu nome pra lista pra ter aquele valor especial
+)
+ 
+-----------------------
+13-04-2019 20:20:35.74183[2][4] - Elapsed time: 0.037 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+13-04-2019 20:20:35.74186[2][4] - Elapsed time: 0.026 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+13-04-2019 20:20:35.74191[4][4] - Elapsed time: 0.048 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>SEM RESPOSTA</text></template> 
+-----------------------
+13-04-2019 20:20:35.74212[2][4] - Elapsed time: 0.209 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+13-04-2019 20:20:35.74224[4][4] - Elapsed time: 0.119 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>SEM RESPOSTA</text></template>
+ 
+-----------------------
+13-04-2019 20:20:35.74231[4][4] - Elapsed time: 0.075 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+13-04-2019 20:20:35.74234[2][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+13-04-2019 20:20:35.74237[4][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>SEM RESPOSTA</text> 
+-----------------------
+13-04-2019 20:20:35.74240[4][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+13-04-2019 20:20:35.74241[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+13-04-2019 20:20:35.74243[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+13-04-2019 20:20:35.74245[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'SEM RESPOSTA' to the response array. tag name is text 
+-----------------------
+13-04-2019 20:20:35.74247[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+13-04-2019 20:20:35.74249[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+13-04-2019 20:20:35.74251[4][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+13-04-2019 20:20:35.74253[4][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+13-04-2019 20:20:35.74255[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'SEM RESPOSTA' to the response array. tag name is template. 
+-----------------------
+13-04-2019 20:20:35.74257[2][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+13-04-2019 20:20:35.74259[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+13-04-2019 20:20:35.74261[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+13-04-2019 20:20:35.74263[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+13-04-2019 20:20:35.74265[4][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: SEM RESPOSTA 
+-----------------------
+13-04-2019 20:20:35.74269[4][4] - Elapsed time: 0.033 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+13-04-2019 20:20:35.74270[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+13-04-2019 20:20:35.74272[2][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that_raw] array 
+-----------------------
+13-04-2019 20:20:35.74275[4][4] - Elapsed time: 0.028 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+13-04-2019 20:20:35.74281[2][4] - Elapsed time: 0.056 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that] array 
+-----------------------
+13-04-2019 20:20:35.74283[4][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+13-04-2019 20:20:35.74286[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+13-04-2019 20:20:35.74288[4][4] - Elapsed time: 0.022 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+13-04-2019 20:20:35.74291[4][4] - Elapsed time: 0.032 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+13-04-2019 20:20:35.74293[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+13-04-2019 20:20:35.74296[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [parsed_template] array 
+-----------------------
+13-04-2019 20:20:35.74298[4][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+13-04-2019 20:20:35.74301[2][4] - Elapsed time: 0.032 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [template] array 
+-----------------------
+13-04-2019 20:20:35.74304[4][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+13-04-2019 20:20:35.74308[2][4] - Elapsed time: 0.041 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+13-04-2019 20:20:35.74312[3][4] - Elapsed time: 0.038 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `devncom_ia_golden`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      '[19:58, 13/4/2019] JULIANA WOSCH: Queria colocar nome na lista ...  Ainda dá tempo?
+[14:30, 13/4/2019] Golden: Aooow, JULIANA! Tudo bem???
+
+Hoje é dia de escutar e dançar UM MODÃO ATRÁS DO OUTRO pra arrastar o chifre no asfalto no melhor lounge bar de Curitiba com o nosso queridinho Matheus Petriv!
+
+Mande seu nome pra lista pra ter aquele valor especial',
+      'SEM RESPOSTA',
+      820,
+      554197018815,
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+13-04-2019 20:20:35.75042[4][4] - Elapsed time: 7.308 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+13-04-2019 20:20:35.75067[3][4] - Elapsed time: 0.249 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `devncom_ia_golden`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  LIMIT 1 
+-----------------------
+13-04-2019 20:20:35.75086[2][4] - Elapsed time: 0.191 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '1' lines of conversation 
+-----------------------
+13-04-2019 20:20:35.75091[4][4] - Elapsed time: 0.041 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as html 
+-----------------------
+13-04-2019 20:20:35.75098[4][4] - Elapsed time: 0.074 milliseconds
+[display_conversation.php][get_html][135]
+Returning HTML 
+-----------------------
+13-04-2019 20:20:35.75233[2][4] - Elapsed time: 1.353 milliseconds
+[conversation_start.php][Called outside of function][297]
+Closing Database 
+-----------------------
+13-04-2019 20:20:35.75241[0][4] - Elapsed time: 0.077 milliseconds
+[conversation_start.php][Called outside of function][303]
+Conversation Ending. Elapsed time: 40.729 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => [19:58, 13/4/2019] JULIANA WOSCH: Queria colocar nome na lista ...  Ainda dá tempo?
+[14:30, 13/4/2019] Golden: Aooow, JULIANA! Tudo bem???
+
+Hoje é dia de escutar e dançar UM MODÃO ATRÁS DO OUTRO pra arrastar o chifre no asfalto no melhor lounge bar de Curitiba com o nosso queridinho Matheus Petriv!
+
+Mande seu nome pra lista pra ter aquele valor especial
+    [conversation] => Array
+        (
+            [convo_id] => 554197018815
+            [bot_name] => Net Bot
+            [bot_id] => 1
+            [format] => html
+            [unknown_user] => Entrou
+            [user_id] => 820
+            [totallines] => 1
+            [user_name] => Entrou
+            [rawSay] => [19:58, 13/4/2019] JULIANA WOSCH: Queria colocar nome na lista ...  Ainda dá tempo?
+[14:30, 13/4/2019] Golden: Aooow, JULIANA! Tudo bem???
+
+Hoje é dia de escutar e dançar UM MODÃO ATRÁS DO OUTRO pra arrastar o chifre no asfalto no melhor lounge bar de Curitiba com o nosso queridinho Matheus Petriv!
+
+Mande seu nome pra lista pra ter aquele valor especial
+            [conversation_lines] => 1
+            [remember_up_to] => 10
+            [debugemail] => contato@devn1.com.br
+            [debug_level] => 4
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => LINHA DE RECOLHA ALEATÓRIA2
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [aiml_id] => -1
+                    [bot_id] => 1
+                    [pattern] => no results
+                    [thatpattern] => 
+                    [template] => SEM RESPOSTA
+                    [topic] => 
+                    [score] => 262
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), direct word match: no (2 points), uncommon word match: results (8 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => [19:58, 13/4/2019] JULIANA WOSCH: Queria colocar nome na lista ...  Ainda dá tempo?
+[14:30, 13/4/2019] Golden: Aooow, JULIANA! Tudo bem???
+
+Hoje é dia de escutar e dançar UM MODÃO ATRÁS DO OUTRO pra arrastar o chifre no asfalto no melhor lounge bar de Curitiba com o nosso queridinho Matheus Petriv!
+
+Mande seu nome pra lista pra ter aquele valor especial
+            [lookingfor] => 19 58 13 DIVIDEDBY 4 2019 JULIANA WOSCH QUERIA COLOCAR NOME NA LISTA AINDA DÁ TEMPO 14 30 13 DIVIDEDBY 4 2019 GOLDEN AOOOW JULIANA TUDO BEM HOJE É DIA DE ESCUTAR E DANÇAR UM MODÃO ATRÁS DO OUTRO PRA ARRASTAR O CHIFRE NO ASFALTO NO MELHOR LOUNGE BAR DE CURITIBA COM O NOSSO QUERIDINHO MATHEUS PETRIV MANDE SEU NOME PRA LISTA PRA TER AQUELE VALOR ESPECIAL
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [html_template] => 
+            [topic] => 
+            [score] => 262
+            [aiml_id] => -1
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => SEM RESPOSTA
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 35.231.211.24
+            [name] => Entrou
+        )
+
+    [time_start] => 1555197635.7116
+    [user_say] => Array
+        (
+            [1] => 19 58 13 DIVIDEDBY 4 2019 JULIANA WOSCH QUERIA COLOCAR NOME NA LISTA AINDA DÁ TEMPO 14 30 13 DIVIDEDBY 4 2019 GOLDEN AOOOW JULIANA TUDO BEM HOJE É DIA DE ESCUTAR E DANÇAR UM MODÃO ATRÁS DO OUTRO PRA ARRASTAR O CHIFRE NO ASFALTO NO MELHOR LOUNGE BAR DE CURITIBA COM O NOSSO QUERIDINHO MATHEUS PETRIV MANDE SEU NOME PRA LISTA PRA TER AQUELE VALOR ESPECIAL
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [input] => Array
+        (
+            [1] => [19:58, 13/4/2019] JULIANA WOSCH: Queria colocar nome na lista... Ainda dá tempo?
+[14:30, 13/4/2019] Golden: Aooow, JULIANA! Tudo bem??? Hoje é dia de escutar e dançar UM MODÃO ATRÁS DO OUTRO pra arrastar o chifre no asfalto no melhor lounge bar de Curitiba com o nosso queridinho Matheus Petriv! Mande seu nome pra lista pra ter aquele valor especial
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => <div class="usersay">Entrou: [19:58, 13/4/2019] JULIANA WOSCH: Queria colocar nome na lista ...  Ainda dá tempo?
+[14:30, 13/4/2019] Golden: Aooow, JULIANA! Tudo bem???
+
+Hoje é dia de escutar e dançar UM MODÃO ATRÁS DO OUTRO pra arrastar o chifre no asfalto no melhor lounge bar de Curitiba com o nosso queridinho Matheus Petriv!
+
+Mande seu nome pra lista pra ter aquele valor especial</div><div class="botsay">Net Bot: SEM RESPOSTA</div>
+)
+
+-----------------------
+Total execution time: 40.729 Milliseconds. Goodbye.

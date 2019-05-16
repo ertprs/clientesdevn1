@@ -1,0 +1,1422 @@
+26-04-2019 08:18:07.57201[0][4] - Elapsed time: 2.179 milliseconds
+[conversation_start.php][Called outside of function][91]
+Conversation starting. Current system specs:
+Program O version:            2.6.11
+Server Software:              Apache
+PHP Version:                  5.6.40
+OS:                           Linux
+OS Version:                   #1 SMP Wed Sep 26 15:12:11 UTC 2018
+MySQL Version:                5.7.26
+Multi-byte functions enabled: true 
+-----------------------
+26-04-2019 08:18:07.57624[4][4] - Elapsed time: 4.226 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+26-04-2019 08:18:07.57740[4][4] - Elapsed time: 1.161 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+26-04-2019 08:18:07.57763[4][4] - Elapsed time: 0.232 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+26-04-2019 08:18:07.57869[4][4] - Elapsed time: 1.058 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+26-04-2019 08:18:07.57871[4][4] - Elapsed time: 0.017 milliseconds
+[conversation_start.php][Called outside of function][104]
+Loaded all Includes 
+-----------------------
+26-04-2019 08:18:07.57888[0][4] - Elapsed time: 0.173 milliseconds
+[conversation_start.php][Called outside of function][159]
+Debug level: 4
+session ID = 554191481919 
+-----------------------
+26-04-2019 08:18:07.57889[4][4] - Elapsed time: 0.015 milliseconds
+[conversation_start.php][Called outside of function][162]
+Conversation continuing. User said '[08:16, 26/4/2019] HELOISE WETTERMANN: Heyy
+[08:16, 26/4/2019] HELOISE WETTERMANN: Pode colocar alguns nomes na lista da Golden Bom Retiro pra amanhã?
+[08:16, 26/4/2019] HELOISE WETTERMANN: Viviane Nunes
+Maria Vitória Nunes
+Maria Klipel
+Solange Lopes
+Adriano Junior
+Mahara Lemos'. 
+-----------------------
+26-04-2019 08:18:07.57900[4][4] - Elapsed time: 0.107 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+26-04-2019 08:18:07.57902[4][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+26-04-2019 08:18:07.57904[3][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `devncom_ia_golden`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+26-04-2019 08:18:07.57930[4][4] - Elapsed time: 0.258 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: 554191481919 
+-----------------------
+26-04-2019 08:18:07.57932[2][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+26-04-2019 08:18:07.57933[3][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+26-04-2019 08:18:07.57951[2][4] - Elapsed time: 0.180 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+26-04-2019 08:18:07.57953[2][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+26-04-2019 08:18:07.57992[2][4] - Elapsed time: 0.396 milliseconds
+[handle_user.php][intisaliseUser][82]
+Initializing user. 
+-----------------------
+26-04-2019 08:18:07.58011[3][4] - Elapsed time: 0.190 milliseconds
+[handle_user.php][intisaliseUser][128]
+intisaliseUser #940 SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, 'Entrou'  , 554191481919   , 1 , '0'        , '34.83.132.82', ''      , 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0)'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     ); 
+-----------------------
+26-04-2019 08:18:07.58025[3][4] - Elapsed time: 0.138 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `devncom_ia_golden`.`client_properties` WHERE `user_id` = 940 AND `bot_id` = 1; 
+-----------------------
+26-04-2019 08:18:07.58130[2][4] - Elapsed time: 1.050 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+26-04-2019 08:18:07.58145[2][4] - Elapsed time: 0.148 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+26-04-2019 08:18:07.58148[2][4] - Elapsed time: 0.030 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+26-04-2019 08:18:07.58174[2][4] - Elapsed time: 0.258 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+26-04-2019 08:18:07.58183[2][4] - Elapsed time: 0.096 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 8. 
+-----------------------
+26-04-2019 08:18:07.58190[2][4] - Elapsed time: 0.073 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+26-04-2019 08:18:07.58196[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+26-04-2019 08:18:07.58203[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 6. 
+-----------------------
+26-04-2019 08:18:07.58211[2][4] - Elapsed time: 0.083 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+26-04-2019 08:18:07.58222[2][4] - Elapsed time: 0.104 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58230[2][4] - Elapsed time: 0.088 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+26-04-2019 08:18:07.58242[2][4] - Elapsed time: 0.113 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 6. 
+-----------------------
+26-04-2019 08:18:07.58250[2][4] - Elapsed time: 0.080 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+26-04-2019 08:18:07.58255[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+26-04-2019 08:18:07.58262[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+26-04-2019 08:18:07.58267[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+26-04-2019 08:18:07.58274[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+26-04-2019 08:18:07.58281[2][4] - Elapsed time: 0.076 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+26-04-2019 08:18:07.58289[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+26-04-2019 08:18:07.58295[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+26-04-2019 08:18:07.58301[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58306[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on HELOISE. 
+-----------------------
+26-04-2019 08:18:07.58313[2][4] - Elapsed time: 0.073 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58319[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on WETTERMANN. 
+-----------------------
+26-04-2019 08:18:07.58327[2][4] - Elapsed time: 0.081 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+26-04-2019 08:18:07.58333[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58338[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Heyy. 
+-----------------------
+26-04-2019 08:18:07.58348[2][4] - Elapsed time: 0.093 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+26-04-2019 08:18:07.58353[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+26-04-2019 08:18:07.58359[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+26-04-2019 08:18:07.58366[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 8. 
+-----------------------
+26-04-2019 08:18:07.58372[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+26-04-2019 08:18:07.58379[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+26-04-2019 08:18:07.58386[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 6. 
+-----------------------
+26-04-2019 08:18:07.58392[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+26-04-2019 08:18:07.58398[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58404[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+26-04-2019 08:18:07.58410[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 6. 
+-----------------------
+26-04-2019 08:18:07.58423[2][4] - Elapsed time: 0.128 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+26-04-2019 08:18:07.58433[2][4] - Elapsed time: 0.096 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+26-04-2019 08:18:07.58444[2][4] - Elapsed time: 0.110 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+26-04-2019 08:18:07.58453[2][4] - Elapsed time: 0.094 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+26-04-2019 08:18:07.58461[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+26-04-2019 08:18:07.58467[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+26-04-2019 08:18:07.58474[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+26-04-2019 08:18:07.58482[2][4] - Elapsed time: 0.075 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+26-04-2019 08:18:07.58487[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58493[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on HELOISE. 
+-----------------------
+26-04-2019 08:18:07.58501[2][4] - Elapsed time: 0.081 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58513[2][4] - Elapsed time: 0.122 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on WETTERMANN. 
+-----------------------
+26-04-2019 08:18:07.58525[2][4] - Elapsed time: 0.114 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+26-04-2019 08:18:07.58532[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58538[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Pode. 
+-----------------------
+26-04-2019 08:18:07.58545[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58551[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on colocar. 
+-----------------------
+26-04-2019 08:18:07.58557[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58563[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on alguns. 
+-----------------------
+26-04-2019 08:18:07.58571[2][4] - Elapsed time: 0.079 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58578[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on nomes. 
+-----------------------
+26-04-2019 08:18:07.58585[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58590[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on na. 
+-----------------------
+26-04-2019 08:18:07.58596[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58602[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on lista. 
+-----------------------
+26-04-2019 08:18:07.58608[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58614[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on da. 
+-----------------------
+26-04-2019 08:18:07.58620[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58626[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Golden. 
+-----------------------
+26-04-2019 08:18:07.58633[2][4] - Elapsed time: 0.073 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58645[2][4] - Elapsed time: 0.126 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Bom. 
+-----------------------
+26-04-2019 08:18:07.58652[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58658[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Retiro. 
+-----------------------
+26-04-2019 08:18:07.58665[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58671[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on pra. 
+-----------------------
+26-04-2019 08:18:07.58678[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58684[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on amanhã. 
+-----------------------
+26-04-2019 08:18:07.58691[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ?. 
+-----------------------
+26-04-2019 08:18:07.58697[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+26-04-2019 08:18:07.58703[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+26-04-2019 08:18:07.58708[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+26-04-2019 08:18:07.58715[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 8. 
+-----------------------
+26-04-2019 08:18:07.58722[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+26-04-2019 08:18:07.58728[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+26-04-2019 08:18:07.58735[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 6. 
+-----------------------
+26-04-2019 08:18:07.58742[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+26-04-2019 08:18:07.58747[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58753[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+26-04-2019 08:18:07.58764[2][4] - Elapsed time: 0.103 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 6. 
+-----------------------
+26-04-2019 08:18:07.58773[2][4] - Elapsed time: 0.090 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+26-04-2019 08:18:07.58779[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+26-04-2019 08:18:07.58786[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+26-04-2019 08:18:07.58791[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+26-04-2019 08:18:07.58798[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+26-04-2019 08:18:07.58804[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+26-04-2019 08:18:07.58811[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+26-04-2019 08:18:07.58818[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+26-04-2019 08:18:07.58823[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58829[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on HELOISE. 
+-----------------------
+26-04-2019 08:18:07.58836[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58841[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on WETTERMANN. 
+-----------------------
+26-04-2019 08:18:07.58849[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+26-04-2019 08:18:07.58854[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58860[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Viviane. 
+-----------------------
+26-04-2019 08:18:07.58867[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58873[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Nunes. 
+-----------------------
+26-04-2019 08:18:07.58881[2][4] - Elapsed time: 0.078 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+26-04-2019 08:18:07.58886[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Maria. 
+-----------------------
+26-04-2019 08:18:07.58893[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58899[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Vitória. 
+-----------------------
+26-04-2019 08:18:07.58906[2][4] - Elapsed time: 0.073 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58912[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Nunes. 
+-----------------------
+26-04-2019 08:18:07.58919[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+26-04-2019 08:18:07.58925[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Maria. 
+-----------------------
+26-04-2019 08:18:07.58932[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58939[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Klipel. 
+-----------------------
+26-04-2019 08:18:07.58946[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+26-04-2019 08:18:07.58952[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Solange. 
+-----------------------
+26-04-2019 08:18:07.58959[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58964[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Lopes. 
+-----------------------
+26-04-2019 08:18:07.58971[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+26-04-2019 08:18:07.58979[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Adriano. 
+-----------------------
+26-04-2019 08:18:07.58992[2][4] - Elapsed time: 0.130 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.58998[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Junior. 
+-----------------------
+26-04-2019 08:18:07.59005[2][4] - Elapsed time: 0.076 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+26-04-2019 08:18:07.59011[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Mahara. 
+-----------------------
+26-04-2019 08:18:07.59018[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-04-2019 08:18:07.59024[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Lemos. 
+-----------------------
+26-04-2019 08:18:07.59032[4][4] - Elapsed time: 0.082 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '[08:16, 26/4/2019] HELOISE WETTERMANN: Heyy
+[08:16, 26/4/2019] HELOISE WETTERMANN: Pode colocar alguns nomes na lista da Golden Bom Retiro pra amanhã?
+[08:16, 26/4/2019] HELOISE WETTERMANN: Viviane Nunes
+Maria Vitória Nunes
+Maria Klipel
+Solange Lopes
+Adriano Junior
+Mahara Lemos' 
+-----------------------
+26-04-2019 08:18:07.59046[4][4] - Elapsed time: 0.132 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN HEYY 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN PODE COLOCAR ALGUNS NOMES NA LISTA DA GOLDEN BOM RETIRO PRA AMANHÃ 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN VIVIANE NUNES
+MARIA VITÓRIA NUNES
+MARIA KLIPEL
+SOLANGE LOPES
+ADRIANO JUNIOR
+MAHARA LEMOS' 
+-----------------------
+26-04-2019 08:18:07.59048[2][4] - Elapsed time: 0.020 milliseconds
+[conversation_start.php][Called outside of function][237]
+Details:
+User say: 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN HEYY 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN PODE COLOCAR ALGUNS NOMES NA LISTA DA GOLDEN BOM RETIRO PRA AMANHÃ 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN VIVIANE NUNES
+MARIA VITÓRIA NUNES
+MARIA KLIPEL
+SOLANGE LOPES
+ADRIANO JUNIOR
+MAHARA LEMOS
+Convo id: 554191481919
+Bot id: 1
+Format: html 
+-----------------------
+26-04-2019 08:18:07.59050[4][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: html 
+-----------------------
+26-04-2019 08:18:07.59051[2][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+26-04-2019 08:18:07.59053[3][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `devncom_ia_golden`.`conversation_log` WHERE `user_id` = 940 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+26-04-2019 08:18:07.60860[4][4] - Elapsed time: 18.073 milliseconds
+[intialise_conversation.php][load_that][856]
+Couldn't find any previous inputs or responses. 
+-----------------------
+26-04-2019 08:18:07.60995[2][4] - Elapsed time: 1.347 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+26-04-2019 08:18:07.60999[3][4] - Elapsed time: 0.044 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1; 
+-----------------------
+26-04-2019 08:18:07.61024[4][4] - Elapsed time: 0.247 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+26-04-2019 08:18:07.61028[0][4] - Elapsed time: 0.036 milliseconds
+[conversation_start.php][Called outside of function][257]
+Default debug level = 4 
+-----------------------
+26-04-2019 08:18:07.61030[0][4] - Elapsed time: 0.018 milliseconds
+[conversation_start.php][Called outside of function][259]
+Current debug level = 4 
+-----------------------
+26-04-2019 08:18:07.61032[0][4] - Elapsed time: 0.022 milliseconds
+[conversation_start.php][Called outside of function][272]
+Say = 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN HEYY 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN PODE COLOCAR ALGUNS NOMES NA LISTA DA GOLDEN BOM RETIRO PRA AMANHÃ 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN VIVIANE NUNES
+MARIA VITÓRIA NUNES
+MARIA KLIPEL
+SOLANGE LOPES
+ADRIANO JUNIOR
+MAHARA LEMOS: raw say = [08:16, 26/4/2019] HELOISE WETTERMANN: Heyy
+[08:16, 26/4/2019] HELOISE WETTERMANN: Pode colocar alguns nomes na lista da Golden Bom Retiro pra amanhã?
+[08:16, 26/4/2019] HELOISE WETTERMANN: Viviane Nunes
+Maria Vitória Nunes
+Maria Klipel
+Solange Lopes
+Adriano Junior
+Mahara Lemos 
+-----------------------
+26-04-2019 08:18:07.61034[4][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+26-04-2019 08:18:07.61035[2][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN HEYY 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN PODE COLOCAR ALGUNS NOMES NA LISTA DA GOLDEN BOM RETIRO PRA AMANHÃ 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN VIVIANE NUNES
+MARIA VITÓRIA NUNES
+MARIA KLIPEL
+SOLANGE LOPES
+ADRIANO JUNIOR
+MAHARA LEMOS' to the front of the [user_say] array 
+-----------------------
+26-04-2019 08:18:07.61039[4][4] - Elapsed time: 0.041 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+26-04-2019 08:18:07.61043[0][4] - Elapsed time: 0.036 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = [08:16, 26/4/2019] HELOISE WETTERMANN: Heyy
+[08:16, 26/4/2019] HELOISE WETTERMANN: Pode colocar alguns nomes na lista da Golden Bom Retiro pra amanhã?
+[08:16, 26/4/2019] HELOISE WETTERMANN: Viviane Nunes
+Maria Vitória Nunes
+Maria Klipel
+Solange Lopes
+Adriano Junior
+Mahara Lemos, RAW say = [08:16, 26/4/2019] HELOISE WETTERMANN: Heyy
+[08:16, 26/4/2019] HELOISE WETTERMANN: Pode colocar alguns nomes na lista da Golden Bom Retiro pra amanhã?
+[08:16, 26/4/2019] HELOISE WETTERMANN: Viviane Nunes
+Maria Vitória Nunes
+Maria Klipel
+Solange Lopes
+Adriano Junior
+Mahara Lemos 
+-----------------------
+26-04-2019 08:18:07.61046[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '[08:16, 26/4/2019] HELOISE WETTERMANN: Heyy
+[08:16, 26/4/2019] HELOISE WETTERMANN: Pode colocar alguns nomes na lista da Golden Bom Retiro pra amanhã?
+[08:16, 26/4/2019] HELOISE WETTERMANN: Viviane Nunes
+Maria Vitória Nunes
+Maria Klipel
+Solange Lopes
+Adriano Junior
+Mahara Lemos' to the front of the [input] array 
+-----------------------
+26-04-2019 08:18:07.61048[4][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+26-04-2019 08:18:07.61050[4][4] - Elapsed time: 0.023 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+26-04-2019 08:18:07.61052[4][4] - Elapsed time: 0.016 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN HEYY 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN PODE COLOCAR ALGUNS NOMES NA LISTA DA GOLDEN BOM RETIRO PRA AMANHÃ 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN VIVIANE NUNES
+MARIA VITÓRIA NUNES
+MARIA KLIPEL
+SOLANGE LOPES
+ADRIANO JUNIOR
+MAHARA LEMOS' 
+-----------------------
+26-04-2019 08:18:07.61058[4][4] - Elapsed time: 0.063 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN HEYY 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN PODE COLOCAR ALGUNS NOMES NA LISTA DA GOLDEN BOM RETIRO PRA AMANHÃ 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN VIVIANE NUNES
+MARIA VITÓRIA NUNES
+MARIA KLIPEL
+SOLANGE LOPES
+ADRIANO JUNIOR
+MAHARA LEMOS' 
+-----------------------
+26-04-2019 08:18:07.61060[4][4] - Elapsed time: 0.016 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+26-04-2019 08:18:07.61149[4][4] - Elapsed time: 0.895 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+26-04-2019 08:18:07.61156[3][4] - Elapsed time: 0.068 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `devncom_ia_golden`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = 554191481919
+    AND (
+        '08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN HEYY 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN PODE COLOCAR ALGUNS NOMES NA LISTA DA GOLDEN BOM RETIRO PRA AMANHÃ 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN VIVIANE NUNES
+MARIA VITÓRIA NUNES
+MARIA KLIPEL
+SOLANGE LOPES
+ADRIANO JUNIOR
+MAHARA LEMOS' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+26-04-2019 08:18:07.61177[2][4] - Elapsed time: 0.208 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+26-04-2019 08:18:07.61180[4][4] - Elapsed time: 0.034 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+26-04-2019 08:18:07.61182[4][4] - Elapsed time: 0.017 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = 1. 
+-----------------------
+26-04-2019 08:18:07.61276[4][4] - Elapsed time: 0.942 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+26-04-2019 08:18:07.61280[3][4] - Elapsed time: 0.042 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `devncom_ia_golden`.`aiml` WHERE
+    bot_id = 1 AND (
+        '08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN HEYY 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN PODE COLOCAR ALGUNS NOMES NA LISTA DA GOLDEN BOM RETIRO PRA AMANHÃ 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN VIVIANE NUNES
+MARIA VITÓRIA NUNES
+MARIA KLIPEL
+SOLANGE LOPES
+ADRIANO JUNIOR
+MAHARA LEMOS' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE 'LINHA DE RECOLHA ALEATÓRIA2'
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+26-04-2019 08:18:07.61300[3][4] - Elapsed time: 0.194 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+26-04-2019 08:18:07.61302[1][4] - Elapsed time: 0.024 milliseconds
+[find_aiml.php][find_aiml_matches][1082]
+Error: FOUND NO AIML matches in DB. 
+-----------------------
+26-04-2019 08:18:07.61304[4][4] - Elapsed time: 0.023 milliseconds
+[find_aiml.php][get_convo_var][727]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] 
+-----------------------
+26-04-2019 08:18:07.61306[4][4] - Elapsed time: 0.020 milliseconds
+[find_aiml.php][get_convo_var][757]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] FOUND: ConvoArr Value = 'LINHA DE RECOLHA ALEATÓRIA2' 
+-----------------------
+26-04-2019 08:18:07.61334[2][4] - Elapsed time: 0.274 milliseconds
+[misc_functions.php][addUnknownInput][232]
+Entry successfully added! 
+-----------------------
+26-04-2019 08:18:07.61337[1][4] - Elapsed time: 0.036 milliseconds
+[find_aiml.php][find_aiml_matches][1084]
+Added input '08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN HEYY 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN PODE COLOCAR ALGUNS NOMES NA LISTA DA GOLDEN BOM RETIRO PRA AMANHÃ 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN VIVIANE NUNES
+MARIA VITÓRIA NUNES
+MARIA KLIPEL
+SOLANGE LOPES
+ADRIANO JUNIOR
+MAHARA LEMOS' to the unknown_inputs table. 
+-----------------------
+26-04-2019 08:18:07.61425[4][4] - Elapsed time: 0.880 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 1 rows to unset bad matches 
+-----------------------
+26-04-2019 08:18:07.61428[1][4] - Elapsed time: 0.024 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][56]
+Returning error as no results where found 
+-----------------------
+26-04-2019 08:18:07.61430[4][4] - Elapsed time: 0.020 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+26-04-2019 08:18:07.61547[4][4] - Elapsed time: 1.175 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+ 
+-----------------------
+26-04-2019 08:18:07.61553[2][4] - Elapsed time: 0.059 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+
+ 
+-----------------------
+26-04-2019 08:18:07.61606[4][4] - Elapsed time: 0.529 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [aiml_id] => -1
+    [bot_id] => 1
+    [pattern] => no results
+    [thatpattern] => 
+    [template] => SEM RESPOSTA
+    [topic] => 
+    [score] => 261
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+)
+ 
+-----------------------
+26-04-2019 08:18:07.61608[2][4] - Elapsed time: 0.023 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+26-04-2019 08:18:07.61617[4][4] - Elapsed time: 0.087 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:-1 (no results) 
+-----------------------
+26-04-2019 08:18:07.61619[3][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+26-04-2019 08:18:07.61622[2][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = 'no results' 
+-----------------------
+26-04-2019 08:18:07.61624[4][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+26-04-2019 08:18:07.61627[4][4] - Elapsed time: 0.026 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+26-04-2019 08:18:07.61631[2][4] - Elapsed time: 0.049 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => -1
+    [html_template] => 
+    [lookingfor] => 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN HEYY 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN PODE COLOCAR ALGUNS NOMES NA LISTA DA GOLDEN BOM RETIRO PRA AMANHÃ 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN VIVIANE NUNES
+MARIA VITÓRIA NUNES
+MARIA KLIPEL
+SOLANGE LOPES
+ADRIANO JUNIOR
+MAHARA LEMOS
+    [pattern] => no results
+    [score] => 261
+    [stars] => Array
+        (
+        )
+
+    [template] => SEM RESPOSTA
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => [08:16, 26/4/2019] HELOISE WETTERMANN: Heyy
+[08:16, 26/4/2019] HELOISE WETTERMANN: Pode colocar alguns nomes na lista da Golden Bom Retiro pra amanhã?
+[08:16, 26/4/2019] HELOISE WETTERMANN: Viviane Nunes
+Maria Vitória Nunes
+Maria Klipel
+Solange Lopes
+Adriano Junior
+Mahara Lemos
+)
+ 
+-----------------------
+26-04-2019 08:18:07.61634[2][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+26-04-2019 08:18:07.61637[2][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+26-04-2019 08:18:07.61644[4][4] - Elapsed time: 0.065 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>SEM RESPOSTA</text></template> 
+-----------------------
+26-04-2019 08:18:07.61662[2][4] - Elapsed time: 0.186 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+26-04-2019 08:18:07.61672[4][4] - Elapsed time: 0.102 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>SEM RESPOSTA</text></template>
+ 
+-----------------------
+26-04-2019 08:18:07.61676[4][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+26-04-2019 08:18:07.61679[2][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+26-04-2019 08:18:07.61682[4][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>SEM RESPOSTA</text> 
+-----------------------
+26-04-2019 08:18:07.61684[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+26-04-2019 08:18:07.61685[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+26-04-2019 08:18:07.61687[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+26-04-2019 08:18:07.61689[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'SEM RESPOSTA' to the response array. tag name is text 
+-----------------------
+26-04-2019 08:18:07.61690[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+26-04-2019 08:18:07.61692[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+26-04-2019 08:18:07.61694[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+26-04-2019 08:18:07.61696[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+26-04-2019 08:18:07.61698[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'SEM RESPOSTA' to the response array. tag name is template. 
+-----------------------
+26-04-2019 08:18:07.61700[2][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+26-04-2019 08:18:07.61701[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+26-04-2019 08:18:07.61703[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+26-04-2019 08:18:07.61704[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+26-04-2019 08:18:07.61706[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: SEM RESPOSTA 
+-----------------------
+26-04-2019 08:18:07.61708[4][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+26-04-2019 08:18:07.61710[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+26-04-2019 08:18:07.61712[2][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that_raw] array 
+-----------------------
+26-04-2019 08:18:07.61714[4][4] - Elapsed time: 0.022 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+26-04-2019 08:18:07.61720[2][4] - Elapsed time: 0.058 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that] array 
+-----------------------
+26-04-2019 08:18:07.61722[4][4] - Elapsed time: 0.028 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+26-04-2019 08:18:07.61726[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+26-04-2019 08:18:07.61728[4][4] - Elapsed time: 0.021 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+26-04-2019 08:18:07.61731[4][4] - Elapsed time: 0.032 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+26-04-2019 08:18:07.61733[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+26-04-2019 08:18:07.61735[2][4] - Elapsed time: 0.025 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [parsed_template] array 
+-----------------------
+26-04-2019 08:18:07.61737[4][4] - Elapsed time: 0.024 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+26-04-2019 08:18:07.61740[2][4] - Elapsed time: 0.030 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [template] array 
+-----------------------
+26-04-2019 08:18:07.61742[4][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+26-04-2019 08:18:07.61746[2][4] - Elapsed time: 0.035 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+26-04-2019 08:18:07.61749[3][4] - Elapsed time: 0.031 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `devncom_ia_golden`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      '[08:16, 26/4/2019] HELOISE WETTERMANN: Heyy
+[08:16, 26/4/2019] HELOISE WETTERMANN: Pode colocar alguns nomes na lista da Golden Bom Retiro pra amanhã?
+[08:16, 26/4/2019] HELOISE WETTERMANN: Viviane Nunes
+Maria Vitória Nunes
+Maria Klipel
+Solange Lopes
+Adriano Junior
+Mahara Lemos',
+      'SEM RESPOSTA',
+      940,
+      554191481919,
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+26-04-2019 08:18:07.63212[4][4] - Elapsed time: 14.634 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+26-04-2019 08:18:07.63238[3][4] - Elapsed time: 0.252 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `devncom_ia_golden`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  LIMIT 1 
+-----------------------
+26-04-2019 08:18:07.63262[2][4] - Elapsed time: 0.244 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '1' lines of conversation 
+-----------------------
+26-04-2019 08:18:07.63265[4][4] - Elapsed time: 0.033 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as html 
+-----------------------
+26-04-2019 08:18:07.63268[4][4] - Elapsed time: 0.030 milliseconds
+[display_conversation.php][get_html][135]
+Returning HTML 
+-----------------------
+26-04-2019 08:18:07.63366[2][4] - Elapsed time: 0.980 milliseconds
+[conversation_start.php][Called outside of function][297]
+Closing Database 
+-----------------------
+26-04-2019 08:18:07.63370[0][4] - Elapsed time: 0.041 milliseconds
+[conversation_start.php][Called outside of function][303]
+Conversation Ending. Elapsed time: 63.856 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => [08:16, 26/4/2019] HELOISE WETTERMANN: Heyy
+[08:16, 26/4/2019] HELOISE WETTERMANN: Pode colocar alguns nomes na lista da Golden Bom Retiro pra amanhã?
+[08:16, 26/4/2019] HELOISE WETTERMANN: Viviane Nunes
+Maria Vitória Nunes
+Maria Klipel
+Solange Lopes
+Adriano Junior
+Mahara Lemos
+    [conversation] => Array
+        (
+            [convo_id] => 554191481919
+            [bot_name] => Net Bot
+            [bot_id] => 1
+            [format] => html
+            [unknown_user] => Entrou
+            [user_id] => 940
+            [totallines] => 1
+            [user_name] => Entrou
+            [rawSay] => [08:16, 26/4/2019] HELOISE WETTERMANN: Heyy
+[08:16, 26/4/2019] HELOISE WETTERMANN: Pode colocar alguns nomes na lista da Golden Bom Retiro pra amanhã?
+[08:16, 26/4/2019] HELOISE WETTERMANN: Viviane Nunes
+Maria Vitória Nunes
+Maria Klipel
+Solange Lopes
+Adriano Junior
+Mahara Lemos
+            [conversation_lines] => 1
+            [remember_up_to] => 10
+            [debugemail] => contato@devn1.com.br
+            [debug_level] => 4
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => LINHA DE RECOLHA ALEATÓRIA2
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [aiml_id] => -1
+                    [bot_id] => 1
+                    [pattern] => no results
+                    [thatpattern] => 
+                    [template] => SEM RESPOSTA
+                    [topic] => 
+                    [score] => 261
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => [08:16, 26/4/2019] HELOISE WETTERMANN: Heyy
+[08:16, 26/4/2019] HELOISE WETTERMANN: Pode colocar alguns nomes na lista da Golden Bom Retiro pra amanhã?
+[08:16, 26/4/2019] HELOISE WETTERMANN: Viviane Nunes
+Maria Vitória Nunes
+Maria Klipel
+Solange Lopes
+Adriano Junior
+Mahara Lemos
+            [lookingfor] => 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN HEYY 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN PODE COLOCAR ALGUNS NOMES NA LISTA DA GOLDEN BOM RETIRO PRA AMANHÃ 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN VIVIANE NUNES
+MARIA VITÓRIA NUNES
+MARIA KLIPEL
+SOLANGE LOPES
+ADRIANO JUNIOR
+MAHARA LEMOS
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [html_template] => 
+            [topic] => 
+            [score] => 261
+            [aiml_id] => -1
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => SEM RESPOSTA
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 34.83.132.82
+            [name] => Entrou
+        )
+
+    [time_start] => 1556277487.5698
+    [user_say] => Array
+        (
+            [1] => 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN HEYY 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN PODE COLOCAR ALGUNS NOMES NA LISTA DA GOLDEN BOM RETIRO PRA AMANHÃ 08 16 26 DIVIDEDBY 4 2019 HELOISE WETTERMANN VIVIANE NUNES
+MARIA VITÓRIA NUNES
+MARIA KLIPEL
+SOLANGE LOPES
+ADRIANO JUNIOR
+MAHARA LEMOS
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [input] => Array
+        (
+            [1] => [08:16, 26/4/2019] HELOISE WETTERMANN: Heyy
+[08:16, 26/4/2019] HELOISE WETTERMANN: Pode colocar alguns nomes na lista da Golden Bom Retiro pra amanhã?
+[08:16, 26/4/2019] HELOISE WETTERMANN: Viviane Nunes
+Maria Vitória Nunes
+Maria Klipel
+Solange Lopes
+Adriano Junior
+Mahara Lemos
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => <div class="usersay">Entrou: [08:16, 26/4/2019] HELOISE WETTERMANN: Heyy
+[08:16, 26/4/2019] HELOISE WETTERMANN: Pode colocar alguns nomes na lista da Golden Bom Retiro pra amanhã?
+[08:16, 26/4/2019] HELOISE WETTERMANN: Viviane Nunes
+Maria Vitória Nunes
+Maria Klipel
+Solange Lopes
+Adriano Junior
+Mahara Lemos</div><div class="botsay">Net Bot: SEM RESPOSTA</div>
+)
+
+-----------------------
+Total execution time: 63.856 Milliseconds. Goodbye.

@@ -1,0 +1,1046 @@
+09-04-2019 02:09:28.87059[0][4] - Elapsed time: 2.465 milliseconds
+[conversation_start.php][Called outside of function][91]
+Conversation starting. Current system specs:
+Program O version:            2.6.11
+Server Software:              Apache
+PHP Version:                  5.6.40
+OS:                           Linux
+OS Version:                   #1 SMP Wed Sep 26 15:12:11 UTC 2018
+MySQL Version:                5.7.25
+Multi-byte functions enabled: true 
+-----------------------
+09-04-2019 02:09:28.87412[4][4] - Elapsed time: 3.533 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+09-04-2019 02:09:28.87530[4][4] - Elapsed time: 1.177 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+09-04-2019 02:09:28.87561[4][4] - Elapsed time: 0.305 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+09-04-2019 02:09:28.87681[4][4] - Elapsed time: 1.207 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+09-04-2019 02:09:28.87683[4][4] - Elapsed time: 0.020 milliseconds
+[conversation_start.php][Called outside of function][104]
+Loaded all Includes 
+-----------------------
+09-04-2019 02:09:28.87702[0][4] - Elapsed time: 0.183 milliseconds
+[conversation_start.php][Called outside of function][159]
+Debug level: 4
+session ID = 554195971725 
+-----------------------
+09-04-2019 02:09:28.87703[4][4] - Elapsed time: 0.014 milliseconds
+[conversation_start.php][Called outside of function][162]
+Conversation continuing. User said '[02:17, 9/4/2019] FERNANDA HECKE: sair
+[02:17, 9/4/2019] FERNANDA HECKE: /sair'. 
+-----------------------
+09-04-2019 02:09:28.87709[4][4] - Elapsed time: 0.061 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+09-04-2019 02:09:28.87710[4][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+09-04-2019 02:09:28.87712[3][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `devncom_ia_golden`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+09-04-2019 02:09:28.87738[4][4] - Elapsed time: 0.258 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: 554195971725 
+-----------------------
+09-04-2019 02:09:28.87741[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+09-04-2019 02:09:28.87742[3][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+09-04-2019 02:09:28.87758[2][4] - Elapsed time: 0.165 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+09-04-2019 02:09:28.87760[2][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+09-04-2019 02:09:28.87791[2][4] - Elapsed time: 0.311 milliseconds
+[handle_user.php][intisaliseUser][82]
+Initializing user. 
+-----------------------
+09-04-2019 02:09:28.87812[3][4] - Elapsed time: 0.207 milliseconds
+[handle_user.php][intisaliseUser][128]
+intisaliseUser #698 SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, 'Entrou'  , 554195971725   , 1 , '0'        , '35.197.3.206', ''      , 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0)'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     ); 
+-----------------------
+09-04-2019 02:09:28.87824[3][4] - Elapsed time: 0.120 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `devncom_ia_golden`.`client_properties` WHERE `user_id` = 698 AND `bot_id` = 1; 
+-----------------------
+09-04-2019 02:09:28.87860[2][4] - Elapsed time: 0.358 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+09-04-2019 02:09:28.87868[2][4] - Elapsed time: 0.088 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+09-04-2019 02:09:28.87871[2][4] - Elapsed time: 0.026 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+09-04-2019 02:09:28.87891[2][4] - Elapsed time: 0.200 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+09-04-2019 02:09:28.87900[2][4] - Elapsed time: 0.088 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+09-04-2019 02:09:28.87907[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+09-04-2019 02:09:28.87912[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+09-04-2019 02:09:28.87919[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 7. 
+-----------------------
+09-04-2019 02:09:28.87926[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+09-04-2019 02:09:28.87931[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+09-04-2019 02:09:28.87937[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+09-04-2019 02:09:28.87944[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+09-04-2019 02:09:28.87949[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+09-04-2019 02:09:28.87956[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+09-04-2019 02:09:28.87962[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+09-04-2019 02:09:28.87969[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+09-04-2019 02:09:28.87976[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+09-04-2019 02:09:28.87982[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+09-04-2019 02:09:28.87989[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+09-04-2019 02:09:28.87996[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+09-04-2019 02:09:28.88001[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on FERNANDA. 
+-----------------------
+09-04-2019 02:09:28.88008[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+09-04-2019 02:09:28.88014[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on HECKE. 
+-----------------------
+09-04-2019 02:09:28.88021[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+09-04-2019 02:09:28.88026[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+09-04-2019 02:09:28.88032[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on sair. 
+-----------------------
+09-04-2019 02:09:28.88039[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+09-04-2019 02:09:28.88045[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+09-04-2019 02:09:28.88051[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+09-04-2019 02:09:28.88057[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+09-04-2019 02:09:28.88064[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+09-04-2019 02:09:28.88070[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+09-04-2019 02:09:28.88077[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 7. 
+-----------------------
+09-04-2019 02:09:28.88084[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+09-04-2019 02:09:28.88089[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+09-04-2019 02:09:28.88096[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+09-04-2019 02:09:28.88103[2][4] - Elapsed time: 0.073 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+09-04-2019 02:09:28.88109[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+09-04-2019 02:09:28.88116[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+09-04-2019 02:09:28.88122[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+09-04-2019 02:09:28.88129[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+09-04-2019 02:09:28.88136[2][4] - Elapsed time: 0.073 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+09-04-2019 02:09:28.88143[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+09-04-2019 02:09:28.88150[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+09-04-2019 02:09:28.88155[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+09-04-2019 02:09:28.88161[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on FERNANDA. 
+-----------------------
+09-04-2019 02:09:28.88169[2][4] - Elapsed time: 0.084 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+09-04-2019 02:09:28.88175[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on HECKE. 
+-----------------------
+09-04-2019 02:09:28.88182[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+09-04-2019 02:09:28.88188[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+09-04-2019 02:09:28.88193[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+09-04-2019 02:09:28.88200[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on sair. 
+-----------------------
+09-04-2019 02:09:28.88207[4][4] - Elapsed time: 0.071 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '[02:17, 9/4/2019] FERNANDA HECKE: sair
+[02:17, 9/4/2019] FERNANDA HECKE: /sair' 
+-----------------------
+09-04-2019 02:09:28.88217[4][4] - Elapsed time: 0.101 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR 02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR' 
+-----------------------
+09-04-2019 02:09:28.88219[2][4] - Elapsed time: 0.016 milliseconds
+[conversation_start.php][Called outside of function][237]
+Details:
+User say: 02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR 02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR
+Convo id: 554195971725
+Bot id: 1
+Format: html 
+-----------------------
+09-04-2019 02:09:28.88221[4][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: html 
+-----------------------
+09-04-2019 02:09:28.88222[2][4] - Elapsed time: 0.012 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+09-04-2019 02:09:28.88224[3][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `devncom_ia_golden`.`conversation_log` WHERE `user_id` = 698 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+09-04-2019 02:09:28.88366[4][4] - Elapsed time: 1.421 milliseconds
+[intialise_conversation.php][load_that][856]
+Couldn't find any previous inputs or responses. 
+-----------------------
+09-04-2019 02:09:28.88460[2][4] - Elapsed time: 0.939 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+09-04-2019 02:09:28.88463[3][4] - Elapsed time: 0.030 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1; 
+-----------------------
+09-04-2019 02:09:28.88481[4][4] - Elapsed time: 0.179 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+09-04-2019 02:09:28.88483[0][4] - Elapsed time: 0.025 milliseconds
+[conversation_start.php][Called outside of function][257]
+Default debug level = 4 
+-----------------------
+09-04-2019 02:09:28.88484[0][4] - Elapsed time: 0.012 milliseconds
+[conversation_start.php][Called outside of function][259]
+Current debug level = 4 
+-----------------------
+09-04-2019 02:09:28.88486[0][4] - Elapsed time: 0.014 milliseconds
+[conversation_start.php][Called outside of function][272]
+Say = 02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR 02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR: raw say = [02:17, 9/4/2019] FERNANDA HECKE: sair
+[02:17, 9/4/2019] FERNANDA HECKE: /sair 
+-----------------------
+09-04-2019 02:09:28.88487[4][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+09-04-2019 02:09:28.88488[2][4] - Elapsed time: 0.012 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR 02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR' to the front of the [user_say] array 
+-----------------------
+09-04-2019 02:09:28.88491[4][4] - Elapsed time: 0.031 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+09-04-2019 02:09:28.88495[0][4] - Elapsed time: 0.034 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = [02:17, 9/4/2019] FERNANDA HECKE: sair
+[02:17, 9/4/2019] FERNANDA HECKE: /sair, RAW say = [02:17, 9/4/2019] FERNANDA HECKE: sair
+[02:17, 9/4/2019] FERNANDA HECKE: /sair 
+-----------------------
+09-04-2019 02:09:28.88496[2][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '[02:17, 9/4/2019] FERNANDA HECKE: sair
+[02:17, 9/4/2019] FERNANDA HECKE: /sair' to the front of the [input] array 
+-----------------------
+09-04-2019 02:09:28.88498[4][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+09-04-2019 02:09:28.88500[4][4] - Elapsed time: 0.019 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+09-04-2019 02:09:28.88501[4][4] - Elapsed time: 0.013 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR 02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR' 
+-----------------------
+09-04-2019 02:09:28.88506[4][4] - Elapsed time: 0.047 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR 02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR' 
+-----------------------
+09-04-2019 02:09:28.88508[4][4] - Elapsed time: 0.021 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+09-04-2019 02:09:28.88545[4][4] - Elapsed time: 0.370 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+09-04-2019 02:09:28.88550[3][4] - Elapsed time: 0.051 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `devncom_ia_golden`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = 554195971725
+    AND (
+        '02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR 02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+09-04-2019 02:09:28.88565[2][4] - Elapsed time: 0.151 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+09-04-2019 02:09:28.88568[4][4] - Elapsed time: 0.034 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+09-04-2019 02:09:28.88570[4][4] - Elapsed time: 0.014 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = 1. 
+-----------------------
+09-04-2019 02:09:28.88605[4][4] - Elapsed time: 0.351 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+09-04-2019 02:09:28.88608[3][4] - Elapsed time: 0.034 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `devncom_ia_golden`.`aiml` WHERE
+    bot_id = 1 AND (
+        '02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR 02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE 'LINHA DE RECOLHA ALEATÓRIA2'
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+09-04-2019 02:09:28.88630[3][4] - Elapsed time: 0.219 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+09-04-2019 02:09:28.88633[2][4] - Elapsed time: 0.024 milliseconds
+[find_aiml.php][find_aiml_matches][1061]
+FOUND: (1) potential AIML matches 
+-----------------------
+09-04-2019 02:09:28.88672[4][4] - Elapsed time: 0.390 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 1 rows to unset bad matches 
+-----------------------
+09-04-2019 02:09:28.88673[4][4] - Elapsed time: 0.018 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][62]
+Blue 5 to Blue leader. Starting my run now! Looking for '02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR 02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR' 
+-----------------------
+09-04-2019 02:09:28.88680[4][4] - Elapsed time: 0.066 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][195]
+Found 1 relevant rows 
+-----------------------
+09-04-2019 02:09:28.88682[4][4] - Elapsed time: 0.018 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+09-04-2019 02:09:28.88745[4][4] - Elapsed time: 0.634 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [id] => 4567
+            [bot_id] => 1
+            [pattern] => *SAIR*
+            [thatpattern] => 
+            [topic] => 
+            [filename] => admin_added.aiml
+            [template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+            [score] => 259
+            [current_that] => 
+            [aiml_id] => 4567
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: *sair* (8 points)
+        )
+
+)
+ 
+-----------------------
+09-04-2019 02:09:28.88751[2][4] - Elapsed time: 0.062 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [id] => 4567
+            [bot_id] => 1
+            [pattern] => *SAIR*
+            [thatpattern] => 
+            [topic] => 
+            [filename] => admin_added.aiml
+            [template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+            [score] => 259
+            [current_that] => 
+            [aiml_id] => 4567
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: *sair* (8 points)
+        )
+
+)
+
+ 
+-----------------------
+09-04-2019 02:09:28.88818[4][4] - Elapsed time: 0.664 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [id] => 4567
+    [bot_id] => 1
+    [pattern] => *SAIR*
+    [thatpattern] => 
+    [topic] => 
+    [filename] => admin_added.aiml
+    [template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+    [score] => 259
+    [current_that] => 
+    [aiml_id] => 4567
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: *sair* (8 points)
+)
+ 
+-----------------------
+09-04-2019 02:09:28.88820[2][4] - Elapsed time: 0.025 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+09-04-2019 02:09:28.88829[4][4] - Elapsed time: 0.087 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:4567 (*SAIR*) 
+-----------------------
+09-04-2019 02:09:28.88831[3][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+09-04-2019 02:09:28.88832[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = '*SAIR*' 
+-----------------------
+09-04-2019 02:09:28.88833[2][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][set_wildcards][306]
+We have pattern stars to process! 
+-----------------------
+09-04-2019 02:09:28.88835[2][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][set_wildcards][310]
+RegEx string = ~(.+)SAIR(.+)$~siuU: Searching [02:17, 9/4/2019] FERNANDA HECKE: sair
+[02:17, 9/4/2019] FERNANDA HECKE: /sair for a match. 
+-----------------------
+09-04-2019 02:09:28.88838[2][4] - Elapsed time: 0.033 milliseconds
+[parse_aiml.php][set_wildcards][313]
+Array
+(
+    [0] => Array
+        (
+            [0] => [02:17, 9/4/2019] FERNANDA HECKE: sair
+[02:17, 9/4/2019] FERNANDA HECKE: /sair
+        )
+
+    [1] => Array
+        (
+            [0] => [02:17, 9/4/2019] FERNANDA HECKE: 
+        )
+
+    [2] => Array
+        (
+            [0] => 
+[02:17, 9/4/2019] FERNANDA HECKE: /sair
+        )
+
+)
+ 
+-----------------------
+09-04-2019 02:09:28.88840[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml.php][set_wildcards][318]
+Adding ' 02 17  9 4 2019  FERNANDA HECKE ' to the stars stack. 
+-----------------------
+09-04-2019 02:09:28.88841[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][set_wildcards][320]
+Star array = Array
+(
+    [1] =>  02 17  9 4 2019  FERNANDA HECKE 
+)
+ 
+-----------------------
+09-04-2019 02:09:28.88843[2][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][set_wildcards][318]
+Adding ' 02 17  9 4 2019  FERNANDA HECKE   sair' to the stars stack. 
+-----------------------
+09-04-2019 02:09:28.88844[2][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][set_wildcards][320]
+Star array = Array
+(
+    [1] =>  02 17  9 4 2019  FERNANDA HECKE 
+    [2] =>  02 17  9 4 2019  FERNANDA HECKE   sair
+)
+ 
+-----------------------
+09-04-2019 02:09:28.88845[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+09-04-2019 02:09:28.88846[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+09-04-2019 02:09:28.88849[2][4] - Elapsed time: 0.026 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => 4567
+    [category_id] => 4567
+    [html_template] => 
+    [lookingfor] => 02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR 02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR
+    [pattern] => *SAIR*
+    [score] => 259
+    [stars] => Array
+        (
+            [1] =>  02 17  9 4 2019  FERNANDA HECKE 
+            [2] =>  02 17  9 4 2019  FERNANDA HECKE   sair
+        )
+
+    [template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => [02:17, 9/4/2019] FERNANDA HECKE: sair
+[02:17, 9/4/2019] FERNANDA HECKE: /sair
+)
+ 
+-----------------------
+09-04-2019 02:09:28.88851[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+09-04-2019 02:09:28.88852[2][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+09-04-2019 02:09:28.88855[4][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>Seu nome foi removido de nossa lista, desculpe o inconveniente.</text></template> 
+-----------------------
+09-04-2019 02:09:28.88872[2][4] - Elapsed time: 0.172 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+09-04-2019 02:09:28.88879[4][4] - Elapsed time: 0.070 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>Seu nome foi removido de nossa lista, desculpe o inconveniente.</text></template>
+ 
+-----------------------
+09-04-2019 02:09:28.88881[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+09-04-2019 02:09:28.88883[2][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+09-04-2019 02:09:28.88886[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>Seu nome foi removido de nossa lista, desculpe o inconveniente.</text> 
+-----------------------
+09-04-2019 02:09:28.88888[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+09-04-2019 02:09:28.88889[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+09-04-2019 02:09:28.88890[2][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+09-04-2019 02:09:28.88892[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' to the response array. tag name is text 
+-----------------------
+09-04-2019 02:09:28.88893[2][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+09-04-2019 02:09:28.88894[2][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+)
+
+ 
+-----------------------
+09-04-2019 02:09:28.88896[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+09-04-2019 02:09:28.88897[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' 
+-----------------------
+09-04-2019 02:09:28.88898[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' to the response array. tag name is template. 
+-----------------------
+09-04-2019 02:09:28.88900[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+09-04-2019 02:09:28.88901[2][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+)
+
+ 
+-----------------------
+09-04-2019 02:09:28.88903[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+09-04-2019 02:09:28.88905[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' 
+-----------------------
+09-04-2019 02:09:28.88907[4][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: Seu nome foi removido de nossa lista, desculpe o inconveniente. 
+-----------------------
+09-04-2019 02:09:28.88909[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+09-04-2019 02:09:28.88910[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+09-04-2019 02:09:28.88911[2][4] - Elapsed time: 0.012 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' to the front of the [that_raw] array 
+-----------------------
+09-04-2019 02:09:28.88913[4][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+09-04-2019 02:09:28.88918[2][4] - Elapsed time: 0.050 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' to the front of the [that] array 
+-----------------------
+09-04-2019 02:09:28.88920[4][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+09-04-2019 02:09:28.88923[4][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' 
+-----------------------
+09-04-2019 02:09:28.88924[4][4] - Elapsed time: 0.016 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' 
+-----------------------
+09-04-2019 02:09:28.88928[4][4] - Elapsed time: 0.036 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE' 
+-----------------------
+09-04-2019 02:09:28.88929[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE' 
+-----------------------
+09-04-2019 02:09:28.88931[2][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' to the front of the [parsed_template] array 
+-----------------------
+09-04-2019 02:09:28.88933[4][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+09-04-2019 02:09:28.88935[2][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' to the front of the [template] array 
+-----------------------
+09-04-2019 02:09:28.88937[4][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+09-04-2019 02:09:28.88940[2][4] - Elapsed time: 0.024 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+09-04-2019 02:09:28.88942[3][4] - Elapsed time: 0.027 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `devncom_ia_golden`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      '[02:17, 9/4/2019] FERNANDA HECKE: sair
+[02:17, 9/4/2019] FERNANDA HECKE: /sair',
+      'Seu nome foi removido de nossa lista, desculpe o inconveniente.',
+      698,
+      554195971725,
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+09-04-2019 02:09:28.89336[4][4] - Elapsed time: 3.937 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+09-04-2019 02:09:28.89350[3][4] - Elapsed time: 0.143 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `devncom_ia_golden`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  LIMIT 1 
+-----------------------
+09-04-2019 02:09:28.89367[2][4] - Elapsed time: 0.169 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '1' lines of conversation 
+-----------------------
+09-04-2019 02:09:28.89370[4][4] - Elapsed time: 0.023 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as html 
+-----------------------
+09-04-2019 02:09:28.89372[4][4] - Elapsed time: 0.023 milliseconds
+[display_conversation.php][get_html][135]
+Returning HTML 
+-----------------------
+09-04-2019 02:09:28.89461[2][4] - Elapsed time: 0.893 milliseconds
+[conversation_start.php][Called outside of function][297]
+Closing Database 
+-----------------------
+09-04-2019 02:09:28.89465[0][4] - Elapsed time: 0.037 milliseconds
+[conversation_start.php][Called outside of function][303]
+Conversation Ending. Elapsed time: 26.506 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => [02:17, 9/4/2019] FERNANDA HECKE: sair
+[02:17, 9/4/2019] FERNANDA HECKE: /sair
+    [conversation] => Array
+        (
+            [convo_id] => 554195971725
+            [bot_name] => Net Bot
+            [bot_id] => 1
+            [format] => html
+            [unknown_user] => Entrou
+            [user_id] => 698
+            [totallines] => 1
+            [user_name] => Entrou
+            [rawSay] => [02:17, 9/4/2019] FERNANDA HECKE: sair
+[02:17, 9/4/2019] FERNANDA HECKE: /sair
+            [conversation_lines] => 1
+            [remember_up_to] => 10
+            [debugemail] => contato@devn1.com.br
+            [debug_level] => 4
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => LINHA DE RECOLHA ALEATÓRIA2
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [id] => 4567
+                    [bot_id] => 1
+                    [pattern] => *SAIR*
+                    [thatpattern] => 
+                    [topic] => 
+                    [filename] => admin_added.aiml
+                    [template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+                    [score] => 259
+                    [current_that] => 
+                    [aiml_id] => 4567
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: *sair* (8 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => [02:17, 9/4/2019] FERNANDA HECKE: sair
+[02:17, 9/4/2019] FERNANDA HECKE: /sair
+            [lookingfor] => 02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR 02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR
+            [category_id] => 4567
+            [pattern] => *SAIR*
+            [thatpattern] => 
+            [template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+            [html_template] => 
+            [topic] => 
+            [score] => 259
+            [aiml_id] => 4567
+            [stars] => Array
+                (
+                    [1] =>  02 17  9 4 2019  FERNANDA HECKE 
+                    [2] =>  02 17  9 4 2019  FERNANDA HECKE   sair
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 35.197.3.206
+            [name] => Entrou
+        )
+
+    [time_start] => 1554786568.8681
+    [user_say] => Array
+        (
+            [1] => 02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR 02 17 9 DIVIDEDBY 4 2019 FERNANDA HECKE SAIR
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [input] => Array
+        (
+            [1] => [02:17, 9/4/2019] FERNANDA HECKE: sair
+[02:17, 9/4/2019] FERNANDA HECKE: /sair
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => <div class="usersay">Entrou: [02:17, 9/4/2019] FERNANDA HECKE: sair
+[02:17, 9/4/2019] FERNANDA HECKE: /sair</div><div class="botsay">Net Bot: Seu nome foi removido de nossa lista, desculpe o inconveniente.</div>
+)
+
+-----------------------
+Total execution time: 26.506 Milliseconds. Goodbye.

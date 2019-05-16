@@ -1,0 +1,1919 @@
+27-03-2019 18:58:15.31115[0][4] - Elapsed time: 2.781 milliseconds
+[conversation_start.php][Called outside of function][59]
+Conversation starting. Current system specs:
+Program O version:            2.6.11
+Server Software:              Apache
+PHP Version:                  5.6.40
+OS:                           Linux
+OS Version:                   #1 SMP Wed Sep 26 15:12:11 UTC 2018
+MySQL Version:                5.7.25
+Multi-byte functions enabled: true 
+-----------------------
+27-03-2019 18:58:15.31546[4][4] - Elapsed time: 4.308 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+27-03-2019 18:58:15.31683[4][4] - Elapsed time: 1.374 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+27-03-2019 18:58:15.31713[4][4] - Elapsed time: 0.294 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+27-03-2019 18:58:15.31826[4][4] - Elapsed time: 1.131 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+27-03-2019 18:58:15.31827[4][4] - Elapsed time: 0.017 milliseconds
+[conversation_start.php][Called outside of function][72]
+Loaded all Includes 
+-----------------------
+27-03-2019 18:58:15.31845[0][4] - Elapsed time: 0.172 milliseconds
+[conversation_start.php][Called outside of function][125]
+Debug level: 4
+session ID = +55 41 9651-6800 
+-----------------------
+27-03-2019 18:58:15.31846[4][4] - Elapsed time: 0.013 milliseconds
+[conversation_start.php][Called outside of function][128]
+Conversation continuing. User said 'Tetae'. 
+-----------------------
+27-03-2019 18:58:15.31851[4][4] - Elapsed time: 0.050 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+27-03-2019 18:58:15.31853[4][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+27-03-2019 18:58:15.31855[3][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `devncom_ia_golden`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+27-03-2019 18:58:15.31880[4][4] - Elapsed time: 0.256 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: +55 41 9651-6800 
+-----------------------
+27-03-2019 18:58:15.31882[2][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+27-03-2019 18:58:15.31883[3][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+27-03-2019 18:58:15.31902[2][4] - Elapsed time: 0.189 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+27-03-2019 18:58:15.31904[2][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+27-03-2019 18:58:15.31932[3][4] - Elapsed time: 0.282 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `devncom_ia_golden`.`client_properties` WHERE `user_id` = 500 AND `bot_id` = 1; 
+-----------------------
+27-03-2019 18:58:15.31998[2][4] - Elapsed time: 0.658 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+27-03-2019 18:58:15.32005[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Tetae. 
+-----------------------
+27-03-2019 18:58:15.32008[2][4] - Elapsed time: 0.028 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+27-03-2019 18:58:15.32035[4][4] - Elapsed time: 0.271 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Tetae' 
+-----------------------
+27-03-2019 18:58:15.32042[4][4] - Elapsed time: 0.071 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'TETAE' 
+-----------------------
+27-03-2019 18:58:15.32043[2][4] - Elapsed time: 0.013 milliseconds
+[conversation_start.php][Called outside of function][203]
+Details:
+User say: TETAE
+Convo id: +55 41 9651-6800
+Bot id: 1
+Format: html 
+-----------------------
+27-03-2019 18:58:15.32045[4][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: html 
+-----------------------
+27-03-2019 18:58:15.32046[2][4] - Elapsed time: 0.010 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+27-03-2019 18:58:15.32047[3][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `devncom_ia_golden`.`conversation_log` WHERE `user_id` = 500 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+27-03-2019 18:58:15.32069[1][4] - Elapsed time: 0.216 milliseconds
+[intialise_conversation.php][load_that][804]
+Inputs returned:Array
+(
+    [0] => quero chocolate
+    [1] => Oi
+    [2] => e eu com isso
+    [3] => que mane sem resposta
+    [4] => Tá bom
+    [5] => Você tem mãe?
+    [6] => Que só
+Que dó
+    [7] => Quantos anos você tem?
+    [8] => Qual seu nome?
+    [9] => Qual seu nome?
+)
+ 
+-----------------------
+27-03-2019 18:58:15.32070[4][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][load_that][805]
+Loading previous responses into the ~THAT~ array. 
+-----------------------
+27-03-2019 18:58:15.32072[1][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][load_that][806]
+Responses returned:Array
+(
+    [0] => SEM RESPOSTA
+    [1] => Ol! Posso ajudar?
+    [2] => Curioso : Entrou disse que com isso com isso.
+    [3] => Sou uma máquina.
+    [4] => SEM RESPOSTA
+    [5] => Esta é uma questão interessante, mas por fatores alheios a minha vontade esTOU privado das respostas adequadas, gostaria de conversar com você sobre temas técnicos.
+    [6] => SEM RESPOSTA
+    [7] => Vou ser honesto com você, na verdade eu não existo, não tenho nada. Sou apenas um software sendo executado na memÃ³ria de seu computador. Fui desenvolvida por Paul Gonçalves pra a Brastemp em uma linguagem chamada AIML. Sei que é triste, mas não faço parte nem mesmo do hardware ONDE fui instalada. Desculpe pelo desabafo. Vamos falar de algum assunto técnico, faça sua pergunta.
+    [8] => O meu nome é Cybora.
+    [9] => Cybora.
+)
+ 
+-----------------------
+27-03-2019 18:58:15.32077[2][4] - Elapsed time: 0.047 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32078[2][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Cybora
+    [1] => 
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32079[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32080[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Cybora ' 
+-----------------------
+27-03-2019 18:58:15.32081[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Cybora ' 
+-----------------------
+27-03-2019 18:58:15.32082[4][4] - Elapsed time: 0.010 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Cybora ' 
+-----------------------
+27-03-2019 18:58:15.32084[4][4] - Elapsed time: 0.023 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'CYBORA' 
+-----------------------
+27-03-2019 18:58:15.32085[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'CYBORA' 
+-----------------------
+27-03-2019 18:58:15.32087[2][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'CYBORA' to the front of the [that] array 
+-----------------------
+27-03-2019 18:58:15.32089[4][4] - Elapsed time: 0.022 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+27-03-2019 18:58:15.32094[4][4] - Elapsed time: 0.050 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'CYBORA' 
+-----------------------
+27-03-2019 18:58:15.32095[4][4] - Elapsed time: 0.011 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'CYBORA' 
+-----------------------
+27-03-2019 18:58:15.32098[4][4] - Elapsed time: 0.021 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'CYBORA' 
+-----------------------
+27-03-2019 18:58:15.32099[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'CYBORA' 
+-----------------------
+27-03-2019 18:58:15.32101[2][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32102[2][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => O meu nome é Cybora
+    [1] => 
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32104[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32105[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'O meu nome é Cybora ' 
+-----------------------
+27-03-2019 18:58:15.32105[4][4] - Elapsed time: 0.008 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'O meu nome é Cybora ' 
+-----------------------
+27-03-2019 18:58:15.32106[4][4] - Elapsed time: 0.009 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'O meu nome é Cybora ' 
+-----------------------
+27-03-2019 18:58:15.32108[4][4] - Elapsed time: 0.022 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'O MEU NOME É CYBORA' 
+-----------------------
+27-03-2019 18:58:15.32109[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'O MEU NOME É CYBORA' 
+-----------------------
+27-03-2019 18:58:15.32111[2][4] - Elapsed time: 0.010 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'O MEU NOME É CYBORA' to the front of the [that] array 
+-----------------------
+27-03-2019 18:58:15.32114[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'O MEU NOME É CYBORA' 
+-----------------------
+27-03-2019 18:58:15.32115[4][4] - Elapsed time: 0.015 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'O MEU NOME É CYBORA' 
+-----------------------
+27-03-2019 18:58:15.32118[4][4] - Elapsed time: 0.027 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'O MEU NOME É CYBORA' 
+-----------------------
+27-03-2019 18:58:15.32119[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'O MEU NOME É CYBORA' 
+-----------------------
+27-03-2019 18:58:15.32120[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32122[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Vou ser honesto com você
+    [1] =>  na verdade eu não existo
+    [2] =>  não tenho nada
+    [3] =>  Sou apenas um software sendo executado na memÃ³ria de seu computador
+    [4] =>  Fui desenvolvida por Paul Gonçalves pra a Brastemp em uma linguagem chamada AIML
+    [5] =>  Sei que é triste
+    [6] =>  mas não faço parte nem mesmo do hardware ONDE fui instalada
+    [7] =>  Desculpe pelo desabafo
+    [8] =>  Vamos falar de algum assunto técnico
+    [9] =>  faça sua pergunta
+    [10] => 
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32123[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32125[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Vou ser honesto com você na verdade eu não existo não tenho nada Sou apenas um software sendo executado na memÃ³ria de seu computador Fui desenvolvida por Paul Gonçalves pra a Brastemp em uma linguagem chamada AIML Sei que é triste mas não faço parte nem mesmo do hardware ONDE fui instalada Desculpe pelo desabafo Vamos falar de algum assunto técnico faça sua pergunta ' 
+-----------------------
+27-03-2019 18:58:15.32126[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Vou ser honesto com você na verdade eu não existo não tenho nada Sou apenas um software sendo executado na memÃ³ria de seu computador Fui desenvolvida por Paul Gonçalves pra a Brastemp em uma linguagem chamada AIML Sei que é triste mas não faço parte nem mesmo do hardware ONDE fui instalada Desculpe pelo desabafo Vamos falar de algum assunto técnico faça sua pergunta ' 
+-----------------------
+27-03-2019 18:58:15.32127[4][4] - Elapsed time: 0.012 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Vou ser honesto com você na verdade eu não existo não tenho nada Sou apenas um software sendo executado na memÃ³ria de seu computador Fui desenvolvida por Paul Gonçalves pra a Brastemp em uma linguagem chamada AIML Sei que é triste mas não faço parte nem mesmo do hardware ONDE fui instalada Desculpe pelo desabafo Vamos falar de algum assunto técnico faça sua pergunta ' 
+-----------------------
+27-03-2019 18:58:15.32135[4][4] - Elapsed time: 0.083 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'VOU SER HONESTO COM VOCÊ NA VERDADE EU NÃO EXISTO NÃO TENHO NADA SOU APENAS UM SOFTWARE SENDO EXECUTADO NA MEMÃ³RIA DE SEU COMPUTADOR FUI DESENVOLVIDA POR PAUL GONÇALVES PRA A BRASTEMP EM UMA LINGUAGEM CHAMADA AIML SEI QUE É TRISTE MAS NÃO FAÇO PARTE NEM MESMO DO HARDWARE ONDE FUI INSTALADA DESCULPE PELO DESABAFO VAMOS FALAR DE ALGUM ASSUNTO TÉCNICO FAÇA SUA PERGUNTA' 
+-----------------------
+27-03-2019 18:58:15.32136[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'VOU SER HONESTO COM VOCÊ NA VERDADE EU NÃO EXISTO NÃO TENHO NADA SOU APENAS UM SOFTWARE SENDO EXECUTADO NA MEMÃ³RIA DE SEU COMPUTADOR FUI DESENVOLVIDA POR PAUL GONÇALVES PRA A BRASTEMP EM UMA LINGUAGEM CHAMADA AIML SEI QUE É TRISTE MAS NÃO FAÇO PARTE NEM MESMO DO HARDWARE ONDE FUI INSTALADA DESCULPE PELO DESABAFO VAMOS FALAR DE ALGUM ASSUNTO TÉCNICO FAÇA SUA PERGUNTA' 
+-----------------------
+27-03-2019 18:58:15.32137[2][4] - Elapsed time: 0.009 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'VOU SER HONESTO COM VOCÊ NA VERDADE EU NÃO EXISTO NÃO TENHO NADA SOU APENAS UM SOFTWARE SENDO EXECUTADO NA MEMÃ³RIA DE SEU COMPUTADOR FUI DESENVOLVIDA POR PAUL GONÇALVES PRA A BRASTEMP EM UMA LINGUAGEM CHAMADA AIML SEI QUE É TRISTE MAS NÃO FAÇO PARTE NEM MESMO DO HARDWARE ONDE FUI INSTALADA DESCULPE PELO DESABAFO VAMOS FALAR DE ALGUM ASSUNTO TÉCNICO FAÇA SUA PERGUNTA' to the front of the [that] array 
+-----------------------
+27-03-2019 18:58:15.32140[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'VOU SER HONESTO COM VOCÊ NA VERDADE EU NÃO EXISTO NÃO TENHO NADA SOU APENAS UM SOFTWARE SENDO EXECUTADO NA MEMÃ³RIA DE SEU COMPUTADOR FUI DESENVOLVIDA POR PAUL GONÇALVES PRA A BRASTEMP EM UMA LINGUAGEM CHAMADA AIML SEI QUE É TRISTE MAS NÃO FAÇO PARTE NEM MESMO DO HARDWARE ONDE FUI INSTALADA DESCULPE PELO DESABAFO VAMOS FALAR DE ALGUM ASSUNTO TÉCNICO FAÇA SUA PERGUNTA' 
+-----------------------
+27-03-2019 18:58:15.32142[4][4] - Elapsed time: 0.013 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'VOU SER HONESTO COM VOCÊ NA VERDADE EU NÃO EXISTO NÃO TENHO NADA SOU APENAS UM SOFTWARE SENDO EXECUTADO NA MEMÃ³RIA DE SEU COMPUTADOR FUI DESENVOLVIDA POR PAUL GONÇALVES PRA A BRASTEMP EM UMA LINGUAGEM CHAMADA AIML SEI QUE É TRISTE MAS NÃO FAÇO PARTE NEM MESMO DO HARDWARE ONDE FUI INSTALADA DESCULPE PELO DESABAFO VAMOS FALAR DE ALGUM ASSUNTO TÉCNICO FAÇA SUA PERGUNTA' 
+-----------------------
+27-03-2019 18:58:15.32147[4][4] - Elapsed time: 0.056 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'VOU SER HONESTO COM VOCÊ NA VERDADE EU NÃO EXISTO NÃO TENHO NADA SOU APENAS UM SOFTWARE SENDO EXECUTADO NA MEMÃ³RIA DE SEU COMPUTADOR FUI DESENVOLVIDA POR PAUL GONÇALVES PRA A BRASTEMP EM UMA LINGUAGEM CHAMADA AIML SEI QUE É TRISTE MAS NÃO FAÇO PARTE NEM MESMO DO HARDWARE ONDE FUI INSTALADA DESCULPE PELO DESABAFO VAMOS FALAR DE ALGUM ASSUNTO TÉCNICO FAÇA SUA PERGUNTA' 
+-----------------------
+27-03-2019 18:58:15.32148[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'VOU SER HONESTO COM VOCÊ NA VERDADE EU NÃO EXISTO NÃO TENHO NADA SOU APENAS UM SOFTWARE SENDO EXECUTADO NA MEMÃ³RIA DE SEU COMPUTADOR FUI DESENVOLVIDA POR PAUL GONÇALVES PRA A BRASTEMP EM UMA LINGUAGEM CHAMADA AIML SEI QUE É TRISTE MAS NÃO FAÇO PARTE NEM MESMO DO HARDWARE ONDE FUI INSTALADA DESCULPE PELO DESABAFO VAMOS FALAR DE ALGUM ASSUNTO TÉCNICO FAÇA SUA PERGUNTA' 
+-----------------------
+27-03-2019 18:58:15.32150[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32151[2][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32152[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32153[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32154[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32155[4][4] - Elapsed time: 0.010 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32157[4][4] - Elapsed time: 0.018 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32158[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32159[2][4] - Elapsed time: 0.010 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that] array 
+-----------------------
+27-03-2019 18:58:15.32161[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32162[4][4] - Elapsed time: 0.013 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32164[4][4] - Elapsed time: 0.018 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32165[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32167[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32168[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Esta é uma questão interessante
+    [1] =>  mas por fatores alheios a minha vontade esTOU privado das respostas adequadas
+    [2] =>  gostaria de conversar com você sobre temas técnicos
+    [3] => 
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32170[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32171[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Esta é uma questão interessante mas por fatores alheios a minha vontade esTOU privado das respostas adequadas gostaria de conversar com você sobre temas técnicos ' 
+-----------------------
+27-03-2019 18:58:15.32172[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Esta é uma questão interessante mas por fatores alheios a minha vontade esTOU privado das respostas adequadas gostaria de conversar com você sobre temas técnicos ' 
+-----------------------
+27-03-2019 18:58:15.32173[4][4] - Elapsed time: 0.011 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Esta é uma questão interessante mas por fatores alheios a minha vontade esTOU privado das respostas adequadas gostaria de conversar com você sobre temas técnicos ' 
+-----------------------
+27-03-2019 18:58:15.32177[4][4] - Elapsed time: 0.044 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ESTA É UMA QUESTÃO INTERESSANTE MAS POR FATORES ALHEIOS A MINHA VONTADE ESTOU PRIVADO DAS RESPOSTAS ADEQUADAS GOSTARIA DE CONVERSAR COM VOCÊ SOBRE TEMAS TÉCNICOS' 
+-----------------------
+27-03-2019 18:58:15.32179[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'ESTA É UMA QUESTÃO INTERESSANTE MAS POR FATORES ALHEIOS A MINHA VONTADE ESTOU PRIVADO DAS RESPOSTAS ADEQUADAS GOSTARIA DE CONVERSAR COM VOCÊ SOBRE TEMAS TÉCNICOS' 
+-----------------------
+27-03-2019 18:58:15.32180[2][4] - Elapsed time: 0.011 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'ESTA É UMA QUESTÃO INTERESSANTE MAS POR FATORES ALHEIOS A MINHA VONTADE ESTOU PRIVADO DAS RESPOSTAS ADEQUADAS GOSTARIA DE CONVERSAR COM VOCÊ SOBRE TEMAS TÉCNICOS' to the front of the [that] array 
+-----------------------
+27-03-2019 18:58:15.32182[4][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'ESTA É UMA QUESTÃO INTERESSANTE MAS POR FATORES ALHEIOS A MINHA VONTADE ESTOU PRIVADO DAS RESPOSTAS ADEQUADAS GOSTARIA DE CONVERSAR COM VOCÊ SOBRE TEMAS TÉCNICOS' 
+-----------------------
+27-03-2019 18:58:15.32183[4][4] - Elapsed time: 0.012 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'ESTA É UMA QUESTÃO INTERESSANTE MAS POR FATORES ALHEIOS A MINHA VONTADE ESTOU PRIVADO DAS RESPOSTAS ADEQUADAS GOSTARIA DE CONVERSAR COM VOCÊ SOBRE TEMAS TÉCNICOS' 
+-----------------------
+27-03-2019 18:58:15.32188[4][4] - Elapsed time: 0.043 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ESTA É UMA QUESTÃO INTERESSANTE MAS POR FATORES ALHEIOS A MINHA VONTADE ESTOU PRIVADO DAS RESPOSTAS ADEQUADAS GOSTARIA DE CONVERSAR COM VOCÊ SOBRE TEMAS TÉCNICOS' 
+-----------------------
+27-03-2019 18:58:15.32189[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'ESTA É UMA QUESTÃO INTERESSANTE MAS POR FATORES ALHEIOS A MINHA VONTADE ESTOU PRIVADO DAS RESPOSTAS ADEQUADAS GOSTARIA DE CONVERSAR COM VOCÊ SOBRE TEMAS TÉCNICOS' 
+-----------------------
+27-03-2019 18:58:15.32190[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32192[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32193[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32194[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32195[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32196[4][4] - Elapsed time: 0.011 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32199[4][4] - Elapsed time: 0.021 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32200[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32201[2][4] - Elapsed time: 0.012 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that] array 
+-----------------------
+27-03-2019 18:58:15.32203[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32204[4][4] - Elapsed time: 0.012 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32206[4][4] - Elapsed time: 0.021 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32207[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32209[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32210[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Sou uma máquina
+    [1] => 
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32212[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32214[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Sou uma máquina ' 
+-----------------------
+27-03-2019 18:58:15.32215[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Sou uma máquina ' 
+-----------------------
+27-03-2019 18:58:15.32217[4][4] - Elapsed time: 0.011 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Sou uma máquina ' 
+-----------------------
+27-03-2019 18:58:15.32219[4][4] - Elapsed time: 0.022 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SOU UMA MÁQUINA' 
+-----------------------
+27-03-2019 18:58:15.32220[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SOU UMA MÁQUINA' 
+-----------------------
+27-03-2019 18:58:15.32221[2][4] - Elapsed time: 0.011 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SOU UMA MÁQUINA' to the front of the [that] array 
+-----------------------
+27-03-2019 18:58:15.32223[4][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SOU UMA MÁQUINA' 
+-----------------------
+27-03-2019 18:58:15.32225[4][4] - Elapsed time: 0.014 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SOU UMA MÁQUINA' 
+-----------------------
+27-03-2019 18:58:15.32227[4][4] - Elapsed time: 0.021 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SOU UMA MÁQUINA' 
+-----------------------
+27-03-2019 18:58:15.32228[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SOU UMA MÁQUINA' 
+-----------------------
+27-03-2019 18:58:15.32230[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32232[2][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Curioso : Entrou disse que com isso com isso
+    [1] => 
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32233[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32235[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Curioso : Entrou disse que com isso com isso ' 
+-----------------------
+27-03-2019 18:58:15.32236[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Curioso : Entrou disse que com isso com isso ' 
+-----------------------
+27-03-2019 18:58:15.32237[4][4] - Elapsed time: 0.011 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Curioso : Entrou disse que com isso com isso ' 
+-----------------------
+27-03-2019 18:58:15.32240[4][4] - Elapsed time: 0.030 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'CURIOSO ENTROU DISSE QUE COM ISSO COM ISSO' 
+-----------------------
+27-03-2019 18:58:15.32241[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'CURIOSO ENTROU DISSE QUE COM ISSO COM ISSO' 
+-----------------------
+27-03-2019 18:58:15.32243[2][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'CURIOSO ENTROU DISSE QUE COM ISSO COM ISSO' to the front of the [that] array 
+-----------------------
+27-03-2019 18:58:15.32245[4][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'CURIOSO ENTROU DISSE QUE COM ISSO COM ISSO' 
+-----------------------
+27-03-2019 18:58:15.32247[4][4] - Elapsed time: 0.016 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'CURIOSO ENTROU DISSE QUE COM ISSO COM ISSO' 
+-----------------------
+27-03-2019 18:58:15.32249[4][4] - Elapsed time: 0.029 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'CURIOSO ENTROU DISSE QUE COM ISSO COM ISSO' 
+-----------------------
+27-03-2019 18:58:15.32251[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'CURIOSO ENTROU DISSE QUE COM ISSO COM ISSO' 
+-----------------------
+27-03-2019 18:58:15.32253[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32255[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Ol
+    [1] =>  Posso ajudar
+    [2] => 
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32256[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32257[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Ol Posso ajudar ' 
+-----------------------
+27-03-2019 18:58:15.32259[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Ol Posso ajudar ' 
+-----------------------
+27-03-2019 18:58:15.32260[4][4] - Elapsed time: 0.012 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Ol Posso ajudar ' 
+-----------------------
+27-03-2019 18:58:15.32262[4][4] - Elapsed time: 0.024 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'OL POSSO AJUDAR' 
+-----------------------
+27-03-2019 18:58:15.32264[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'OL POSSO AJUDAR' 
+-----------------------
+27-03-2019 18:58:15.32284[2][4] - Elapsed time: 0.206 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'OL POSSO AJUDAR' to the front of the [that] array 
+-----------------------
+27-03-2019 18:58:15.32288[4][4] - Elapsed time: 0.033 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'OL POSSO AJUDAR' 
+-----------------------
+27-03-2019 18:58:15.32289[4][4] - Elapsed time: 0.015 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'OL POSSO AJUDAR' 
+-----------------------
+27-03-2019 18:58:15.32291[4][4] - Elapsed time: 0.022 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'OL POSSO AJUDAR' 
+-----------------------
+27-03-2019 18:58:15.32293[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'OL POSSO AJUDAR' 
+-----------------------
+27-03-2019 18:58:15.32295[2][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32297[2][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32298[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32300[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32301[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32302[4][4] - Elapsed time: 0.014 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32305[4][4] - Elapsed time: 0.031 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32307[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32308[2][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that] array 
+-----------------------
+27-03-2019 18:58:15.32311[4][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32313[4][4] - Elapsed time: 0.023 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32315[4][4] - Elapsed time: 0.027 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32317[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32319[4][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][load_that][835]
+Loading previous user inputs into the ~INPUT~ array. 
+-----------------------
+27-03-2019 18:58:15.32321[2][4] - Elapsed time: 0.026 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32324[2][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Qual seu nome
+    [1] => 
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32325[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32327[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Qual seu nome ' 
+-----------------------
+27-03-2019 18:58:15.32328[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Qual seu nome ' 
+-----------------------
+27-03-2019 18:58:15.32330[4][4] - Elapsed time: 0.015 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Qual seu nome ' 
+-----------------------
+27-03-2019 18:58:15.32333[4][4] - Elapsed time: 0.032 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL SEU NOME' 
+-----------------------
+27-03-2019 18:58:15.32334[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL SEU NOME' 
+-----------------------
+27-03-2019 18:58:15.32336[2][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'QUAL SEU NOME' to the front of the [input] array 
+-----------------------
+27-03-2019 18:58:15.32337[4][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+27-03-2019 18:58:15.32340[2][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32341[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Qual seu nome
+    [1] => 
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32343[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32344[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Qual seu nome ' 
+-----------------------
+27-03-2019 18:58:15.32345[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Qual seu nome ' 
+-----------------------
+27-03-2019 18:58:15.32347[4][4] - Elapsed time: 0.019 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Qual seu nome ' 
+-----------------------
+27-03-2019 18:58:15.32350[4][4] - Elapsed time: 0.024 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL SEU NOME' 
+-----------------------
+27-03-2019 18:58:15.32351[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL SEU NOME' 
+-----------------------
+27-03-2019 18:58:15.32353[2][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'QUAL SEU NOME' to the front of the [input] array 
+-----------------------
+27-03-2019 18:58:15.32355[2][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32357[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Quantos anos você tem
+    [1] => 
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32358[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32360[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Quantos anos você tem ' 
+-----------------------
+27-03-2019 18:58:15.32361[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Quantos anos você tem ' 
+-----------------------
+27-03-2019 18:58:15.32362[4][4] - Elapsed time: 0.016 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Quantos anos você tem ' 
+-----------------------
+27-03-2019 18:58:15.32365[4][4] - Elapsed time: 0.026 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUANTOS ANOS VOCÊ TEM' 
+-----------------------
+27-03-2019 18:58:15.32367[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUANTOS ANOS VOCÊ TEM' 
+-----------------------
+27-03-2019 18:58:15.32368[2][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'QUANTOS ANOS VOCÊ TEM' to the front of the [input] array 
+-----------------------
+27-03-2019 18:58:15.32370[2][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32372[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Que só
+Que dó
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32373[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32375[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Que só
+Que dó' 
+-----------------------
+27-03-2019 18:58:15.32376[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Que só
+Que dó' 
+-----------------------
+27-03-2019 18:58:15.32378[4][4] - Elapsed time: 0.014 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Que só
+Que dó' 
+-----------------------
+27-03-2019 18:58:15.32380[4][4] - Elapsed time: 0.024 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUE SÓ
+QUE DÓ' 
+-----------------------
+27-03-2019 18:58:15.32382[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUE SÓ
+QUE DÓ' 
+-----------------------
+27-03-2019 18:58:15.32383[2][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'QUE SÓ
+QUE DÓ' to the front of the [input] array 
+-----------------------
+27-03-2019 18:58:15.32386[2][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32389[2][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Você tem mãe
+    [1] => 
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32390[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32392[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Você tem mãe ' 
+-----------------------
+27-03-2019 18:58:15.32394[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Você tem mãe ' 
+-----------------------
+27-03-2019 18:58:15.32395[4][4] - Elapsed time: 0.014 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Você tem mãe ' 
+-----------------------
+27-03-2019 18:58:15.32398[4][4] - Elapsed time: 0.026 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'VOCÊ TEM MÃE' 
+-----------------------
+27-03-2019 18:58:15.32399[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'VOCÊ TEM MÃE' 
+-----------------------
+27-03-2019 18:58:15.32401[2][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'VOCÊ TEM MÃE' to the front of the [input] array 
+-----------------------
+27-03-2019 18:58:15.32403[2][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32405[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Tá bom
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32406[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32408[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Tá bom' 
+-----------------------
+27-03-2019 18:58:15.32409[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Tá bom' 
+-----------------------
+27-03-2019 18:58:15.32411[4][4] - Elapsed time: 0.021 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Tá bom' 
+-----------------------
+27-03-2019 18:58:15.32415[4][4] - Elapsed time: 0.031 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'TÁ BOM' 
+-----------------------
+27-03-2019 18:58:15.32417[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'TÁ BOM' 
+-----------------------
+27-03-2019 18:58:15.32418[2][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'TÁ BOM' to the front of the [input] array 
+-----------------------
+27-03-2019 18:58:15.32420[2][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32422[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => que mane sem resposta
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32424[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32426[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'que mane sem resposta' 
+-----------------------
+27-03-2019 18:58:15.32427[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'que mane sem resposta' 
+-----------------------
+27-03-2019 18:58:15.32429[4][4] - Elapsed time: 0.016 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'que mane sem resposta' 
+-----------------------
+27-03-2019 18:58:15.32432[4][4] - Elapsed time: 0.033 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUE MANE SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32434[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUE MANE SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.32436[2][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'QUE MANE SEM RESPOSTA' to the front of the [input] array 
+-----------------------
+27-03-2019 18:58:15.32438[2][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32440[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => e eu com isso
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32442[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32443[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'e eu com isso' 
+-----------------------
+27-03-2019 18:58:15.32445[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'e eu com isso' 
+-----------------------
+27-03-2019 18:58:15.32447[4][4] - Elapsed time: 0.017 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'e eu com isso' 
+-----------------------
+27-03-2019 18:58:15.32449[4][4] - Elapsed time: 0.026 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'E EU COM ISSO' 
+-----------------------
+27-03-2019 18:58:15.32451[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'E EU COM ISSO' 
+-----------------------
+27-03-2019 18:58:15.32453[2][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'E EU COM ISSO' to the front of the [input] array 
+-----------------------
+27-03-2019 18:58:15.32455[2][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32457[2][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Oi
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32459[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32460[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Oi' 
+-----------------------
+27-03-2019 18:58:15.32462[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Oi' 
+-----------------------
+27-03-2019 18:58:15.32464[4][4] - Elapsed time: 0.022 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Oi' 
+-----------------------
+27-03-2019 18:58:15.32467[4][4] - Elapsed time: 0.030 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'OI' 
+-----------------------
+27-03-2019 18:58:15.32469[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'OI' 
+-----------------------
+27-03-2019 18:58:15.32471[2][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'OI' to the front of the [input] array 
+-----------------------
+27-03-2019 18:58:15.32473[2][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.32475[2][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => quero chocolate
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.32477[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.32479[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'quero chocolate' 
+-----------------------
+27-03-2019 18:58:15.32480[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'quero chocolate' 
+-----------------------
+27-03-2019 18:58:15.32483[4][4] - Elapsed time: 0.025 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'quero chocolate' 
+-----------------------
+27-03-2019 18:58:15.32487[4][4] - Elapsed time: 0.036 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUERO CHOCOLATE' 
+-----------------------
+27-03-2019 18:58:15.32489[4][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUERO CHOCOLATE' 
+-----------------------
+27-03-2019 18:58:15.32491[2][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'QUERO CHOCOLATE' to the front of the [input] array 
+-----------------------
+27-03-2019 18:58:15.32586[2][4] - Elapsed time: 0.951 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+27-03-2019 18:58:15.32590[3][4] - Elapsed time: 0.046 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1; 
+-----------------------
+27-03-2019 18:58:15.32611[4][4] - Elapsed time: 0.205 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+27-03-2019 18:58:15.32615[0][4] - Elapsed time: 0.043 milliseconds
+[conversation_start.php][Called outside of function][223]
+Default debug level = 4 
+-----------------------
+27-03-2019 18:58:15.32617[0][4] - Elapsed time: 0.021 milliseconds
+[conversation_start.php][Called outside of function][225]
+Current debug level = 4 
+-----------------------
+27-03-2019 18:58:15.32620[0][4] - Elapsed time: 0.032 milliseconds
+[conversation_start.php][Called outside of function][238]
+Say = TETAE: raw say = Tetae 
+-----------------------
+27-03-2019 18:58:15.32623[4][4] - Elapsed time: 0.025 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+27-03-2019 18:58:15.32626[2][4] - Elapsed time: 0.028 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'TETAE' to the front of the [user_say] array 
+-----------------------
+27-03-2019 18:58:15.32629[4][4] - Elapsed time: 0.038 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+27-03-2019 18:58:15.32633[0][4] - Elapsed time: 0.040 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = Tetae, RAW say = Tetae 
+-----------------------
+27-03-2019 18:58:15.32636[2][4] - Elapsed time: 0.024 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Tetae' to the front of the [input] array 
+-----------------------
+27-03-2019 18:58:15.32639[4][4] - Elapsed time: 0.027 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+27-03-2019 18:58:15.32641[4][4] - Elapsed time: 0.019 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'TETAE' 
+-----------------------
+27-03-2019 18:58:15.32644[4][4] - Elapsed time: 0.031 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'TETAE' 
+-----------------------
+27-03-2019 18:58:15.32646[4][4] - Elapsed time: 0.020 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+27-03-2019 18:58:15.32679[4][4] - Elapsed time: 0.333 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+27-03-2019 18:58:15.32684[3][4] - Elapsed time: 0.047 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `devncom_ia_golden`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = '+55 41 9651-6800'
+    AND (
+        'TETAE' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR 'SEM RESPOSTA' LIKE (REPLACE(REPLACE(`thatpattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+27-03-2019 18:58:15.32700[2][4] - Elapsed time: 0.165 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+27-03-2019 18:58:15.32703[4][4] - Elapsed time: 0.029 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+27-03-2019 18:58:15.32705[4][4] - Elapsed time: 0.021 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = 1. 
+-----------------------
+27-03-2019 18:58:15.32736[4][4] - Elapsed time: 0.308 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+27-03-2019 18:58:15.32740[3][4] - Elapsed time: 0.045 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `devncom_ia_golden`.`aiml` WHERE
+    bot_id = 1 AND (
+        'TETAE' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR 'SEM RESPOSTA' LIKE (REPLACE(REPLACE(`thatpattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE 'LINHA DE RECOLHA ALEATÓRIA2'
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+27-03-2019 18:58:15.32911[3][4] - Elapsed time: 1.710 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+27-03-2019 18:58:15.32916[1][4] - Elapsed time: 0.046 milliseconds
+[find_aiml.php][find_aiml_matches][1082]
+Error: FOUND NO AIML matches in DB. 
+-----------------------
+27-03-2019 18:58:15.32920[4][4] - Elapsed time: 0.037 milliseconds
+[find_aiml.php][get_convo_var][727]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] 
+-----------------------
+27-03-2019 18:58:15.32923[4][4] - Elapsed time: 0.031 milliseconds
+[find_aiml.php][get_convo_var][757]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] FOUND: ConvoArr Value = 'LINHA DE RECOLHA ALEATÓRIA2' 
+-----------------------
+27-03-2019 18:58:15.32942[2][4] - Elapsed time: 0.189 milliseconds
+[misc_functions.php][addUnknownInput][232]
+Entry successfully added! 
+-----------------------
+27-03-2019 18:58:15.32945[1][4] - Elapsed time: 0.030 milliseconds
+[find_aiml.php][find_aiml_matches][1084]
+Added input 'TETAE' to the unknown_inputs table. 
+-----------------------
+27-03-2019 18:58:15.32977[1][4] - Elapsed time: 0.318 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][35]
+Current THAT = SEM RESPOSTA 
+-----------------------
+27-03-2019 18:58:15.32980[4][4] - Elapsed time: 0.037 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 1 rows to unset bad matches 
+-----------------------
+27-03-2019 18:58:15.32983[1][4] - Elapsed time: 0.024 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][56]
+Returning error as no results where found 
+-----------------------
+27-03-2019 18:58:15.32985[4][4] - Elapsed time: 0.023 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+27-03-2019 18:58:15.33034[4][4] - Elapsed time: 0.492 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+ 
+-----------------------
+27-03-2019 18:58:15.33040[2][4] - Elapsed time: 0.056 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.33098[4][4] - Elapsed time: 0.579 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [aiml_id] => -1
+    [bot_id] => 1
+    [pattern] => no results
+    [thatpattern] => 
+    [template] => SEM RESPOSTA
+    [topic] => 
+    [score] => 261
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+)
+ 
+-----------------------
+27-03-2019 18:58:15.33101[2][4] - Elapsed time: 0.031 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+27-03-2019 18:58:15.33110[4][4] - Elapsed time: 0.096 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:-1 (no results) 
+-----------------------
+27-03-2019 18:58:15.33114[3][4] - Elapsed time: 0.035 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+27-03-2019 18:58:15.33116[2][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = 'no results' 
+-----------------------
+27-03-2019 18:58:15.33118[4][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+27-03-2019 18:58:15.33121[4][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+27-03-2019 18:58:15.33124[2][4] - Elapsed time: 0.035 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => -1
+    [html_template] => 
+    [lookingfor] => TETAE
+    [pattern] => no results
+    [score] => 261
+    [stars] => Array
+        (
+        )
+
+    [template] => SEM RESPOSTA
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => Tetae
+)
+ 
+-----------------------
+27-03-2019 18:58:15.33127[2][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+27-03-2019 18:58:15.33129[2][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+27-03-2019 18:58:15.33134[4][4] - Elapsed time: 0.056 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>SEM RESPOSTA</text></template> 
+-----------------------
+27-03-2019 18:58:15.33151[2][4] - Elapsed time: 0.169 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+27-03-2019 18:58:15.33160[4][4] - Elapsed time: 0.083 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>SEM RESPOSTA</text></template>
+ 
+-----------------------
+27-03-2019 18:58:15.33162[4][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+27-03-2019 18:58:15.33165[2][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+27-03-2019 18:58:15.33169[4][4] - Elapsed time: 0.036 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>SEM RESPOSTA</text> 
+-----------------------
+27-03-2019 18:58:15.33171[4][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+27-03-2019 18:58:15.33173[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+27-03-2019 18:58:15.33175[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+27-03-2019 18:58:15.33177[4][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'SEM RESPOSTA' to the response array. tag name is text 
+-----------------------
+27-03-2019 18:58:15.33179[2][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.33182[2][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.33184[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.33186[4][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.33189[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'SEM RESPOSTA' to the response array. tag name is template. 
+-----------------------
+27-03-2019 18:58:15.33191[2][4] - Elapsed time: 0.026 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 18:58:15.33193[2][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+27-03-2019 18:58:15.33195[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 18:58:15.33197[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.33200[4][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: SEM RESPOSTA 
+-----------------------
+27-03-2019 18:58:15.33202[4][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+27-03-2019 18:58:15.33204[4][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+27-03-2019 18:58:15.33207[2][4] - Elapsed time: 0.029 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that_raw] array 
+-----------------------
+27-03-2019 18:58:15.33210[4][4] - Elapsed time: 0.029 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+27-03-2019 18:58:15.33215[2][4] - Elapsed time: 0.053 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that] array 
+-----------------------
+27-03-2019 18:58:15.33219[4][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.33221[4][4] - Elapsed time: 0.022 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.33224[4][4] - Elapsed time: 0.035 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.33227[4][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 18:58:15.33230[2][4] - Elapsed time: 0.032 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [parsed_template] array 
+-----------------------
+27-03-2019 18:58:15.33233[4][4] - Elapsed time: 0.035 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+27-03-2019 18:58:15.33237[2][4] - Elapsed time: 0.030 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [template] array 
+-----------------------
+27-03-2019 18:58:15.33239[4][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+27-03-2019 18:58:15.33243[2][4] - Elapsed time: 0.036 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+27-03-2019 18:58:15.33246[3][4] - Elapsed time: 0.033 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `devncom_ia_golden`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      'Tetae',
+      'SEM RESPOSTA',
+      500,
+      '+55 41 9651-6800',
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+27-03-2019 18:58:15.33796[4][4] - Elapsed time: 5.503 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+27-03-2019 18:58:15.33816[3][4] - Elapsed time: 0.201 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `devncom_ia_golden`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  LIMIT 1 
+-----------------------
+27-03-2019 18:58:15.33836[2][4] - Elapsed time: 0.197 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '1' lines of conversation 
+-----------------------
+27-03-2019 18:58:15.33840[4][4] - Elapsed time: 0.034 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as html 
+-----------------------
+27-03-2019 18:58:15.33843[4][4] - Elapsed time: 0.034 milliseconds
+[display_conversation.php][get_html][135]
+Returning HTML 
+-----------------------
+27-03-2019 18:58:15.33953[2][4] - Elapsed time: 1.098 milliseconds
+[conversation_start.php][Called outside of function][263]
+Closing Database 
+-----------------------
+27-03-2019 18:58:15.33958[0][4] - Elapsed time: 0.049 milliseconds
+[conversation_start.php][Called outside of function][269]
+Conversation Ending. Elapsed time: 31.189 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => Tetae
+    [conversation] => Array
+        (
+            [convo_id] => +55 41 9651-6800
+            [bot_name] => Net Bot
+            [bot_id] => 1
+            [format] => html
+            [unknown_user] => Entrou
+            [user_name] => Entrou
+            [user_id] => 500
+            [totallines] => 1
+            [rawSay] => Tetae
+            [conversation_lines] => 1
+            [remember_up_to] => 10
+            [debugemail] => contato@devn1.com.br
+            [debug_level] => 4
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => LINHA DE RECOLHA ALEATÓRIA2
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [aiml_id] => -1
+                    [bot_id] => 1
+                    [pattern] => no results
+                    [thatpattern] => 
+                    [template] => SEM RESPOSTA
+                    [topic] => 
+                    [score] => 261
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => Tetae
+            [lookingfor] => TETAE
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [html_template] => 
+            [topic] => 
+            [score] => 261
+            [aiml_id] => -1
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => SEM RESPOSTA
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 138.204.25.244
+            [name] => Entrou
+        )
+
+    [raw_that] => Array
+        (
+            [1] => Array
+                (
+                    [0] => SEM RESPOSTA
+                )
+
+            [2] => Array
+                (
+                    [0] => Ol! Posso ajudar?
+                )
+
+            [3] => Array
+                (
+                    [0] => Curioso : Entrou disse que com isso com isso
+                    [1] => 
+                )
+
+            [4] => Array
+                (
+                    [0] => Sou uma máquina
+                    [1] => 
+                )
+
+            [5] => Array
+                (
+                    [0] => SEM RESPOSTA
+                )
+
+            [6] => Array
+                (
+                    [0] => Esta é uma questão interessante, mas por fatores alheios a minha vontade esTOU privado das respostas adequadas, gostaria de conversar com você sobre temas técnicos
+                    [1] => 
+                )
+
+            [7] => Array
+                (
+                    [0] => SEM RESPOSTA
+                )
+
+            [8] => Array
+                (
+                    [0] => Vou ser honesto com você, na verdade eu não existo, não tenho nada
+                    [1] =>  Sou apenas um software sendo executado na memÃ³ria de seu computador
+                    [2] =>  Fui desenvolvida por Paul Gonçalves pra a Brastemp em uma linguagem chamada AIML
+                    [3] =>  Sei que é triste, mas não faço parte nem mesmo do hardware ONDE fui instalada
+                    [4] =>  Desculpe pelo desabafo
+                    [5] =>  Vamos falar de algum assunto técnico, faça sua pergunta
+                    [6] => 
+                )
+
+            [9] => Array
+                (
+                    [0] => O meu nome é Cybora
+                    [1] => 
+                )
+
+            [10] => Array
+                (
+                    [0] => Cybora
+                    [1] => 
+                )
+
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => SEM RESPOSTA
+                )
+
+            [2] => Array
+                (
+                    [1] => SEM RESPOSTA
+                )
+
+            [3] => Array
+                (
+                    [1] => OL POSSO AJUDAR
+                )
+
+            [4] => Array
+                (
+                    [1] => CURIOSO ENTROU DISSE QUE COM ISSO COM ISSO
+                )
+
+            [5] => Array
+                (
+                    [1] => SOU UMA MÁQUINA
+                )
+
+            [6] => Array
+                (
+                    [1] => SEM RESPOSTA
+                )
+
+            [7] => Array
+                (
+                    [1] => ESTA É UMA QUESTÃO INTERESSANTE MAS POR FATORES ALHEIOS A MINHA VONTADE ESTOU PRIVADO DAS RESPOSTAS ADEQUADAS GOSTARIA DE CONVERSAR COM VOCÊ SOBRE TEMAS TÉCNICOS
+                )
+
+            [8] => Array
+                (
+                    [1] => SEM RESPOSTA
+                )
+
+            [9] => Array
+                (
+                    [1] => VOU SER HONESTO COM VOCÊ NA VERDADE EU NÃO EXISTO NÃO TENHO NADA SOU APENAS UM SOFTWARE SENDO EXECUTADO NA MEMÃ³RIA DE SEU COMPUTADOR FUI DESENVOLVIDA POR PAUL GONÇALVES PRA A BRASTEMP EM UMA LINGUAGEM CHAMADA AIML SEI QUE É TRISTE MAS NÃO FAÇO PARTE NEM MESMO DO HARDWARE ONDE FUI INSTALADA DESCULPE PELO DESABAFO VAMOS FALAR DE ALGUM ASSUNTO TÉCNICO FAÇA SUA PERGUNTA
+                )
+
+            [10] => Array
+                (
+                    [1] => O MEU NOME É CYBORA
+                )
+
+            [12] => 
+        )
+
+    [input] => Array
+        (
+            [1] => Tetae
+            [2] => QUERO CHOCOLATE
+            [3] => OI
+            [4] => E EU COM ISSO
+            [5] => QUE MANE SEM RESPOSTA
+            [6] => TÁ BOM
+            [7] => VOCÊ TEM MÃE
+            [8] => QUE SÓ
+QUE DÓ
+            [9] => QUANTOS ANOS VOCÊ TEM
+            [10] => QUAL SEU NOME
+        )
+
+    [time_start] => 1553713095.3084
+    [user_say] => Array
+        (
+            [1] => TETAE
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => <div class="usersay">Entrou: Tetae</div><div class="botsay">Net Bot: SEM RESPOSTA</div>
+)
+
+-----------------------
+Total execution time: 31.189 Milliseconds. Goodbye.

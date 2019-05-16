@@ -1,0 +1,998 @@
+07-04-2019 14:10:04.87503[0][4] - Elapsed time: 2.340 milliseconds
+[conversation_start.php][Called outside of function][91]
+Conversation starting. Current system specs:
+Program O version:            2.6.11
+Server Software:              Apache
+PHP Version:                  5.6.40
+OS:                           Linux
+OS Version:                   #1 SMP Wed Sep 26 15:12:11 UTC 2018
+MySQL Version:                5.7.25
+Multi-byte functions enabled: true 
+-----------------------
+07-04-2019 14:10:04.87848[4][4] - Elapsed time: 3.449 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+07-04-2019 14:10:04.87957[4][4] - Elapsed time: 1.084 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+07-04-2019 14:10:04.87982[4][4] - Elapsed time: 0.256 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+07-04-2019 14:10:04.88088[4][4] - Elapsed time: 1.063 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+07-04-2019 14:10:04.88092[4][4] - Elapsed time: 0.035 milliseconds
+[conversation_start.php][Called outside of function][104]
+Loaded all Includes 
+-----------------------
+07-04-2019 14:10:04.88108[0][4] - Elapsed time: 0.158 milliseconds
+[conversation_start.php][Called outside of function][159]
+Debug level: 4
+session ID = 554195933129 
+-----------------------
+07-04-2019 14:10:04.88110[4][4] - Elapsed time: 0.020 milliseconds
+[conversation_start.php][Called outside of function][162]
+Conversation continuing. User said '[11:38, 7/4/2019] CARLOS EDUARDO: Oi
+[11:38, 7/4/2019] CARLOS EDUARDO: Bem E vc?'. 
+-----------------------
+07-04-2019 14:10:04.88115[4][4] - Elapsed time: 0.051 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+07-04-2019 14:10:04.88117[4][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+07-04-2019 14:10:04.88119[3][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `devncom_ia_golden`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+07-04-2019 14:10:04.88151[4][4] - Elapsed time: 0.323 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: 554195933129 
+-----------------------
+07-04-2019 14:10:04.88154[2][4] - Elapsed time: 0.025 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+07-04-2019 14:10:04.88155[3][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+07-04-2019 14:10:04.88179[2][4] - Elapsed time: 0.238 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+07-04-2019 14:10:04.88181[2][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+07-04-2019 14:10:04.88220[2][4] - Elapsed time: 0.385 milliseconds
+[handle_user.php][intisaliseUser][82]
+Initializing user. 
+-----------------------
+07-04-2019 14:10:04.88240[3][4] - Elapsed time: 0.201 milliseconds
+[handle_user.php][intisaliseUser][128]
+intisaliseUser #658 SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, 'Entrou'  , 554195933129   , 1 , '0'        , '35.203.191.19', ''      , 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0)'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     ); 
+-----------------------
+07-04-2019 14:10:04.88255[3][4] - Elapsed time: 0.148 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `devncom_ia_golden`.`client_properties` WHERE `user_id` = 658 AND `bot_id` = 1; 
+-----------------------
+07-04-2019 14:10:04.88304[2][4] - Elapsed time: 0.494 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+07-04-2019 14:10:04.88309[2][4] - Elapsed time: 0.047 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+07-04-2019 14:10:04.88312[2][4] - Elapsed time: 0.032 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+07-04-2019 14:10:04.88334[2][4] - Elapsed time: 0.223 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+07-04-2019 14:10:04.88346[2][4] - Elapsed time: 0.119 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+07-04-2019 14:10:04.88357[2][4] - Elapsed time: 0.109 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+07-04-2019 14:10:04.88366[2][4] - Elapsed time: 0.089 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 3. 
+-----------------------
+07-04-2019 14:10:04.88378[2][4] - Elapsed time: 0.121 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 8. 
+-----------------------
+07-04-2019 14:10:04.88390[2][4] - Elapsed time: 0.113 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+07-04-2019 14:10:04.88399[2][4] - Elapsed time: 0.091 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+07-04-2019 14:10:04.88408[2][4] - Elapsed time: 0.090 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 7. 
+-----------------------
+07-04-2019 14:10:04.88419[2][4] - Elapsed time: 0.109 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+07-04-2019 14:10:04.88428[2][4] - Elapsed time: 0.091 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+07-04-2019 14:10:04.88439[2][4] - Elapsed time: 0.109 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+07-04-2019 14:10:04.88448[2][4] - Elapsed time: 0.091 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+07-04-2019 14:10:04.88458[2][4] - Elapsed time: 0.107 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+07-04-2019 14:10:04.88469[2][4] - Elapsed time: 0.103 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+07-04-2019 14:10:04.88485[2][4] - Elapsed time: 0.161 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+07-04-2019 14:10:04.88495[2][4] - Elapsed time: 0.105 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+07-04-2019 14:10:04.88505[2][4] - Elapsed time: 0.093 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+07-04-2019 14:10:04.88514[2][4] - Elapsed time: 0.092 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on CARLOS. 
+-----------------------
+07-04-2019 14:10:04.88524[2][4] - Elapsed time: 0.105 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+07-04-2019 14:10:04.88533[2][4] - Elapsed time: 0.092 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on EDUARDO. 
+-----------------------
+07-04-2019 14:10:04.88545[2][4] - Elapsed time: 0.114 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+07-04-2019 14:10:04.88554[2][4] - Elapsed time: 0.091 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+07-04-2019 14:10:04.88563[2][4] - Elapsed time: 0.092 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Oi. 
+-----------------------
+07-04-2019 14:10:04.88576[2][4] - Elapsed time: 0.132 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+07-04-2019 14:10:04.88584[2][4] - Elapsed time: 0.076 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+07-04-2019 14:10:04.88592[2][4] - Elapsed time: 0.076 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+07-04-2019 14:10:04.88599[2][4] - Elapsed time: 0.077 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+07-04-2019 14:10:04.88606[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+07-04-2019 14:10:04.88612[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 3. 
+-----------------------
+07-04-2019 14:10:04.88619[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 8. 
+-----------------------
+07-04-2019 14:10:04.88627[2][4] - Elapsed time: 0.075 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+07-04-2019 14:10:04.88632[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+07-04-2019 14:10:04.88638[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 7. 
+-----------------------
+07-04-2019 14:10:04.88645[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+07-04-2019 14:10:04.88651[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+07-04-2019 14:10:04.88659[2][4] - Elapsed time: 0.080 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+07-04-2019 14:10:04.88667[2][4] - Elapsed time: 0.084 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+07-04-2019 14:10:04.88681[2][4] - Elapsed time: 0.135 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+07-04-2019 14:10:04.88691[2][4] - Elapsed time: 0.104 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+07-04-2019 14:10:04.88721[2][4] - Elapsed time: 0.301 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+07-04-2019 14:10:04.88730[2][4] - Elapsed time: 0.089 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+07-04-2019 14:10:04.88738[2][4] - Elapsed time: 0.078 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+07-04-2019 14:10:04.88747[2][4] - Elapsed time: 0.087 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on CARLOS. 
+-----------------------
+07-04-2019 14:10:04.88757[2][4] - Elapsed time: 0.108 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+07-04-2019 14:10:04.88767[2][4] - Elapsed time: 0.095 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on EDUARDO. 
+-----------------------
+07-04-2019 14:10:04.88780[2][4] - Elapsed time: 0.128 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+07-04-2019 14:10:04.88786[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+07-04-2019 14:10:04.88792[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Bem. 
+-----------------------
+07-04-2019 14:10:04.88803[2][4] - Elapsed time: 0.102 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+07-04-2019 14:10:04.88812[2][4] - Elapsed time: 0.091 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on E. 
+-----------------------
+07-04-2019 14:10:04.88820[2][4] - Elapsed time: 0.083 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+07-04-2019 14:10:04.88829[2][4] - Elapsed time: 0.091 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on vc. 
+-----------------------
+07-04-2019 14:10:04.88839[2][4] - Elapsed time: 0.095 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ?. 
+-----------------------
+07-04-2019 14:10:04.88850[4][4] - Elapsed time: 0.114 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '[11:38, 7/4/2019] CARLOS EDUARDO: Oi
+[11:38, 7/4/2019] CARLOS EDUARDO: Bem E vc?' 
+-----------------------
+07-04-2019 14:10:04.88855[4][4] - Elapsed time: 0.049 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO OI 11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO BEM E VC' 
+-----------------------
+07-04-2019 14:10:04.88856[2][4] - Elapsed time: 0.015 milliseconds
+[conversation_start.php][Called outside of function][237]
+Details:
+User say: 11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO OI 11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO BEM E VC
+Convo id: 554195933129
+Bot id: 1
+Format: html 
+-----------------------
+07-04-2019 14:10:04.88858[4][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: html 
+-----------------------
+07-04-2019 14:10:04.88859[2][4] - Elapsed time: 0.012 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+07-04-2019 14:10:04.88861[3][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `devncom_ia_golden`.`conversation_log` WHERE `user_id` = 658 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+07-04-2019 14:10:04.89002[4][4] - Elapsed time: 1.409 milliseconds
+[intialise_conversation.php][load_that][856]
+Couldn't find any previous inputs or responses. 
+-----------------------
+07-04-2019 14:10:04.89085[2][4] - Elapsed time: 0.825 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+07-04-2019 14:10:04.89090[3][4] - Elapsed time: 0.057 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1; 
+-----------------------
+07-04-2019 14:10:04.89124[4][4] - Elapsed time: 0.333 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+07-04-2019 14:10:04.89128[0][4] - Elapsed time: 0.041 milliseconds
+[conversation_start.php][Called outside of function][257]
+Default debug level = 4 
+-----------------------
+07-04-2019 14:10:04.89129[0][4] - Elapsed time: 0.019 milliseconds
+[conversation_start.php][Called outside of function][259]
+Current debug level = 4 
+-----------------------
+07-04-2019 14:10:04.89131[0][4] - Elapsed time: 0.016 milliseconds
+[conversation_start.php][Called outside of function][272]
+Say = 11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO OI 11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO BEM E VC: raw say = [11:38, 7/4/2019] CARLOS EDUARDO: Oi
+[11:38, 7/4/2019] CARLOS EDUARDO: Bem E vc? 
+-----------------------
+07-04-2019 14:10:04.89132[4][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+07-04-2019 14:10:04.89134[2][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO OI 11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO BEM E VC' to the front of the [user_say] array 
+-----------------------
+07-04-2019 14:10:04.89138[4][4] - Elapsed time: 0.032 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+07-04-2019 14:10:04.89140[0][4] - Elapsed time: 0.029 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = [11:38, 7/4/2019] CARLOS EDUARDO: Oi
+[11:38, 7/4/2019] CARLOS EDUARDO: Bem E vc?, RAW say = [11:38, 7/4/2019] CARLOS EDUARDO: Oi
+[11:38, 7/4/2019] CARLOS EDUARDO: Bem E vc? 
+-----------------------
+07-04-2019 14:10:04.89142[2][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '[11:38, 7/4/2019] CARLOS EDUARDO: Oi
+[11:38, 7/4/2019] CARLOS EDUARDO: Bem E vc?' to the front of the [input] array 
+-----------------------
+07-04-2019 14:10:04.89145[4][4] - Elapsed time: 0.028 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+07-04-2019 14:10:04.89148[4][4] - Elapsed time: 0.032 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+07-04-2019 14:10:04.89150[4][4] - Elapsed time: 0.022 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO OI 11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO BEM E VC' 
+-----------------------
+07-04-2019 14:10:04.89156[4][4] - Elapsed time: 0.059 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO OI 11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO BEM E VC' 
+-----------------------
+07-04-2019 14:10:04.89159[4][4] - Elapsed time: 0.024 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+07-04-2019 14:10:04.89216[4][4] - Elapsed time: 0.575 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+07-04-2019 14:10:04.89223[3][4] - Elapsed time: 0.066 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `devncom_ia_golden`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = 554195933129
+    AND (
+        '11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO OI 11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO BEM E VC' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+07-04-2019 14:10:04.89244[2][4] - Elapsed time: 0.211 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+07-04-2019 14:10:04.89247[4][4] - Elapsed time: 0.029 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+07-04-2019 14:10:04.89249[4][4] - Elapsed time: 0.022 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = 1. 
+-----------------------
+07-04-2019 14:10:04.89299[4][4] - Elapsed time: 0.501 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+07-04-2019 14:10:04.89305[3][4] - Elapsed time: 0.057 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `devncom_ia_golden`.`aiml` WHERE
+    bot_id = 1 AND (
+        '11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO OI 11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO BEM E VC' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE 'LINHA DE RECOLHA ALEATÓRIA2'
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+07-04-2019 14:10:04.89328[3][4] - Elapsed time: 0.233 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+07-04-2019 14:10:04.89331[1][4] - Elapsed time: 0.031 milliseconds
+[find_aiml.php][find_aiml_matches][1082]
+Error: FOUND NO AIML matches in DB. 
+-----------------------
+07-04-2019 14:10:04.89334[4][4] - Elapsed time: 0.027 milliseconds
+[find_aiml.php][get_convo_var][727]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] 
+-----------------------
+07-04-2019 14:10:04.89337[4][4] - Elapsed time: 0.027 milliseconds
+[find_aiml.php][get_convo_var][757]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] FOUND: ConvoArr Value = 'LINHA DE RECOLHA ALEATÓRIA2' 
+-----------------------
+07-04-2019 14:10:04.89369[2][4] - Elapsed time: 0.322 milliseconds
+[misc_functions.php][addUnknownInput][232]
+Entry successfully added! 
+-----------------------
+07-04-2019 14:10:04.89374[1][4] - Elapsed time: 0.051 milliseconds
+[find_aiml.php][find_aiml_matches][1084]
+Added input '11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO OI 11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO BEM E VC' to the unknown_inputs table. 
+-----------------------
+07-04-2019 14:10:04.89414[4][4] - Elapsed time: 0.399 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 1 rows to unset bad matches 
+-----------------------
+07-04-2019 14:10:04.89417[1][4] - Elapsed time: 0.034 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][56]
+Returning error as no results where found 
+-----------------------
+07-04-2019 14:10:04.89420[4][4] - Elapsed time: 0.025 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+07-04-2019 14:10:04.89496[4][4] - Elapsed time: 0.764 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+ 
+-----------------------
+07-04-2019 14:10:04.89501[2][4] - Elapsed time: 0.048 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+
+ 
+-----------------------
+07-04-2019 14:10:04.89556[4][4] - Elapsed time: 0.553 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [aiml_id] => -1
+    [bot_id] => 1
+    [pattern] => no results
+    [thatpattern] => 
+    [template] => SEM RESPOSTA
+    [topic] => 
+    [score] => 261
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+)
+ 
+-----------------------
+07-04-2019 14:10:04.89560[2][4] - Elapsed time: 0.039 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+07-04-2019 14:10:04.89576[4][4] - Elapsed time: 0.158 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:-1 (no results) 
+-----------------------
+07-04-2019 14:10:04.89579[3][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+07-04-2019 14:10:04.89582[2][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = 'no results' 
+-----------------------
+07-04-2019 14:10:04.89584[4][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+07-04-2019 14:10:04.89586[4][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+07-04-2019 14:10:04.89591[2][4] - Elapsed time: 0.044 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => -1
+    [html_template] => 
+    [lookingfor] => 11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO OI 11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO BEM E VC
+    [pattern] => no results
+    [score] => 261
+    [stars] => Array
+        (
+        )
+
+    [template] => SEM RESPOSTA
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => [11:38, 7/4/2019] CARLOS EDUARDO: Oi
+[11:38, 7/4/2019] CARLOS EDUARDO: Bem E vc?
+)
+ 
+-----------------------
+07-04-2019 14:10:04.89593[2][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+07-04-2019 14:10:04.89595[2][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+07-04-2019 14:10:04.89598[4][4] - Elapsed time: 0.036 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>SEM RESPOSTA</text></template> 
+-----------------------
+07-04-2019 14:10:04.89604[2][4] - Elapsed time: 0.052 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+07-04-2019 14:10:04.89609[4][4] - Elapsed time: 0.049 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>SEM RESPOSTA</text></template>
+ 
+-----------------------
+07-04-2019 14:10:04.89612[4][4] - Elapsed time: 0.033 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+07-04-2019 14:10:04.89615[2][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+07-04-2019 14:10:04.89619[4][4] - Elapsed time: 0.039 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>SEM RESPOSTA</text> 
+-----------------------
+07-04-2019 14:10:04.89621[4][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+07-04-2019 14:10:04.89623[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+07-04-2019 14:10:04.89625[2][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+07-04-2019 14:10:04.89627[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'SEM RESPOSTA' to the response array. tag name is text 
+-----------------------
+07-04-2019 14:10:04.89629[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+07-04-2019 14:10:04.89631[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+07-04-2019 14:10:04.89633[4][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+07-04-2019 14:10:04.89635[4][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+07-04-2019 14:10:04.89637[4][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'SEM RESPOSTA' to the response array. tag name is template. 
+-----------------------
+07-04-2019 14:10:04.89640[2][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+07-04-2019 14:10:04.89641[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+07-04-2019 14:10:04.89642[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+07-04-2019 14:10:04.89644[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+07-04-2019 14:10:04.89646[4][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: SEM RESPOSTA 
+-----------------------
+07-04-2019 14:10:04.89648[4][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+07-04-2019 14:10:04.89650[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+07-04-2019 14:10:04.89652[2][4] - Elapsed time: 0.022 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that_raw] array 
+-----------------------
+07-04-2019 14:10:04.89655[4][4] - Elapsed time: 0.031 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+07-04-2019 14:10:04.89661[2][4] - Elapsed time: 0.060 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that] array 
+-----------------------
+07-04-2019 14:10:04.89664[4][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+07-04-2019 14:10:04.89666[4][4] - Elapsed time: 0.026 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+07-04-2019 14:10:04.89669[4][4] - Elapsed time: 0.025 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+07-04-2019 14:10:04.89675[4][4] - Elapsed time: 0.062 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+07-04-2019 14:10:04.89677[4][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+07-04-2019 14:10:04.89681[2][4] - Elapsed time: 0.036 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [parsed_template] array 
+-----------------------
+07-04-2019 14:10:04.89684[4][4] - Elapsed time: 0.030 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+07-04-2019 14:10:04.89687[2][4] - Elapsed time: 0.034 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [template] array 
+-----------------------
+07-04-2019 14:10:04.89689[4][4] - Elapsed time: 0.024 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+07-04-2019 14:10:04.89693[2][4] - Elapsed time: 0.038 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+07-04-2019 14:10:04.89696[3][4] - Elapsed time: 0.027 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `devncom_ia_golden`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      '[11:38, 7/4/2019] CARLOS EDUARDO: Oi
+[11:38, 7/4/2019] CARLOS EDUARDO: Bem E vc?',
+      'SEM RESPOSTA',
+      658,
+      554195933129,
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+07-04-2019 14:10:04.90244[4][4] - Elapsed time: 5.478 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+07-04-2019 14:10:04.90280[3][4] - Elapsed time: 0.362 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `devncom_ia_golden`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  LIMIT 1 
+-----------------------
+07-04-2019 14:10:04.90310[2][4] - Elapsed time: 0.299 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '1' lines of conversation 
+-----------------------
+07-04-2019 14:10:04.90315[4][4] - Elapsed time: 0.046 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as html 
+-----------------------
+07-04-2019 14:10:04.90318[4][4] - Elapsed time: 0.038 milliseconds
+[display_conversation.php][get_html][135]
+Returning HTML 
+-----------------------
+07-04-2019 14:10:04.90464[2][4] - Elapsed time: 1.454 milliseconds
+[conversation_start.php][Called outside of function][297]
+Closing Database 
+-----------------------
+07-04-2019 14:10:04.90474[0][4] - Elapsed time: 0.100 milliseconds
+[conversation_start.php][Called outside of function][303]
+Conversation Ending. Elapsed time: 32.000 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => [11:38, 7/4/2019] CARLOS EDUARDO: Oi
+[11:38, 7/4/2019] CARLOS EDUARDO: Bem E vc?
+    [conversation] => Array
+        (
+            [convo_id] => 554195933129
+            [bot_name] => Net Bot
+            [bot_id] => 1
+            [format] => html
+            [unknown_user] => Entrou
+            [user_id] => 658
+            [totallines] => 1
+            [user_name] => Entrou
+            [rawSay] => [11:38, 7/4/2019] CARLOS EDUARDO: Oi
+[11:38, 7/4/2019] CARLOS EDUARDO: Bem E vc?
+            [conversation_lines] => 1
+            [remember_up_to] => 10
+            [debugemail] => contato@devn1.com.br
+            [debug_level] => 4
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => LINHA DE RECOLHA ALEATÓRIA2
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [aiml_id] => -1
+                    [bot_id] => 1
+                    [pattern] => no results
+                    [thatpattern] => 
+                    [template] => SEM RESPOSTA
+                    [topic] => 
+                    [score] => 261
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => [11:38, 7/4/2019] CARLOS EDUARDO: Oi
+[11:38, 7/4/2019] CARLOS EDUARDO: Bem E vc?
+            [lookingfor] => 11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO OI 11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO BEM E VC
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [html_template] => 
+            [topic] => 
+            [score] => 261
+            [aiml_id] => -1
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => SEM RESPOSTA
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 35.203.191.19
+            [name] => Entrou
+        )
+
+    [time_start] => 1554657004.8727
+    [user_say] => Array
+        (
+            [1] => 11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO OI 11 38 7 DIVIDEDBY 4 2019 CARLOS EDUARDO BEM E VC
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [input] => Array
+        (
+            [1] => [11:38, 7/4/2019] CARLOS EDUARDO: Oi
+[11:38, 7/4/2019] CARLOS EDUARDO: Bem E vc?
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => <div class="usersay">Entrou: [11:38, 7/4/2019] CARLOS EDUARDO: Oi
+[11:38, 7/4/2019] CARLOS EDUARDO: Bem E vc?</div><div class="botsay">Net Bot: SEM RESPOSTA</div>
+)
+
+-----------------------
+Total execution time: 32.000 Milliseconds. Goodbye.

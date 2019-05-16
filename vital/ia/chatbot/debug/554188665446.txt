@@ -1,0 +1,1376 @@
+20-04-2019 16:22:29.21366[0][4] - Elapsed time: 1.541 milliseconds
+[conversation_start.php][Called outside of function][91]
+Conversation starting. Current system specs:
+Program O version:            2.6.11
+Server Software:              Apache
+PHP Version:                  5.6.40
+OS:                           Linux
+OS Version:                   #1 SMP Wed Sep 26 15:12:11 UTC 2018
+MySQL Version:                5.7.25
+Multi-byte functions enabled: true 
+-----------------------
+20-04-2019 16:22:29.21408[4][4] - Elapsed time: 0.412 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+20-04-2019 16:22:29.21429[4][4] - Elapsed time: 0.218 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+20-04-2019 16:22:29.21435[4][4] - Elapsed time: 0.059 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+20-04-2019 16:22:29.21470[4][4] - Elapsed time: 0.344 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+20-04-2019 16:22:29.21471[4][4] - Elapsed time: 0.013 milliseconds
+[conversation_start.php][Called outside of function][104]
+Loaded all Includes 
+-----------------------
+20-04-2019 16:22:29.21489[0][4] - Elapsed time: 0.182 milliseconds
+[conversation_start.php][Called outside of function][159]
+Debug level: 4
+session ID = 554188665446 
+-----------------------
+20-04-2019 16:22:29.21490[4][4] - Elapsed time: 0.012 milliseconds
+[conversation_start.php][Called outside of function][162]
+Conversation continuing. User said '[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: /sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: / sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Não quero mais receber saporra'. 
+-----------------------
+20-04-2019 16:22:29.21496[4][4] - Elapsed time: 0.060 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+20-04-2019 16:22:29.21498[4][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+20-04-2019 16:22:29.21499[3][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `devncom_ia_golden`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+20-04-2019 16:22:29.21527[4][4] - Elapsed time: 0.271 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: 554188665446 
+-----------------------
+20-04-2019 16:22:29.21528[2][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+20-04-2019 16:22:29.21530[3][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+20-04-2019 16:22:29.21549[2][4] - Elapsed time: 0.195 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+20-04-2019 16:22:29.21551[2][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+20-04-2019 16:22:29.21585[2][4] - Elapsed time: 0.345 milliseconds
+[handle_user.php][intisaliseUser][82]
+Initializing user. 
+-----------------------
+20-04-2019 16:22:29.21604[3][4] - Elapsed time: 0.189 milliseconds
+[handle_user.php][intisaliseUser][128]
+intisaliseUser #887 SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, 'Entrou'  , 554188665446   , 1 , '0'        , '104.197.164.8', ''      , 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0)'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     ); 
+-----------------------
+20-04-2019 16:22:29.21638[3][4] - Elapsed time: 0.333 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `devncom_ia_golden`.`client_properties` WHERE `user_id` = 887 AND `bot_id` = 1; 
+-----------------------
+20-04-2019 16:22:29.21694[2][4] - Elapsed time: 0.561 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+20-04-2019 16:22:29.21703[2][4] - Elapsed time: 0.092 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+20-04-2019 16:22:29.21706[2][4] - Elapsed time: 0.030 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+20-04-2019 16:22:29.21729[2][4] - Elapsed time: 0.231 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+20-04-2019 16:22:29.21737[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 6. 
+-----------------------
+20-04-2019 16:22:29.21743[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+20-04-2019 16:22:29.21748[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+20-04-2019 16:22:29.21754[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+20-04-2019 16:22:29.21760[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+20-04-2019 16:22:29.21765[2][4] - Elapsed time: 0.051 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.21771[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+20-04-2019 16:22:29.21778[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+20-04-2019 16:22:29.21784[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+20-04-2019 16:22:29.21790[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+20-04-2019 16:22:29.21796[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+20-04-2019 16:22:29.21802[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+20-04-2019 16:22:29.21808[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+20-04-2019 16:22:29.21814[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+20-04-2019 16:22:29.21821[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+20-04-2019 16:22:29.21827[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+20-04-2019 16:22:29.21832[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.21838[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on LUIZ. 
+-----------------------
+20-04-2019 16:22:29.21844[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.21849[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on FLAVIO. 
+-----------------------
+20-04-2019 16:22:29.21856[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.21861[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on GRCAS. 
+-----------------------
+20-04-2019 16:22:29.21867[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+20-04-2019 16:22:29.21872[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.21878[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+20-04-2019 16:22:29.21883[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on sair. 
+-----------------------
+20-04-2019 16:22:29.21888[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+20-04-2019 16:22:29.21894[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+20-04-2019 16:22:29.21900[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+20-04-2019 16:22:29.21907[2][4] - Elapsed time: 0.076 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 6. 
+-----------------------
+20-04-2019 16:22:29.21914[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+20-04-2019 16:22:29.21919[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+20-04-2019 16:22:29.21925[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+20-04-2019 16:22:29.21932[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+20-04-2019 16:22:29.21937[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.21942[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+20-04-2019 16:22:29.21948[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+20-04-2019 16:22:29.21955[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+20-04-2019 16:22:29.21960[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+20-04-2019 16:22:29.21968[2][4] - Elapsed time: 0.078 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+20-04-2019 16:22:29.21973[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+20-04-2019 16:22:29.21979[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+20-04-2019 16:22:29.21986[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+20-04-2019 16:22:29.21992[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+20-04-2019 16:22:29.21998[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+20-04-2019 16:22:29.22004[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.22009[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on LUIZ. 
+-----------------------
+20-04-2019 16:22:29.22016[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.22021[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on FLAVIO. 
+-----------------------
+20-04-2019 16:22:29.22027[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.22033[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on GRCAS. 
+-----------------------
+20-04-2019 16:22:29.22039[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+20-04-2019 16:22:29.22045[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.22050[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+20-04-2019 16:22:29.22055[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.22061[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on sair. 
+-----------------------
+20-04-2019 16:22:29.22067[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+20-04-2019 16:22:29.22072[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+20-04-2019 16:22:29.22077[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+20-04-2019 16:22:29.22084[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 6. 
+-----------------------
+20-04-2019 16:22:29.22090[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+20-04-2019 16:22:29.22095[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+20-04-2019 16:22:29.22103[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+20-04-2019 16:22:29.22109[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+20-04-2019 16:22:29.22114[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.22120[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+20-04-2019 16:22:29.22126[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+20-04-2019 16:22:29.22133[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+20-04-2019 16:22:29.22138[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+20-04-2019 16:22:29.22145[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+20-04-2019 16:22:29.22150[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+20-04-2019 16:22:29.22156[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+20-04-2019 16:22:29.22163[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+20-04-2019 16:22:29.22169[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+20-04-2019 16:22:29.22176[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+20-04-2019 16:22:29.22181[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.22187[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on LUIZ. 
+-----------------------
+20-04-2019 16:22:29.22193[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.22198[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on FLAVIO. 
+-----------------------
+20-04-2019 16:22:29.22206[2][4] - Elapsed time: 0.078 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.22211[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on GRCAS. 
+-----------------------
+20-04-2019 16:22:29.22218[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+20-04-2019 16:22:29.22223[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.22229[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Sair. 
+-----------------------
+20-04-2019 16:22:29.22236[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+20-04-2019 16:22:29.22242[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+20-04-2019 16:22:29.22247[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+20-04-2019 16:22:29.22253[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 6. 
+-----------------------
+20-04-2019 16:22:29.22260[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+20-04-2019 16:22:29.22268[2][4] - Elapsed time: 0.080 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+20-04-2019 16:22:29.22275[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+20-04-2019 16:22:29.22281[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+20-04-2019 16:22:29.22287[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.22293[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+20-04-2019 16:22:29.22299[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+20-04-2019 16:22:29.22306[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+20-04-2019 16:22:29.22312[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+20-04-2019 16:22:29.22319[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+20-04-2019 16:22:29.22325[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+20-04-2019 16:22:29.22332[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+20-04-2019 16:22:29.22338[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+20-04-2019 16:22:29.22345[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+20-04-2019 16:22:29.22351[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+20-04-2019 16:22:29.22357[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.22362[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on LUIZ. 
+-----------------------
+20-04-2019 16:22:29.22370[2][4] - Elapsed time: 0.078 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.22380[2][4] - Elapsed time: 0.095 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on FLAVIO. 
+-----------------------
+20-04-2019 16:22:29.22389[2][4] - Elapsed time: 0.093 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.22395[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on GRCAS. 
+-----------------------
+20-04-2019 16:22:29.22403[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+20-04-2019 16:22:29.22408[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.22414[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Não. 
+-----------------------
+20-04-2019 16:22:29.22420[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.22426[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on quero. 
+-----------------------
+20-04-2019 16:22:29.22433[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.22438[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on mais. 
+-----------------------
+20-04-2019 16:22:29.22444[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.22450[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on receber. 
+-----------------------
+20-04-2019 16:22:29.22457[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+20-04-2019 16:22:29.22462[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on saporra. 
+-----------------------
+20-04-2019 16:22:29.22470[4][4] - Elapsed time: 0.080 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: /sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: / sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Não quero mais receber saporra' 
+-----------------------
+20-04-2019 16:22:29.22481[4][4] - Elapsed time: 0.113 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS NÃO QUERO MAIS RECEBER SAPORRA' 
+-----------------------
+20-04-2019 16:22:29.22483[2][4] - Elapsed time: 0.018 milliseconds
+[conversation_start.php][Called outside of function][237]
+Details:
+User say: 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS NÃO QUERO MAIS RECEBER SAPORRA
+Convo id: 554188665446
+Bot id: 1
+Format: html 
+-----------------------
+20-04-2019 16:22:29.22486[4][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: html 
+-----------------------
+20-04-2019 16:22:29.22489[2][4] - Elapsed time: 0.030 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+20-04-2019 16:22:29.22491[3][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `devncom_ia_golden`.`conversation_log` WHERE `user_id` = 887 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+20-04-2019 16:22:29.23417[4][4] - Elapsed time: 9.263 milliseconds
+[intialise_conversation.php][load_that][856]
+Couldn't find any previous inputs or responses. 
+-----------------------
+20-04-2019 16:22:29.23539[2][4] - Elapsed time: 1.219 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+20-04-2019 16:22:29.23544[3][4] - Elapsed time: 0.044 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1; 
+-----------------------
+20-04-2019 16:22:29.23563[4][4] - Elapsed time: 0.197 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+20-04-2019 16:22:29.23566[0][4] - Elapsed time: 0.030 milliseconds
+[conversation_start.php][Called outside of function][257]
+Default debug level = 4 
+-----------------------
+20-04-2019 16:22:29.23569[0][4] - Elapsed time: 0.025 milliseconds
+[conversation_start.php][Called outside of function][259]
+Current debug level = 4 
+-----------------------
+20-04-2019 16:22:29.23571[0][4] - Elapsed time: 0.020 milliseconds
+[conversation_start.php][Called outside of function][272]
+Say = 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS NÃO QUERO MAIS RECEBER SAPORRA: raw say = [16:21, 20/4/2019] LUIZ FLAVIO GRCAS: /sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: / sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Não quero mais receber saporra 
+-----------------------
+20-04-2019 16:22:29.23572[4][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+20-04-2019 16:22:29.23574[2][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS NÃO QUERO MAIS RECEBER SAPORRA' to the front of the [user_say] array 
+-----------------------
+20-04-2019 16:22:29.23578[4][4] - Elapsed time: 0.041 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+20-04-2019 16:22:29.23583[0][4] - Elapsed time: 0.050 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = [16:21, 20/4/2019] LUIZ FLAVIO GRCAS: /sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: / sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Não quero mais receber saporra, RAW say = [16:21, 20/4/2019] LUIZ FLAVIO GRCAS: /sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: / sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Não quero mais receber saporra 
+-----------------------
+20-04-2019 16:22:29.23585[2][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: /sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: / sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Não quero mais receber saporra' to the front of the [input] array 
+-----------------------
+20-04-2019 16:22:29.23587[4][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+20-04-2019 16:22:29.23589[4][4] - Elapsed time: 0.022 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+20-04-2019 16:22:29.23591[4][4] - Elapsed time: 0.017 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS NÃO QUERO MAIS RECEBER SAPORRA' 
+-----------------------
+20-04-2019 16:22:29.23596[4][4] - Elapsed time: 0.055 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS NÃO QUERO MAIS RECEBER SAPORRA' 
+-----------------------
+20-04-2019 16:22:29.23598[4][4] - Elapsed time: 0.018 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+20-04-2019 16:22:29.23660[4][4] - Elapsed time: 0.615 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+20-04-2019 16:22:29.23665[3][4] - Elapsed time: 0.057 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `devncom_ia_golden`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = 554188665446
+    AND (
+        '16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS NÃO QUERO MAIS RECEBER SAPORRA' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+20-04-2019 16:22:29.23688[2][4] - Elapsed time: 0.231 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+20-04-2019 16:22:29.23691[4][4] - Elapsed time: 0.027 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+20-04-2019 16:22:29.23693[4][4] - Elapsed time: 0.016 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = 1. 
+-----------------------
+20-04-2019 16:22:29.23748[4][4] - Elapsed time: 0.555 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+20-04-2019 16:22:29.23754[3][4] - Elapsed time: 0.054 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `devncom_ia_golden`.`aiml` WHERE
+    bot_id = 1 AND (
+        '16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS NÃO QUERO MAIS RECEBER SAPORRA' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE 'LINHA DE RECOLHA ALEATÓRIA2'
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+20-04-2019 16:22:29.23779[3][4] - Elapsed time: 0.254 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+20-04-2019 16:22:29.23781[2][4] - Elapsed time: 0.025 milliseconds
+[find_aiml.php][find_aiml_matches][1061]
+FOUND: (1) potential AIML matches 
+-----------------------
+20-04-2019 16:22:29.23839[4][4] - Elapsed time: 0.573 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 1 rows to unset bad matches 
+-----------------------
+20-04-2019 16:22:29.23842[4][4] - Elapsed time: 0.030 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][62]
+Blue 5 to Blue leader. Starting my run now! Looking for '16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS NÃO QUERO MAIS RECEBER SAPORRA' 
+-----------------------
+20-04-2019 16:22:29.23850[4][4] - Elapsed time: 0.084 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][195]
+Found 1 relevant rows 
+-----------------------
+20-04-2019 16:22:29.23853[4][4] - Elapsed time: 0.030 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+20-04-2019 16:22:29.23931[4][4] - Elapsed time: 0.779 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [id] => 4567
+            [bot_id] => 1
+            [pattern] => *SAIR*
+            [thatpattern] => 
+            [topic] => 
+            [filename] => admin_added.aiml
+            [template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+            [score] => 259
+            [current_that] => 
+            [aiml_id] => 4567
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: *sair* (8 points)
+        )
+
+)
+ 
+-----------------------
+20-04-2019 16:22:29.23938[2][4] - Elapsed time: 0.064 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [id] => 4567
+            [bot_id] => 1
+            [pattern] => *SAIR*
+            [thatpattern] => 
+            [topic] => 
+            [filename] => admin_added.aiml
+            [template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+            [score] => 259
+            [current_that] => 
+            [aiml_id] => 4567
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: *sair* (8 points)
+        )
+
+)
+
+ 
+-----------------------
+20-04-2019 16:22:29.23998[4][4] - Elapsed time: 0.603 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [id] => 4567
+    [bot_id] => 1
+    [pattern] => *SAIR*
+    [thatpattern] => 
+    [topic] => 
+    [filename] => admin_added.aiml
+    [template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+    [score] => 259
+    [current_that] => 
+    [aiml_id] => 4567
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: *sair* (8 points)
+)
+ 
+-----------------------
+20-04-2019 16:22:29.24000[2][4] - Elapsed time: 0.023 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+20-04-2019 16:22:29.24010[4][4] - Elapsed time: 0.102 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:4567 (*SAIR*) 
+-----------------------
+20-04-2019 16:22:29.24013[3][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+20-04-2019 16:22:29.24015[2][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = '*SAIR*' 
+-----------------------
+20-04-2019 16:22:29.24017[2][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][set_wildcards][306]
+We have pattern stars to process! 
+-----------------------
+20-04-2019 16:22:29.24019[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][set_wildcards][310]
+RegEx string = ~(.+)SAIR(.+)$~siuU: Searching [16:21, 20/4/2019] LUIZ FLAVIO GRCAS: /sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: / sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Não quero mais receber saporra for a match. 
+-----------------------
+20-04-2019 16:22:29.24022[2][4] - Elapsed time: 0.037 milliseconds
+[parse_aiml.php][set_wildcards][313]
+Array
+(
+    [0] => Array
+        (
+            [0] => [16:21, 20/4/2019] LUIZ FLAVIO GRCAS: /sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: / sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Não quero mais receber saporra
+        )
+
+    [1] => Array
+        (
+            [0] => [16:21, 20/4/2019] LUIZ FLAVIO GRCAS: /
+        )
+
+    [2] => Array
+        (
+            [0] => 
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: / sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Não quero mais receber saporra
+        )
+
+)
+ 
+-----------------------
+20-04-2019 16:22:29.24025[2][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml.php][set_wildcards][318]
+Adding ' 16 21  20 4 2019  LUIZ FLAVIO GRCAS   ' to the stars stack. 
+-----------------------
+20-04-2019 16:22:29.24027[2][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][set_wildcards][320]
+Star array = Array
+(
+    [1] =>  16 21  20 4 2019  LUIZ FLAVIO GRCAS   
+)
+ 
+-----------------------
+20-04-2019 16:22:29.24029[2][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml.php][set_wildcards][318]
+Adding ' 16 21  20 4 2019  LUIZ FLAVIO GRCAS    sair
+ 16 21  20 4 2019  LUIZ FLAVIO GRCAS  Sair
+ 16 21  20 4 2019  LUIZ FLAVIO GRCAS  Não quero mais receber saporra' to the stars stack. 
+-----------------------
+20-04-2019 16:22:29.24031[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][set_wildcards][320]
+Star array = Array
+(
+    [1] =>  16 21  20 4 2019  LUIZ FLAVIO GRCAS   
+    [2] =>  16 21  20 4 2019  LUIZ FLAVIO GRCAS    sair
+ 16 21  20 4 2019  LUIZ FLAVIO GRCAS  Sair
+ 16 21  20 4 2019  LUIZ FLAVIO GRCAS  Não quero mais receber saporra
+)
+ 
+-----------------------
+20-04-2019 16:22:29.24032[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+20-04-2019 16:22:29.24034[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+20-04-2019 16:22:29.24037[2][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => 4567
+    [category_id] => 4567
+    [html_template] => 
+    [lookingfor] => 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS NÃO QUERO MAIS RECEBER SAPORRA
+    [pattern] => *SAIR*
+    [score] => 259
+    [stars] => Array
+        (
+            [1] =>  16 21  20 4 2019  LUIZ FLAVIO GRCAS   
+            [2] =>  16 21  20 4 2019  LUIZ FLAVIO GRCAS    sair
+ 16 21  20 4 2019  LUIZ FLAVIO GRCAS  Sair
+ 16 21  20 4 2019  LUIZ FLAVIO GRCAS  Não quero mais receber saporra
+        )
+
+    [template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => [16:21, 20/4/2019] LUIZ FLAVIO GRCAS: /sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: / sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Não quero mais receber saporra
+)
+ 
+-----------------------
+20-04-2019 16:22:29.24040[2][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+20-04-2019 16:22:29.24042[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+20-04-2019 16:22:29.24045[4][4] - Elapsed time: 0.036 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>Seu nome foi removido de nossa lista, desculpe o inconveniente.</text></template> 
+-----------------------
+20-04-2019 16:22:29.24063[2][4] - Elapsed time: 0.183 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+20-04-2019 16:22:29.24072[4][4] - Elapsed time: 0.085 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>Seu nome foi removido de nossa lista, desculpe o inconveniente.</text></template>
+ 
+-----------------------
+20-04-2019 16:22:29.24078[4][4] - Elapsed time: 0.064 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+20-04-2019 16:22:29.24081[2][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+20-04-2019 16:22:29.24084[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>Seu nome foi removido de nossa lista, desculpe o inconveniente.</text> 
+-----------------------
+20-04-2019 16:22:29.24086[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+20-04-2019 16:22:29.24088[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+20-04-2019 16:22:29.24089[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+20-04-2019 16:22:29.24091[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' to the response array. tag name is text 
+-----------------------
+20-04-2019 16:22:29.24093[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+20-04-2019 16:22:29.24094[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+)
+
+ 
+-----------------------
+20-04-2019 16:22:29.24096[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+20-04-2019 16:22:29.24098[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' 
+-----------------------
+20-04-2019 16:22:29.24099[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' to the response array. tag name is template. 
+-----------------------
+20-04-2019 16:22:29.24102[2][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+20-04-2019 16:22:29.24104[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+)
+
+ 
+-----------------------
+20-04-2019 16:22:29.24106[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+20-04-2019 16:22:29.24107[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' 
+-----------------------
+20-04-2019 16:22:29.24110[4][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: Seu nome foi removido de nossa lista, desculpe o inconveniente. 
+-----------------------
+20-04-2019 16:22:29.24112[4][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+20-04-2019 16:22:29.24114[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+20-04-2019 16:22:29.24115[2][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' to the front of the [that_raw] array 
+-----------------------
+20-04-2019 16:22:29.24118[4][4] - Elapsed time: 0.024 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+20-04-2019 16:22:29.24123[2][4] - Elapsed time: 0.052 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' to the front of the [that] array 
+-----------------------
+20-04-2019 16:22:29.24125[4][4] - Elapsed time: 0.024 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+20-04-2019 16:22:29.24128[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' 
+-----------------------
+20-04-2019 16:22:29.24130[4][4] - Elapsed time: 0.020 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' 
+-----------------------
+20-04-2019 16:22:29.24134[4][4] - Elapsed time: 0.038 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE' 
+-----------------------
+20-04-2019 16:22:29.24136[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE' 
+-----------------------
+20-04-2019 16:22:29.24138[2][4] - Elapsed time: 0.024 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' to the front of the [parsed_template] array 
+-----------------------
+20-04-2019 16:22:29.24141[4][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+20-04-2019 16:22:29.24143[2][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' to the front of the [template] array 
+-----------------------
+20-04-2019 16:22:29.24145[4][4] - Elapsed time: 0.022 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+20-04-2019 16:22:29.24148[2][4] - Elapsed time: 0.033 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+20-04-2019 16:22:29.24151[3][4] - Elapsed time: 0.032 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `devncom_ia_golden`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      '[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: /sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: / sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Não quero mais receber saporra',
+      'Seu nome foi removido de nossa lista, desculpe o inconveniente.',
+      887,
+      554188665446,
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+20-04-2019 16:22:29.24918[4][4] - Elapsed time: 7.667 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+20-04-2019 16:22:29.24941[3][4] - Elapsed time: 0.228 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `devncom_ia_golden`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  LIMIT 1 
+-----------------------
+20-04-2019 16:22:29.24979[2][4] - Elapsed time: 0.383 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '1' lines of conversation 
+-----------------------
+20-04-2019 16:22:29.24982[4][4] - Elapsed time: 0.030 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as html 
+-----------------------
+20-04-2019 16:22:29.24987[4][4] - Elapsed time: 0.045 milliseconds
+[display_conversation.php][get_html][135]
+Returning HTML 
+-----------------------
+20-04-2019 16:22:29.25088[2][4] - Elapsed time: 1.016 milliseconds
+[conversation_start.php][Called outside of function][297]
+Closing Database 
+-----------------------
+20-04-2019 16:22:29.25093[0][4] - Elapsed time: 0.045 milliseconds
+[conversation_start.php][Called outside of function][303]
+Conversation Ending. Elapsed time: 38.787 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => [16:21, 20/4/2019] LUIZ FLAVIO GRCAS: /sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: / sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Não quero mais receber saporra
+    [conversation] => Array
+        (
+            [convo_id] => 554188665446
+            [bot_name] => Net Bot
+            [bot_id] => 1
+            [format] => html
+            [unknown_user] => Entrou
+            [user_id] => 887
+            [totallines] => 1
+            [user_name] => Entrou
+            [rawSay] => [16:21, 20/4/2019] LUIZ FLAVIO GRCAS: /sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: / sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Não quero mais receber saporra
+            [conversation_lines] => 1
+            [remember_up_to] => 10
+            [debugemail] => contato@devn1.com.br
+            [debug_level] => 4
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => LINHA DE RECOLHA ALEATÓRIA2
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [id] => 4567
+                    [bot_id] => 1
+                    [pattern] => *SAIR*
+                    [thatpattern] => 
+                    [topic] => 
+                    [filename] => admin_added.aiml
+                    [template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+                    [score] => 259
+                    [current_that] => 
+                    [aiml_id] => 4567
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: *sair* (8 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => [16:21, 20/4/2019] LUIZ FLAVIO GRCAS: /sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: / sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Não quero mais receber saporra
+            [lookingfor] => 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS NÃO QUERO MAIS RECEBER SAPORRA
+            [category_id] => 4567
+            [pattern] => *SAIR*
+            [thatpattern] => 
+            [template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+            [html_template] => 
+            [topic] => 
+            [score] => 259
+            [aiml_id] => 4567
+            [stars] => Array
+                (
+                    [1] =>  16 21  20 4 2019  LUIZ FLAVIO GRCAS   
+                    [2] =>  16 21  20 4 2019  LUIZ FLAVIO GRCAS    sair
+ 16 21  20 4 2019  LUIZ FLAVIO GRCAS  Sair
+ 16 21  20 4 2019  LUIZ FLAVIO GRCAS  Não quero mais receber saporra
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 104.197.164.8
+            [name] => Entrou
+        )
+
+    [time_start] => 1555788149.2121
+    [user_say] => Array
+        (
+            [1] => 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS SAIR 16 21 20 DIVIDEDBY 4 2019 LUIZ FLAVIO GRCAS NÃO QUERO MAIS RECEBER SAPORRA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [input] => Array
+        (
+            [1] => [16:21, 20/4/2019] LUIZ FLAVIO GRCAS: /sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: / sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Não quero mais receber saporra
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => <div class="usersay">Entrou: [16:21, 20/4/2019] LUIZ FLAVIO GRCAS: /sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: / sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Sair
+[16:21, 20/4/2019] LUIZ FLAVIO GRCAS: Não quero mais receber saporra</div><div class="botsay">Net Bot: Seu nome foi removido de nossa lista, desculpe o inconveniente.</div>
+)
+
+-----------------------
+Total execution time: 38.787 Milliseconds. Goodbye.

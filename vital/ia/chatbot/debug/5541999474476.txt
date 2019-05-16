@@ -1,0 +1,1900 @@
+11-02-2019 20:50:17.33793[0][4] - Elapsed time: 6.300 milliseconds
+[conversation_start.php][Called outside of function][56]
+Conversation starting. Current system specs:
+Program O version:            2.6.11
+Server Software:              Apache
+PHP Version:                  5.6.40
+OS:                           Linux
+OS Version:                   #1 SMP Wed Sep 26 15:12:11 UTC 2018
+MySQL Version:                5.7.25
+Multi-byte functions enabled: true 
+-----------------------
+11-02-2019 20:50:17.34480[4][4] - Elapsed time: 6.874 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+11-02-2019 20:50:17.34770[4][4] - Elapsed time: 2.902 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+11-02-2019 20:50:17.34826[4][4] - Elapsed time: 0.554 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+11-02-2019 20:50:17.35013[4][4] - Elapsed time: 1.867 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+11-02-2019 20:50:17.35016[4][4] - Elapsed time: 0.034 milliseconds
+[conversation_start.php][Called outside of function][69]
+Loaded all Includes 
+-----------------------
+11-02-2019 20:50:17.35044[0][4] - Elapsed time: 0.285 milliseconds
+[conversation_start.php][Called outside of function][122]
+Debug level: 4
+session ID = 5541999474476 
+-----------------------
+11-02-2019 20:50:17.35047[4][4] - Elapsed time: 0.026 milliseconds
+[conversation_start.php][Called outside of function][125]
+Conversation continuing. User said 'ASSINAR'. 
+-----------------------
+11-02-2019 20:50:17.35053[4][4] - Elapsed time: 0.061 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+11-02-2019 20:50:17.35055[4][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+11-02-2019 20:50:17.35057[3][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `devncom_net_iaoficial`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+11-02-2019 20:50:17.35085[4][4] - Elapsed time: 0.282 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: 5541999474476 
+-----------------------
+11-02-2019 20:50:17.35087[2][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+11-02-2019 20:50:17.35088[3][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `devncom_net_iaoficial`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+11-02-2019 20:50:17.35105[2][4] - Elapsed time: 0.173 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+11-02-2019 20:50:17.35107[2][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+11-02-2019 20:50:17.35123[3][4] - Elapsed time: 0.157 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `devncom_net_iaoficial`.`client_properties` WHERE `user_id` = 17 AND `bot_id` = 1; 
+-----------------------
+11-02-2019 20:50:17.35140[2][4] - Elapsed time: 0.172 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+11-02-2019 20:50:17.35146[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ASSINAR. 
+-----------------------
+11-02-2019 20:50:17.35149[2][4] - Elapsed time: 0.027 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+11-02-2019 20:50:17.35207[4][4] - Elapsed time: 0.582 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35212[4][4] - Elapsed time: 0.054 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35214[2][4] - Elapsed time: 0.013 milliseconds
+[conversation_start.php][Called outside of function][200]
+Details:
+User say: ASSINAR
+Convo id: 5541999474476
+Bot id: 1
+Format: html 
+-----------------------
+11-02-2019 20:50:17.35215[4][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: json 
+-----------------------
+11-02-2019 20:50:17.35216[2][4] - Elapsed time: 0.010 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+11-02-2019 20:50:17.35218[3][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `devncom_net_iaoficial`.`conversation_log` WHERE `user_id` = 17 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+11-02-2019 20:50:17.35244[1][4] - Elapsed time: 0.262 milliseconds
+[intialise_conversation.php][load_that][804]
+Inputs returned:Array
+(
+    [0] => ASSINAR
+    [1] => ASSINAR
+    [2] => ASSINAR
+    [3] => ASSINAR
+    [4] => ASSINAR
+    [5] => ASSINAR
+    [6] => ASSINAR
+    [7] => ASSINAR
+    [8] => ASSINAR
+    [9] => ASSINAR
+)
+ 
+-----------------------
+11-02-2019 20:50:17.35246[4][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][load_that][805]
+Loading previous responses into the ~THAT~ array. 
+-----------------------
+11-02-2019 20:50:17.35248[1][4] - Elapsed time: 0.022 milliseconds
+[intialise_conversation.php][load_that][806]
+Responses returned:Array
+(
+    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+    [1] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+    [2] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+    [3] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+    [4] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+    [5] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+    [6] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+    [7] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+    [8] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+    [9] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+)
+ 
+-----------------------
+11-02-2019 20:50:17.35254[2][4] - Elapsed time: 0.055 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35256[2][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal
+    [1] => 
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35257[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35259[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35261[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35263[4][4] - Elapsed time: 0.017 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35269[4][4] - Elapsed time: 0.061 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35270[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35272[2][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' to the front of the [that] array 
+-----------------------
+11-02-2019 20:50:17.35294[4][4] - Elapsed time: 0.222 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+11-02-2019 20:50:17.35300[4][4] - Elapsed time: 0.064 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35302[4][4] - Elapsed time: 0.016 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35305[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35306[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35309[2][4] - Elapsed time: 0.036 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35312[2][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal
+    [1] => 
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35313[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35315[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35316[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35318[4][4] - Elapsed time: 0.015 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35324[4][4] - Elapsed time: 0.060 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35326[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35327[2][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' to the front of the [that] array 
+-----------------------
+11-02-2019 20:50:17.35331[4][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35332[4][4] - Elapsed time: 0.018 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35337[4][4] - Elapsed time: 0.041 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35338[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35341[2][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35343[2][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal
+    [1] => 
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35345[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35346[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35348[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35350[4][4] - Elapsed time: 0.017 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35355[4][4] - Elapsed time: 0.048 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35356[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35357[2][4] - Elapsed time: 0.010 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' to the front of the [that] array 
+-----------------------
+11-02-2019 20:50:17.35359[4][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35360[4][4] - Elapsed time: 0.011 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35363[4][4] - Elapsed time: 0.026 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35364[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35366[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35367[2][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal
+    [1] => 
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35368[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35369[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35370[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35371[4][4] - Elapsed time: 0.010 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35373[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35374[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35375[2][4] - Elapsed time: 0.009 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' to the front of the [that] array 
+-----------------------
+11-02-2019 20:50:17.35377[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35378[4][4] - Elapsed time: 0.010 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35381[4][4] - Elapsed time: 0.024 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35382[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35383[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35385[2][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal
+    [1] => 
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35385[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35387[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35387[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35388[4][4] - Elapsed time: 0.010 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35391[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35392[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35393[2][4] - Elapsed time: 0.010 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' to the front of the [that] array 
+-----------------------
+11-02-2019 20:50:17.35395[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35396[4][4] - Elapsed time: 0.011 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35399[4][4] - Elapsed time: 0.024 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35400[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35401[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35403[2][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal
+    [1] => 
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35404[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35405[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35406[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35407[4][4] - Elapsed time: 0.010 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35410[4][4] - Elapsed time: 0.029 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35411[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35412[2][4] - Elapsed time: 0.010 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' to the front of the [that] array 
+-----------------------
+11-02-2019 20:50:17.35414[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35415[4][4] - Elapsed time: 0.012 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35417[4][4] - Elapsed time: 0.024 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35418[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35420[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35421[2][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal
+    [1] => 
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35424[4][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35425[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35426[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35427[4][4] - Elapsed time: 0.012 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35430[4][4] - Elapsed time: 0.030 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35431[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35432[2][4] - Elapsed time: 0.011 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' to the front of the [that] array 
+-----------------------
+11-02-2019 20:50:17.35434[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35436[4][4] - Elapsed time: 0.012 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35438[4][4] - Elapsed time: 0.025 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35439[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35441[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35442[2][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal
+    [1] => 
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35443[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35444[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35446[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35447[4][4] - Elapsed time: 0.012 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35450[4][4] - Elapsed time: 0.033 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35452[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35453[2][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' to the front of the [that] array 
+-----------------------
+11-02-2019 20:50:17.35455[4][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35457[4][4] - Elapsed time: 0.016 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35459[4][4] - Elapsed time: 0.027 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35461[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35463[2][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35465[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal
+    [1] => 
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35466[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35468[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35469[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35470[4][4] - Elapsed time: 0.014 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35473[4][4] - Elapsed time: 0.032 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35475[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35476[2][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' to the front of the [that] array 
+-----------------------
+11-02-2019 20:50:17.35478[4][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35480[4][4] - Elapsed time: 0.013 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35483[4][4] - Elapsed time: 0.032 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35485[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35487[2][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35490[2][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal
+    [1] => 
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35492[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35493[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35494[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35496[4][4] - Elapsed time: 0.015 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal ' 
+-----------------------
+11-02-2019 20:50:17.35499[4][4] - Elapsed time: 0.034 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35501[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35502[2][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' to the front of the [that] array 
+-----------------------
+11-02-2019 20:50:17.35505[4][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35506[4][4] - Elapsed time: 0.018 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35509[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35511[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.35513[4][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][load_that][835]
+Loading previous user inputs into the ~INPUT~ array. 
+-----------------------
+11-02-2019 20:50:17.35515[2][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35518[2][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => ASSINAR
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35519[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35521[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35523[4][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35525[4][4] - Elapsed time: 0.017 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35528[4][4] - Elapsed time: 0.026 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35529[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35530[2][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'ASSINAR' to the front of the [input] array 
+-----------------------
+11-02-2019 20:50:17.35532[4][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+11-02-2019 20:50:17.35534[2][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35536[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => ASSINAR
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35538[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35539[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35540[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35542[4][4] - Elapsed time: 0.013 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35544[4][4] - Elapsed time: 0.023 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35545[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35547[2][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'ASSINAR' to the front of the [input] array 
+-----------------------
+11-02-2019 20:50:17.35549[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35551[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => ASSINAR
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35552[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35553[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35555[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35556[4][4] - Elapsed time: 0.014 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35558[4][4] - Elapsed time: 0.023 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35560[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35561[2][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'ASSINAR' to the front of the [input] array 
+-----------------------
+11-02-2019 20:50:17.35563[2][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35565[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => ASSINAR
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35567[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35568[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35570[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35571[4][4] - Elapsed time: 0.014 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35573[4][4] - Elapsed time: 0.022 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35575[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35576[2][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'ASSINAR' to the front of the [input] array 
+-----------------------
+11-02-2019 20:50:17.35578[2][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35580[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => ASSINAR
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35582[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35583[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35585[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35586[4][4] - Elapsed time: 0.014 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35589[4][4] - Elapsed time: 0.027 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35591[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35592[2][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'ASSINAR' to the front of the [input] array 
+-----------------------
+11-02-2019 20:50:17.35594[2][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35596[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => ASSINAR
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35597[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35599[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35600[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35602[4][4] - Elapsed time: 0.015 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35604[4][4] - Elapsed time: 0.024 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35606[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35608[2][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'ASSINAR' to the front of the [input] array 
+-----------------------
+11-02-2019 20:50:17.35610[2][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35612[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => ASSINAR
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35613[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35615[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35616[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35618[4][4] - Elapsed time: 0.015 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35620[4][4] - Elapsed time: 0.025 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35622[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35624[2][4] - Elapsed time: 0.025 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'ASSINAR' to the front of the [input] array 
+-----------------------
+11-02-2019 20:50:17.35627[2][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35628[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => ASSINAR
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35630[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35632[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35633[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35635[4][4] - Elapsed time: 0.018 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35637[4][4] - Elapsed time: 0.024 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35639[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35641[2][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'ASSINAR' to the front of the [input] array 
+-----------------------
+11-02-2019 20:50:17.35643[2][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35645[2][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => ASSINAR
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35647[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35648[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35650[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35651[4][4] - Elapsed time: 0.016 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35654[4][4] - Elapsed time: 0.027 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35656[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35657[2][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'ASSINAR' to the front of the [input] array 
+-----------------------
+11-02-2019 20:50:17.35660[2][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.35662[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => ASSINAR
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.35663[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.35665[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35666[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35668[4][4] - Elapsed time: 0.016 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35671[4][4] - Elapsed time: 0.026 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35673[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35674[2][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'ASSINAR' to the front of the [input] array 
+-----------------------
+11-02-2019 20:50:17.35777[2][4] - Elapsed time: 1.026 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+11-02-2019 20:50:17.35781[3][4] - Elapsed time: 0.037 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `devncom_net_iaoficial`.`bots` WHERE bot_id = 1; 
+-----------------------
+11-02-2019 20:50:17.35805[4][4] - Elapsed time: 0.244 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+11-02-2019 20:50:17.35809[0][4] - Elapsed time: 0.038 milliseconds
+[conversation_start.php][Called outside of function][220]
+Default debug level = 4 
+-----------------------
+11-02-2019 20:50:17.35811[0][4] - Elapsed time: 0.021 milliseconds
+[conversation_start.php][Called outside of function][222]
+Current debug level = 4 
+-----------------------
+11-02-2019 20:50:17.35813[0][4] - Elapsed time: 0.024 milliseconds
+[conversation_start.php][Called outside of function][235]
+Say = ASSINAR: raw say = ASSINAR 
+-----------------------
+11-02-2019 20:50:17.35815[4][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+11-02-2019 20:50:17.35817[2][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'ASSINAR' to the front of the [user_say] array 
+-----------------------
+11-02-2019 20:50:17.35820[4][4] - Elapsed time: 0.027 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+11-02-2019 20:50:17.35824[0][4] - Elapsed time: 0.040 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = ASSINAR, RAW say = ASSINAR 
+-----------------------
+11-02-2019 20:50:17.35826[2][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'ASSINAR' to the front of the [input] array 
+-----------------------
+11-02-2019 20:50:17.35829[4][4] - Elapsed time: 0.027 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+11-02-2019 20:50:17.35831[4][4] - Elapsed time: 0.024 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35835[4][4] - Elapsed time: 0.033 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35836[4][4] - Elapsed time: 0.019 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+11-02-2019 20:50:17.35856[4][4] - Elapsed time: 0.191 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+11-02-2019 20:50:17.35861[3][4] - Elapsed time: 0.052 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `devncom_net_iaoficial`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = 5541999474476
+    AND (
+        'ASSINAR' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' LIKE (REPLACE(REPLACE(`thatpattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+11-02-2019 20:50:17.35880[2][4] - Elapsed time: 0.189 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+11-02-2019 20:50:17.35882[4][4] - Elapsed time: 0.028 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+11-02-2019 20:50:17.35885[4][4] - Elapsed time: 0.022 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = 1. 
+-----------------------
+11-02-2019 20:50:17.35899[4][4] - Elapsed time: 0.143 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+11-02-2019 20:50:17.35904[3][4] - Elapsed time: 0.048 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `devncom_net_iaoficial`.`aiml` WHERE
+    bot_id = 1 AND (
+        'ASSINAR' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' LIKE (REPLACE(REPLACE(`thatpattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE 'LINHA DE RECOLHA ALEATÓRIA2'
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+11-02-2019 20:50:17.35940[3][4] - Elapsed time: 0.365 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+11-02-2019 20:50:17.35943[2][4] - Elapsed time: 0.031 milliseconds
+[find_aiml.php][find_aiml_matches][1061]
+FOUND: (3) potential AIML matches 
+-----------------------
+11-02-2019 20:50:17.35962[1][4] - Elapsed time: 0.185 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][35]
+Current THAT = QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL 
+-----------------------
+11-02-2019 20:50:17.35966[4][4] - Elapsed time: 0.038 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 3 rows to unset bad matches 
+-----------------------
+11-02-2019 20:50:17.35968[4][4] - Elapsed time: 0.025 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][62]
+Blue 5 to Blue leader. Starting my run now! Looking for 'ASSINAR' 
+-----------------------
+11-02-2019 20:50:17.35982[4][4] - Elapsed time: 0.142 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][195]
+Found 1 relevant rows 
+-----------------------
+11-02-2019 20:50:17.35985[4][4] - Elapsed time: 0.025 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+11-02-2019 20:50:17.36018[4][4] - Elapsed time: 0.337 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [id] => 696
+            [bot_id] => 1
+            [pattern] => *ASSINAR*
+            [thatpattern] => 
+            [topic] => 
+            [filename] => admin_added.aiml
+            [template] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+            [score] => 259
+            [current_that] => qual o seu cep para eu fazer uma pré analise de disponibilidade de sinal
+            [aiml_id] => 696
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: *assinar* (8 points)
+        )
+
+)
+ 
+-----------------------
+11-02-2019 20:50:17.36024[2][4] - Elapsed time: 0.054 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [id] => 696
+            [bot_id] => 1
+            [pattern] => *ASSINAR*
+            [thatpattern] => 
+            [topic] => 
+            [filename] => admin_added.aiml
+            [template] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+            [score] => 259
+            [current_that] => qual o seu cep para eu fazer uma pré analise de disponibilidade de sinal
+            [aiml_id] => 696
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: *assinar* (8 points)
+        )
+
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.36074[4][4] - Elapsed time: 0.498 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [id] => 696
+    [bot_id] => 1
+    [pattern] => *ASSINAR*
+    [thatpattern] => 
+    [topic] => 
+    [filename] => admin_added.aiml
+    [template] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+    [score] => 259
+    [current_that] => qual o seu cep para eu fazer uma pré analise de disponibilidade de sinal
+    [aiml_id] => 696
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: *assinar* (8 points)
+)
+ 
+-----------------------
+11-02-2019 20:50:17.36076[2][4] - Elapsed time: 0.026 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+11-02-2019 20:50:17.36087[4][4] - Elapsed time: 0.108 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:696 (*ASSINAR*) 
+-----------------------
+11-02-2019 20:50:17.36089[3][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+11-02-2019 20:50:17.36092[2][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = '*ASSINAR*' 
+-----------------------
+11-02-2019 20:50:17.36094[2][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][set_wildcards][306]
+We have pattern stars to process! 
+-----------------------
+11-02-2019 20:50:17.36096[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][set_wildcards][310]
+RegEx string = ~(.+)ASSINAR(.+)$~siuU: Searching ASSINAR for a match. 
+-----------------------
+11-02-2019 20:50:17.36098[2][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml.php][set_wildcards][324]
+Something is not right here. 
+-----------------------
+11-02-2019 20:50:17.36100[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+11-02-2019 20:50:17.36102[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+11-02-2019 20:50:17.36105[2][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => 696
+    [category_id] => 696
+    [html_template] => 
+    [lookingfor] => ASSINAR
+    [pattern] => *ASSINAR*
+    [score] => 259
+    [stars] => Array
+        (
+        )
+
+    [template] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => ASSINAR
+)
+ 
+-----------------------
+11-02-2019 20:50:17.36108[2][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+11-02-2019 20:50:17.36110[2][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+11-02-2019 20:50:17.36114[4][4] - Elapsed time: 0.035 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?</text></template> 
+-----------------------
+11-02-2019 20:50:17.36127[2][4] - Elapsed time: 0.133 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+11-02-2019 20:50:17.36136[4][4] - Elapsed time: 0.089 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>Qual o seu CEP para eu fazer uma pr&#xE9; analise de disponibilidade de sinal?</text></template>
+ 
+-----------------------
+11-02-2019 20:50:17.36139[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+11-02-2019 20:50:17.36141[2][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+11-02-2019 20:50:17.36145[4][4] - Elapsed time: 0.038 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?</text> 
+-----------------------
+11-02-2019 20:50:17.36148[4][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+11-02-2019 20:50:17.36150[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+11-02-2019 20:50:17.36152[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+11-02-2019 20:50:17.36154[4][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' to the response array. tag name is text 
+-----------------------
+11-02-2019 20:50:17.36156[2][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.36158[2][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.36160[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.36162[4][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' 
+-----------------------
+11-02-2019 20:50:17.36164[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' to the response array. tag name is template. 
+-----------------------
+11-02-2019 20:50:17.36168[2][4] - Elapsed time: 0.039 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+11-02-2019 20:50:17.36172[2][4] - Elapsed time: 0.035 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+)
+
+ 
+-----------------------
+11-02-2019 20:50:17.36175[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+11-02-2019 20:50:17.36178[4][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' 
+-----------------------
+11-02-2019 20:50:17.36182[4][4] - Elapsed time: 0.037 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal? 
+-----------------------
+11-02-2019 20:50:17.36186[4][4] - Elapsed time: 0.045 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+11-02-2019 20:50:17.36191[4][4] - Elapsed time: 0.043 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+11-02-2019 20:50:17.36194[2][4] - Elapsed time: 0.033 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' to the front of the [that_raw] array 
+-----------------------
+11-02-2019 20:50:17.36199[4][4] - Elapsed time: 0.048 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+11-02-2019 20:50:17.36205[2][4] - Elapsed time: 0.064 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' to the front of the [that] array 
+-----------------------
+11-02-2019 20:50:17.36210[4][4] - Elapsed time: 0.051 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' 
+-----------------------
+11-02-2019 20:50:17.36214[4][4] - Elapsed time: 0.038 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' 
+-----------------------
+11-02-2019 20:50:17.36221[4][4] - Elapsed time: 0.074 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.36226[4][4] - Elapsed time: 0.046 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+11-02-2019 20:50:17.36230[2][4] - Elapsed time: 0.036 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' to the front of the [parsed_template] array 
+-----------------------
+11-02-2019 20:50:17.36232[4][4] - Elapsed time: 0.027 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+11-02-2019 20:50:17.36235[2][4] - Elapsed time: 0.029 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' to the front of the [template] array 
+-----------------------
+11-02-2019 20:50:17.36238[4][4] - Elapsed time: 0.027 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+11-02-2019 20:50:17.36242[2][4] - Elapsed time: 0.037 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+11-02-2019 20:50:17.36245[3][4] - Elapsed time: 0.035 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `devncom_net_iaoficial`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      'ASSINAR',
+      'Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?',
+      17,
+      5541999474476,
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+11-02-2019 20:50:17.36341[4][4] - Elapsed time: 0.959 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+11-02-2019 20:50:17.36357[3][4] - Elapsed time: 0.159 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `devncom_net_iaoficial`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  LIMIT 1 
+-----------------------
+11-02-2019 20:50:17.36375[2][4] - Elapsed time: 0.183 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '1' lines of conversation 
+-----------------------
+11-02-2019 20:50:17.36379[4][4] - Elapsed time: 0.034 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as html 
+-----------------------
+11-02-2019 20:50:17.36383[4][4] - Elapsed time: 0.044 milliseconds
+[display_conversation.php][get_html][135]
+Returning HTML 
+-----------------------
+11-02-2019 20:50:17.36476[2][4] - Elapsed time: 0.935 milliseconds
+[conversation_start.php][Called outside of function][260]
+Closing Database 
+-----------------------
+11-02-2019 20:50:17.36483[0][4] - Elapsed time: 0.066 milliseconds
+[conversation_start.php][Called outside of function][266]
+Conversation Ending. Elapsed time: 33.176 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => ASSINAR
+    [conversation] => Array
+        (
+            [convo_id] => 5541999474476
+            [bot_name] => Net Bot
+            [bot_id] => 1
+            [format] => html
+            [unknown_user] => Entrou
+            [user_name] => Entrou
+            [user_id] => 17
+            [totallines] => 1
+            [rawSay] => ASSINAR
+            [conversation_lines] => 1
+            [remember_up_to] => 10
+            [debugemail] => contato@devn1.com.br
+            [debug_level] => 4
+            [debugmode] => 1
+            [save_state] => session
+            [default_aiml_pattern] => LINHA DE RECOLHA ALEATÓRIA2
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [id] => 696
+                    [bot_id] => 1
+                    [pattern] => *ASSINAR*
+                    [thatpattern] => 
+                    [topic] => 
+                    [filename] => admin_added.aiml
+                    [template] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+                    [score] => 259
+                    [current_that] => qual o seu cep para eu fazer uma pré analise de disponibilidade de sinal
+                    [aiml_id] => 696
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: *assinar* (8 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => ASSINAR
+            [lookingfor] => ASSINAR
+            [category_id] => 696
+            [pattern] => *ASSINAR*
+            [thatpattern] => 
+            [template] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+            [html_template] => 
+            [topic] => 
+            [score] => 259
+            [aiml_id] => 696
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 191.177.180.107
+            [name] => Entrou
+        )
+
+    [raw_that] => Array
+        (
+            [1] => Array
+                (
+                    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+                )
+
+            [2] => Array
+                (
+                    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+                )
+
+            [3] => Array
+                (
+                    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+                )
+
+            [4] => Array
+                (
+                    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+                )
+
+            [5] => Array
+                (
+                    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+                )
+
+            [6] => Array
+                (
+                    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+                )
+
+            [7] => Array
+                (
+                    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+                )
+
+            [8] => Array
+                (
+                    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+                )
+
+            [9] => Array
+                (
+                    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+                )
+
+            [10] => Array
+                (
+                    [0] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+                )
+
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL
+                )
+
+            [2] => Array
+                (
+                    [1] => QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL
+                )
+
+            [3] => Array
+                (
+                    [1] => QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL
+                )
+
+            [4] => Array
+                (
+                    [1] => QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL
+                )
+
+            [5] => Array
+                (
+                    [1] => QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL
+                )
+
+            [6] => Array
+                (
+                    [1] => QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL
+                )
+
+            [7] => Array
+                (
+                    [1] => QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL
+                )
+
+            [8] => Array
+                (
+                    [1] => QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL
+                )
+
+            [9] => Array
+                (
+                    [1] => QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL
+                )
+
+            [10] => Array
+                (
+                    [1] => QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL
+                )
+
+            [12] => 
+        )
+
+    [input] => Array
+        (
+            [1] => ASSINAR
+            [2] => ASSINAR
+            [3] => ASSINAR
+            [4] => ASSINAR
+            [5] => ASSINAR
+            [6] => ASSINAR
+            [7] => ASSINAR
+            [8] => ASSINAR
+            [9] => ASSINAR
+            [10] => ASSINAR
+        )
+
+    [time_start] => 1549918217.3316
+    [user_say] => Array
+        (
+            [1] => ASSINAR
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => <div class="usersay">Entrou: ASSINAR</div><div class="botsay">Net Bot: Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?</div>
+)
+
+-----------------------
+Total execution time: 33.176 Milliseconds. Goodbye.

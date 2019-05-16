@@ -1,0 +1,1319 @@
+27-03-2019 17:24:21.55416[0][4] - Elapsed time: 2.401 milliseconds
+[conversation_start.php][Called outside of function][91]
+Conversation starting. Current system specs:
+Program O version:            2.6.11
+Server Software:              Apache
+PHP Version:                  5.6.40
+OS:                           Linux
+OS Version:                   #1 SMP Wed Sep 26 15:12:11 UTC 2018
+MySQL Version:                5.7.25
+Multi-byte functions enabled: true 
+-----------------------
+27-03-2019 17:24:21.55779[4][4] - Elapsed time: 3.634 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+27-03-2019 17:24:21.55911[4][4] - Elapsed time: 1.324 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+27-03-2019 17:24:21.55931[4][4] - Elapsed time: 0.201 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+27-03-2019 17:24:21.56050[4][4] - Elapsed time: 1.183 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+27-03-2019 17:24:21.56052[4][4] - Elapsed time: 0.020 milliseconds
+[conversation_start.php][Called outside of function][104]
+Loaded all Includes 
+-----------------------
+27-03-2019 17:24:21.56070[0][4] - Elapsed time: 0.179 milliseconds
+[conversation_start.php][Called outside of function][159]
+Debug level: 4
+session ID = 55 
+-----------------------
+27-03-2019 17:24:21.56071[4][4] - Elapsed time: 0.013 milliseconds
+[conversation_start.php][Called outside of function][162]
+Conversation continuing. User said 'Oi'. 
+-----------------------
+27-03-2019 17:24:21.56077[4][4] - Elapsed time: 0.059 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+27-03-2019 17:24:21.56078[4][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+27-03-2019 17:24:21.56081[3][4] - Elapsed time: 0.028 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `devncom_ia_golden`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+27-03-2019 17:24:21.56112[4][4] - Elapsed time: 0.314 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: 55 
+-----------------------
+27-03-2019 17:24:21.56115[2][4] - Elapsed time: 0.022 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+27-03-2019 17:24:21.56116[3][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+27-03-2019 17:24:21.56133[2][4] - Elapsed time: 0.173 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+27-03-2019 17:24:21.56135[2][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+27-03-2019 17:24:21.56165[3][4] - Elapsed time: 0.298 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `devncom_ia_golden`.`client_properties` WHERE `user_id` = 518 AND `bot_id` = 1; 
+-----------------------
+27-03-2019 17:24:21.56210[2][4] - Elapsed time: 0.452 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+27-03-2019 17:24:21.56215[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Oi. 
+-----------------------
+27-03-2019 17:24:21.56218[2][4] - Elapsed time: 0.025 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+27-03-2019 17:24:21.56244[4][4] - Elapsed time: 0.261 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Oi' 
+-----------------------
+27-03-2019 17:24:21.56251[4][4] - Elapsed time: 0.073 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'OI' 
+-----------------------
+27-03-2019 17:24:21.56253[2][4] - Elapsed time: 0.014 milliseconds
+[conversation_start.php][Called outside of function][237]
+Details:
+User say: OI
+Convo id: 55
+Bot id: 1
+Format: html 
+-----------------------
+27-03-2019 17:24:21.56254[4][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: html 
+-----------------------
+27-03-2019 17:24:21.56255[2][4] - Elapsed time: 0.010 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+27-03-2019 17:24:21.56257[3][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `devncom_ia_golden`.`conversation_log` WHERE `user_id` = 518 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+27-03-2019 17:24:21.56312[1][4] - Elapsed time: 0.553 milliseconds
+[intialise_conversation.php][load_that][804]
+Inputs returned:Array
+(
+    [0] => Dramática
+    [1] => Oi
+    [2] => Oi
+)
+ 
+-----------------------
+27-03-2019 17:24:21.56314[4][4] - Elapsed time: 0.024 milliseconds
+[intialise_conversation.php][load_that][805]
+Loading previous responses into the ~THAT~ array. 
+-----------------------
+27-03-2019 17:24:21.56316[1][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][load_that][806]
+Responses returned:Array
+(
+    [0] => SEM RESPOSTA
+    [1] => Oi, como posso ser útil?
+    [2] => Oi, como posso ser útil?
+)
+ 
+-----------------------
+27-03-2019 17:24:21.56319[2][4] - Elapsed time: 0.033 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 17:24:21.56321[2][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Oi
+    [1] =>  como posso ser útil
+    [2] => 
+)
+
+ 
+-----------------------
+27-03-2019 17:24:21.56322[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 17:24:21.56323[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Oi como posso ser útil ' 
+-----------------------
+27-03-2019 17:24:21.56324[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Oi como posso ser útil ' 
+-----------------------
+27-03-2019 17:24:21.56325[4][4] - Elapsed time: 0.010 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Oi como posso ser útil ' 
+-----------------------
+27-03-2019 17:24:21.56328[4][4] - Elapsed time: 0.026 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'OI COMO POSSO SER ÚTIL' 
+-----------------------
+27-03-2019 17:24:21.56329[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'OI COMO POSSO SER ÚTIL' 
+-----------------------
+27-03-2019 17:24:21.56330[2][4] - Elapsed time: 0.009 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'OI COMO POSSO SER ÚTIL' to the front of the [that] array 
+-----------------------
+27-03-2019 17:24:21.56332[4][4] - Elapsed time: 0.024 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+27-03-2019 17:24:21.56336[4][4] - Elapsed time: 0.042 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'OI COMO POSSO SER ÚTIL' 
+-----------------------
+27-03-2019 17:24:21.56338[4][4] - Elapsed time: 0.014 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'OI COMO POSSO SER ÚTIL' 
+-----------------------
+27-03-2019 17:24:21.56340[4][4] - Elapsed time: 0.023 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'OI COMO POSSO SER ÚTIL' 
+-----------------------
+27-03-2019 17:24:21.56341[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'OI COMO POSSO SER ÚTIL' 
+-----------------------
+27-03-2019 17:24:21.56344[2][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 17:24:21.56346[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Oi
+    [1] =>  como posso ser útil
+    [2] => 
+)
+
+ 
+-----------------------
+27-03-2019 17:24:21.56347[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 17:24:21.56348[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Oi como posso ser útil ' 
+-----------------------
+27-03-2019 17:24:21.56349[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Oi como posso ser útil ' 
+-----------------------
+27-03-2019 17:24:21.56350[4][4] - Elapsed time: 0.009 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Oi como posso ser útil ' 
+-----------------------
+27-03-2019 17:24:21.56352[4][4] - Elapsed time: 0.024 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'OI COMO POSSO SER ÚTIL' 
+-----------------------
+27-03-2019 17:24:21.56353[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'OI COMO POSSO SER ÚTIL' 
+-----------------------
+27-03-2019 17:24:21.56354[2][4] - Elapsed time: 0.009 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'OI COMO POSSO SER ÚTIL' to the front of the [that] array 
+-----------------------
+27-03-2019 17:24:21.56356[4][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'OI COMO POSSO SER ÚTIL' 
+-----------------------
+27-03-2019 17:24:21.56357[4][4] - Elapsed time: 0.011 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'OI COMO POSSO SER ÚTIL' 
+-----------------------
+27-03-2019 17:24:21.56359[4][4] - Elapsed time: 0.020 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'OI COMO POSSO SER ÚTIL' 
+-----------------------
+27-03-2019 17:24:21.56360[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'OI COMO POSSO SER ÚTIL' 
+-----------------------
+27-03-2019 17:24:21.56362[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 17:24:21.56363[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+27-03-2019 17:24:21.56364[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 17:24:21.56365[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 17:24:21.56366[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 17:24:21.56367[4][4] - Elapsed time: 0.009 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 17:24:21.56369[4][4] - Elapsed time: 0.023 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 17:24:21.56371[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 17:24:21.56372[2][4] - Elapsed time: 0.012 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that] array 
+-----------------------
+27-03-2019 17:24:21.56374[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 17:24:21.56375[4][4] - Elapsed time: 0.014 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 17:24:21.56377[4][4] - Elapsed time: 0.019 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 17:24:21.56378[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+27-03-2019 17:24:21.56380[4][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][load_that][835]
+Loading previous user inputs into the ~INPUT~ array. 
+-----------------------
+27-03-2019 17:24:21.56381[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 17:24:21.56383[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Oi
+)
+
+ 
+-----------------------
+27-03-2019 17:24:21.56384[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 17:24:21.56385[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Oi' 
+-----------------------
+27-03-2019 17:24:21.56393[4][4] - Elapsed time: 0.081 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Oi' 
+-----------------------
+27-03-2019 17:24:21.56395[4][4] - Elapsed time: 0.019 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Oi' 
+-----------------------
+27-03-2019 17:24:21.56397[4][4] - Elapsed time: 0.021 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'OI' 
+-----------------------
+27-03-2019 17:24:21.56398[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'OI' 
+-----------------------
+27-03-2019 17:24:21.56399[2][4] - Elapsed time: 0.011 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'OI' to the front of the [input] array 
+-----------------------
+27-03-2019 17:24:21.56401[4][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+27-03-2019 17:24:21.56403[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 17:24:21.56404[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Oi
+)
+
+ 
+-----------------------
+27-03-2019 17:24:21.56405[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 17:24:21.56407[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Oi' 
+-----------------------
+27-03-2019 17:24:21.56408[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Oi' 
+-----------------------
+27-03-2019 17:24:21.56409[4][4] - Elapsed time: 0.010 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Oi' 
+-----------------------
+27-03-2019 17:24:21.56411[4][4] - Elapsed time: 0.019 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'OI' 
+-----------------------
+27-03-2019 17:24:21.56412[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'OI' 
+-----------------------
+27-03-2019 17:24:21.56413[2][4] - Elapsed time: 0.011 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'OI' to the front of the [input] array 
+-----------------------
+27-03-2019 17:24:21.56415[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 17:24:21.56417[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Dramática
+)
+
+ 
+-----------------------
+27-03-2019 17:24:21.56418[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 17:24:21.56419[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Dramática' 
+-----------------------
+27-03-2019 17:24:21.56420[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Dramática' 
+-----------------------
+27-03-2019 17:24:21.56421[4][4] - Elapsed time: 0.011 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Dramática' 
+-----------------------
+27-03-2019 17:24:21.56424[4][4] - Elapsed time: 0.023 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'DRAMÁTICA' 
+-----------------------
+27-03-2019 17:24:21.56425[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'DRAMÁTICA' 
+-----------------------
+27-03-2019 17:24:21.56426[2][4] - Elapsed time: 0.011 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'DRAMÁTICA' to the front of the [input] array 
+-----------------------
+27-03-2019 17:24:21.56522[2][4] - Elapsed time: 0.955 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+27-03-2019 17:24:21.56524[3][4] - Elapsed time: 0.027 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1; 
+-----------------------
+27-03-2019 17:24:21.56544[4][4] - Elapsed time: 0.199 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+27-03-2019 17:24:21.56547[0][4] - Elapsed time: 0.029 milliseconds
+[conversation_start.php][Called outside of function][257]
+Default debug level = 4 
+-----------------------
+27-03-2019 17:24:21.56568[0][4] - Elapsed time: 0.209 milliseconds
+[conversation_start.php][Called outside of function][259]
+Current debug level = 4 
+-----------------------
+27-03-2019 17:24:21.56570[0][4] - Elapsed time: 0.016 milliseconds
+[conversation_start.php][Called outside of function][272]
+Say = OI: raw say = Oi 
+-----------------------
+27-03-2019 17:24:21.56571[4][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+27-03-2019 17:24:21.56572[2][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'OI' to the front of the [user_say] array 
+-----------------------
+27-03-2019 17:24:21.56574[4][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+27-03-2019 17:24:21.56576[0][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = Oi, RAW say = Oi 
+-----------------------
+27-03-2019 17:24:21.56578[2][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Oi' to the front of the [input] array 
+-----------------------
+27-03-2019 17:24:21.56580[4][4] - Elapsed time: 0.022 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+27-03-2019 17:24:21.56582[4][4] - Elapsed time: 0.013 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'OI' 
+-----------------------
+27-03-2019 17:24:21.56584[4][4] - Elapsed time: 0.026 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'OI' 
+-----------------------
+27-03-2019 17:24:21.56586[4][4] - Elapsed time: 0.015 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+27-03-2019 17:24:21.56631[4][4] - Elapsed time: 0.456 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+27-03-2019 17:24:21.56636[3][4] - Elapsed time: 0.045 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `devncom_ia_golden`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = 55
+    AND (
+        'OI' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR 'SEM RESPOSTA' LIKE (REPLACE(REPLACE(`thatpattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+27-03-2019 17:24:21.56652[2][4] - Elapsed time: 0.160 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+27-03-2019 17:24:21.56654[4][4] - Elapsed time: 0.023 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+27-03-2019 17:24:21.56656[4][4] - Elapsed time: 0.016 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = 1. 
+-----------------------
+27-03-2019 17:24:21.56691[4][4] - Elapsed time: 0.353 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+27-03-2019 17:24:21.56695[3][4] - Elapsed time: 0.039 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `devncom_ia_golden`.`aiml` WHERE
+    bot_id = 1 AND (
+        'OI' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR 'SEM RESPOSTA' LIKE (REPLACE(REPLACE(`thatpattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE 'LINHA DE RECOLHA ALEATÓRIA2'
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+27-03-2019 17:24:21.56865[3][4] - Elapsed time: 1.703 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+27-03-2019 17:24:21.56869[2][4] - Elapsed time: 0.034 milliseconds
+[find_aiml.php][find_aiml_matches][1061]
+FOUND: (2) potential AIML matches 
+-----------------------
+27-03-2019 17:24:21.56906[1][4] - Elapsed time: 0.371 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][35]
+Current THAT = SEM RESPOSTA 
+-----------------------
+27-03-2019 17:24:21.56909[4][4] - Elapsed time: 0.031 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 2 rows to unset bad matches 
+-----------------------
+27-03-2019 17:24:21.56910[4][4] - Elapsed time: 0.015 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][62]
+Blue 5 to Blue leader. Starting my run now! Looking for 'OI' 
+-----------------------
+27-03-2019 17:24:21.56919[4][4] - Elapsed time: 0.084 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][195]
+Found 2 relevant rows 
+-----------------------
+27-03-2019 17:24:21.56921[4][4] - Elapsed time: 0.022 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+27-03-2019 17:24:21.56958[4][4] - Elapsed time: 0.368 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [id] => 3997
+            [bot_id] => 1
+            [pattern] => OI
+            [thatpattern] => 
+            [topic] => 
+            [filename] => cybora_1.aiml
+            [template] => <srai>Oi</srai>
+            [score] => 260
+            [current_that] => sem resposta
+            [aiml_id] => 3997
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), direct pattern match (7 points), direct word match: oi (2 points)
+        )
+
+    [1] => Array
+        (
+            [id] => 4013
+            [bot_id] => 1
+            [pattern] => OI
+            [thatpattern] => 
+            [topic] => 
+            [filename] => cybora_1.aiml
+            [template] => <random>
+                <li>Oi!!!!</li>
+                <li>Ol! Posso ajudar?</li>
+                <li>Oi, qual informação deseja?</li>
+                <li>Oi, qual é o seu nome?</li>
+                <li>Oi, como posso ser útil?</li>
+            </random>
+            [score] => 260
+            [current_that] => sem resposta
+            [aiml_id] => 4013
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), direct pattern match (7 points), direct word match: oi (2 points)
+        )
+
+)
+ 
+-----------------------
+27-03-2019 17:24:21.56965[2][4] - Elapsed time: 0.072 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [id] => 3997
+            [bot_id] => 1
+            [pattern] => OI
+            [thatpattern] => 
+            [topic] => 
+            [filename] => cybora_1.aiml
+            [template] => <srai>Oi</srai>
+            [score] => 260
+            [current_that] => sem resposta
+            [aiml_id] => 3997
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), direct pattern match (7 points), direct word match: oi (2 points)
+        )
+
+    [1] => Array
+        (
+            [id] => 4013
+            [bot_id] => 1
+            [pattern] => OI
+            [thatpattern] => 
+            [topic] => 
+            [filename] => cybora_1.aiml
+            [template] => <random>
+                <li>Oi!!!!</li>
+                <li>Ol! Posso ajudar?</li>
+                <li>Oi, qual informação deseja?</li>
+                <li>Oi, qual é o seu nome?</li>
+                <li>Oi, como posso ser útil?</li>
+            </random>
+            [score] => 260
+            [current_that] => sem resposta
+            [aiml_id] => 4013
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), direct pattern match (7 points), direct word match: oi (2 points)
+        )
+
+)
+
+ 
+-----------------------
+27-03-2019 17:24:21.57025[4][4] - Elapsed time: 0.600 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [id] => 4013
+    [bot_id] => 1
+    [pattern] => OI
+    [thatpattern] => 
+    [topic] => 
+    [filename] => cybora_1.aiml
+    [template] => <random>
+                <li>Oi!!!!</li>
+                <li>Ol! Posso ajudar?</li>
+                <li>Oi, qual informação deseja?</li>
+                <li>Oi, qual é o seu nome?</li>
+                <li>Oi, como posso ser útil?</li>
+            </random>
+    [score] => 260
+    [current_that] => sem resposta
+    [aiml_id] => 4013
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), direct pattern match (7 points), direct word match: oi (2 points)
+)
+ 
+-----------------------
+27-03-2019 17:24:21.57027[2][4] - Elapsed time: 0.022 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+27-03-2019 17:24:21.57035[4][4] - Elapsed time: 0.079 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:4013 (OI) 
+-----------------------
+27-03-2019 17:24:21.57037[3][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+27-03-2019 17:24:21.57038[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = 'OI' 
+-----------------------
+27-03-2019 17:24:21.57040[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+27-03-2019 17:24:21.57041[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+27-03-2019 17:24:21.57044[2][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => 4013
+    [category_id] => 4013
+    [html_template] => 
+    [lookingfor] => OI
+    [pattern] => OI
+    [score] => 260
+    [stars] => Array
+        (
+        )
+
+    [template] => <random>
+                <li>Oi!!!!</li>
+                <li>Ol! Posso ajudar?</li>
+                <li>Oi, qual informação deseja?</li>
+                <li>Oi, qual é o seu nome?</li>
+                <li>Oi, como posso ser útil?</li>
+            </random>
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => Oi
+)
+ 
+-----------------------
+27-03-2019 17:24:21.57046[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+27-03-2019 17:24:21.57048[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+27-03-2019 17:24:21.57052[4][4] - Elapsed time: 0.048 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><random><li><text>Oi!!!!</text></li><li><text>Ol! Posso ajudar?</text></li><li><text>Oi, qual informação deseja?</text></li><li><text>Oi, qual é o seu nome?</text></li><li><text>Oi, como posso ser útil?</text></li></random></template> 
+-----------------------
+27-03-2019 17:24:21.57070[2][4] - Elapsed time: 0.177 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+27-03-2019 17:24:21.57081[4][4] - Elapsed time: 0.108 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><random><li><text>Oi!!!!</text></li><li><text>Ol! Posso ajudar?</text></li><li><text>Oi, qual informa&#xE7;&#xE3;o deseja?</text></li><li><text>Oi, qual &#xE9; o seu nome?</text></li><li><text>Oi, como posso ser &#xFA;til?</text></li></random></template>
+ 
+-----------------------
+27-03-2019 17:24:21.57083[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+27-03-2019 17:24:21.57085[2][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+27-03-2019 17:24:21.57095[4][4] - Elapsed time: 0.093 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element random at level 1. element XML = <random><li><text>Oi!!!!</text></li><li><text>Ol! Posso ajudar?</text></li><li><text>Oi, qual informação deseja?</text></li><li><text>Oi, qual é o seu nome?</text></li><li><text>Oi, como posso ser útil?</text></li></random> 
+-----------------------
+27-03-2019 17:24:21.57097[4][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_random_tag does exist. Processing now. 
+-----------------------
+27-03-2019 17:24:21.57098[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element random to the parse_random_tag function 
+-----------------------
+27-03-2019 17:24:21.57100[2][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][parse_random_tag][496]
+Parsing a RANDOM tag, or doing some stargazing, or fomenting chaos, or... 
+-----------------------
+27-03-2019 17:24:21.57107[4][4] - Elapsed time: 0.079 milliseconds
+[parse_aiml_as_XML.php][parse_random_tag][498]
+Pick array:
+Array
+(
+    [0] => SimpleXMLElement Object
+        (
+            [text] => Oi!!!!
+        )
+
+    [1] => SimpleXMLElement Object
+        (
+            [text] => Ol! Posso ajudar?
+        )
+
+    [2] => SimpleXMLElement Object
+        (
+            [text] => Oi, qual informação deseja?
+        )
+
+    [3] => SimpleXMLElement Object
+        (
+            [text] => Oi, qual é o seu nome?
+        )
+
+    [4] => SimpleXMLElement Object
+        (
+            [text] => Oi, como posso ser útil?
+        )
+
+)
+ 
+-----------------------
+27-03-2019 17:24:21.57109[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][parse_random_tag][500]
+Picking option #2 from random tag.
+ 
+-----------------------
+27-03-2019 17:24:21.57111[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+27-03-2019 17:24:21.57114[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element li at level 2. element XML = <li><text>Oi, qual informação deseja?</text></li> 
+-----------------------
+27-03-2019 17:24:21.57115[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_li_tag does not exist. Parsing tag as text. 
+-----------------------
+27-03-2019 17:24:21.57118[2][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+27-03-2019 17:24:21.57120[4][4] - Elapsed time: 0.026 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 3. element XML = <text>Oi, qual informação deseja?</text> 
+-----------------------
+27-03-2019 17:24:21.57122[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+27-03-2019 17:24:21.57123[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+27-03-2019 17:24:21.57124[2][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+27-03-2019 17:24:21.57126[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'Oi, qual informação deseja?' to the response array. tag name is text 
+-----------------------
+27-03-2019 17:24:21.57127[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 17:24:21.57129[2][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Oi, qual informação deseja?
+)
+
+ 
+-----------------------
+27-03-2019 17:24:21.57130[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 17:24:21.57132[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Oi, qual informação deseja?' 
+-----------------------
+27-03-2019 17:24:21.57133[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'Oi, qual informação deseja?' to the response array. tag name is li. 
+-----------------------
+27-03-2019 17:24:21.57135[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 17:24:21.57136[2][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Oi, qual informação deseja?
+)
+
+ 
+-----------------------
+27-03-2019 17:24:21.57137[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 17:24:21.57139[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Oi, qual informação deseja?' 
+-----------------------
+27-03-2019 17:24:21.57140[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][parse_random_tag][503]
+Chose Random Response of 'Oi, qual informação deseja?' for output. 
+-----------------------
+27-03-2019 17:24:21.57142[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'Oi, qual informação deseja?' to the response array. tag name is random 
+-----------------------
+27-03-2019 17:24:21.57143[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 17:24:21.57145[2][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Oi, qual informação deseja?
+)
+
+ 
+-----------------------
+27-03-2019 17:24:21.57146[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 17:24:21.57147[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Oi, qual informação deseja?' 
+-----------------------
+27-03-2019 17:24:21.57149[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'Oi, qual informação deseja?' to the response array. tag name is template. 
+-----------------------
+27-03-2019 17:24:21.57151[2][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+27-03-2019 17:24:21.57152[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Oi, qual informação deseja?
+)
+
+ 
+-----------------------
+27-03-2019 17:24:21.57154[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+27-03-2019 17:24:21.57155[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Oi, qual informação deseja?' 
+-----------------------
+27-03-2019 17:24:21.57157[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: Oi, qual informação deseja? 
+-----------------------
+27-03-2019 17:24:21.57159[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+27-03-2019 17:24:21.57160[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+27-03-2019 17:24:21.57162[2][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Oi, qual informação deseja?' to the front of the [that_raw] array 
+-----------------------
+27-03-2019 17:24:21.57164[4][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+27-03-2019 17:24:21.57168[2][4] - Elapsed time: 0.037 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Oi, qual informação deseja?' to the front of the [that] array 
+-----------------------
+27-03-2019 17:24:21.57170[4][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Oi, qual informação deseja?' 
+-----------------------
+27-03-2019 17:24:21.57172[4][4] - Elapsed time: 0.017 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Oi, qual informação deseja?' 
+-----------------------
+27-03-2019 17:24:21.57175[4][4] - Elapsed time: 0.034 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'OI QUAL INFORMAÇÃO DESEJA' 
+-----------------------
+27-03-2019 17:24:21.57177[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'OI QUAL INFORMAÇÃO DESEJA' 
+-----------------------
+27-03-2019 17:24:21.57179[2][4] - Elapsed time: 0.024 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Oi, qual informação deseja?' to the front of the [parsed_template] array 
+-----------------------
+27-03-2019 17:24:21.57181[4][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+27-03-2019 17:24:21.57184[2][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '<random>
+                <li>Oi!!!!</li>
+                <li>Ol! Posso ajudar?</li>
+                <li>Oi, qual informação deseja?</li>
+                <li>Oi, qual é o seu nome?</li>
+                <li>Oi, como posso ser útil?</li>
+            </random>' to the front of the [template] array 
+-----------------------
+27-03-2019 17:24:21.57186[4][4] - Elapsed time: 0.022 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+27-03-2019 17:24:21.57193[2][4] - Elapsed time: 0.070 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+27-03-2019 17:24:21.57196[3][4] - Elapsed time: 0.029 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `devncom_ia_golden`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      'Oi',
+      'Oi, qual informação deseja?',
+      518,
+      55,
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+27-03-2019 17:24:21.57759[4][4] - Elapsed time: 5.636 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+27-03-2019 17:24:21.57780[3][4] - Elapsed time: 0.203 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `devncom_ia_golden`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  LIMIT 1 
+-----------------------
+27-03-2019 17:24:21.57799[2][4] - Elapsed time: 0.199 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '1' lines of conversation 
+-----------------------
+27-03-2019 17:24:21.57802[4][4] - Elapsed time: 0.026 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as html 
+-----------------------
+27-03-2019 17:24:21.57805[4][4] - Elapsed time: 0.029 milliseconds
+[display_conversation.php][get_html][135]
+Returning HTML 
+-----------------------
+27-03-2019 17:24:21.57896[2][4] - Elapsed time: 0.908 milliseconds
+[conversation_start.php][Called outside of function][297]
+Closing Database 
+-----------------------
+27-03-2019 17:24:21.57900[0][4] - Elapsed time: 0.046 milliseconds
+[conversation_start.php][Called outside of function][303]
+Conversation Ending. Elapsed time: 27.227 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => Oi
+    [conversation] => Array
+        (
+            [convo_id] => 55
+            [bot_name] => Net Bot
+            [bot_id] => 1
+            [format] => html
+            [unknown_user] => Entrou
+            [user_name] => Entrou
+            [user_id] => 518
+            [totallines] => 1
+            [rawSay] => Oi
+            [conversation_lines] => 1
+            [remember_up_to] => 10
+            [debugemail] => contato@devn1.com.br
+            [debug_level] => 4
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => LINHA DE RECOLHA ALEATÓRIA2
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [id] => 4013
+                    [bot_id] => 1
+                    [pattern] => OI
+                    [thatpattern] => 
+                    [topic] => 
+                    [filename] => cybora_1.aiml
+                    [template] => <random>
+                <li>Oi!!!!</li>
+                <li>Ol! Posso ajudar?</li>
+                <li>Oi, qual informação deseja?</li>
+                <li>Oi, qual é o seu nome?</li>
+                <li>Oi, como posso ser útil?</li>
+            </random>
+                    [score] => 260
+                    [current_that] => sem resposta
+                    [aiml_id] => 4013
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), direct pattern match (7 points), direct word match: oi (2 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => Oi
+            [lookingfor] => OI
+            [category_id] => 4013
+            [pattern] => OI
+            [thatpattern] => 
+            [template] => <random>
+                <li>Oi!!!!</li>
+                <li>Ol! Posso ajudar?</li>
+                <li>Oi, qual informação deseja?</li>
+                <li>Oi, qual é o seu nome?</li>
+                <li>Oi, como posso ser útil?</li>
+            </random>
+            [html_template] => 
+            [topic] => 
+            [score] => 260
+            [aiml_id] => 4013
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => Oi, qual informação deseja?
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 168.194.163.84
+            [name] => Entrou
+        )
+
+    [raw_that] => Array
+        (
+            [1] => Array
+                (
+                    [0] => SEM RESPOSTA
+                )
+
+            [2] => Array
+                (
+                    [0] => Oi, como posso ser útil?
+                )
+
+            [3] => Array
+                (
+                    [0] => Oi, como posso ser útil?
+                )
+
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => OI QUAL INFORMAÇÃO DESEJA
+                )
+
+            [2] => Array
+                (
+                    [1] => SEM RESPOSTA
+                )
+
+            [3] => Array
+                (
+                    [1] => OI COMO POSSO SER ÚTIL
+                )
+
+            [4] => Array
+                (
+                    [1] => OI COMO POSSO SER ÚTIL
+                )
+
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [input] => Array
+        (
+            [1] => Oi
+            [2] => DRAMÁTICA
+            [3] => OI
+            [4] => OI
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [time_start] => 1553718261.5518
+    [user_say] => Array
+        (
+            [1] => OI
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => Oi, qual informação deseja?
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => Oi, qual informação deseja?
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => <random> <li>Oi!!!!</li> <li>Ol! Posso ajudar?</li> <li>Oi, qual informação deseja?</li> <li>Oi, qual é o seu nome?</li> <li>Oi, como posso ser útil?</li> </random>
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => <div class="usersay">Entrou: Oi</div><div class="botsay">Net Bot: Oi, qual informação deseja?</div>
+)
+
+-----------------------
+Total execution time: 27.227 Milliseconds. Goodbye.
