@@ -350,7 +350,7 @@ $mensagemdocliente = $cliente_escreveu;
 $gerarcor = $rand_color = '#' . substr(md5(mt_rand()), 0, 6);
 $telefonecefonec2 = $numerotelefone;
 $telefonecefonec2 = substr($telefonecefonec2, 2);
-
+$millitime = round(microtime(true) * 1000);
 // função remove caractes extras
 function ReformatCSVString($strInput)
 { 
@@ -389,7 +389,7 @@ $conectanumerotelefone = mysqli_query($connchat, $selectnumerotelefone);
 //Verifica se o telefone esta cadastrado
 if (empty($telefonecefoneresultado)){ // Se não estiver cadastrado
 // Insere usuario chatbull_users
-$chatbull_users ="INSERT INTO chatbull_users (name, email, display_name, profile_color) VALUES ('$nomedocliente', '$numerotelefone', '$nomedocliente', '$gerarcor')";
+$chatbull_users ="INSERT INTO chatbull_users (name, email, display_name, profile_color, bot_responsavel) VALUES ('$nomedocliente', '$numerotelefone', '$nomedocliente', '$gerarcor', '$userId')";
 $chatbull_users1 = mysqli_query($connchat, $chatbull_users); 
 $iddousuario = mysqli_insert_id($connchat);
 
@@ -410,21 +410,8 @@ $chatbull_chat_sessions ="INSERT INTO chatbull_chat_sessions (site_id) VALUES ('
 $chatbull_chat_sessions1 = mysqli_query($connchat, $chatbull_chat_sessions);  
 $chatdasessao = mysqli_insert_id($connchat);
 
-// Busca ultimo registro da conversa
-$ultreconv ="SELECT ccm.local_id, ccm.sort_order FROM chatbull_chat_messages as ccm  ORDER BY ccm.sort_order DESC LIMIT 0, 1";
-$ultreconv1 = mysqli_query($connchat, $ultreconv);
-while($rwsconv = mysqli_fetch_assoc($ultreconv1)){
-$ultlocal_id = $rwsconv['local_id'];                // ultimo locaidenviado
-$ultsort_order = $rwsconv['sort_order'];            // ultimo registro da mensagem 
-$ultimlocal_id = substr($ultlocal_id, 3)+1;         // local_id
-$ultimlocal_id = "vwb".$ultimlocal_id;
-$ultimultsort_order = $ultsort_order+1;             // sort_order
-$ultimultsort_order2 = $ultsort_order+2;             // se disser algo
-} 
-
-
 // Registra a mensagem chatbull_chat_messages
-$chatbull_chat_messages ="INSERT INTO chatbull_chat_messages (chat_session_id, sender_id, local_id, sort_order, chat_message, created_at) VALUES ('$chatdasessao', '$iddousuario', '$ultimlocal_id', '$ultimultsort_order', '$mensagemdocliente', '$dataatual')";
+$chatbull_chat_messages ="INSERT INTO chatbull_chat_messages (chat_session_id, sender_id, local_id, sort_order, chat_message, created_at) VALUES ('$chatdasessao', '$iddousuario', '$millitime', '$millitime', '$mensagemdocliente', '$dataatual')";
 $chatbull_chat_messages1 = mysqli_query($connchat, $chatbull_chat_messages); 
 
 // Registra chatbull_chat_users
@@ -434,7 +421,6 @@ $chatbull_chat_users1 = mysqli_query($connchat, $chatbull_chat_users);
 // Registra chatbull_chat_requests
 $chatbull_chat_requests ="INSERT INTO chatbull_chat_requests (chat_session_id, sender_id, requested_to, message) VALUES ('$chatdasessao', '$iddousuario', '1', '$mensagemdocliente')";
 $chatbull_chat_requests1 = mysqli_query($connchat, $chatbull_chat_requests);  
-
 
 // Se pediu pra remover o nome
 if ($botsay == 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' && $contacatacteres >= 7) {
@@ -448,12 +434,8 @@ if ($botsay == 'Seu nome foi removido de nossa lista, desculpe o inconveniente.'
     $sql = "UPDATE chatbull_chat_sessions SET session_status = 'closed' WHERE id = '$chatdasessao'";
     mysqli_query($connchat, $sql); 
     $registramensagem ="INSERT INTO chatbull_chat_messages (chat_session_id, sender_id, local_id, sort_order,message_status, chat_message, created_at) 
-                                                VALUES ('$chatdasessao', '2', '$ultimlocal_id', '$ultimultsort_order2', 'read', '$botsay', '$dataatual')";
+                         VALUES ('$chatdasessao', '2', '$millitime', '$millitime', 'read', '$botsay', '$dataatual')";
     $registramensagem1 = mysqli_query($connchat, $registramensagem); }
-    // confirma que a conversa foi fechada
-    $sql = "UPDATE chatbull_chat_requests SET request_status = 'accepted' WHERE chat_session_id = '$chatdasessao'";
-    mysqli_query($connchat, $sql);
-
 
 } else{ // Se Não encontrar o telefone no registro
 // Busca ultima mensagem enviada
@@ -473,62 +455,31 @@ $dadosdasessao1 = mysqli_query($connchat, $dadosdasessao);
   $dadosdasessaochat_session_id = $rowsbuscaultima2['chat_session_id']; // sessão do chat
   $dadosdasessaosender_id = $rowsbuscaultima2['sender_id'];     // id de quem esta enviando
 }
-
-// Busca ultimo registro da conversa
-$ultreconv ="SELECT ccm.id, ccm.chat_session_id, ccm.local_id, ccm.sort_order FROM chatbull_chat_messages AS ccm ORDER BY ccm.id DESC LIMIT 0, 1";
-$ultreconv1 = mysqli_query($connchat, $ultreconv);
-while($rwsconv = mysqli_fetch_assoc($ultreconv1)){
-$chatdasessao = $rwsconv['chat_session_id'];  // id da solicitação do chat
-$ultlocal_id = $rwsconv['local_id'];                // ultimo locaidenviado
-$ultsort_order = $rwsconv['sort_order'];            // ultimo registro da mensagem 
-$ultimlocal_id = substr($ultlocal_id, 3)+1;         // local_id
-$ultimlocal_id = "vwb".$ultimlocal_id;
-$ultimultsort_order = $ultsort_order+1;             // sort_order
-$ultimultsort_order2 = $ultsort_order+2;             // se disser algo
-} 
+// Atualiza o bot responsavel pelo cliente
+$sql = "UPDATE chatbull_users SET bot_responsavel = '$userId' WHERE id = '$dadosdasessaosender_id'";
+mysqli_query($connchat, $sql);
 
 // Cadastra mensagem na conversa
-$registramensagem ="INSERT INTO chatbull_chat_messages (chat_session_id, sender_id, local_id, sort_order, chat_message, created_at) VALUES ('$chatdasessao', '$dadosdasessaosender_id', '$ultimlocal_id', '$ultimultsort_order', '$mensagemdocliente', '$dataatual')";
+$registramensagem ="INSERT INTO chatbull_chat_messages (chat_session_id, sender_id, local_id, sort_order, chat_message, created_at) VALUES ('$dadosdasessaochat_session_id', '$dadosdasessaosender_id', '$millitime', '$millitime', '$mensagemdocliente', '$dataatual')";
 $registramensagem1 = mysqli_query($connchat, $registramensagem); 
-
-
 
 // Se pediu pra remover o nome
 if ($botsay == 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' && $contacatacteres >= 7) {
+    // Registra usuario na conversa
+    $chatbull_chat_users2 ="INSERT INTO chatbull_chat_users (chat_session_id, user_id, user_role) VALUES ('$dadosdasessaochat_session_id', '1', 'agent')";
+    $chatbull_chat_users3 = mysqli_query($connchat, $chatbull_chat_users2); 
     // Altera o status pra aceito
-   $sql = "UPDATE chatbull_chat_requests SET request_status = 'accepted' WHERE chat_session_id = '$chatdasessao'";
+   $sql = "UPDATE chatbull_chat_requests SET request_status = 'accepted' WHERE chat_session_id = '$dadosdasessaochat_session_id'";
     mysqli_query($connchat, $sql);
     // Fecha a conversa pra não responder
-    $sql = "UPDATE chatbull_chat_sessions SET session_status = 'closed' WHERE id = '$chatdasessao'";
+    $sql = "UPDATE chatbull_chat_sessions SET session_status = 'closed' WHERE id = '$dadosdasessaochat_session_id'";
     mysqli_query($connchat, $sql); 
     $registramensagem ="INSERT INTO chatbull_chat_messages (chat_session_id, sender_id, local_id, sort_order,message_status, chat_message, created_at) 
-                                                VALUES ('$chatdasessao', '2', '$ultimlocal_id', '$ultimultsort_order2', 'read', '$botsay', '$dataatual')";
-    $registramensagem1 = mysqli_query($connchat, $registramensagem); 
-
-}
+                         VALUES ('$dadosdasessaochat_session_id', '2', '$millitime', '$millitime', 'read', '$botsay', '$dataatual')";
+    $registramensagem1 = mysqli_query($connchat, $registramensagem); }
 
 } // finaliza se não tiver mensagem
 
- // Remover da lista de inscritos 
- /*
-if ($botsay == 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' && $contacatacteres >= 7) {
-    $sql2 ="UPDATE mail_lists INNER JOIN subscribers ON subscribers.mail_list_id = mail_lists.id SET subscribers.status = 'unsubscribed' WHERE mail_lists.customer_id = $idcliente AND email Like '%$telefonec'";
- mysqli_query($conn2, $sql2);
-    $sql2 ="UPDATE mail_lists INNER JOIN subscribers ON subscribers.mail_list_id = mail_lists.id SET subscribers.updated_at = '$dataatual' WHERE mail_lists.customer_id = $idcliente AND email Like '%$telefonec'";
- mysqli_query($conn2, $sql2);
-} else { } 
-*/
 
-/*
-$contacatacteres = strlen($convo_id);
-if ($botsay == 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' && $contacatacteres >= 7) {
-    // Altera o status pra aceito
-    $sql = "UPDATE chatbull_chat_requests SET request_status = 'accepted' WHERE id = '$ultchat_session_id'";
-    mysqli_query($connchat, $sql);
-    // Fecha a conversa pra não responder
-    $sql = "UPDATE chatbull_chat_sessions SET session_status = 'closed' WHERE id = '$ultchat_session_id'";
-    mysqli_query($connchat, $sql);
-} else {}
-*/
 
 ?>
