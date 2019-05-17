@@ -9,6 +9,7 @@
                     <!-- <li><a href="<?php echo site_url('c=sites'); ?>" class="<?php echo is_active('sites'); ?>"><i class="fa fa-cogs"></i><span class="title"><?php echo $this->lang->line('sites'); ?></span></a></li> -->
                     <li class="hidden-sm hidden-xs"><a href="<?php echo site_url('c=chat_history'); ?>" class="<?php echo is_active('chat_history'); ?>"><i class="fa fa-history"></i><span class="title"><?php echo $this->lang->line('chat_history'); ?></span></a></li>
                     <li class="hidden-sm hidden-xs"><a href="<?php echo site_url('c=settings'); ?>" class="<?php echo is_active('settings'); ?>"><i class="fa fa-gear"></i><span class="title"><?php echo $this->lang->line('settings'); ?></span></a></li>
+                    <li><a href="<?php echo site_url('c=users'); ?>" class="<?php echo is_active('users'); ?>"><i class="fa fa-user"></i><span class="title">IA (Desenvolvimento)</span></a></li>
                    <!--  <li class="dropdown">
                         <?php
                         $more_active = '';

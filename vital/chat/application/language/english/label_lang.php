@@ -49,6 +49,7 @@ $lang['confirm_delete_request'] = 'Are you sure you want to delete this request 
 
 // title label
 $lang['agents_and_visitors'] = 'Usuarios';
+$lang['inteligencia_artificial'] = 'IA (Desenvolvimento)';
 $lang['tags'] = 'Tags';
 $lang['departments'] = 'Departamentos';
 $lang['settings'] = 'Configurações';
