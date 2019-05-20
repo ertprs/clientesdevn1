@@ -1,0 +1,752 @@
+07-02-2019 13:28:29.63798[0][4] - Elapsed time: 6.254 milliseconds
+[conversation_start.php][Called outside of function][56]
+Conversation starting. Current system specs:
+  King Bot version:            2.6.11
+  Server Software:              Apache
+  PHP Version:                  5.6.40
+  OS:                           Linux
+  OS Version:                   #1 SMP Wed Sep 26 15:12:11 UTC 2018
+  MySQL Version:                5.7.25
+  Multi-byte functions enabled: true 
+-----------------------
+07-02-2019 13:28:29.64984[4][4] - Elapsed time: 11.852 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+07-02-2019 13:28:29.65420[4][4] - Elapsed time: 4.362 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+07-02-2019 13:28:29.65509[4][4] - Elapsed time: 0.892 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+07-02-2019 13:28:29.65845[4][4] - Elapsed time: 3.357 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+07-02-2019 13:28:29.65847[4][4] - Elapsed time: 0.026 milliseconds
+[conversation_start.php][Called outside of function][69]
+Loaded all Includes 
+-----------------------
+07-02-2019 13:28:29.65863[0][4] - Elapsed time: 0.160 milliseconds
+[conversation_start.php][Called outside of function][122]
+Debug level: 4
+session ID = exampleusage_1231232 
+-----------------------
+07-02-2019 13:28:29.65865[4][4] - Elapsed time: 0.013 milliseconds
+[conversation_start.php][Called outside of function][125]
+Conversation continuing. User said 'Oi'. 
+-----------------------
+07-02-2019 13:28:29.65870[4][4] - Elapsed time: 0.053 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+07-02-2019 13:28:29.65871[4][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+07-02-2019 13:28:29.65873[3][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `devncom_net_iaoficial`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+07-02-2019 13:28:29.65931[4][4] - Elapsed time: 0.580 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: exampleusage_1231232 
+-----------------------
+07-02-2019 13:28:29.65933[2][4] - Elapsed time: 0.022 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+07-02-2019 13:28:29.65935[3][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `devncom_net_iaoficial`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+07-02-2019 13:28:29.65960[2][4] - Elapsed time: 0.250 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+07-02-2019 13:28:29.65961[2][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+07-02-2019 13:28:29.65981[2][4] - Elapsed time: 0.191 milliseconds
+[handle_user.php][intisaliseUser][82]
+Initializing user. 
+-----------------------
+07-02-2019 13:28:29.66101[3][4] - Elapsed time: 1.203 milliseconds
+[handle_user.php][intisaliseUser][128]
+intisaliseUser #9 SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, 'Seeker'  , 'exampleusage_1231232'   , 1 , '0'        , '191.177.180.107', 'https://www.devn1.com/clientes/net/ia/gui/jquery/?1&say=what%20is%20your%20name&convo_id=exampleusage_1231232&format=xml'      , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     ); 
+-----------------------
+07-02-2019 13:28:29.66142[3][4] - Elapsed time: 0.414 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `devncom_net_iaoficial`.`client_properties` WHERE `user_id` = 9 AND `bot_id` = 1; 
+-----------------------
+07-02-2019 13:28:29.66160[2][4] - Elapsed time: 0.173 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+07-02-2019 13:28:29.66166[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Oi. 
+-----------------------
+07-02-2019 13:28:29.66170[2][4] - Elapsed time: 0.037 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+07-02-2019 13:28:29.66271[4][4] - Elapsed time: 1.011 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Oi' 
+-----------------------
+07-02-2019 13:28:29.66277[4][4] - Elapsed time: 0.055 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'OI' 
+-----------------------
+07-02-2019 13:28:29.66278[2][4] - Elapsed time: 0.013 milliseconds
+[conversation_start.php][Called outside of function][200]
+Details:
+User say: OI
+Convo id: exampleusage_1231232
+Bot id: 1
+Format: json 
+-----------------------
+07-02-2019 13:28:29.66279[4][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: json 
+-----------------------
+07-02-2019 13:28:29.66280[2][4] - Elapsed time: 0.010 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+07-02-2019 13:28:29.66282[3][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `devncom_net_iaoficial`.`conversation_log` WHERE `user_id` = 9 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+07-02-2019 13:28:29.66370[4][4] - Elapsed time: 0.885 milliseconds
+[intialise_conversation.php][load_that][856]
+Couldn't find any previous inputs or responses. 
+-----------------------
+07-02-2019 13:28:29.66529[2][4] - Elapsed time: 1.587 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+07-02-2019 13:28:29.66531[3][4] - Elapsed time: 0.025 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `devncom_net_iaoficial`.`bots` WHERE bot_id = 1; 
+-----------------------
+07-02-2019 13:28:29.66548[4][4] - Elapsed time: 0.170 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+07-02-2019 13:28:29.66551[0][4] - Elapsed time: 0.023 milliseconds
+[conversation_start.php][Called outside of function][220]
+Default debug level = 4 
+-----------------------
+07-02-2019 13:28:29.66552[0][4] - Elapsed time: 0.011 milliseconds
+[conversation_start.php][Called outside of function][222]
+Current debug level = 4 
+-----------------------
+07-02-2019 13:28:29.66553[0][4] - Elapsed time: 0.009 milliseconds
+[conversation_start.php][Called outside of function][235]
+Say = OI: raw say = Oi 
+-----------------------
+07-02-2019 13:28:29.66554[4][4] - Elapsed time: 0.010 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+07-02-2019 13:28:29.66555[2][4] - Elapsed time: 0.011 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'OI' to the front of the [user_say] array 
+-----------------------
+07-02-2019 13:28:29.66558[4][4] - Elapsed time: 0.027 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+07-02-2019 13:28:29.66563[0][4] - Elapsed time: 0.054 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = Oi, RAW say = Oi 
+-----------------------
+07-02-2019 13:28:29.66564[2][4] - Elapsed time: 0.011 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Oi' to the front of the [input] array 
+-----------------------
+07-02-2019 13:28:29.66565[4][4] - Elapsed time: 0.012 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+07-02-2019 13:28:29.66567[4][4] - Elapsed time: 0.015 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+07-02-2019 13:28:29.66568[4][4] - Elapsed time: 0.011 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'OI' 
+-----------------------
+07-02-2019 13:28:29.66570[4][4] - Elapsed time: 0.022 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'OI' 
+-----------------------
+07-02-2019 13:28:29.66571[4][4] - Elapsed time: 0.010 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+07-02-2019 13:28:29.66585[4][4] - Elapsed time: 0.136 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+07-02-2019 13:28:29.66588[3][4] - Elapsed time: 0.033 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `devncom_net_iaoficial`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = 'exampleusage_1231232'
+    AND (
+        'OI' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+07-02-2019 13:28:29.66629[2][4] - Elapsed time: 0.409 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+07-02-2019 13:28:29.66631[4][4] - Elapsed time: 0.017 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+07-02-2019 13:28:29.66632[4][4] - Elapsed time: 0.010 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = 1. 
+-----------------------
+07-02-2019 13:28:29.66644[4][4] - Elapsed time: 0.125 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+07-02-2019 13:28:29.66647[3][4] - Elapsed time: 0.028 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `devncom_net_iaoficial`.`aiml` WHERE
+    bot_id = 1 AND (
+        'OI' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE 'LINHA DE RECOLHA ALEATÓRIA2'
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+07-02-2019 13:28:29.66683[3][4] - Elapsed time: 0.357 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+07-02-2019 13:28:29.66684[2][4] - Elapsed time: 0.018 milliseconds
+[find_aiml.php][find_aiml_matches][1061]
+FOUND: (2) potential AIML matches 
+-----------------------
+07-02-2019 13:28:29.66700[4][4] - Elapsed time: 0.159 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 2 rows to unset bad matches 
+-----------------------
+07-02-2019 13:28:29.66702[4][4] - Elapsed time: 0.015 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][62]
+Blue 5 to Blue leader. Starting my run now! Looking for 'OI' 
+-----------------------
+07-02-2019 13:28:29.66711[1][4] - Elapsed time: 0.095 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][182]
+Error: FOUND NO AIML matches in DB 
+-----------------------
+07-02-2019 13:28:29.66713[4][4] - Elapsed time: 0.018 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][195]
+Found 1 relevant rows 
+-----------------------
+07-02-2019 13:28:29.66714[4][4] - Elapsed time: 0.012 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+07-02-2019 13:28:29.66728[1][4] - Elapsed time: 0.140 milliseconds
+[find_aiml.php][score_matches][329]
+Found an error trying to identify the chatbot. 
+-----------------------
+07-02-2019 13:28:29.66731[4][4] - Elapsed time: 0.032 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+)
+ 
+-----------------------
+07-02-2019 13:28:29.66733[2][4] - Elapsed time: 0.018 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+)
+
+ 
+-----------------------
+07-02-2019 13:28:29.66780[4][4] - Elapsed time: 0.465 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [id] => -1
+    [aiml_id] => -1
+    [bot_id] => 1
+    [pattern] => no results
+    [thatpattern] => 
+    [topic] => 
+    [template] => Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+    [score] => 0
+    [track_score] => No Match Found!
+)
+ 
+-----------------------
+07-02-2019 13:28:29.66781[2][4] - Elapsed time: 0.015 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+07-02-2019 13:28:29.66790[4][4] - Elapsed time: 0.091 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:-1 (no results) 
+-----------------------
+07-02-2019 13:28:29.66792[3][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+07-02-2019 13:28:29.66793[2][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = 'no results' 
+-----------------------
+07-02-2019 13:28:29.66794[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+07-02-2019 13:28:29.66795[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+07-02-2019 13:28:29.66798[2][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => -1
+    [category_id] => -1
+    [html_template] => 
+    [lookingfor] => OI
+    [pattern] => no results
+    [score] => 0
+    [stars] => Array
+        (
+        )
+
+    [template] => Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => Oi
+)
+ 
+-----------------------
+07-02-2019 13:28:29.66800[2][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+07-02-2019 13:28:29.66801[2][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+07-02-2019 13:28:29.66804[4][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?</text></template> 
+-----------------------
+07-02-2019 13:28:29.66815[2][4] - Elapsed time: 0.112 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+07-02-2019 13:28:29.66822[4][4] - Elapsed time: 0.065 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>Um Momento, Qual o seu CEP para eu fazer uma pr&#xE9; analise de disponibilidade de sinal?</text></template>
+ 
+-----------------------
+07-02-2019 13:28:29.66824[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+07-02-2019 13:28:29.66825[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+07-02-2019 13:28:29.66827[4][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?</text> 
+-----------------------
+07-02-2019 13:28:29.66829[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+07-02-2019 13:28:29.66830[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+07-02-2019 13:28:29.66831[2][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+07-02-2019 13:28:29.66832[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' to the response array. tag name is text 
+-----------------------
+07-02-2019 13:28:29.66833[2][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+07-02-2019 13:28:29.66835[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+)
+
+ 
+-----------------------
+07-02-2019 13:28:29.66836[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+07-02-2019 13:28:29.66837[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' 
+-----------------------
+07-02-2019 13:28:29.66838[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' to the response array. tag name is template. 
+-----------------------
+07-02-2019 13:28:29.66840[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+07-02-2019 13:28:29.66841[2][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+)
+
+ 
+-----------------------
+07-02-2019 13:28:29.66842[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+07-02-2019 13:28:29.66843[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' 
+-----------------------
+07-02-2019 13:28:29.66845[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal? 
+-----------------------
+07-02-2019 13:28:29.66846[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+07-02-2019 13:28:29.66847[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+07-02-2019 13:28:29.66848[2][4] - Elapsed time: 0.010 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' to the front of the [that_raw] array 
+-----------------------
+07-02-2019 13:28:29.66850[4][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+07-02-2019 13:28:29.66854[2][4] - Elapsed time: 0.038 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' to the front of the [that] array 
+-----------------------
+07-02-2019 13:28:29.66856[4][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+07-02-2019 13:28:29.66858[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' 
+-----------------------
+07-02-2019 13:28:29.66860[4][4] - Elapsed time: 0.020 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' 
+-----------------------
+07-02-2019 13:28:29.66865[4][4] - Elapsed time: 0.042 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'UM MOMENTO QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+07-02-2019 13:28:29.66866[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'UM MOMENTO QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL' 
+-----------------------
+07-02-2019 13:28:29.66868[2][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' to the front of the [parsed_template] array 
+-----------------------
+07-02-2019 13:28:29.66885[4][4] - Elapsed time: 0.178 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+07-02-2019 13:28:29.66887[2][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?' to the front of the [template] array 
+-----------------------
+07-02-2019 13:28:29.66890[4][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+07-02-2019 13:28:29.66893[2][4] - Elapsed time: 0.025 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+07-02-2019 13:28:29.66895[3][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `devncom_net_iaoficial`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      'Oi',
+      'Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?',
+      9,
+      'exampleusage_1231232',
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+07-02-2019 13:28:29.66978[4][4] - Elapsed time: 0.832 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+07-02-2019 13:28:29.66992[3][4] - Elapsed time: 0.144 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `devncom_net_iaoficial`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  LIMIT 1 
+-----------------------
+07-02-2019 13:28:29.67007[2][4] - Elapsed time: 0.149 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '1' lines of conversation 
+-----------------------
+07-02-2019 13:28:29.67009[4][4] - Elapsed time: 0.020 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as json 
+-----------------------
+07-02-2019 13:28:29.67011[2][4] - Elapsed time: 0.015 milliseconds
+[display_conversation.php][get_json][150]
+Outputting response as JSON 
+-----------------------
+07-02-2019 13:28:29.67015[4][4] - Elapsed time: 0.048 milliseconds
+[display_conversation.php][get_json][164]
+Returning JSON string: {"convo_id":"exampleusage_1231232","usersay":"Oi","botsay":"Um Momento, Qual o seu CEP para eu fazer uma pr\u00e9 analise de disponibilidade de sinal?","botData":{"convo_id":"exampleusage_1231232","bot_name":"Net Bot","bot_id":"1","format":"json","unknown_user":"Seeker","user_id":"9","totallines":1,"user_name":"Seeker","rawSay":"Oi","conversation_lines":"1","remember_up_to":"10","debugemail":"contato@devn1.com.br","debug_level":"4","debugmode":1,"save_state":"session","default_aiml_pattern":"LINHA DE RECOLHA ALEAT\u00d3RIA2","bot_parent_id":"1","aimlData":{"id":-1,"aiml_id":-1,"bot_id":"1","pattern":"no results","thatpattern":"","topic":"","template":"Um Momento, Qual o seu CEP para eu fazer uma pr\u00e9 analise de disponibilidade de sinal?","score":0,"track_score":"No Match Found!"}}} 
+-----------------------
+07-02-2019 13:28:29.67055[2][4] - Elapsed time: 0.395 milliseconds
+[conversation_start.php][Called outside of function][260]
+Closing Database 
+-----------------------
+07-02-2019 13:28:29.67059[0][4] - Elapsed time: 0.042 milliseconds
+[conversation_start.php][Called outside of function][266]
+Conversation Ending. Elapsed time: 38.837 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => Oi
+    [conversation] => Array
+        (
+            [convo_id] => exampleusage_1231232
+            [bot_name] => Net Bot
+            [bot_id] => 1
+            [format] => json
+            [unknown_user] => Seeker
+            [user_id] => 9
+            [totallines] => 1
+            [user_name] => Seeker
+            [rawSay] => Oi
+            [conversation_lines] => 1
+            [remember_up_to] => 10
+            [debugemail] => contato@devn1.com.br
+            [debug_level] => 4
+            [debugmode] => 1
+            [save_state] => session
+            [default_aiml_pattern] => LINHA DE RECOLHA ALEATÓRIA2
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [id] => -1
+                    [aiml_id] => -1
+                    [bot_id] => 1
+                    [pattern] => no results
+                    [thatpattern] => 
+                    [topic] => 
+                    [template] => Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+                    [score] => 0
+                    [track_score] => No Match Found!
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => Oi
+            [lookingfor] => OI
+            [category_id] => -1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+            [html_template] => 
+            [topic] => 
+            [score] => 0
+            [aiml_id] => -1
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 191.177.180.107
+            [name] => Seeker
+        )
+
+    [time_start] => 1549546109.6317
+    [user_say] => Array
+        (
+            [1] => OI
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [input] => Array
+        (
+            [1] => Oi
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => UM MOMENTO QUAL O SEU CEP PARA EU FAZER UMA PRÉ ANALISE DE DISPONIBILIDADE DE SINAL
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => Um Momento, Qual o seu CEP para eu fazer uma pré analise de disponibilidade de sinal?
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => {"convo_id":"exampleusage_1231232","usersay":"Oi","botsay":"Um Momento, Qual o seu CEP para eu fazer uma pr\u00e9 analise de disponibilidade de sinal?","botData":{"convo_id":"exampleusage_1231232","bot_name":"Net Bot","bot_id":"1","format":"json","unknown_user":"Seeker","user_id":"9","totallines":1,"user_name":"Seeker","rawSay":"Oi","conversation_lines":"1","remember_up_to":"10","debugemail":"contato@devn1.com.br","debug_level":"4","debugmode":1,"save_state":"session","default_aiml_pattern":"LINHA DE RECOLHA ALEAT\u00d3RIA2","bot_parent_id":"1","aimlData":{"id":-1,"aiml_id":-1,"bot_id":"1","pattern":"no results","thatpattern":"","topic":"","template":"Um Momento, Qual o seu CEP para eu fazer uma pr\u00e9 analise de disponibilidade de sinal?","score":0,"track_score":"No Match Found!"}}}
+)
+
+-----------------------
+Total execution time: 38.837 Milliseconds. Goodbye.

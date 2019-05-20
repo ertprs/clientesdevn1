@@ -1,0 +1,1122 @@
+13-04-2019 21:52:32.24335[0][4] - Elapsed time: 0.592 milliseconds
+[conversation_start.php][Called outside of function][91]
+Conversation starting. Current system specs:
+Program O version:            2.6.11
+Server Software:              Apache
+PHP Version:                  5.6.40
+OS:                           Linux
+OS Version:                   #1 SMP Wed Sep 26 15:12:11 UTC 2018
+MySQL Version:                5.7.25
+Multi-byte functions enabled: true 
+-----------------------
+13-04-2019 21:52:32.24347[4][4] - Elapsed time: 0.123 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+13-04-2019 21:52:32.24357[4][4] - Elapsed time: 0.098 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+13-04-2019 21:52:32.24362[4][4] - Elapsed time: 0.051 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+13-04-2019 21:52:32.24387[4][4] - Elapsed time: 0.251 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+13-04-2019 21:52:32.24395[4][4] - Elapsed time: 0.076 milliseconds
+[conversation_start.php][Called outside of function][104]
+Loaded all Includes 
+-----------------------
+13-04-2019 21:52:32.24409[0][4] - Elapsed time: 0.142 milliseconds
+[conversation_start.php][Called outside of function][159]
+Debug level: 4
+session ID = 554188889552 
+-----------------------
+13-04-2019 21:52:32.24410[4][4] - Elapsed time: 0.014 milliseconds
+[conversation_start.php][Called outside of function][162]
+Conversation continuing. User said '[21:26, 13/4/2019] JOAO VITOR: Qual é o valor da entrada na golden do bom retiro hj?
+[21:27, 13/4/2019] JOAO VITOR: Pode colocar 4 nomes na lista?'. 
+-----------------------
+13-04-2019 21:52:32.24414[4][4] - Elapsed time: 0.037 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+13-04-2019 21:52:32.24415[4][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+13-04-2019 21:52:32.24417[3][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `devncom_ia_golden`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+13-04-2019 21:52:32.24436[4][4] - Elapsed time: 0.197 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: 554188889552 
+-----------------------
+13-04-2019 21:52:32.24438[2][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+13-04-2019 21:52:32.24440[3][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+13-04-2019 21:52:32.24457[2][4] - Elapsed time: 0.177 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+13-04-2019 21:52:32.24459[2][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+13-04-2019 21:52:32.24496[2][4] - Elapsed time: 0.370 milliseconds
+[handle_user.php][intisaliseUser][82]
+Initializing user. 
+-----------------------
+13-04-2019 21:52:32.24512[3][4] - Elapsed time: 0.155 milliseconds
+[handle_user.php][intisaliseUser][128]
+intisaliseUser #825 SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, 'Entrou'  , 554188889552   , 1 , '0'        , '35.247.73.214', ''      , 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0)'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     ); 
+-----------------------
+13-04-2019 21:52:32.24523[3][4] - Elapsed time: 0.111 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `devncom_ia_golden`.`client_properties` WHERE `user_id` = 825 AND `bot_id` = 1; 
+-----------------------
+13-04-2019 21:52:32.24585[2][4] - Elapsed time: 0.620 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+13-04-2019 21:52:32.24589[2][4] - Elapsed time: 0.041 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+13-04-2019 21:52:32.24591[2][4] - Elapsed time: 0.022 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+13-04-2019 21:52:32.24607[2][4] - Elapsed time: 0.155 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+13-04-2019 21:52:32.24614[2][4] - Elapsed time: 0.076 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+13-04-2019 21:52:32.24622[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+13-04-2019 21:52:32.24627[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+13-04-2019 21:52:32.24637[2][4] - Elapsed time: 0.096 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 6. 
+-----------------------
+13-04-2019 21:52:32.24646[2][4] - Elapsed time: 0.088 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+13-04-2019 21:52:32.24652[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.24659[2][4] - Elapsed time: 0.075 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+13-04-2019 21:52:32.24667[2][4] - Elapsed time: 0.080 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 3. 
+-----------------------
+13-04-2019 21:52:32.24674[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+13-04-2019 21:52:32.24679[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+13-04-2019 21:52:32.24686[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+13-04-2019 21:52:32.24692[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+13-04-2019 21:52:32.24698[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+13-04-2019 21:52:32.24705[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+13-04-2019 21:52:32.24711[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+13-04-2019 21:52:32.24718[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+13-04-2019 21:52:32.24725[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.24731[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on JOAO. 
+-----------------------
+13-04-2019 21:52:32.24737[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.24744[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on VITOR. 
+-----------------------
+13-04-2019 21:52:32.24751[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+13-04-2019 21:52:32.24758[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.24765[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Qual. 
+-----------------------
+13-04-2019 21:52:32.24773[2][4] - Elapsed time: 0.084 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.24779[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on é. 
+-----------------------
+13-04-2019 21:52:32.24784[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.24790[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on o. 
+-----------------------
+13-04-2019 21:52:32.24795[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.24801[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on valor. 
+-----------------------
+13-04-2019 21:52:32.24807[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.24813[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on da. 
+-----------------------
+13-04-2019 21:52:32.24818[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.24824[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on entrada. 
+-----------------------
+13-04-2019 21:52:32.24831[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.24836[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on na. 
+-----------------------
+13-04-2019 21:52:32.24843[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.24848[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on golden. 
+-----------------------
+13-04-2019 21:52:32.24856[2][4] - Elapsed time: 0.078 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.24863[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on do. 
+-----------------------
+13-04-2019 21:52:32.24867[2][4] - Elapsed time: 0.048 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.24873[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on bom. 
+-----------------------
+13-04-2019 21:52:32.24879[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.24884[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on retiro. 
+-----------------------
+13-04-2019 21:52:32.24891[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.24897[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on hj. 
+-----------------------
+13-04-2019 21:52:32.24902[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ?. 
+-----------------------
+13-04-2019 21:52:32.24908[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+13-04-2019 21:52:32.24914[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+13-04-2019 21:52:32.24919[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+13-04-2019 21:52:32.24926[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+13-04-2019 21:52:32.24932[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+13-04-2019 21:52:32.24938[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+13-04-2019 21:52:32.24948[2][4] - Elapsed time: 0.103 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 7. 
+-----------------------
+13-04-2019 21:52:32.24957[2][4] - Elapsed time: 0.088 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+13-04-2019 21:52:32.24963[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.24969[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+13-04-2019 21:52:32.24976[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 3. 
+-----------------------
+13-04-2019 21:52:32.24983[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+13-04-2019 21:52:32.24989[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+13-04-2019 21:52:32.24995[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+13-04-2019 21:52:32.25001[2][4] - Elapsed time: 0.056 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+13-04-2019 21:52:32.25008[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+13-04-2019 21:52:32.25014[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+13-04-2019 21:52:32.25021[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+13-04-2019 21:52:32.25028[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+13-04-2019 21:52:32.25036[2][4] - Elapsed time: 0.084 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.25042[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on JOAO. 
+-----------------------
+13-04-2019 21:52:32.25050[2][4] - Elapsed time: 0.082 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.25059[2][4] - Elapsed time: 0.084 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on VITOR. 
+-----------------------
+13-04-2019 21:52:32.25069[2][4] - Elapsed time: 0.103 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+13-04-2019 21:52:32.25078[2][4] - Elapsed time: 0.088 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.25088[2][4] - Elapsed time: 0.097 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Pode. 
+-----------------------
+13-04-2019 21:52:32.25099[2][4] - Elapsed time: 0.109 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.25107[2][4] - Elapsed time: 0.082 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on colocar. 
+-----------------------
+13-04-2019 21:52:32.25114[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.25120[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+13-04-2019 21:52:32.25127[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.25132[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on nomes. 
+-----------------------
+13-04-2019 21:52:32.25139[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.25145[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on na. 
+-----------------------
+13-04-2019 21:52:32.25152[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+13-04-2019 21:52:32.25161[2][4] - Elapsed time: 0.094 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on lista. 
+-----------------------
+13-04-2019 21:52:32.25169[2][4] - Elapsed time: 0.078 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ?. 
+-----------------------
+13-04-2019 21:52:32.25176[4][4] - Elapsed time: 0.066 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '[21:26, 13/4/2019] JOAO VITOR: Qual é o valor da entrada na golden do bom retiro hj?
+[21:27, 13/4/2019] JOAO VITOR: Pode colocar 4 nomes na lista?' 
+-----------------------
+13-04-2019 21:52:32.25182[4][4] - Elapsed time: 0.058 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '21 26 13 DIVIDEDBY 4 2019 JOAO VITOR QUAL É O VALOR DA ENTRADA NA GOLDEN DO BOM RETIRO HJ 21 27 13 DIVIDEDBY 4 2019 JOAO VITOR PODE COLOCAR 4 NOMES NA LISTA' 
+-----------------------
+13-04-2019 21:52:32.25183[2][4] - Elapsed time: 0.015 milliseconds
+[conversation_start.php][Called outside of function][237]
+Details:
+User say: 21 26 13 DIVIDEDBY 4 2019 JOAO VITOR QUAL É O VALOR DA ENTRADA NA GOLDEN DO BOM RETIRO HJ 21 27 13 DIVIDEDBY 4 2019 JOAO VITOR PODE COLOCAR 4 NOMES NA LISTA
+Convo id: 554188889552
+Bot id: 1
+Format: html 
+-----------------------
+13-04-2019 21:52:32.25185[4][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: html 
+-----------------------
+13-04-2019 21:52:32.25186[2][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+13-04-2019 21:52:32.25188[3][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `devncom_ia_golden`.`conversation_log` WHERE `user_id` = 825 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+13-04-2019 21:52:32.25962[4][4] - Elapsed time: 7.743 milliseconds
+[intialise_conversation.php][load_that][856]
+Couldn't find any previous inputs or responses. 
+-----------------------
+13-04-2019 21:52:32.26034[2][4] - Elapsed time: 0.721 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+13-04-2019 21:52:32.26038[3][4] - Elapsed time: 0.036 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1; 
+-----------------------
+13-04-2019 21:52:32.26064[4][4] - Elapsed time: 0.264 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+13-04-2019 21:52:32.26070[0][4] - Elapsed time: 0.060 milliseconds
+[conversation_start.php][Called outside of function][257]
+Default debug level = 4 
+-----------------------
+13-04-2019 21:52:32.26072[0][4] - Elapsed time: 0.015 milliseconds
+[conversation_start.php][Called outside of function][259]
+Current debug level = 4 
+-----------------------
+13-04-2019 21:52:32.26073[0][4] - Elapsed time: 0.013 milliseconds
+[conversation_start.php][Called outside of function][272]
+Say = 21 26 13 DIVIDEDBY 4 2019 JOAO VITOR QUAL É O VALOR DA ENTRADA NA GOLDEN DO BOM RETIRO HJ 21 27 13 DIVIDEDBY 4 2019 JOAO VITOR PODE COLOCAR 4 NOMES NA LISTA: raw say = [21:26, 13/4/2019] JOAO VITOR: Qual é o valor da entrada na golden do bom retiro hj?
+[21:27, 13/4/2019] JOAO VITOR: Pode colocar 4 nomes na lista? 
+-----------------------
+13-04-2019 21:52:32.26075[4][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+13-04-2019 21:52:32.26076[2][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '21 26 13 DIVIDEDBY 4 2019 JOAO VITOR QUAL É O VALOR DA ENTRADA NA GOLDEN DO BOM RETIRO HJ 21 27 13 DIVIDEDBY 4 2019 JOAO VITOR PODE COLOCAR 4 NOMES NA LISTA' to the front of the [user_say] array 
+-----------------------
+13-04-2019 21:52:32.26079[4][4] - Elapsed time: 0.025 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+13-04-2019 21:52:32.26081[0][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = [21:26, 13/4/2019] JOAO VITOR: Qual é o valor da entrada na golden do bom retiro hj?
+[21:27, 13/4/2019] JOAO VITOR: Pode colocar 4 nomes na lista?, RAW say = [21:26, 13/4/2019] JOAO VITOR: Qual é o valor da entrada na golden do bom retiro hj?
+[21:27, 13/4/2019] JOAO VITOR: Pode colocar 4 nomes na lista? 
+-----------------------
+13-04-2019 21:52:32.26082[2][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '[21:26, 13/4/2019] JOAO VITOR: Qual é o valor da entrada na golden do bom retiro hj?
+[21:27, 13/4/2019] JOAO VITOR: Pode colocar 4 nomes na lista?' to the front of the [input] array 
+-----------------------
+13-04-2019 21:52:32.26084[4][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+13-04-2019 21:52:32.26086[4][4] - Elapsed time: 0.021 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+13-04-2019 21:52:32.26088[4][4] - Elapsed time: 0.018 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '21 26 13 DIVIDEDBY 4 2019 JOAO VITOR QUAL É O VALOR DA ENTRADA NA GOLDEN DO BOM RETIRO HJ 21 27 13 DIVIDEDBY 4 2019 JOAO VITOR PODE COLOCAR 4 NOMES NA LISTA' 
+-----------------------
+13-04-2019 21:52:32.26093[4][4] - Elapsed time: 0.053 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '21 26 13 DIVIDEDBY 4 2019 JOAO VITOR QUAL É O VALOR DA ENTRADA NA GOLDEN DO BOM RETIRO HJ 21 27 13 DIVIDEDBY 4 2019 JOAO VITOR PODE COLOCAR 4 NOMES NA LISTA' 
+-----------------------
+13-04-2019 21:52:32.26095[4][4] - Elapsed time: 0.016 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+13-04-2019 21:52:32.26201[4][4] - Elapsed time: 1.056 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+13-04-2019 21:52:32.26218[3][4] - Elapsed time: 0.171 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `devncom_ia_golden`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = 554188889552
+    AND (
+        '21 26 13 DIVIDEDBY 4 2019 JOAO VITOR QUAL É O VALOR DA ENTRADA NA GOLDEN DO BOM RETIRO HJ 21 27 13 DIVIDEDBY 4 2019 JOAO VITOR PODE COLOCAR 4 NOMES NA LISTA' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+13-04-2019 21:52:32.26241[2][4] - Elapsed time: 0.229 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+13-04-2019 21:52:32.26243[4][4] - Elapsed time: 0.024 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+13-04-2019 21:52:32.26244[4][4] - Elapsed time: 0.015 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = 1. 
+-----------------------
+13-04-2019 21:52:32.26299[4][4] - Elapsed time: 0.543 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+13-04-2019 21:52:32.26303[3][4] - Elapsed time: 0.045 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `devncom_ia_golden`.`aiml` WHERE
+    bot_id = 1 AND (
+        '21 26 13 DIVIDEDBY 4 2019 JOAO VITOR QUAL É O VALOR DA ENTRADA NA GOLDEN DO BOM RETIRO HJ 21 27 13 DIVIDEDBY 4 2019 JOAO VITOR PODE COLOCAR 4 NOMES NA LISTA' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE 'LINHA DE RECOLHA ALEATÓRIA2'
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+13-04-2019 21:52:32.26323[3][4] - Elapsed time: 0.193 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+13-04-2019 21:52:32.26325[1][4] - Elapsed time: 0.022 milliseconds
+[find_aiml.php][find_aiml_matches][1082]
+Error: FOUND NO AIML matches in DB. 
+-----------------------
+13-04-2019 21:52:32.26327[4][4] - Elapsed time: 0.019 milliseconds
+[find_aiml.php][get_convo_var][727]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] 
+-----------------------
+13-04-2019 21:52:32.26329[4][4] - Elapsed time: 0.019 milliseconds
+[find_aiml.php][get_convo_var][757]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] FOUND: ConvoArr Value = 'LINHA DE RECOLHA ALEATÓRIA2' 
+-----------------------
+13-04-2019 21:52:32.26354[2][4] - Elapsed time: 0.253 milliseconds
+[misc_functions.php][addUnknownInput][232]
+Entry successfully added! 
+-----------------------
+13-04-2019 21:52:32.26356[1][4] - Elapsed time: 0.022 milliseconds
+[find_aiml.php][find_aiml_matches][1084]
+Added input '21 26 13 DIVIDEDBY 4 2019 JOAO VITOR QUAL É O VALOR DA ENTRADA NA GOLDEN DO BOM RETIRO HJ 21 27 13 DIVIDEDBY 4 2019 JOAO VITOR PODE COLOCAR 4 NOMES NA LISTA' to the unknown_inputs table. 
+-----------------------
+13-04-2019 21:52:32.26425[4][4] - Elapsed time: 0.693 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 1 rows to unset bad matches 
+-----------------------
+13-04-2019 21:52:32.26429[1][4] - Elapsed time: 0.032 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][56]
+Returning error as no results where found 
+-----------------------
+13-04-2019 21:52:32.26431[4][4] - Elapsed time: 0.027 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+13-04-2019 21:52:32.26515[4][4] - Elapsed time: 0.838 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+ 
+-----------------------
+13-04-2019 21:52:32.26519[2][4] - Elapsed time: 0.035 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+
+ 
+-----------------------
+13-04-2019 21:52:32.26548[4][4] - Elapsed time: 0.294 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [aiml_id] => -1
+    [bot_id] => 1
+    [pattern] => no results
+    [thatpattern] => 
+    [template] => SEM RESPOSTA
+    [topic] => 
+    [score] => 261
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+)
+ 
+-----------------------
+13-04-2019 21:52:32.26550[2][4] - Elapsed time: 0.017 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+13-04-2019 21:52:32.26558[4][4] - Elapsed time: 0.085 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:-1 (no results) 
+-----------------------
+13-04-2019 21:52:32.26560[3][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+13-04-2019 21:52:32.26562[2][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = 'no results' 
+-----------------------
+13-04-2019 21:52:32.26564[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+13-04-2019 21:52:32.26565[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+13-04-2019 21:52:32.26569[2][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => -1
+    [html_template] => 
+    [lookingfor] => 21 26 13 DIVIDEDBY 4 2019 JOAO VITOR QUAL É O VALOR DA ENTRADA NA GOLDEN DO BOM RETIRO HJ 21 27 13 DIVIDEDBY 4 2019 JOAO VITOR PODE COLOCAR 4 NOMES NA LISTA
+    [pattern] => no results
+    [score] => 261
+    [stars] => Array
+        (
+        )
+
+    [template] => SEM RESPOSTA
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => [21:26, 13/4/2019] JOAO VITOR: Qual é o valor da entrada na golden do bom retiro hj?
+[21:27, 13/4/2019] JOAO VITOR: Pode colocar 4 nomes na lista?
+)
+ 
+-----------------------
+13-04-2019 21:52:32.26570[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+13-04-2019 21:52:32.26572[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+13-04-2019 21:52:32.26574[4][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>SEM RESPOSTA</text></template> 
+-----------------------
+13-04-2019 21:52:32.26578[2][4] - Elapsed time: 0.038 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+13-04-2019 21:52:32.26581[4][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>SEM RESPOSTA</text></template>
+ 
+-----------------------
+13-04-2019 21:52:32.26583[4][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+13-04-2019 21:52:32.26585[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+13-04-2019 21:52:32.26587[4][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>SEM RESPOSTA</text> 
+-----------------------
+13-04-2019 21:52:32.26589[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+13-04-2019 21:52:32.26590[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+13-04-2019 21:52:32.26591[2][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+13-04-2019 21:52:32.26593[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'SEM RESPOSTA' to the response array. tag name is text 
+-----------------------
+13-04-2019 21:52:32.26594[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+13-04-2019 21:52:32.26596[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+13-04-2019 21:52:32.26597[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+13-04-2019 21:52:32.26599[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+13-04-2019 21:52:32.26600[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'SEM RESPOSTA' to the response array. tag name is template. 
+-----------------------
+13-04-2019 21:52:32.26602[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+13-04-2019 21:52:32.26603[2][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+13-04-2019 21:52:32.26605[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+13-04-2019 21:52:32.26606[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+13-04-2019 21:52:32.26609[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: SEM RESPOSTA 
+-----------------------
+13-04-2019 21:52:32.26611[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+13-04-2019 21:52:32.26613[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+13-04-2019 21:52:32.26614[2][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that_raw] array 
+-----------------------
+13-04-2019 21:52:32.26616[4][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+13-04-2019 21:52:32.26620[2][4] - Elapsed time: 0.035 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that] array 
+-----------------------
+13-04-2019 21:52:32.26621[4][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+13-04-2019 21:52:32.26624[4][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+13-04-2019 21:52:32.26625[4][4] - Elapsed time: 0.016 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+13-04-2019 21:52:32.26629[4][4] - Elapsed time: 0.034 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+13-04-2019 21:52:32.26631[4][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+13-04-2019 21:52:32.26634[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [parsed_template] array 
+-----------------------
+13-04-2019 21:52:32.26636[4][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+13-04-2019 21:52:32.26638[2][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [template] array 
+-----------------------
+13-04-2019 21:52:32.26639[4][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+13-04-2019 21:52:32.26642[2][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+13-04-2019 21:52:32.26644[3][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `devncom_ia_golden`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      '[21:26, 13/4/2019] JOAO VITOR: Qual é o valor da entrada na golden do bom retiro hj?
+[21:27, 13/4/2019] JOAO VITOR: Pode colocar 4 nomes na lista?',
+      'SEM RESPOSTA',
+      825,
+      554188889552,
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+13-04-2019 21:52:32.27408[4][4] - Elapsed time: 7.636 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+13-04-2019 21:52:32.27427[3][4] - Elapsed time: 0.187 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `devncom_ia_golden`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  LIMIT 1 
+-----------------------
+13-04-2019 21:52:32.27450[2][4] - Elapsed time: 0.236 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '1' lines of conversation 
+-----------------------
+13-04-2019 21:52:32.27454[4][4] - Elapsed time: 0.037 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as html 
+-----------------------
+13-04-2019 21:52:32.27457[4][4] - Elapsed time: 0.036 milliseconds
+[display_conversation.php][get_html][135]
+Returning HTML 
+-----------------------
+13-04-2019 21:52:32.27558[2][4] - Elapsed time: 1.005 milliseconds
+[conversation_start.php][Called outside of function][297]
+Closing Database 
+-----------------------
+13-04-2019 21:52:32.27564[0][4] - Elapsed time: 0.056 milliseconds
+[conversation_start.php][Called outside of function][303]
+Conversation Ending. Elapsed time: 32.861 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => [21:26, 13/4/2019] JOAO VITOR: Qual é o valor da entrada na golden do bom retiro hj?
+[21:27, 13/4/2019] JOAO VITOR: Pode colocar 4 nomes na lista?
+    [conversation] => Array
+        (
+            [convo_id] => 554188889552
+            [bot_name] => Net Bot
+            [bot_id] => 1
+            [format] => html
+            [unknown_user] => Entrou
+            [user_id] => 825
+            [totallines] => 1
+            [user_name] => Entrou
+            [rawSay] => [21:26, 13/4/2019] JOAO VITOR: Qual é o valor da entrada na golden do bom retiro hj?
+[21:27, 13/4/2019] JOAO VITOR: Pode colocar 4 nomes na lista?
+            [conversation_lines] => 1
+            [remember_up_to] => 10
+            [debugemail] => contato@devn1.com.br
+            [debug_level] => 4
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => LINHA DE RECOLHA ALEATÓRIA2
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [aiml_id] => -1
+                    [bot_id] => 1
+                    [pattern] => no results
+                    [thatpattern] => 
+                    [template] => SEM RESPOSTA
+                    [topic] => 
+                    [score] => 261
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => [21:26, 13/4/2019] JOAO VITOR: Qual é o valor da entrada na golden do bom retiro hj?
+[21:27, 13/4/2019] JOAO VITOR: Pode colocar 4 nomes na lista?
+            [lookingfor] => 21 26 13 DIVIDEDBY 4 2019 JOAO VITOR QUAL É O VALOR DA ENTRADA NA GOLDEN DO BOM RETIRO HJ 21 27 13 DIVIDEDBY 4 2019 JOAO VITOR PODE COLOCAR 4 NOMES NA LISTA
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [html_template] => 
+            [topic] => 
+            [score] => 261
+            [aiml_id] => -1
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => SEM RESPOSTA
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 35.247.73.214
+            [name] => Entrou
+        )
+
+    [time_start] => 1555203152.2428
+    [user_say] => Array
+        (
+            [1] => 21 26 13 DIVIDEDBY 4 2019 JOAO VITOR QUAL É O VALOR DA ENTRADA NA GOLDEN DO BOM RETIRO HJ 21 27 13 DIVIDEDBY 4 2019 JOAO VITOR PODE COLOCAR 4 NOMES NA LISTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [input] => Array
+        (
+            [1] => [21:26, 13/4/2019] JOAO VITOR: Qual é o valor da entrada na golden do bom retiro hj?
+[21:27, 13/4/2019] JOAO VITOR: Pode colocar 4 nomes na lista?
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => <div class="usersay">Entrou: [21:26, 13/4/2019] JOAO VITOR: Qual é o valor da entrada na golden do bom retiro hj?
+[21:27, 13/4/2019] JOAO VITOR: Pode colocar 4 nomes na lista?</div><div class="botsay">Net Bot: SEM RESPOSTA</div>
+)
+
+-----------------------
+Total execution time: 32.861 Milliseconds. Goodbye.

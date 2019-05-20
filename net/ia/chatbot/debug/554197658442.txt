@@ -1,0 +1,876 @@
+15-04-2019 21:07:40.44376[0][4] - Elapsed time: 1.647 milliseconds
+[conversation_start.php][Called outside of function][91]
+Conversation starting. Current system specs:
+Program O version:            2.6.11
+Server Software:              Apache
+PHP Version:                  5.6.40
+OS:                           Linux
+OS Version:                   #1 SMP Wed Sep 26 15:12:11 UTC 2018
+MySQL Version:                5.7.25
+Multi-byte functions enabled: true 
+-----------------------
+15-04-2019 21:07:40.44418[4][4] - Elapsed time: 0.425 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+15-04-2019 21:07:40.44442[4][4] - Elapsed time: 0.242 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+15-04-2019 21:07:40.44449[4][4] - Elapsed time: 0.065 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+15-04-2019 21:07:40.44494[4][4] - Elapsed time: 0.453 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+15-04-2019 21:07:40.44496[4][4] - Elapsed time: 0.014 milliseconds
+[conversation_start.php][Called outside of function][104]
+Loaded all Includes 
+-----------------------
+15-04-2019 21:07:40.44513[0][4] - Elapsed time: 0.178 milliseconds
+[conversation_start.php][Called outside of function][159]
+Debug level: 4
+session ID = 554197658442 
+-----------------------
+15-04-2019 21:07:40.44514[4][4] - Elapsed time: 0.012 milliseconds
+[conversation_start.php][Called outside of function][162]
+Conversation continuing. User said 'Boa noite queria saber oq vai ter sábado q quero comemorar um aniversário ai'. 
+-----------------------
+15-04-2019 21:07:40.44519[4][4] - Elapsed time: 0.048 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+15-04-2019 21:07:40.44521[4][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+15-04-2019 21:07:40.44523[3][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `devncom_ia_golden`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+15-04-2019 21:07:40.44545[4][4] - Elapsed time: 0.225 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: 554197658442 
+-----------------------
+15-04-2019 21:07:40.44547[2][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+15-04-2019 21:07:40.44549[3][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+15-04-2019 21:07:40.44564[2][4] - Elapsed time: 0.149 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+15-04-2019 21:07:40.44566[2][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+15-04-2019 21:07:40.44636[2][4] - Elapsed time: 0.702 milliseconds
+[handle_user.php][intisaliseUser][82]
+Initializing user. 
+-----------------------
+15-04-2019 21:07:40.44672[3][4] - Elapsed time: 0.364 milliseconds
+[handle_user.php][intisaliseUser][128]
+intisaliseUser #866 SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, 'Entrou'  , 554197658442   , 1 , '0'        , '35.227.32.113', ''      , 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0)'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     ); 
+-----------------------
+15-04-2019 21:07:40.44702[3][4] - Elapsed time: 0.299 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `devncom_ia_golden`.`client_properties` WHERE `user_id` = 866 AND `bot_id` = 1; 
+-----------------------
+15-04-2019 21:07:40.44762[2][4] - Elapsed time: 0.595 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+15-04-2019 21:07:40.44769[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Boa. 
+-----------------------
+15-04-2019 21:07:40.44772[2][4] - Elapsed time: 0.030 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+15-04-2019 21:07:40.44793[2][4] - Elapsed time: 0.210 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+15-04-2019 21:07:40.44799[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on noite. 
+-----------------------
+15-04-2019 21:07:40.44805[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+15-04-2019 21:07:40.44810[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on queria. 
+-----------------------
+15-04-2019 21:07:40.44816[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+15-04-2019 21:07:40.44821[2][4] - Elapsed time: 0.051 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on saber. 
+-----------------------
+15-04-2019 21:07:40.44829[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+15-04-2019 21:07:40.44834[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on oq. 
+-----------------------
+15-04-2019 21:07:40.44840[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+15-04-2019 21:07:40.44845[2][4] - Elapsed time: 0.051 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on vai. 
+-----------------------
+15-04-2019 21:07:40.44850[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+15-04-2019 21:07:40.44855[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ter. 
+-----------------------
+15-04-2019 21:07:40.44861[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+15-04-2019 21:07:40.44866[2][4] - Elapsed time: 0.051 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on sábado. 
+-----------------------
+15-04-2019 21:07:40.44874[2][4] - Elapsed time: 0.083 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+15-04-2019 21:07:40.44879[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on q. 
+-----------------------
+15-04-2019 21:07:40.44884[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+15-04-2019 21:07:40.44890[2][4] - Elapsed time: 0.051 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on quero. 
+-----------------------
+15-04-2019 21:07:40.44896[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+15-04-2019 21:07:40.44901[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on comemorar. 
+-----------------------
+15-04-2019 21:07:40.44907[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+15-04-2019 21:07:40.44912[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on um. 
+-----------------------
+15-04-2019 21:07:40.44918[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+15-04-2019 21:07:40.44923[2][4] - Elapsed time: 0.051 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on aniversário. 
+-----------------------
+15-04-2019 21:07:40.44930[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+15-04-2019 21:07:40.44935[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ai. 
+-----------------------
+15-04-2019 21:07:40.44941[4][4] - Elapsed time: 0.060 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Boa noite queria saber oq vai ter sábado q quero comemorar um aniversário ai' 
+-----------------------
+15-04-2019 21:07:40.44949[4][4] - Elapsed time: 0.084 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'BOA NOITE QUERIA SABER OQ VAI TER SÁBADO Q QUERO COMEMORAR UM ANIVERSÁRIO AI' 
+-----------------------
+15-04-2019 21:07:40.44951[2][4] - Elapsed time: 0.014 milliseconds
+[conversation_start.php][Called outside of function][237]
+Details:
+User say: BOA NOITE QUERIA SABER OQ VAI TER SÁBADO Q QUERO COMEMORAR UM ANIVERSÁRIO AI
+Convo id: 554197658442
+Bot id: 1
+Format: html 
+-----------------------
+15-04-2019 21:07:40.44954[4][4] - Elapsed time: 0.034 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: html 
+-----------------------
+15-04-2019 21:07:40.44956[2][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+15-04-2019 21:07:40.44957[3][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `devncom_ia_golden`.`conversation_log` WHERE `user_id` = 866 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+15-04-2019 21:07:40.48366[4][4] - Elapsed time: 34.083 milliseconds
+[intialise_conversation.php][load_that][856]
+Couldn't find any previous inputs or responses. 
+-----------------------
+15-04-2019 21:07:40.48482[2][4] - Elapsed time: 1.169 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+15-04-2019 21:07:40.48488[3][4] - Elapsed time: 0.052 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1; 
+-----------------------
+15-04-2019 21:07:40.48518[4][4] - Elapsed time: 0.307 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+15-04-2019 21:07:40.48523[0][4] - Elapsed time: 0.045 milliseconds
+[conversation_start.php][Called outside of function][257]
+Default debug level = 4 
+-----------------------
+15-04-2019 21:07:40.48524[0][4] - Elapsed time: 0.013 milliseconds
+[conversation_start.php][Called outside of function][259]
+Current debug level = 4 
+-----------------------
+15-04-2019 21:07:40.48528[0][4] - Elapsed time: 0.033 milliseconds
+[conversation_start.php][Called outside of function][272]
+Say = BOA NOITE QUERIA SABER OQ VAI TER SÁBADO Q QUERO COMEMORAR UM ANIVERSÁRIO AI: raw say = Boa noite queria saber oq vai ter sábado q quero comemorar um aniversário ai 
+-----------------------
+15-04-2019 21:07:40.48529[4][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+15-04-2019 21:07:40.48530[2][4] - Elapsed time: 0.011 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'BOA NOITE QUERIA SABER OQ VAI TER SÁBADO Q QUERO COMEMORAR UM ANIVERSÁRIO AI' to the front of the [user_say] array 
+-----------------------
+15-04-2019 21:07:40.48534[4][4] - Elapsed time: 0.039 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+15-04-2019 21:07:40.48538[0][4] - Elapsed time: 0.042 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = Boa noite queria saber oq vai ter sábado q quero comemorar um aniversário ai, RAW say = Boa noite queria saber oq vai ter sábado q quero comemorar um aniversário ai 
+-----------------------
+15-04-2019 21:07:40.48539[2][4] - Elapsed time: 0.012 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Boa noite queria saber oq vai ter sábado q quero comemorar um aniversário ai' to the front of the [input] array 
+-----------------------
+15-04-2019 21:07:40.48541[4][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+15-04-2019 21:07:40.48543[4][4] - Elapsed time: 0.017 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+15-04-2019 21:07:40.48544[4][4] - Elapsed time: 0.012 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'BOA NOITE QUERIA SABER OQ VAI TER SÁBADO Q QUERO COMEMORAR UM ANIVERSÁRIO AI' 
+-----------------------
+15-04-2019 21:07:40.48548[4][4] - Elapsed time: 0.038 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'BOA NOITE QUERIA SABER OQ VAI TER SÁBADO Q QUERO COMEMORAR UM ANIVERSÁRIO AI' 
+-----------------------
+15-04-2019 21:07:40.48549[4][4] - Elapsed time: 0.014 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+15-04-2019 21:07:40.48605[4][4] - Elapsed time: 0.563 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+15-04-2019 21:07:40.48610[3][4] - Elapsed time: 0.044 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `devncom_ia_golden`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = 554197658442
+    AND (
+        'BOA NOITE QUERIA SABER OQ VAI TER SÁBADO Q QUERO COMEMORAR UM ANIVERSÁRIO AI' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+15-04-2019 21:07:40.48627[2][4] - Elapsed time: 0.169 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+15-04-2019 21:07:40.48630[4][4] - Elapsed time: 0.039 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+15-04-2019 21:07:40.48632[4][4] - Elapsed time: 0.018 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = 1. 
+-----------------------
+15-04-2019 21:07:40.48689[4][4] - Elapsed time: 0.565 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+15-04-2019 21:07:40.48696[3][4] - Elapsed time: 0.072 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `devncom_ia_golden`.`aiml` WHERE
+    bot_id = 1 AND (
+        'BOA NOITE QUERIA SABER OQ VAI TER SÁBADO Q QUERO COMEMORAR UM ANIVERSÁRIO AI' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE 'LINHA DE RECOLHA ALEATÓRIA2'
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+15-04-2019 21:07:40.48715[3][4] - Elapsed time: 0.191 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+15-04-2019 21:07:40.48717[1][4] - Elapsed time: 0.019 milliseconds
+[find_aiml.php][find_aiml_matches][1082]
+Error: FOUND NO AIML matches in DB. 
+-----------------------
+15-04-2019 21:07:40.48719[4][4] - Elapsed time: 0.015 milliseconds
+[find_aiml.php][get_convo_var][727]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] 
+-----------------------
+15-04-2019 21:07:40.48720[4][4] - Elapsed time: 0.018 milliseconds
+[find_aiml.php][get_convo_var][757]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] FOUND: ConvoArr Value = 'LINHA DE RECOLHA ALEATÓRIA2' 
+-----------------------
+15-04-2019 21:07:40.48740[2][4] - Elapsed time: 0.198 milliseconds
+[misc_functions.php][addUnknownInput][232]
+Entry successfully added! 
+-----------------------
+15-04-2019 21:07:40.48743[1][4] - Elapsed time: 0.024 milliseconds
+[find_aiml.php][find_aiml_matches][1084]
+Added input 'BOA NOITE QUERIA SABER OQ VAI TER SÁBADO Q QUERO COMEMORAR UM ANIVERSÁRIO AI' to the unknown_inputs table. 
+-----------------------
+15-04-2019 21:07:40.48803[4][4] - Elapsed time: 0.601 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 1 rows to unset bad matches 
+-----------------------
+15-04-2019 21:07:40.48805[1][4] - Elapsed time: 0.024 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][56]
+Returning error as no results where found 
+-----------------------
+15-04-2019 21:07:40.48807[4][4] - Elapsed time: 0.016 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+15-04-2019 21:07:40.48907[4][4] - Elapsed time: 1.008 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+ 
+-----------------------
+15-04-2019 21:07:40.48913[2][4] - Elapsed time: 0.058 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+
+ 
+-----------------------
+15-04-2019 21:07:40.48975[4][4] - Elapsed time: 0.622 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [aiml_id] => -1
+    [bot_id] => 1
+    [pattern] => no results
+    [thatpattern] => 
+    [template] => SEM RESPOSTA
+    [topic] => 
+    [score] => 261
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+)
+ 
+-----------------------
+15-04-2019 21:07:40.48978[2][4] - Elapsed time: 0.029 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+15-04-2019 21:07:40.48990[4][4] - Elapsed time: 0.117 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:-1 (no results) 
+-----------------------
+15-04-2019 21:07:40.48993[3][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+15-04-2019 21:07:40.48997[2][4] - Elapsed time: 0.046 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = 'no results' 
+-----------------------
+15-04-2019 21:07:40.49000[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+15-04-2019 21:07:40.49003[4][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+15-04-2019 21:07:40.49007[2][4] - Elapsed time: 0.048 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => -1
+    [html_template] => 
+    [lookingfor] => BOA NOITE QUERIA SABER OQ VAI TER SÁBADO Q QUERO COMEMORAR UM ANIVERSÁRIO AI
+    [pattern] => no results
+    [score] => 261
+    [stars] => Array
+        (
+        )
+
+    [template] => SEM RESPOSTA
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => Boa noite queria saber oq vai ter sábado q quero comemorar um aniversário ai
+)
+ 
+-----------------------
+15-04-2019 21:07:40.49010[2][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+15-04-2019 21:07:40.49012[2][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+15-04-2019 21:07:40.49019[4][4] - Elapsed time: 0.064 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>SEM RESPOSTA</text></template> 
+-----------------------
+15-04-2019 21:07:40.49042[2][4] - Elapsed time: 0.228 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+15-04-2019 21:07:40.49051[4][4] - Elapsed time: 0.091 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>SEM RESPOSTA</text></template>
+ 
+-----------------------
+15-04-2019 21:07:40.49056[4][4] - Elapsed time: 0.053 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+15-04-2019 21:07:40.49058[2][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+15-04-2019 21:07:40.49061[4][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>SEM RESPOSTA</text> 
+-----------------------
+15-04-2019 21:07:40.49063[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+15-04-2019 21:07:40.49064[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+15-04-2019 21:07:40.49065[2][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+15-04-2019 21:07:40.49066[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'SEM RESPOSTA' to the response array. tag name is text 
+-----------------------
+15-04-2019 21:07:40.49067[2][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+15-04-2019 21:07:40.49069[2][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+15-04-2019 21:07:40.49070[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+15-04-2019 21:07:40.49072[4][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+15-04-2019 21:07:40.49074[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'SEM RESPOSTA' to the response array. tag name is template. 
+-----------------------
+15-04-2019 21:07:40.49077[2][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+15-04-2019 21:07:40.49078[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+15-04-2019 21:07:40.49080[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+15-04-2019 21:07:40.49082[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+15-04-2019 21:07:40.49084[4][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: SEM RESPOSTA 
+-----------------------
+15-04-2019 21:07:40.49089[4][4] - Elapsed time: 0.040 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+15-04-2019 21:07:40.49090[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+15-04-2019 21:07:40.49092[2][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that_raw] array 
+-----------------------
+15-04-2019 21:07:40.49096[4][4] - Elapsed time: 0.032 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+15-04-2019 21:07:40.49104[2][4] - Elapsed time: 0.089 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that] array 
+-----------------------
+15-04-2019 21:07:40.49107[4][4] - Elapsed time: 0.029 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+15-04-2019 21:07:40.49111[4][4] - Elapsed time: 0.036 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+15-04-2019 21:07:40.49114[4][4] - Elapsed time: 0.027 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+15-04-2019 21:07:40.49118[4][4] - Elapsed time: 0.044 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+15-04-2019 21:07:40.49120[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+15-04-2019 21:07:40.49124[2][4] - Elapsed time: 0.034 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [parsed_template] array 
+-----------------------
+15-04-2019 21:07:40.49129[4][4] - Elapsed time: 0.051 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+15-04-2019 21:07:40.49132[2][4] - Elapsed time: 0.032 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [template] array 
+-----------------------
+15-04-2019 21:07:40.49134[4][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+15-04-2019 21:07:40.49138[2][4] - Elapsed time: 0.041 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+15-04-2019 21:07:40.49143[3][4] - Elapsed time: 0.042 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `devncom_ia_golden`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      'Boa noite queria saber oq vai ter sábado q quero comemorar um aniversário ai',
+      'SEM RESPOSTA',
+      866,
+      554197658442,
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+15-04-2019 21:07:40.49929[4][4] - Elapsed time: 7.865 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+15-04-2019 21:07:40.49952[3][4] - Elapsed time: 0.231 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `devncom_ia_golden`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  LIMIT 1 
+-----------------------
+15-04-2019 21:07:40.49971[2][4] - Elapsed time: 0.190 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '1' lines of conversation 
+-----------------------
+15-04-2019 21:07:40.49974[4][4] - Elapsed time: 0.022 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as html 
+-----------------------
+15-04-2019 21:07:40.49976[4][4] - Elapsed time: 0.028 milliseconds
+[display_conversation.php][get_html][135]
+Returning HTML 
+-----------------------
+15-04-2019 21:07:40.50079[2][4] - Elapsed time: 1.023 milliseconds
+[conversation_start.php][Called outside of function][297]
+Closing Database 
+-----------------------
+15-04-2019 21:07:40.50085[0][4] - Elapsed time: 0.061 milliseconds
+[conversation_start.php][Called outside of function][303]
+Conversation Ending. Elapsed time: 58.712 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => Boa noite queria saber oq vai ter sábado q quero comemorar um aniversário ai
+    [conversation] => Array
+        (
+            [convo_id] => 554197658442
+            [bot_name] => Net Bot
+            [bot_id] => 1
+            [format] => html
+            [unknown_user] => Entrou
+            [user_id] => 866
+            [totallines] => 1
+            [user_name] => Entrou
+            [rawSay] => Boa noite queria saber oq vai ter sábado q quero comemorar um aniversário ai
+            [conversation_lines] => 1
+            [remember_up_to] => 10
+            [debugemail] => contato@devn1.com.br
+            [debug_level] => 4
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => LINHA DE RECOLHA ALEATÓRIA2
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [aiml_id] => -1
+                    [bot_id] => 1
+                    [pattern] => no results
+                    [thatpattern] => 
+                    [template] => SEM RESPOSTA
+                    [topic] => 
+                    [score] => 261
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => Boa noite queria saber oq vai ter sábado q quero comemorar um aniversário ai
+            [lookingfor] => BOA NOITE QUERIA SABER OQ VAI TER SÁBADO Q QUERO COMEMORAR UM ANIVERSÁRIO AI
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [html_template] => 
+            [topic] => 
+            [score] => 261
+            [aiml_id] => -1
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => SEM RESPOSTA
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 35.227.32.113
+            [name] => Entrou
+        )
+
+    [time_start] => 1555373260.4421
+    [user_say] => Array
+        (
+            [1] => BOA NOITE QUERIA SABER OQ VAI TER SÁBADO Q QUERO COMEMORAR UM ANIVERSÁRIO AI
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [input] => Array
+        (
+            [1] => Boa noite queria saber oq vai ter sábado q quero comemorar um aniversário ai
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => <div class="usersay">Entrou: Boa noite queria saber oq vai ter sábado q quero comemorar um aniversário ai</div><div class="botsay">Net Bot: SEM RESPOSTA</div>
+)
+
+-----------------------
+Total execution time: 58.712 Milliseconds. Goodbye.

@@ -1,0 +1,130 @@
+{% extends "base_dashboard.twig" %}
+
+{% block title %}{{ l('Posts') }}{% endblock %}
+
+{% block stylesheets %}
+{{ parent() }}
+<style type="text/css">
+.ccheckbox {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+</style>
+{% endblock %}
+
+{% block body %}
+	{{ parent() }}
+{% include "blocks/flash_bag.twig" %}
+<div class="row">
+	<div class="col-xs-12">
+		<div class="panel panel-default">
+				<div class="panel-body">
+				<label for="checkbox-all" class="btn btn-default">
+					<input type='checkbox' id="checkbox-all" class="check-all checkbox-style" name='a' />
+					<label for="checkbox-all"></label>
+				{{l('Select all')}}</label>
+				
+				<button class="btn btn-primary" type="button" id="update"><i class="fa fa-refresh" aria-hidden="true"></i> {{ l('Update') }}</button>
+
+				<button class="btn btn-danger" type="button" id="deleteBtn"><i class="fa fa-trash fa-fw" aria-hidden="true"></i>{{ l('Delete') }}</button>
+				
+				<button class="btn btn-primary" type="button" id="addNewBtn"><i class="fa fa-trash fa-fw" aria-hidden="true"></i>{{ l('New category') }}</button>
+
+				<span class="TotalRecords">{{ l('Total categories') }} : {{total_records}}</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<form method="POST">
+	<div class="card-group nodesCategories row">
+		{% for category in nodes_categories %}
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="card">
+				    <div class="card-header">
+						<h4 class="card-title">
+							{{ category.category_name|capitalize }}
+				      		<div class="ccheckbox">
+				      			<input type='checkbox' class='checkbox checkbox-style' name='checkbox[]' id='checkbox-{{ category.id }}' value='{{ category.id }}' />
+								<label for='checkbox-{{ category.id }}'></label>
+							</div>
+				    	</h4>
+				    </div>
+				    <div class="card-block">
+				      <p><img src='https://graph.facebook.com/{{ category.fb_id }}/picture?redirect=1&height=32&width=32&type=normal' width='32' height='32' style='vertical-align:middle;' class="img-circle" onerror="this.src = '{{ assets('theme/default/images/facebookUser.jpg') }}'"/> {{ category.fb_account }}</p>
+				      <p>{{l("Total groups")}} : {{ category.total_groups }}</p>
+				      <p>{{l("Total pages")}} : {{ category.total_pages }}</p>
+				    </div>
+				</div>
+			</div>
+		{% else %}
+			<span class="well"></span>
+		{% endfor %}
+	</div>
+	{% if pagination %}
+      {{ pagination|raw}}
+    {% endif %}
+</form>
+
+{# Box variables #}
+{% set box_id = "post" %}
+{% set delete_msg = l("Are you sure you want to delete the selected records?") %}
+{% include "blocks/delete_modal.twig" %}
+
+{% endblock %}
+
+{% block javascripts_footer %}
+    {{ parent() }}
+   	<script src="{{ assets('theme/default/js/helpers.js') }}"></script>
+    <script>
+
+    $("#checkbox-all").click(function () {
+    $('.posts input[type="checkbox"]').prop('checked', this.checked);
+    }); 
+
+    {# Delete action #}
+    $("#deleteBtn").click(function(){
+    	if($('.posts .checkbox:checked').length > 0){
+			$("#delete_post").modal("show");
+    	}
+    });
+
+	$(".deleteBtn_post" ).click(function(){
+  		var posts = [];
+  		$('.posts .checkbox:checked').each(function(){
+    		posts.push($(this).val());
+  		});
+
+  		kp_preloader("on","#delete_post .modal-body");
+		$(".deleteBtn_post").prop('disabled', true);
+
+		$.ajax({
+			url: '{{ base_url("posts/delete") }}',
+			dataType: 'json',
+			type: 'post',
+			contentType: 'application/x-www-form-urlencoded',
+			data: { ids: JSON.stringify(posts), {{ config_item('csrf_token_name') }}: getCookie('{{ config_item('csrf_cookie_name') }}') },
+			success: function( data, textStatus, jQxhr ){
+			  if(data.status == "success"){
+			    alertBox(data.message,"success",".deleteAlertBox_post",false,false);
+			      $(".deleteBtn_post").prop('disabled', true);
+			    $(document).on('hide.bs.modal','#delete_post', function () {location.reload();});
+			  }else{
+			    alertBox(data.message,"danger",".deleteAlertBox_post",false,false);
+			  }
+			},
+			error: function( jqXhr, textStatus, errorThrown ){ 
+			  console.log(errorThrown);
+			  alertBox("{{ l('Unable to complete your request') }}","danger",".deleteAlertBox_post",false,false);
+			},
+			complete: function(){
+				kp_preloader("off","#delete_post .modal-body");
+				$(".deleteBtn_post").prop('disabled', false);
+			}
+		});
+
+		$('.deleteBox_content_post').html("");
+   	});
+    </script>
+{% endblock %}

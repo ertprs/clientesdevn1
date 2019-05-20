@@ -1,0 +1,916 @@
+24-02-2019 01:49:17.04892[0][4] - Elapsed time: 1.145 milliseconds
+[conversation_start.php][Called outside of function][60]
+Conversation starting. Current system specs:
+Program O version:            2.6.11
+Server Software:              Apache
+PHP Version:                  5.6.40
+OS:                           Linux
+OS Version:                   #1 SMP Wed Sep 26 15:12:11 UTC 2018
+MySQL Version:                5.7.25
+Multi-byte functions enabled: true 
+-----------------------
+24-02-2019 01:49:17.04921[4][4] - Elapsed time: 0.292 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+24-02-2019 01:49:17.04938[4][4] - Elapsed time: 0.169 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+24-02-2019 01:49:17.04944[4][4] - Elapsed time: 0.064 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+24-02-2019 01:49:17.04977[4][4] - Elapsed time: 0.327 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+24-02-2019 01:49:17.04978[4][4] - Elapsed time: 0.012 milliseconds
+[conversation_start.php][Called outside of function][73]
+Loaded all Includes 
+-----------------------
+24-02-2019 01:49:17.04994[0][4] - Elapsed time: 0.154 milliseconds
+[conversation_start.php][Called outside of function][126]
+Debug level: 4
+session ID = +554192257900 
+-----------------------
+24-02-2019 01:49:17.04995[4][4] - Elapsed time: 0.011 milliseconds
+[conversation_start.php][Called outside of function][129]
+Conversation continuing. User said 'sair'. 
+-----------------------
+24-02-2019 01:49:17.04999[4][4] - Elapsed time: 0.041 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+24-02-2019 01:49:17.05000[4][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+24-02-2019 01:49:17.05002[3][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `devncom_net_iaoficial`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+24-02-2019 01:49:17.05022[4][4] - Elapsed time: 0.200 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: +554192257900 
+-----------------------
+24-02-2019 01:49:17.05025[2][4] - Elapsed time: 0.025 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+24-02-2019 01:49:17.05027[3][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `devncom_net_iaoficial`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+24-02-2019 01:49:17.05047[2][4] - Elapsed time: 0.205 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+24-02-2019 01:49:17.05049[2][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+24-02-2019 01:49:17.05069[3][4] - Elapsed time: 0.197 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `devncom_net_iaoficial`.`client_properties` WHERE `user_id` = 198 AND `bot_id` = 1; 
+-----------------------
+24-02-2019 01:49:17.05089[2][4] - Elapsed time: 0.201 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+24-02-2019 01:49:17.05094[2][4] - Elapsed time: 0.047 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on sair. 
+-----------------------
+24-02-2019 01:49:17.05095[2][4] - Elapsed time: 0.018 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+24-02-2019 01:49:17.05151[4][4] - Elapsed time: 0.551 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'sair' 
+-----------------------
+24-02-2019 01:49:17.05162[4][4] - Elapsed time: 0.116 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SAIR' 
+-----------------------
+24-02-2019 01:49:17.05164[2][4] - Elapsed time: 0.015 milliseconds
+[conversation_start.php][Called outside of function][204]
+Details:
+User say: SAIR
+Convo id: +554192257900
+Bot id: 1
+Format: html 
+-----------------------
+24-02-2019 01:49:17.05166[4][4] - Elapsed time: 0.028 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: html 
+-----------------------
+24-02-2019 01:49:17.05168[2][4] - Elapsed time: 0.012 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+24-02-2019 01:49:17.05169[3][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `devncom_net_iaoficial`.`conversation_log` WHERE `user_id` = 198 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+24-02-2019 01:49:17.05440[1][4] - Elapsed time: 2.707 milliseconds
+[intialise_conversation.php][load_that][804]
+Inputs returned:Array
+(
+    [0] => sair
+)
+ 
+-----------------------
+24-02-2019 01:49:17.05444[4][4] - Elapsed time: 0.037 milliseconds
+[intialise_conversation.php][load_that][805]
+Loading previous responses into the ~THAT~ array. 
+-----------------------
+24-02-2019 01:49:17.05446[1][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][load_that][806]
+Responses returned:Array
+(
+    [0] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+)
+ 
+-----------------------
+24-02-2019 01:49:17.05450[2][4] - Elapsed time: 0.040 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+24-02-2019 01:49:17.05452[2][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Seu nome foi removido de nossa lista
+    [1] =>  desculpe o inconveniente
+    [2] => 
+)
+
+ 
+-----------------------
+24-02-2019 01:49:17.05453[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+24-02-2019 01:49:17.05456[4][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Seu nome foi removido de nossa lista desculpe o inconveniente ' 
+-----------------------
+24-02-2019 01:49:17.05458[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Seu nome foi removido de nossa lista desculpe o inconveniente ' 
+-----------------------
+24-02-2019 01:49:17.05462[4][4] - Elapsed time: 0.041 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Seu nome foi removido de nossa lista desculpe o inconveniente ' 
+-----------------------
+24-02-2019 01:49:17.05468[4][4] - Elapsed time: 0.059 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE' 
+-----------------------
+24-02-2019 01:49:17.05469[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE' 
+-----------------------
+24-02-2019 01:49:17.05471[2][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE' to the front of the [that] array 
+-----------------------
+24-02-2019 01:49:17.05475[4][4] - Elapsed time: 0.037 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+24-02-2019 01:49:17.05481[4][4] - Elapsed time: 0.062 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE' 
+-----------------------
+24-02-2019 01:49:17.05483[4][4] - Elapsed time: 0.017 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE' 
+-----------------------
+24-02-2019 01:49:17.05486[4][4] - Elapsed time: 0.034 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE' 
+-----------------------
+24-02-2019 01:49:17.05487[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE' 
+-----------------------
+24-02-2019 01:49:17.05490[4][4] - Elapsed time: 0.031 milliseconds
+[intialise_conversation.php][load_that][835]
+Loading previous user inputs into the ~INPUT~ array. 
+-----------------------
+24-02-2019 01:49:17.05492[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+24-02-2019 01:49:17.05494[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => sair
+)
+
+ 
+-----------------------
+24-02-2019 01:49:17.05496[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+24-02-2019 01:49:17.05497[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'sair' 
+-----------------------
+24-02-2019 01:49:17.05498[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'sair' 
+-----------------------
+24-02-2019 01:49:17.05500[4][4] - Elapsed time: 0.012 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'sair' 
+-----------------------
+24-02-2019 01:49:17.05502[4][4] - Elapsed time: 0.026 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SAIR' 
+-----------------------
+24-02-2019 01:49:17.05503[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SAIR' 
+-----------------------
+24-02-2019 01:49:17.05505[2][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SAIR' to the front of the [input] array 
+-----------------------
+24-02-2019 01:49:17.05506[4][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+24-02-2019 01:49:17.05631[2][4] - Elapsed time: 1.247 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+24-02-2019 01:49:17.05634[3][4] - Elapsed time: 0.031 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `devncom_net_iaoficial`.`bots` WHERE bot_id = 1; 
+-----------------------
+24-02-2019 01:49:17.05659[4][4] - Elapsed time: 0.248 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+24-02-2019 01:49:17.05664[0][4] - Elapsed time: 0.047 milliseconds
+[conversation_start.php][Called outside of function][224]
+Default debug level = 4 
+-----------------------
+24-02-2019 01:49:17.05666[0][4] - Elapsed time: 0.026 milliseconds
+[conversation_start.php][Called outside of function][226]
+Current debug level = 4 
+-----------------------
+24-02-2019 01:49:17.05668[0][4] - Elapsed time: 0.020 milliseconds
+[conversation_start.php][Called outside of function][239]
+Say = SAIR: raw say = sair 
+-----------------------
+24-02-2019 01:49:17.05670[4][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+24-02-2019 01:49:17.05672[2][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SAIR' to the front of the [user_say] array 
+-----------------------
+24-02-2019 01:49:17.05674[4][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+24-02-2019 01:49:17.05677[0][4] - Elapsed time: 0.029 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = sair, RAW say = sair 
+-----------------------
+24-02-2019 01:49:17.05679[2][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'sair' to the front of the [input] array 
+-----------------------
+24-02-2019 01:49:17.05681[4][4] - Elapsed time: 0.027 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+24-02-2019 01:49:17.05683[4][4] - Elapsed time: 0.020 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SAIR' 
+-----------------------
+24-02-2019 01:49:17.05686[4][4] - Elapsed time: 0.033 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SAIR' 
+-----------------------
+24-02-2019 01:49:17.05689[4][4] - Elapsed time: 0.020 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+24-02-2019 01:49:17.05720[4][4] - Elapsed time: 0.311 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+24-02-2019 01:49:17.05727[3][4] - Elapsed time: 0.071 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `devncom_net_iaoficial`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = +554192257900
+    AND (
+        'SAIR' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR 'SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE' LIKE (REPLACE(REPLACE(`thatpattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+24-02-2019 01:49:17.05746[2][4] - Elapsed time: 0.191 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+24-02-2019 01:49:17.05749[4][4] - Elapsed time: 0.029 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+24-02-2019 01:49:17.05750[4][4] - Elapsed time: 0.017 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = 1. 
+-----------------------
+24-02-2019 01:49:17.05778[4][4] - Elapsed time: 0.277 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+24-02-2019 01:49:17.05784[3][4] - Elapsed time: 0.054 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `devncom_net_iaoficial`.`aiml` WHERE
+    bot_id = 1 AND (
+        'SAIR' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR 'SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE' LIKE (REPLACE(REPLACE(`thatpattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE 'LINHA DE RECOLHA ALEATÓRIA2'
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+24-02-2019 01:49:17.05808[3][4] - Elapsed time: 0.242 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+24-02-2019 01:49:17.05810[2][4] - Elapsed time: 0.027 milliseconds
+[find_aiml.php][find_aiml_matches][1061]
+FOUND: (1) potential AIML matches 
+-----------------------
+24-02-2019 01:49:17.05840[1][4] - Elapsed time: 0.300 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][35]
+Current THAT = SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE 
+-----------------------
+24-02-2019 01:49:17.05844[4][4] - Elapsed time: 0.036 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 1 rows to unset bad matches 
+-----------------------
+24-02-2019 01:49:17.05846[4][4] - Elapsed time: 0.019 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][62]
+Blue 5 to Blue leader. Starting my run now! Looking for 'SAIR' 
+-----------------------
+24-02-2019 01:49:17.05857[4][4] - Elapsed time: 0.109 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][195]
+Found 1 relevant rows 
+-----------------------
+24-02-2019 01:49:17.05861[4][4] - Elapsed time: 0.039 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+24-02-2019 01:49:17.05932[4][4] - Elapsed time: 0.716 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [id] => 791
+            [bot_id] => 1
+            [pattern] => *SAIR*
+            [thatpattern] => 
+            [topic] => 
+            [filename] => admin_added.aiml
+            [template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+            [score] => 259
+            [current_that] => seu nome foi removido de nossa lista desculpe o inconveniente
+            [aiml_id] => 791
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: *sair* (8 points)
+        )
+
+)
+ 
+-----------------------
+24-02-2019 01:49:17.05940[2][4] - Elapsed time: 0.076 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [id] => 791
+            [bot_id] => 1
+            [pattern] => *SAIR*
+            [thatpattern] => 
+            [topic] => 
+            [filename] => admin_added.aiml
+            [template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+            [score] => 259
+            [current_that] => seu nome foi removido de nossa lista desculpe o inconveniente
+            [aiml_id] => 791
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: *sair* (8 points)
+        )
+
+)
+
+ 
+-----------------------
+24-02-2019 01:49:17.06029[4][4] - Elapsed time: 0.894 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [id] => 791
+    [bot_id] => 1
+    [pattern] => *SAIR*
+    [thatpattern] => 
+    [topic] => 
+    [filename] => admin_added.aiml
+    [template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+    [score] => 259
+    [current_that] => seu nome foi removido de nossa lista desculpe o inconveniente
+    [aiml_id] => 791
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: *sair* (8 points)
+)
+ 
+-----------------------
+24-02-2019 01:49:17.06032[2][4] - Elapsed time: 0.028 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+24-02-2019 01:49:17.06042[4][4] - Elapsed time: 0.096 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:791 (*SAIR*) 
+-----------------------
+24-02-2019 01:49:17.06043[3][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+24-02-2019 01:49:17.06045[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = '*SAIR*' 
+-----------------------
+24-02-2019 01:49:17.06046[2][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][set_wildcards][306]
+We have pattern stars to process! 
+-----------------------
+24-02-2019 01:49:17.06047[2][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][set_wildcards][310]
+RegEx string = ~(.+)SAIR(.+)$~siuU: Searching sair for a match. 
+-----------------------
+24-02-2019 01:49:17.06050[2][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml.php][set_wildcards][324]
+Something is not right here. 
+-----------------------
+24-02-2019 01:49:17.06051[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+24-02-2019 01:49:17.06052[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+24-02-2019 01:49:17.06055[2][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => 791
+    [category_id] => 791
+    [html_template] => 
+    [lookingfor] => SAIR
+    [pattern] => *SAIR*
+    [score] => 259
+    [stars] => Array
+        (
+        )
+
+    [template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => sair
+)
+ 
+-----------------------
+24-02-2019 01:49:17.06057[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+24-02-2019 01:49:17.06058[2][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+24-02-2019 01:49:17.06062[4][4] - Elapsed time: 0.046 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>Seu nome foi removido de nossa lista, desculpe o inconveniente.</text></template> 
+-----------------------
+24-02-2019 01:49:17.06079[2][4] - Elapsed time: 0.170 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+24-02-2019 01:49:17.06087[4][4] - Elapsed time: 0.078 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>Seu nome foi removido de nossa lista, desculpe o inconveniente.</text></template>
+ 
+-----------------------
+24-02-2019 01:49:17.06092[4][4] - Elapsed time: 0.053 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+24-02-2019 01:49:17.06095[2][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+24-02-2019 01:49:17.06097[4][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>Seu nome foi removido de nossa lista, desculpe o inconveniente.</text> 
+-----------------------
+24-02-2019 01:49:17.06099[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+24-02-2019 01:49:17.06100[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+24-02-2019 01:49:17.06101[2][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+24-02-2019 01:49:17.06102[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' to the response array. tag name is text 
+-----------------------
+24-02-2019 01:49:17.06103[2][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+24-02-2019 01:49:17.06104[2][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+)
+
+ 
+-----------------------
+24-02-2019 01:49:17.06105[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+24-02-2019 01:49:17.06107[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' 
+-----------------------
+24-02-2019 01:49:17.06108[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' to the response array. tag name is template. 
+-----------------------
+24-02-2019 01:49:17.06110[2][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+24-02-2019 01:49:17.06112[2][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+)
+
+ 
+-----------------------
+24-02-2019 01:49:17.06113[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+24-02-2019 01:49:17.06114[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' 
+-----------------------
+24-02-2019 01:49:17.06115[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: Seu nome foi removido de nossa lista, desculpe o inconveniente. 
+-----------------------
+24-02-2019 01:49:17.06117[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+24-02-2019 01:49:17.06118[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+24-02-2019 01:49:17.06119[2][4] - Elapsed time: 0.011 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' to the front of the [that_raw] array 
+-----------------------
+24-02-2019 01:49:17.06121[4][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+24-02-2019 01:49:17.06124[2][4] - Elapsed time: 0.034 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' to the front of the [that] array 
+-----------------------
+24-02-2019 01:49:17.06126[4][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' 
+-----------------------
+24-02-2019 01:49:17.06128[4][4] - Elapsed time: 0.014 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' 
+-----------------------
+24-02-2019 01:49:17.06131[4][4] - Elapsed time: 0.034 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE' 
+-----------------------
+24-02-2019 01:49:17.06132[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE' 
+-----------------------
+24-02-2019 01:49:17.06134[2][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' to the front of the [parsed_template] array 
+-----------------------
+24-02-2019 01:49:17.06136[4][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+24-02-2019 01:49:17.06138[2][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Seu nome foi removido de nossa lista, desculpe o inconveniente.' to the front of the [template] array 
+-----------------------
+24-02-2019 01:49:17.06140[4][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+24-02-2019 01:49:17.06142[2][4] - Elapsed time: 0.024 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+24-02-2019 01:49:17.06144[3][4] - Elapsed time: 0.025 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `devncom_net_iaoficial`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      'sair',
+      'Seu nome foi removido de nossa lista, desculpe o inconveniente.',
+      198,
+      +554192257900,
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+24-02-2019 01:49:17.06392[4][4] - Elapsed time: 2.477 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+24-02-2019 01:49:17.06405[3][4] - Elapsed time: 0.133 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `devncom_net_iaoficial`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  LIMIT 1 
+-----------------------
+24-02-2019 01:49:17.06423[2][4] - Elapsed time: 0.171 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '1' lines of conversation 
+-----------------------
+24-02-2019 01:49:17.06425[4][4] - Elapsed time: 0.028 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as html 
+-----------------------
+24-02-2019 01:49:17.06428[4][4] - Elapsed time: 0.029 milliseconds
+[display_conversation.php][get_html][135]
+Returning HTML 
+-----------------------
+24-02-2019 01:49:17.06525[2][4] - Elapsed time: 0.972 milliseconds
+[conversation_start.php][Called outside of function][264]
+Closing Database 
+-----------------------
+24-02-2019 01:49:17.06529[0][4] - Elapsed time: 0.035 milliseconds
+[conversation_start.php][Called outside of function][270]
+Conversation Ending. Elapsed time: 17.504 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => sair
+    [conversation] => Array
+        (
+            [convo_id] => +554192257900
+            [bot_name] => Net Bot
+            [bot_id] => 1
+            [format] => html
+            [unknown_user] => Entrou
+            [user_name] => Entrou
+            [user_id] => 198
+            [totallines] => 1
+            [rawSay] => sair
+            [conversation_lines] => 1
+            [remember_up_to] => 10
+            [debugemail] => contato@devn1.com.br
+            [debug_level] => 4
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => LINHA DE RECOLHA ALEATÓRIA2
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [id] => 791
+                    [bot_id] => 1
+                    [pattern] => *SAIR*
+                    [thatpattern] => 
+                    [topic] => 
+                    [filename] => admin_added.aiml
+                    [template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+                    [score] => 259
+                    [current_that] => seu nome foi removido de nossa lista desculpe o inconveniente
+                    [aiml_id] => 791
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: *sair* (8 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => sair
+            [lookingfor] => SAIR
+            [category_id] => 791
+            [pattern] => *SAIR*
+            [thatpattern] => 
+            [template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+            [html_template] => 
+            [topic] => 
+            [score] => 259
+            [aiml_id] => 791
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 138.204.25.246
+            [name] => Entrou
+        )
+
+    [raw_that] => Array
+        (
+            [1] => Array
+                (
+                    [0] => Seu nome foi removido de nossa lista, desculpe o inconveniente
+                    [1] => 
+                )
+
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE
+                )
+
+            [2] => Array
+                (
+                    [1] => SEU NOME FOI REMOVIDO DE NOSSA LISTA DESCULPE O INCONVENIENTE
+                )
+
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [input] => Array
+        (
+            [1] => sair
+            [2] => SAIR
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [time_start] => 1550972957.0478
+    [user_say] => Array
+        (
+            [1] => SAIR
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => Seu nome foi removido de nossa lista, desculpe o inconveniente.
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => <div class="usersay">Entrou: sair</div><div class="botsay">Net Bot: Seu nome foi removido de nossa lista, desculpe o inconveniente.</div>
+)
+
+-----------------------
+Total execution time: 17.504 Milliseconds. Goodbye.

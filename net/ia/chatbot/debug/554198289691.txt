@@ -1,0 +1,772 @@
+26-02-2019 22:36:30.60703[0][4] - Elapsed time: 1.086 milliseconds
+[conversation_start.php][Called outside of function][62]
+Conversation starting. Current system specs:
+Program O version:            2.6.11
+Server Software:              Apache
+PHP Version:                  5.6.40
+OS:                           Linux
+OS Version:                   #1 SMP Wed Sep 26 15:12:11 UTC 2018
+MySQL Version:                5.7.25
+Multi-byte functions enabled: true 
+-----------------------
+26-02-2019 22:36:30.60736[4][4] - Elapsed time: 0.323 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+26-02-2019 22:36:30.60753[4][4] - Elapsed time: 0.178 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+26-02-2019 22:36:30.60760[4][4] - Elapsed time: 0.065 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+26-02-2019 22:36:30.60795[4][4] - Elapsed time: 0.351 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+26-02-2019 22:36:30.60796[4][4] - Elapsed time: 0.013 milliseconds
+[conversation_start.php][Called outside of function][75]
+Loaded all Includes 
+-----------------------
+26-02-2019 22:36:30.60815[0][4] - Elapsed time: 0.183 milliseconds
+[conversation_start.php][Called outside of function][128]
+Debug level: 4
+session ID = 554198289691 
+-----------------------
+26-02-2019 22:36:30.60816[4][4] - Elapsed time: 0.012 milliseconds
+[conversation_start.php][Called outside of function][131]
+Conversation continuing. User said 'Tudo'. 
+-----------------------
+26-02-2019 22:36:30.60821[4][4] - Elapsed time: 0.055 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+26-02-2019 22:36:30.60823[4][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+26-02-2019 22:36:30.60825[3][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `devncom_net_iaoficial`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+26-02-2019 22:36:30.60847[4][4] - Elapsed time: 0.214 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: 554198289691 
+-----------------------
+26-02-2019 22:36:30.60849[2][4] - Elapsed time: 0.024 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+26-02-2019 22:36:30.60850[3][4] - Elapsed time: 0.012 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `devncom_net_iaoficial`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+26-02-2019 22:36:30.60871[2][4] - Elapsed time: 0.207 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+26-02-2019 22:36:30.60873[2][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+26-02-2019 22:36:30.60898[2][4] - Elapsed time: 0.250 milliseconds
+[handle_user.php][intisaliseUser][82]
+Initializing user. 
+-----------------------
+26-02-2019 22:36:30.60936[3][4] - Elapsed time: 0.384 milliseconds
+[handle_user.php][intisaliseUser][128]
+intisaliseUser #265 SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, 'Entrou'  , 554198289691   , 1 , '0'        , '168.194.160.117', 'http://devn1.com/clientes/net/atualiza/bot/envia/svr1mv8.php'      , 'Mozilla/5.0 (Linux; U; Android 4.0.4; en-gb; GT-P3113 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     ); 
+-----------------------
+26-02-2019 22:36:30.60948[3][4] - Elapsed time: 0.124 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `devncom_net_iaoficial`.`client_properties` WHERE `user_id` = 265 AND `bot_id` = 1; 
+-----------------------
+26-02-2019 22:36:30.60972[2][4] - Elapsed time: 0.231 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+26-02-2019 22:36:30.60977[2][4] - Elapsed time: 0.049 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Tudo. 
+-----------------------
+26-02-2019 22:36:30.60979[2][4] - Elapsed time: 0.022 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+26-02-2019 22:36:30.61045[4][4] - Elapsed time: 0.667 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Tudo' 
+-----------------------
+26-02-2019 22:36:30.61053[4][4] - Elapsed time: 0.075 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'TUDO' 
+-----------------------
+26-02-2019 22:36:30.61054[2][4] - Elapsed time: 0.014 milliseconds
+[conversation_start.php][Called outside of function][206]
+Details:
+User say: TUDO
+Convo id: 554198289691
+Bot id: 1
+Format: html 
+-----------------------
+26-02-2019 22:36:30.61057[4][4] - Elapsed time: 0.025 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: html 
+-----------------------
+26-02-2019 22:36:30.61058[2][4] - Elapsed time: 0.011 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+26-02-2019 22:36:30.61059[3][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `devncom_net_iaoficial`.`conversation_log` WHERE `user_id` = 265 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+26-02-2019 22:36:30.61342[4][4] - Elapsed time: 2.824 milliseconds
+[intialise_conversation.php][load_that][856]
+Couldn't find any previous inputs or responses. 
+-----------------------
+26-02-2019 22:36:30.61430[2][4] - Elapsed time: 0.885 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+26-02-2019 22:36:30.61432[3][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `devncom_net_iaoficial`.`bots` WHERE bot_id = 1; 
+-----------------------
+26-02-2019 22:36:30.61457[4][4] - Elapsed time: 0.246 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+26-02-2019 22:36:30.61459[0][4] - Elapsed time: 0.024 milliseconds
+[conversation_start.php][Called outside of function][226]
+Default debug level = 4 
+-----------------------
+26-02-2019 22:36:30.61460[0][4] - Elapsed time: 0.010 milliseconds
+[conversation_start.php][Called outside of function][228]
+Current debug level = 4 
+-----------------------
+26-02-2019 22:36:30.61465[0][4] - Elapsed time: 0.049 milliseconds
+[conversation_start.php][Called outside of function][241]
+Say = TUDO: raw say = Tudo 
+-----------------------
+26-02-2019 22:36:30.61467[4][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+26-02-2019 22:36:30.61468[2][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'TUDO' to the front of the [user_say] array 
+-----------------------
+26-02-2019 22:36:30.61471[4][4] - Elapsed time: 0.031 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+26-02-2019 22:36:30.61475[0][4] - Elapsed time: 0.035 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = Tudo, RAW say = Tudo 
+-----------------------
+26-02-2019 22:36:30.61476[2][4] - Elapsed time: 0.010 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Tudo' to the front of the [input] array 
+-----------------------
+26-02-2019 22:36:30.61477[4][4] - Elapsed time: 0.011 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+26-02-2019 22:36:30.61478[4][4] - Elapsed time: 0.015 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+26-02-2019 22:36:30.61480[4][4] - Elapsed time: 0.012 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'TUDO' 
+-----------------------
+26-02-2019 22:36:30.61483[4][4] - Elapsed time: 0.034 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'TUDO' 
+-----------------------
+26-02-2019 22:36:30.61489[4][4] - Elapsed time: 0.058 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+26-02-2019 22:36:30.61518[4][4] - Elapsed time: 0.291 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+26-02-2019 22:36:30.61522[3][4] - Elapsed time: 0.036 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `devncom_net_iaoficial`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = 554198289691
+    AND (
+        'TUDO' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+26-02-2019 22:36:30.61538[2][4] - Elapsed time: 0.164 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+26-02-2019 22:36:30.61540[4][4] - Elapsed time: 0.019 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+26-02-2019 22:36:30.61541[4][4] - Elapsed time: 0.011 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = 1. 
+-----------------------
+26-02-2019 22:36:30.61569[4][4] - Elapsed time: 0.282 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+26-02-2019 22:36:30.61575[3][4] - Elapsed time: 0.060 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `devncom_net_iaoficial`.`aiml` WHERE
+    bot_id = 1 AND (
+        'TUDO' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE 'LINHA DE RECOLHA ALEATÓRIA2'
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+26-02-2019 22:36:30.61594[3][4] - Elapsed time: 0.189 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+26-02-2019 22:36:30.61596[1][4] - Elapsed time: 0.016 milliseconds
+[find_aiml.php][find_aiml_matches][1082]
+Error: FOUND NO AIML matches in DB. 
+-----------------------
+26-02-2019 22:36:30.61597[4][4] - Elapsed time: 0.016 milliseconds
+[find_aiml.php][get_convo_var][727]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] 
+-----------------------
+26-02-2019 22:36:30.61599[4][4] - Elapsed time: 0.019 milliseconds
+[find_aiml.php][get_convo_var][757]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] FOUND: ConvoArr Value = 'LINHA DE RECOLHA ALEATÓRIA2' 
+-----------------------
+26-02-2019 22:36:30.61615[2][4] - Elapsed time: 0.156 milliseconds
+[misc_functions.php][addUnknownInput][232]
+Entry successfully added! 
+-----------------------
+26-02-2019 22:36:30.61617[1][4] - Elapsed time: 0.021 milliseconds
+[find_aiml.php][find_aiml_matches][1084]
+Added input 'TUDO' to the unknown_inputs table. 
+-----------------------
+26-02-2019 22:36:30.61639[4][4] - Elapsed time: 0.223 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 1 rows to unset bad matches 
+-----------------------
+26-02-2019 22:36:30.61641[1][4] - Elapsed time: 0.021 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][56]
+Returning error as no results where found 
+-----------------------
+26-02-2019 22:36:30.61643[4][4] - Elapsed time: 0.014 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+26-02-2019 22:36:30.61701[4][4] - Elapsed time: 0.587 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+ 
+-----------------------
+26-02-2019 22:36:30.61706[2][4] - Elapsed time: 0.052 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+
+ 
+-----------------------
+26-02-2019 22:36:30.61783[4][4] - Elapsed time: 0.764 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [aiml_id] => -1
+    [bot_id] => 1
+    [pattern] => no results
+    [thatpattern] => 
+    [template] => SEM RESPOSTA
+    [topic] => 
+    [score] => 261
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+)
+ 
+-----------------------
+26-02-2019 22:36:30.61785[2][4] - Elapsed time: 0.024 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+26-02-2019 22:36:30.61799[4][4] - Elapsed time: 0.135 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:-1 (no results) 
+-----------------------
+26-02-2019 22:36:30.61801[3][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+26-02-2019 22:36:30.61804[2][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = 'no results' 
+-----------------------
+26-02-2019 22:36:30.61806[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+26-02-2019 22:36:30.61807[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+26-02-2019 22:36:30.61811[2][4] - Elapsed time: 0.038 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => -1
+    [html_template] => 
+    [lookingfor] => TUDO
+    [pattern] => no results
+    [score] => 261
+    [stars] => Array
+        (
+        )
+
+    [template] => SEM RESPOSTA
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => Tudo
+)
+ 
+-----------------------
+26-02-2019 22:36:30.61814[2][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+26-02-2019 22:36:30.61816[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+26-02-2019 22:36:30.61822[4][4] - Elapsed time: 0.067 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>SEM RESPOSTA</text></template> 
+-----------------------
+26-02-2019 22:36:30.61842[2][4] - Elapsed time: 0.196 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+26-02-2019 22:36:30.61854[4][4] - Elapsed time: 0.125 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>SEM RESPOSTA</text></template>
+ 
+-----------------------
+26-02-2019 22:36:30.61863[4][4] - Elapsed time: 0.085 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+26-02-2019 22:36:30.61866[2][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+26-02-2019 22:36:30.61870[4][4] - Elapsed time: 0.036 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>SEM RESPOSTA</text> 
+-----------------------
+26-02-2019 22:36:30.61872[4][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+26-02-2019 22:36:30.61874[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+26-02-2019 22:36:30.61875[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+26-02-2019 22:36:30.61877[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'SEM RESPOSTA' to the response array. tag name is text 
+-----------------------
+26-02-2019 22:36:30.61879[2][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+26-02-2019 22:36:30.61881[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+26-02-2019 22:36:30.61882[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+26-02-2019 22:36:30.61885[4][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+26-02-2019 22:36:30.61888[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'SEM RESPOSTA' to the response array. tag name is template. 
+-----------------------
+26-02-2019 22:36:30.61890[2][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+26-02-2019 22:36:30.61892[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+26-02-2019 22:36:30.61894[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+26-02-2019 22:36:30.61895[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+26-02-2019 22:36:30.61897[4][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: SEM RESPOSTA 
+-----------------------
+26-02-2019 22:36:30.61900[4][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+26-02-2019 22:36:30.61902[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+26-02-2019 22:36:30.61903[2][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that_raw] array 
+-----------------------
+26-02-2019 22:36:30.61906[4][4] - Elapsed time: 0.028 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+26-02-2019 22:36:30.61913[2][4] - Elapsed time: 0.072 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that] array 
+-----------------------
+26-02-2019 22:36:30.61916[4][4] - Elapsed time: 0.024 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+26-02-2019 22:36:30.61919[4][4] - Elapsed time: 0.032 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+26-02-2019 22:36:30.61921[4][4] - Elapsed time: 0.021 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+26-02-2019 22:36:30.61925[4][4] - Elapsed time: 0.035 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+26-02-2019 22:36:30.61926[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+26-02-2019 22:36:30.61929[2][4] - Elapsed time: 0.028 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [parsed_template] array 
+-----------------------
+26-02-2019 22:36:30.61931[4][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+26-02-2019 22:36:30.61934[2][4] - Elapsed time: 0.028 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [template] array 
+-----------------------
+26-02-2019 22:36:30.61936[4][4] - Elapsed time: 0.022 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+26-02-2019 22:36:30.61940[2][4] - Elapsed time: 0.034 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+26-02-2019 22:36:30.61943[3][4] - Elapsed time: 0.035 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `devncom_net_iaoficial`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      'Tudo',
+      'SEM RESPOSTA',
+      265,
+      554198289691,
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+26-02-2019 22:36:30.62203[4][4] - Elapsed time: 2.599 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+26-02-2019 22:36:30.62224[3][4] - Elapsed time: 0.209 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `devncom_net_iaoficial`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  LIMIT 1 
+-----------------------
+26-02-2019 22:36:30.62246[2][4] - Elapsed time: 0.217 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '1' lines of conversation 
+-----------------------
+26-02-2019 22:36:30.62249[4][4] - Elapsed time: 0.029 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as html 
+-----------------------
+26-02-2019 22:36:30.62253[4][4] - Elapsed time: 0.043 milliseconds
+[display_conversation.php][get_html][135]
+Returning HTML 
+-----------------------
+26-02-2019 22:36:30.62401[2][4] - Elapsed time: 1.480 milliseconds
+[conversation_start.php][Called outside of function][266]
+Closing Database 
+-----------------------
+26-02-2019 22:36:30.62407[0][4] - Elapsed time: 0.056 milliseconds
+[conversation_start.php][Called outside of function][272]
+Conversation Ending. Elapsed time: 18.090 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => Tudo
+    [conversation] => Array
+        (
+            [convo_id] => 554198289691
+            [bot_name] => Net Bot
+            [bot_id] => 1
+            [format] => html
+            [unknown_user] => Entrou
+            [user_id] => 265
+            [totallines] => 1
+            [user_name] => Entrou
+            [rawSay] => Tudo
+            [conversation_lines] => 1
+            [remember_up_to] => 10
+            [debugemail] => contato@devn1.com.br
+            [debug_level] => 4
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => LINHA DE RECOLHA ALEATÓRIA2
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [aiml_id] => -1
+                    [bot_id] => 1
+                    [pattern] => no results
+                    [thatpattern] => 
+                    [template] => SEM RESPOSTA
+                    [topic] => 
+                    [score] => 261
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => Tudo
+            [lookingfor] => TUDO
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [html_template] => 
+            [topic] => 
+            [score] => 261
+            [aiml_id] => -1
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => SEM RESPOSTA
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 168.194.160.117
+            [name] => Entrou
+        )
+
+    [time_start] => 1551220590.6059
+    [user_say] => Array
+        (
+            [1] => TUDO
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [input] => Array
+        (
+            [1] => Tudo
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => <div class="usersay">Entrou: Tudo</div><div class="botsay">Net Bot: SEM RESPOSTA</div>
+)
+
+-----------------------
+Total execution time: 18.090 Milliseconds. Goodbye.

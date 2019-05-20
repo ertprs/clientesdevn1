@@ -1,0 +1,982 @@
+12-02-2019 14:23:06.68174[0][4] - Elapsed time: 3.603 milliseconds
+[conversation_start.php][Called outside of function][56]
+Conversation starting. Current system specs:
+Program O version:            2.6.11
+Server Software:              Apache
+PHP Version:                  5.6.40
+OS:                           Linux
+OS Version:                   #1 SMP Wed Sep 26 15:12:11 UTC 2018
+MySQL Version:                5.7.25
+Multi-byte functions enabled: true 
+-----------------------
+12-02-2019 14:23:06.68877[4][4] - Elapsed time: 7.036 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+12-02-2019 14:23:06.69087[4][4] - Elapsed time: 2.098 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+12-02-2019 14:23:06.69121[4][4] - Elapsed time: 0.343 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+12-02-2019 14:23:06.69283[4][4] - Elapsed time: 1.614 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+12-02-2019 14:23:06.69285[4][4] - Elapsed time: 0.018 milliseconds
+[conversation_start.php][Called outside of function][69]
+Loaded all Includes 
+-----------------------
+12-02-2019 14:23:06.69298[0][4] - Elapsed time: 0.132 milliseconds
+[conversation_start.php][Called outside of function][122]
+Debug level: 4
+session ID = 17643fe94ae2a1d061f64b501ec68ef0 
+-----------------------
+12-02-2019 14:23:06.69299[4][4] - Elapsed time: 0.012 milliseconds
+[conversation_start.php][Called outside of function][125]
+Conversation continuing. User said 'pct teste'. 
+-----------------------
+12-02-2019 14:23:06.69303[4][4] - Elapsed time: 0.042 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+12-02-2019 14:23:06.69304[4][4] - Elapsed time: 0.011 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+12-02-2019 14:23:06.69306[3][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `devncom_net_iaoficial`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+12-02-2019 14:23:06.69330[4][4] - Elapsed time: 0.238 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: 17643fe94ae2a1d061f64b501ec68ef0 
+-----------------------
+12-02-2019 14:23:06.69331[2][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+12-02-2019 14:23:06.69333[3][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `devncom_net_iaoficial`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+12-02-2019 14:23:06.69351[2][4] - Elapsed time: 0.185 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+12-02-2019 14:23:06.69353[2][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+12-02-2019 14:23:06.69366[2][4] - Elapsed time: 0.130 milliseconds
+[handle_user.php][intisaliseUser][82]
+Initializing user. 
+-----------------------
+12-02-2019 14:23:06.69385[3][4] - Elapsed time: 0.185 milliseconds
+[handle_user.php][intisaliseUser][128]
+intisaliseUser #39 SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, 'Entrou'  , '17643fe94ae2a1d061f64b501ec68ef0'   , 1 , '0'        , '138.204.25.187', 'https://www.devn1.com/clientes/net/ia/gui/plain/?bot_id=1'      , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     ); 
+-----------------------
+12-02-2019 14:23:06.69396[3][4] - Elapsed time: 0.116 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `devncom_net_iaoficial`.`client_properties` WHERE `user_id` = 39 AND `bot_id` = 1; 
+-----------------------
+12-02-2019 14:23:06.69410[2][4] - Elapsed time: 0.140 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+12-02-2019 14:23:06.69415[2][4] - Elapsed time: 0.049 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on pct. 
+-----------------------
+12-02-2019 14:23:06.69417[2][4] - Elapsed time: 0.021 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+12-02-2019 14:23:06.69479[2][4] - Elapsed time: 0.622 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+12-02-2019 14:23:06.69486[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on teste. 
+-----------------------
+12-02-2019 14:23:06.69494[4][4] - Elapsed time: 0.077 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'pct teste' 
+-----------------------
+12-02-2019 14:23:06.69499[4][4] - Elapsed time: 0.050 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'PCT TESTE' 
+-----------------------
+12-02-2019 14:23:06.69500[2][4] - Elapsed time: 0.011 milliseconds
+[conversation_start.php][Called outside of function][200]
+Details:
+User say: PCT TESTE
+Convo id: 17643fe94ae2a1d061f64b501ec68ef0
+Bot id: 1
+Format: html 
+-----------------------
+12-02-2019 14:23:06.69501[4][4] - Elapsed time: 0.012 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: html 
+-----------------------
+12-02-2019 14:23:06.69502[2][4] - Elapsed time: 0.009 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+12-02-2019 14:23:06.69504[3][4] - Elapsed time: 0.012 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `devncom_net_iaoficial`.`conversation_log` WHERE `user_id` = 39 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+12-02-2019 14:23:06.69593[4][4] - Elapsed time: 0.898 milliseconds
+[intialise_conversation.php][load_that][856]
+Couldn't find any previous inputs or responses. 
+-----------------------
+12-02-2019 14:23:06.69675[2][4] - Elapsed time: 0.818 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+12-02-2019 14:23:06.69677[3][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `devncom_net_iaoficial`.`bots` WHERE bot_id = 1; 
+-----------------------
+12-02-2019 14:23:06.69692[4][4] - Elapsed time: 0.146 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+12-02-2019 14:23:06.69694[0][4] - Elapsed time: 0.021 milliseconds
+[conversation_start.php][Called outside of function][220]
+Default debug level = 4 
+-----------------------
+12-02-2019 14:23:06.69695[0][4] - Elapsed time: 0.009 milliseconds
+[conversation_start.php][Called outside of function][222]
+Current debug level = 4 
+-----------------------
+12-02-2019 14:23:06.69696[0][4] - Elapsed time: 0.009 milliseconds
+[conversation_start.php][Called outside of function][235]
+Say = PCT TESTE: raw say = pct teste 
+-----------------------
+12-02-2019 14:23:06.69697[4][4] - Elapsed time: 0.009 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+12-02-2019 14:23:06.69697[2][4] - Elapsed time: 0.009 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'PCT TESTE' to the front of the [user_say] array 
+-----------------------
+12-02-2019 14:23:06.69699[4][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+12-02-2019 14:23:06.69703[0][4] - Elapsed time: 0.036 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = pct teste, RAW say = pct teste 
+-----------------------
+12-02-2019 14:23:06.69704[2][4] - Elapsed time: 0.010 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'pct teste' to the front of the [input] array 
+-----------------------
+12-02-2019 14:23:06.69705[4][4] - Elapsed time: 0.011 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+12-02-2019 14:23:06.69707[4][4] - Elapsed time: 0.016 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+12-02-2019 14:23:06.69708[4][4] - Elapsed time: 0.011 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'PCT TESTE' 
+-----------------------
+12-02-2019 14:23:06.69710[4][4] - Elapsed time: 0.022 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'PCT TESTE' 
+-----------------------
+12-02-2019 14:23:06.69711[4][4] - Elapsed time: 0.010 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+12-02-2019 14:23:06.69726[4][4] - Elapsed time: 0.151 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+12-02-2019 14:23:06.69729[3][4] - Elapsed time: 0.031 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `devncom_net_iaoficial`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = '17643fe94ae2a1d061f64b501ec68ef0'
+    AND (
+        'PCT TESTE' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+12-02-2019 14:23:06.69743[2][4] - Elapsed time: 0.140 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+12-02-2019 14:23:06.69745[4][4] - Elapsed time: 0.017 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+12-02-2019 14:23:06.69746[4][4] - Elapsed time: 0.010 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = 1. 
+-----------------------
+12-02-2019 14:23:06.69759[4][4] - Elapsed time: 0.128 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+12-02-2019 14:23:06.69761[3][4] - Elapsed time: 0.027 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `devncom_net_iaoficial`.`aiml` WHERE
+    bot_id = 1 AND (
+        'PCT TESTE' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE 'LINHA DE RECOLHA ALEATÓRIA2'
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+12-02-2019 14:23:06.69779[3][4] - Elapsed time: 0.174 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+12-02-2019 14:23:06.69781[2][4] - Elapsed time: 0.018 milliseconds
+[find_aiml.php][find_aiml_matches][1061]
+FOUND: (1) potential AIML matches 
+-----------------------
+12-02-2019 14:23:06.69795[4][4] - Elapsed time: 0.148 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 1 rows to unset bad matches 
+-----------------------
+12-02-2019 14:23:06.69797[4][4] - Elapsed time: 0.015 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][62]
+Blue 5 to Blue leader. Starting my run now! Looking for 'PCT TESTE' 
+-----------------------
+12-02-2019 14:23:06.69802[4][4] - Elapsed time: 0.050 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][195]
+Found 1 relevant rows 
+-----------------------
+12-02-2019 14:23:06.69803[4][4] - Elapsed time: 0.014 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+12-02-2019 14:23:06.69836[4][4] - Elapsed time: 0.329 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [id] => 728
+            [bot_id] => 1
+            [pattern] => PCT*
+            [thatpattern] => 
+            [topic] => 
+            [filename] => admin_added.aiml
+            [template] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D
+%0D
++ Internet de 120 megas  para você navegar à jato por apenas R$ 99,90 no debito em conta. 
+Este valor fica fixo por 12 meses. %0D
+%0D
++ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D
+%0D
++   Nessa promoção eu também consigo pra você isenção da taxa de instalação...   +%0D
+%0D
+Posso te passar mais informações sobre disponibilidade e contratação?
+            [score] => 259
+            [current_that] => 
+            [aiml_id] => 728
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: pct* (8 points)
+        )
+
+)
+ 
+-----------------------
+12-02-2019 14:23:06.69841[2][4] - Elapsed time: 0.047 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [id] => 728
+            [bot_id] => 1
+            [pattern] => PCT*
+            [thatpattern] => 
+            [topic] => 
+            [filename] => admin_added.aiml
+            [template] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D
+%0D
++ Internet de 120 megas  para você navegar à jato por apenas R$ 99,90 no debito em conta. 
+Este valor fica fixo por 12 meses. %0D
+%0D
++ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D
+%0D
++   Nessa promoção eu também consigo pra você isenção da taxa de instalação...   +%0D
+%0D
+Posso te passar mais informações sobre disponibilidade e contratação?
+            [score] => 259
+            [current_that] => 
+            [aiml_id] => 728
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: pct* (8 points)
+        )
+
+)
+
+ 
+-----------------------
+12-02-2019 14:23:06.69929[4][4] - Elapsed time: 0.877 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [id] => 728
+    [bot_id] => 1
+    [pattern] => PCT*
+    [thatpattern] => 
+    [topic] => 
+    [filename] => admin_added.aiml
+    [template] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D
+%0D
++ Internet de 120 megas  para você navegar à jato por apenas R$ 99,90 no debito em conta. 
+Este valor fica fixo por 12 meses. %0D
+%0D
++ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D
+%0D
++   Nessa promoção eu também consigo pra você isenção da taxa de instalação...   +%0D
+%0D
+Posso te passar mais informações sobre disponibilidade e contratação?
+    [score] => 259
+    [current_that] => 
+    [aiml_id] => 728
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: pct* (8 points)
+)
+ 
+-----------------------
+12-02-2019 14:23:06.69932[2][4] - Elapsed time: 0.030 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+12-02-2019 14:23:06.69947[4][4] - Elapsed time: 0.158 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:728 (PCT*) 
+-----------------------
+12-02-2019 14:23:06.69950[3][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+12-02-2019 14:23:06.69952[2][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = 'PCT*' 
+-----------------------
+12-02-2019 14:23:06.69954[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][set_wildcards][306]
+We have pattern stars to process! 
+-----------------------
+12-02-2019 14:23:06.69956[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][set_wildcards][310]
+RegEx string = ~PCT(.+)$~siuU: Searching pct teste for a match. 
+-----------------------
+12-02-2019 14:23:06.69959[2][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml.php][set_wildcards][313]
+Array
+(
+    [0] => Array
+        (
+            [0] => pct teste
+        )
+
+    [1] => Array
+        (
+            [0] =>  teste
+        )
+
+)
+ 
+-----------------------
+12-02-2019 14:23:06.69961[2][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml.php][set_wildcards][318]
+Adding 'teste' to the stars stack. 
+-----------------------
+12-02-2019 14:23:06.69963[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][set_wildcards][320]
+Star array = Array
+(
+    [1] => teste
+)
+ 
+-----------------------
+12-02-2019 14:23:06.69965[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+12-02-2019 14:23:06.69966[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+12-02-2019 14:23:06.69970[2][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => 728
+    [category_id] => 728
+    [html_template] => 
+    [lookingfor] => PCT TESTE
+    [pattern] => PCT*
+    [score] => 259
+    [stars] => Array
+        (
+            [1] => teste
+        )
+
+    [template] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D
+%0D
++ Internet de 120 megas  para você navegar à jato por apenas R$ 99,90 no debito em conta. 
+Este valor fica fixo por 12 meses. %0D
+%0D
++ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D
+%0D
++   Nessa promoção eu também consigo pra você isenção da taxa de instalação...   +%0D
+%0D
+Posso te passar mais informações sobre disponibilidade e contratação?
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => pct teste
+)
+ 
+-----------------------
+12-02-2019 14:23:06.69972[2][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+12-02-2019 14:23:06.69974[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+12-02-2019 14:23:06.69979[4][4] - Elapsed time: 0.056 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D%0D+ Internet de 120 megas  para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D%0D+   Nessa promoção eu também consigo pra você isenção da taxa de instalação...   +%0D%0DPosso te passar mais informações sobre disponibilidade e contratação?</text></template> 
+-----------------------
+12-02-2019 14:23:06.69996[2][4] - Elapsed time: 0.166 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+12-02-2019 14:23:06.70006[4][4] - Elapsed time: 0.106 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>Queria te dizer que a NET est&#xE1; com uma promo&#xE7;&#xE3;o especial at&#xE9; dia 28/02/2019. %0D%0D+ Internet de 120 megas  para voc&#xEA; navegar &#xE0; jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim voc&#xEA; ainda economiza em seu pacote de dados. %0D%0D+   Nessa promo&#xE7;&#xE3;o eu tamb&#xE9;m consigo pra voc&#xEA; isen&#xE7;&#xE3;o da taxa de instala&#xE7;&#xE3;o...   +%0D%0DPosso te passar mais informa&#xE7;&#xF5;es sobre disponibilidade e contrata&#xE7;&#xE3;o?</text></template>
+ 
+-----------------------
+12-02-2019 14:23:06.70009[4][4] - Elapsed time: 0.026 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+12-02-2019 14:23:06.70012[2][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+12-02-2019 14:23:06.70015[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D%0D+ Internet de 120 megas  para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D%0D+   Nessa promoção eu também consigo pra você isenção da taxa de instalação...   +%0D%0DPosso te passar mais informações sobre disponibilidade e contratação?</text> 
+-----------------------
+12-02-2019 14:23:06.70016[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+12-02-2019 14:23:06.70017[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+12-02-2019 14:23:06.70018[2][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+12-02-2019 14:23:06.70020[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D%0D+ Internet de 120 megas  para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D%0D+   Nessa promoção eu também consigo pra você isenção da taxa de instalação...   +%0D%0DPosso te passar mais informações sobre disponibilidade e contratação?' to the response array. tag name is text 
+-----------------------
+12-02-2019 14:23:06.70022[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 14:23:06.70023[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D%0D+ Internet de 120 megas  para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D%0D+   Nessa promoção eu também consigo pra você isenção da taxa de instalação...   +%0D%0DPosso te passar mais informações sobre disponibilidade e contratação?
+)
+
+ 
+-----------------------
+12-02-2019 14:23:06.70025[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 14:23:06.70027[4][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D%0D+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D%0D+  Nessa promoção eu também consigo pra você isenção da taxa de instalação...  +%0D%0DPosso te passar mais informações sobre disponibilidade e contratação?' 
+-----------------------
+12-02-2019 14:23:06.70029[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D%0D+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D%0D+  Nessa promoção eu também consigo pra você isenção da taxa de instalação...  +%0D%0DPosso te passar mais informações sobre disponibilidade e contratação?' to the response array. tag name is template. 
+-----------------------
+12-02-2019 14:23:06.70031[2][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 14:23:06.70033[2][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D%0D+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D%0D+  Nessa promoção eu também consigo pra você isenção da taxa de instalação...  +%0D%0DPosso te passar mais informações sobre disponibilidade e contratação?
+)
+
+ 
+-----------------------
+12-02-2019 14:23:06.70034[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 14:23:06.70036[4][4] - Elapsed time: 0.024 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D%0D+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D%0D+ Nessa promoção eu também consigo pra você isenção da taxa de instalação... +%0D%0DPosso te passar mais informações sobre disponibilidade e contratação?' 
+-----------------------
+12-02-2019 14:23:06.70038[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D%0D+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D%0D+ Nessa promoção eu também consigo pra você isenção da taxa de instalação... +%0D%0DPosso te passar mais informações sobre disponibilidade e contratação? 
+-----------------------
+12-02-2019 14:23:06.70040[4][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+12-02-2019 14:23:06.70041[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+12-02-2019 14:23:06.70042[2][4] - Elapsed time: 0.011 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D%0D+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D%0D+ Nessa promoção eu também consigo pra você isenção da taxa de instalação... +%0D%0DPosso te passar mais informações sobre disponibilidade e contratação?' to the front of the [that_raw] array 
+-----------------------
+12-02-2019 14:23:06.70046[4][4] - Elapsed time: 0.034 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+12-02-2019 14:23:06.70051[2][4] - Elapsed time: 0.055 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D%0D+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D%0D+ Nessa promoção eu também consigo pra você isenção da taxa de instalação... +%0D%0DPosso te passar mais informações sobre disponibilidade e contratação?' to the front of the [that] array 
+-----------------------
+12-02-2019 14:23:06.70054[4][4] - Elapsed time: 0.033 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+12-02-2019 14:23:06.70058[4][4] - Elapsed time: 0.035 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019.' 
+-----------------------
+12-02-2019 14:23:06.70060[4][4] - Elapsed time: 0.022 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019.' 
+-----------------------
+12-02-2019 14:23:06.70065[4][4] - Elapsed time: 0.046 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019' 
+-----------------------
+12-02-2019 14:23:06.70066[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019' 
+-----------------------
+12-02-2019 14:23:06.70067[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: '%0D%0D+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta.' 
+-----------------------
+12-02-2019 14:23:06.70068[4][4] - Elapsed time: 0.011 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '%0D%0D+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta.' 
+-----------------------
+12-02-2019 14:23:06.70071[4][4] - Elapsed time: 0.033 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '0D 0D INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA' 
+-----------------------
+12-02-2019 14:23:06.70073[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = '0D 0D INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA' 
+-----------------------
+12-02-2019 14:23:06.70074[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Este valor fica fixo por 12 meses.' 
+-----------------------
+12-02-2019 14:23:06.70075[4][4] - Elapsed time: 0.010 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Este valor fica fixo por 12 meses.' 
+-----------------------
+12-02-2019 14:23:06.70077[4][4] - Elapsed time: 0.022 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ESTE VALOR FICA FIXO POR 12 MESES' 
+-----------------------
+12-02-2019 14:23:06.70078[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'ESTE VALOR FICA FIXO POR 12 MESES' 
+-----------------------
+12-02-2019 14:23:06.70079[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: '%0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados.' 
+-----------------------
+12-02-2019 14:23:06.70080[4][4] - Elapsed time: 0.011 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '%0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados.' 
+-----------------------
+12-02-2019 14:23:06.70084[4][4] - Elapsed time: 0.043 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '0D 0D INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS' 
+-----------------------
+12-02-2019 14:23:06.70085[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = '0D 0D INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS' 
+-----------------------
+12-02-2019 14:23:06.70086[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: '%0D%0D+ Nessa promoção eu também consigo pra você isenção da taxa de instalação...' 
+-----------------------
+12-02-2019 14:23:06.70088[4][4] - Elapsed time: 0.011 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '%0D%0D+ Nessa promoção eu também consigo pra você isenção da taxa de instalação...' 
+-----------------------
+12-02-2019 14:23:06.70091[4][4] - Elapsed time: 0.032 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '0D 0D NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO' 
+-----------------------
+12-02-2019 14:23:06.70092[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = '0D 0D NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO' 
+-----------------------
+12-02-2019 14:23:06.70094[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: '+%0D%0DPosso te passar mais informações sobre disponibilidade e contratação?' 
+-----------------------
+12-02-2019 14:23:06.70095[4][4] - Elapsed time: 0.015 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '+%0D%0DPosso te passar mais informações sobre disponibilidade e contratação?' 
+-----------------------
+12-02-2019 14:23:06.70098[4][4] - Elapsed time: 0.029 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '0D 0DPOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 14:23:06.70099[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = '0D 0DPOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 14:23:06.70101[2][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D%0D+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D%0D+ Nessa promoção eu também consigo pra você isenção da taxa de instalação... +%0D%0DPosso te passar mais informações sobre disponibilidade e contratação?' to the front of the [parsed_template] array 
+-----------------------
+12-02-2019 14:23:06.70105[4][4] - Elapsed time: 0.033 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+12-02-2019 14:23:06.70107[2][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D
+%0D
++ Internet de 120 megas  para você navegar à jato por apenas R$ 99,90 no debito em conta. 
+Este valor fica fixo por 12 meses. %0D
+%0D
++ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D
+%0D
++   Nessa promoção eu também consigo pra você isenção da taxa de instalação...   +%0D
+%0D
+Posso te passar mais informações sobre disponibilidade e contratação?' to the front of the [template] array 
+-----------------------
+12-02-2019 14:23:06.70110[4][4] - Elapsed time: 0.033 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+12-02-2019 14:23:06.70112[2][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+12-02-2019 14:23:06.70115[3][4] - Elapsed time: 0.024 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `devncom_net_iaoficial`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      'pct teste',
+      'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D%0D+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D%0D+ Nessa promoção eu também consigo pra você isenção da taxa de instalação... +%0D%0DPosso te passar mais informações sobre disponibilidade e contratação?',
+      39,
+      '17643fe94ae2a1d061f64b501ec68ef0',
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+12-02-2019 14:23:06.70198[4][4] - Elapsed time: 0.838 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+12-02-2019 14:23:06.70215[3][4] - Elapsed time: 0.165 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `devncom_net_iaoficial`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  LIMIT 1 
+-----------------------
+12-02-2019 14:23:06.70237[2][4] - Elapsed time: 0.218 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '1' lines of conversation 
+-----------------------
+12-02-2019 14:23:06.70240[4][4] - Elapsed time: 0.031 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as html 
+-----------------------
+12-02-2019 14:23:06.70242[4][4] - Elapsed time: 0.025 milliseconds
+[display_conversation.php][get_html][135]
+Returning HTML 
+-----------------------
+12-02-2019 14:23:06.70364[2][4] - Elapsed time: 1.219 milliseconds
+[conversation_start.php][Called outside of function][260]
+Closing Database 
+-----------------------
+12-02-2019 14:23:06.70369[0][4] - Elapsed time: 0.044 milliseconds
+[conversation_start.php][Called outside of function][266]
+Conversation Ending. Elapsed time: 25.534 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => pct teste
+    [conversation] => Array
+        (
+            [convo_id] => 17643fe94ae2a1d061f64b501ec68ef0
+            [bot_name] => Net Bot
+            [bot_id] => 1
+            [format] => html
+            [unknown_user] => Entrou
+            [user_id] => 39
+            [totallines] => 1
+            [user_name] => Entrou
+            [rawSay] => pct teste
+            [conversation_lines] => 1
+            [remember_up_to] => 10
+            [debugemail] => contato@devn1.com.br
+            [debug_level] => 4
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => LINHA DE RECOLHA ALEATÓRIA2
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [id] => 728
+                    [bot_id] => 1
+                    [pattern] => PCT*
+                    [thatpattern] => 
+                    [topic] => 
+                    [filename] => admin_added.aiml
+                    [template] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D
+%0D
++ Internet de 120 megas  para você navegar à jato por apenas R$ 99,90 no debito em conta. 
+Este valor fica fixo por 12 meses. %0D
+%0D
++ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D
+%0D
++   Nessa promoção eu também consigo pra você isenção da taxa de instalação...   +%0D
+%0D
+Posso te passar mais informações sobre disponibilidade e contratação?
+                    [score] => 259
+                    [current_that] => 
+                    [aiml_id] => 728
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), uncommon word match: pct* (8 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => pct teste
+            [lookingfor] => PCT TESTE
+            [category_id] => 728
+            [pattern] => PCT*
+            [thatpattern] => 
+            [template] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D
+%0D
++ Internet de 120 megas  para você navegar à jato por apenas R$ 99,90 no debito em conta. 
+Este valor fica fixo por 12 meses. %0D
+%0D
++ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D
+%0D
++   Nessa promoção eu também consigo pra você isenção da taxa de instalação...   +%0D
+%0D
+Posso te passar mais informações sobre disponibilidade e contratação?
+            [html_template] => 
+            [topic] => 
+            [score] => 259
+            [aiml_id] => 728
+            [stars] => Array
+                (
+                    [1] => teste
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D%0D+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D%0D+ Nessa promoção eu também consigo pra você isenção da taxa de instalação... +%0D%0DPosso te passar mais informações sobre disponibilidade e contratação?
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 138.204.25.187
+            [name] => Entrou
+        )
+
+    [time_start] => 1549981386.6781
+    [user_say] => Array
+        (
+            [1] => PCT TESTE
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [input] => Array
+        (
+            [1] => pct teste
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => +%0D%0DPosso te passar mais informações sobre disponibilidade e contratação?
+                    [3] => %0D%0D+ Nessa promoção eu também consigo pra você isenção da taxa de instalação...
+                    [4] => %0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados.
+                    [5] => Este valor fica fixo por 12 meses.
+                    [6] => %0D%0D+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta.
+                    [7] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019.
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 0D 0DPOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO
+                    [2] => 0D 0D NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO
+                    [3] => 0D 0D INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS
+                    [4] => ESTE VALOR FICA FIXO POR 12 MESES
+                    [5] => 0D 0D INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA
+                    [6] => QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D%0D+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D%0D+ Nessa promoção eu também consigo pra você isenção da taxa de instalação... +%0D%0DPosso te passar mais informações sobre disponibilidade e contratação?
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D
+%0D
++ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0D
+%0D
++ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D
+%0D
++ Nessa promoção eu também consigo pra você isenção da taxa de instalação... +%0D
+%0D
+Posso te passar mais informações sobre disponibilidade e contratação?
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => <div class="usersay">Entrou: pct teste</div><div class="botsay">Net Bot: Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0D%0D+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0D%0D+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0D%0D+ Nessa promoção eu também consigo pra você isenção da taxa de instalação... +%0D%0DPosso te passar mais informações sobre disponibilidade e contratação?</div>
+)
+
+-----------------------
+Total execution time: 25.534 Milliseconds. Goodbye.

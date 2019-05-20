@@ -1,0 +1,1344 @@
+26-02-2019 22:17:28.92326[0][4] - Elapsed time: 0.738 milliseconds
+[conversation_start.php][Called outside of function][62]
+Conversation starting. Current system specs:
+Program O version:            2.6.11
+Server Software:              Apache
+PHP Version:                  5.6.40
+OS:                           Linux
+OS Version:                   #1 SMP Wed Sep 26 15:12:11 UTC 2018
+MySQL Version:                5.7.25
+Multi-byte functions enabled: true 
+-----------------------
+26-02-2019 22:17:28.92352[4][4] - Elapsed time: 0.265 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+26-02-2019 22:17:28.92366[4][4] - Elapsed time: 0.141 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+26-02-2019 22:17:28.92372[4][4] - Elapsed time: 0.060 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+26-02-2019 22:17:28.92427[4][4] - Elapsed time: 0.547 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+26-02-2019 22:17:28.92428[4][4] - Elapsed time: 0.015 milliseconds
+[conversation_start.php][Called outside of function][75]
+Loaded all Includes 
+-----------------------
+26-02-2019 22:17:28.92443[0][4] - Elapsed time: 0.144 milliseconds
+[conversation_start.php][Called outside of function][128]
+Debug level: 4
+session ID = 554198395145 
+-----------------------
+26-02-2019 22:17:28.92444[4][4] - Elapsed time: 0.012 milliseconds
+[conversation_start.php][Called outside of function][131]
+Conversation continuing. User said '[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: Tudo bem
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: E você
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: ?'. 
+-----------------------
+26-02-2019 22:17:28.92447[4][4] - Elapsed time: 0.031 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+26-02-2019 22:17:28.92448[4][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+26-02-2019 22:17:28.92450[3][4] - Elapsed time: 0.012 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `devncom_net_iaoficial`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+26-02-2019 22:17:28.92470[4][4] - Elapsed time: 0.200 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: 554198395145 
+-----------------------
+26-02-2019 22:17:28.92472[2][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+26-02-2019 22:17:28.92473[3][4] - Elapsed time: 0.012 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `devncom_net_iaoficial`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+26-02-2019 22:17:28.92488[2][4] - Elapsed time: 0.154 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+26-02-2019 22:17:28.92490[2][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+26-02-2019 22:17:28.92508[2][4] - Elapsed time: 0.177 milliseconds
+[handle_user.php][intisaliseUser][82]
+Initializing user. 
+-----------------------
+26-02-2019 22:17:28.92522[3][4] - Elapsed time: 0.147 milliseconds
+[handle_user.php][intisaliseUser][128]
+intisaliseUser #257 SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, 'Entrou'  , 554198395145   , 1 , '0'        , '168.194.160.117', 'http://devn1.com/clientes/net/atualiza/bot/envia/svr1mv9.php'      , 'Mozilla/5.0 (Linux; U; Android 4.0.4; en-gb; GT-P3113 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     ); 
+-----------------------
+26-02-2019 22:17:28.92534[3][4] - Elapsed time: 0.114 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `devncom_net_iaoficial`.`client_properties` WHERE `user_id` = 257 AND `bot_id` = 1; 
+-----------------------
+26-02-2019 22:17:28.92554[2][4] - Elapsed time: 0.206 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+26-02-2019 22:17:28.92561[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+26-02-2019 22:17:28.92564[2][4] - Elapsed time: 0.023 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+26-02-2019 22:17:28.92612[2][4] - Elapsed time: 0.482 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 7. 
+-----------------------
+26-02-2019 22:17:28.92620[2][4] - Elapsed time: 0.079 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+26-02-2019 22:17:28.92626[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+26-02-2019 22:17:28.92633[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 5. 
+-----------------------
+26-02-2019 22:17:28.92640[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on pm. 
+-----------------------
+26-02-2019 22:17:28.92649[2][4] - Elapsed time: 0.088 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+26-02-2019 22:17:28.92658[2][4] - Elapsed time: 0.091 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-02-2019 22:17:28.92664[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+26-02-2019 22:17:28.92671[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 6. 
+-----------------------
+26-02-2019 22:17:28.92681[2][4] - Elapsed time: 0.096 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+26-02-2019 22:17:28.92689[2][4] - Elapsed time: 0.077 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+26-02-2019 22:17:28.92700[2][4] - Elapsed time: 0.110 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+26-02-2019 22:17:28.92708[2][4] - Elapsed time: 0.086 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+26-02-2019 22:17:28.92714[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+26-02-2019 22:17:28.92721[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+26-02-2019 22:17:28.92728[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+26-02-2019 22:17:28.92735[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+26-02-2019 22:17:28.92742[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+26-02-2019 22:17:28.92748[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-02-2019 22:17:28.92755[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ‪. 
+-----------------------
+26-02-2019 22:17:28.92761[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on +. 
+-----------------------
+26-02-2019 22:17:28.92767[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 5. 
+-----------------------
+26-02-2019 22:17:28.92774[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 5. 
+-----------------------
+26-02-2019 22:17:28.92781[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-02-2019 22:17:28.92788[2][4] - Elapsed time: 0.075 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+26-02-2019 22:17:28.92795[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+26-02-2019 22:17:28.92802[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-02-2019 22:17:28.92808[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+26-02-2019 22:17:28.92815[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 8. 
+-----------------------
+26-02-2019 22:17:28.92822[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 3. 
+-----------------------
+26-02-2019 22:17:28.92829[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+26-02-2019 22:17:28.92836[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on -. 
+-----------------------
+26-02-2019 22:17:28.92842[2][4] - Elapsed time: 0.059 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 5. 
+-----------------------
+26-02-2019 22:17:28.92849[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+26-02-2019 22:17:28.92856[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+26-02-2019 22:17:28.92865[2][4] - Elapsed time: 0.083 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 5. 
+-----------------------
+26-02-2019 22:17:28.92873[2][4] - Elapsed time: 0.079 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ‬. 
+-----------------------
+26-02-2019 22:17:28.92879[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+26-02-2019 22:17:28.92885[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-02-2019 22:17:28.92892[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Tudo. 
+-----------------------
+26-02-2019 22:17:28.92901[2][4] - Elapsed time: 0.092 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-02-2019 22:17:28.92907[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on bem. 
+-----------------------
+26-02-2019 22:17:28.92913[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+26-02-2019 22:17:28.92919[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+26-02-2019 22:17:28.92925[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+26-02-2019 22:17:28.92931[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 7. 
+-----------------------
+26-02-2019 22:17:28.92938[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+26-02-2019 22:17:28.92944[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+26-02-2019 22:17:28.92952[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 5. 
+-----------------------
+26-02-2019 22:17:28.92959[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on pm. 
+-----------------------
+26-02-2019 22:17:28.92965[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+26-02-2019 22:17:28.92971[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-02-2019 22:17:28.92979[2][4] - Elapsed time: 0.081 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+26-02-2019 22:17:28.92987[2][4] - Elapsed time: 0.081 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 6. 
+-----------------------
+26-02-2019 22:17:28.92994[2][4] - Elapsed time: 0.073 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+26-02-2019 22:17:28.93001[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+26-02-2019 22:17:28.93008[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+26-02-2019 22:17:28.93015[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+26-02-2019 22:17:28.93021[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+26-02-2019 22:17:28.93028[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+26-02-2019 22:17:28.93035[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+26-02-2019 22:17:28.93042[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+26-02-2019 22:17:28.93050[2][4] - Elapsed time: 0.073 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+26-02-2019 22:17:28.93058[2][4] - Elapsed time: 0.079 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-02-2019 22:17:28.93064[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ‪. 
+-----------------------
+26-02-2019 22:17:28.93070[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on +. 
+-----------------------
+26-02-2019 22:17:28.93076[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 5. 
+-----------------------
+26-02-2019 22:17:28.93084[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 5. 
+-----------------------
+26-02-2019 22:17:28.93097[2][4] - Elapsed time: 0.128 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-02-2019 22:17:28.93107[2][4] - Elapsed time: 0.105 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+26-02-2019 22:17:28.93120[2][4] - Elapsed time: 0.128 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+26-02-2019 22:17:28.93133[2][4] - Elapsed time: 0.128 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-02-2019 22:17:28.93143[2][4] - Elapsed time: 0.102 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+26-02-2019 22:17:28.93156[2][4] - Elapsed time: 0.125 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 8. 
+-----------------------
+26-02-2019 22:17:28.93168[2][4] - Elapsed time: 0.129 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 3. 
+-----------------------
+26-02-2019 22:17:28.93181[2][4] - Elapsed time: 0.129 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+26-02-2019 22:17:28.93195[2][4] - Elapsed time: 0.137 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on -. 
+-----------------------
+26-02-2019 22:17:28.93205[2][4] - Elapsed time: 0.103 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 5. 
+-----------------------
+26-02-2019 22:17:28.93218[2][4] - Elapsed time: 0.129 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+26-02-2019 22:17:28.93231[2][4] - Elapsed time: 0.128 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+26-02-2019 22:17:28.93244[2][4] - Elapsed time: 0.125 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 5. 
+-----------------------
+26-02-2019 22:17:28.93256[2][4] - Elapsed time: 0.121 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ‬. 
+-----------------------
+26-02-2019 22:17:28.93263[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+26-02-2019 22:17:28.93269[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-02-2019 22:17:28.93277[2][4] - Elapsed time: 0.082 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on E. 
+-----------------------
+26-02-2019 22:17:28.93284[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-02-2019 22:17:28.93291[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on você. 
+-----------------------
+26-02-2019 22:17:28.93298[2][4] - Elapsed time: 0.071 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+26-02-2019 22:17:28.93304[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+26-02-2019 22:17:28.93310[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+26-02-2019 22:17:28.93319[2][4] - Elapsed time: 0.082 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 7. 
+-----------------------
+26-02-2019 22:17:28.93326[2][4] - Elapsed time: 0.076 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+26-02-2019 22:17:28.93333[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+26-02-2019 22:17:28.93340[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 5. 
+-----------------------
+26-02-2019 22:17:28.93347[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on pm. 
+-----------------------
+26-02-2019 22:17:28.93354[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+26-02-2019 22:17:28.93361[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-02-2019 22:17:28.93368[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+26-02-2019 22:17:28.93375[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 6. 
+-----------------------
+26-02-2019 22:17:28.93382[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+26-02-2019 22:17:28.93389[2][4] - Elapsed time: 0.069 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+26-02-2019 22:17:28.93397[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+26-02-2019 22:17:28.93404[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+26-02-2019 22:17:28.93410[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+26-02-2019 22:17:28.93418[2][4] - Elapsed time: 0.075 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+26-02-2019 22:17:28.93425[2][4] - Elapsed time: 0.073 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+26-02-2019 22:17:28.93433[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+26-02-2019 22:17:28.93440[2][4] - Elapsed time: 0.076 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+26-02-2019 22:17:28.93446[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-02-2019 22:17:28.93453[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ‪. 
+-----------------------
+26-02-2019 22:17:28.93459[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on +. 
+-----------------------
+26-02-2019 22:17:28.93466[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 5. 
+-----------------------
+26-02-2019 22:17:28.93473[2][4] - Elapsed time: 0.075 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 5. 
+-----------------------
+26-02-2019 22:17:28.93480[2][4] - Elapsed time: 0.073 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-02-2019 22:17:28.93488[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+26-02-2019 22:17:28.93495[2][4] - Elapsed time: 0.075 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+26-02-2019 22:17:28.93503[2][4] - Elapsed time: 0.075 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-02-2019 22:17:28.93509[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+26-02-2019 22:17:28.93516[2][4] - Elapsed time: 0.075 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 8. 
+-----------------------
+26-02-2019 22:17:28.93524[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 3. 
+-----------------------
+26-02-2019 22:17:28.93531[2][4] - Elapsed time: 0.075 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+26-02-2019 22:17:28.93539[2][4] - Elapsed time: 0.075 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on -. 
+-----------------------
+26-02-2019 22:17:28.93545[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 5. 
+-----------------------
+26-02-2019 22:17:28.93553[2][4] - Elapsed time: 0.074 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+26-02-2019 22:17:28.93560[2][4] - Elapsed time: 0.075 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+26-02-2019 22:17:28.93568[2][4] - Elapsed time: 0.075 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 5. 
+-----------------------
+26-02-2019 22:17:28.93576[2][4] - Elapsed time: 0.081 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ‬. 
+-----------------------
+26-02-2019 22:17:28.93582[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+26-02-2019 22:17:28.93595[2][4] - Elapsed time: 0.130 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+26-02-2019 22:17:28.93603[2][4] - Elapsed time: 0.077 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ?. 
+-----------------------
+26-02-2019 22:17:28.93611[4][4] - Elapsed time: 0.078 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: Tudo bem
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: E você
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: ?' 
+-----------------------
+26-02-2019 22:17:28.93620[4][4] - Elapsed time: 0.089 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ TUDO BEM 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ E VOCÊ 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬' 
+-----------------------
+26-02-2019 22:17:28.93621[2][4] - Elapsed time: 0.017 milliseconds
+[conversation_start.php][Called outside of function][206]
+Details:
+User say: 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ TUDO BEM 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ E VOCÊ 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬
+Convo id: 554198395145
+Bot id: 1
+Format: html 
+-----------------------
+26-02-2019 22:17:28.93625[4][4] - Elapsed time: 0.034 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: html 
+-----------------------
+26-02-2019 22:17:28.93627[2][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+26-02-2019 22:17:28.93629[3][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `devncom_net_iaoficial`.`conversation_log` WHERE `user_id` = 257 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+26-02-2019 22:17:28.93911[4][4] - Elapsed time: 2.822 milliseconds
+[intialise_conversation.php][load_that][856]
+Couldn't find any previous inputs or responses. 
+-----------------------
+26-02-2019 22:17:28.93968[2][4] - Elapsed time: 0.568 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+26-02-2019 22:17:28.93971[3][4] - Elapsed time: 0.034 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `devncom_net_iaoficial`.`bots` WHERE bot_id = 1; 
+-----------------------
+26-02-2019 22:17:28.93993[4][4] - Elapsed time: 0.219 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+26-02-2019 22:17:28.93996[0][4] - Elapsed time: 0.029 milliseconds
+[conversation_start.php][Called outside of function][226]
+Default debug level = 4 
+-----------------------
+26-02-2019 22:17:28.93997[0][4] - Elapsed time: 0.015 milliseconds
+[conversation_start.php][Called outside of function][228]
+Current debug level = 4 
+-----------------------
+26-02-2019 22:17:28.93999[0][4] - Elapsed time: 0.017 milliseconds
+[conversation_start.php][Called outside of function][241]
+Say = 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ TUDO BEM 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ E VOCÊ 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬: raw say = [7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: Tudo bem
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: E você
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: ? 
+-----------------------
+26-02-2019 22:17:28.94001[4][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+26-02-2019 22:17:28.94002[2][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ TUDO BEM 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ E VOCÊ 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬' to the front of the [user_say] array 
+-----------------------
+26-02-2019 22:17:28.94005[4][4] - Elapsed time: 0.028 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+26-02-2019 22:17:28.94008[0][4] - Elapsed time: 0.028 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = [7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: Tudo bem
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: E você
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: ?, RAW say = [7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: Tudo bem
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: E você
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: ? 
+-----------------------
+26-02-2019 22:17:28.94009[2][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: Tudo bem
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: E você
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: ?' to the front of the [input] array 
+-----------------------
+26-02-2019 22:17:28.94011[4][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+26-02-2019 22:17:28.94014[4][4] - Elapsed time: 0.020 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+26-02-2019 22:17:28.94015[4][4] - Elapsed time: 0.015 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ TUDO BEM 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ E VOCÊ 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬' 
+-----------------------
+26-02-2019 22:17:28.94020[4][4] - Elapsed time: 0.053 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ TUDO BEM 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ E VOCÊ 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬' 
+-----------------------
+26-02-2019 22:17:28.94022[4][4] - Elapsed time: 0.018 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+26-02-2019 22:17:28.94046[4][4] - Elapsed time: 0.236 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+26-02-2019 22:17:28.94051[3][4] - Elapsed time: 0.052 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `devncom_net_iaoficial`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = 554198395145
+    AND (
+        '7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ TUDO BEM 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ E VOCÊ 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+26-02-2019 22:17:28.94083[2][4] - Elapsed time: 0.323 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+26-02-2019 22:17:28.94089[4][4] - Elapsed time: 0.062 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+26-02-2019 22:17:28.94092[4][4] - Elapsed time: 0.023 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = 1. 
+-----------------------
+26-02-2019 22:17:28.94114[4][4] - Elapsed time: 0.221 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+26-02-2019 22:17:28.94118[3][4] - Elapsed time: 0.046 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `devncom_net_iaoficial`.`aiml` WHERE
+    bot_id = 1 AND (
+        '7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ TUDO BEM 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ E VOCÊ 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE 'LINHA DE RECOLHA ALEATÓRIA2'
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+26-02-2019 22:17:28.94135[3][4] - Elapsed time: 0.170 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+26-02-2019 22:17:28.94138[1][4] - Elapsed time: 0.023 milliseconds
+[find_aiml.php][find_aiml_matches][1082]
+Error: FOUND NO AIML matches in DB. 
+-----------------------
+26-02-2019 22:17:28.94140[4][4] - Elapsed time: 0.020 milliseconds
+[find_aiml.php][get_convo_var][727]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] 
+-----------------------
+26-02-2019 22:17:28.94142[4][4] - Elapsed time: 0.027 milliseconds
+[find_aiml.php][get_convo_var][757]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] FOUND: ConvoArr Value = 'LINHA DE RECOLHA ALEATÓRIA2' 
+-----------------------
+26-02-2019 22:17:28.94159[2][4] - Elapsed time: 0.167 milliseconds
+[misc_functions.php][addUnknownInput][232]
+Entry successfully added! 
+-----------------------
+26-02-2019 22:17:28.94162[1][4] - Elapsed time: 0.024 milliseconds
+[find_aiml.php][find_aiml_matches][1084]
+Added input '7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ TUDO BEM 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ E VOCÊ 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬' to the unknown_inputs table. 
+-----------------------
+26-02-2019 22:17:28.94185[4][4] - Elapsed time: 0.235 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 1 rows to unset bad matches 
+-----------------------
+26-02-2019 22:17:28.94190[1][4] - Elapsed time: 0.047 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][56]
+Returning error as no results where found 
+-----------------------
+26-02-2019 22:17:28.94192[4][4] - Elapsed time: 0.021 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+26-02-2019 22:17:28.94231[4][4] - Elapsed time: 0.393 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+ 
+-----------------------
+26-02-2019 22:17:28.94235[2][4] - Elapsed time: 0.038 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+
+ 
+-----------------------
+26-02-2019 22:17:28.94268[4][4] - Elapsed time: 0.331 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [aiml_id] => -1
+    [bot_id] => 1
+    [pattern] => no results
+    [thatpattern] => 
+    [template] => SEM RESPOSTA
+    [topic] => 
+    [score] => 261
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+)
+ 
+-----------------------
+26-02-2019 22:17:28.94270[2][4] - Elapsed time: 0.021 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+26-02-2019 22:17:28.94279[4][4] - Elapsed time: 0.092 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:-1 (no results) 
+-----------------------
+26-02-2019 22:17:28.94281[3][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+26-02-2019 22:17:28.94283[2][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = 'no results' 
+-----------------------
+26-02-2019 22:17:28.94285[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+26-02-2019 22:17:28.94289[4][4] - Elapsed time: 0.042 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+26-02-2019 22:17:28.94293[2][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => -1
+    [html_template] => 
+    [lookingfor] => 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ TUDO BEM 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ E VOCÊ 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬
+    [pattern] => no results
+    [score] => 261
+    [stars] => Array
+        (
+        )
+
+    [template] => SEM RESPOSTA
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => [7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: Tudo bem
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: E você
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: ?
+)
+ 
+-----------------------
+26-02-2019 22:17:28.94295[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+26-02-2019 22:17:28.94296[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+26-02-2019 22:17:28.94299[4][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>SEM RESPOSTA</text></template> 
+-----------------------
+26-02-2019 22:17:28.94303[2][4] - Elapsed time: 0.046 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+26-02-2019 22:17:28.94307[4][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>SEM RESPOSTA</text></template>
+ 
+-----------------------
+26-02-2019 22:17:28.94310[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+26-02-2019 22:17:28.94312[2][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+26-02-2019 22:17:28.94314[4][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>SEM RESPOSTA</text> 
+-----------------------
+26-02-2019 22:17:28.94316[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+26-02-2019 22:17:28.94317[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+26-02-2019 22:17:28.94319[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+26-02-2019 22:17:28.94320[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'SEM RESPOSTA' to the response array. tag name is text 
+-----------------------
+26-02-2019 22:17:28.94322[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+26-02-2019 22:17:28.94324[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+26-02-2019 22:17:28.94325[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+26-02-2019 22:17:28.94327[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+26-02-2019 22:17:28.94329[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'SEM RESPOSTA' to the response array. tag name is template. 
+-----------------------
+26-02-2019 22:17:28.94330[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+26-02-2019 22:17:28.94332[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+26-02-2019 22:17:28.94334[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+26-02-2019 22:17:28.94335[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+26-02-2019 22:17:28.94337[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: SEM RESPOSTA 
+-----------------------
+26-02-2019 22:17:28.94338[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+26-02-2019 22:17:28.94340[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+26-02-2019 22:17:28.94341[2][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that_raw] array 
+-----------------------
+26-02-2019 22:17:28.94344[4][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+26-02-2019 22:17:28.94347[2][4] - Elapsed time: 0.037 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that] array 
+-----------------------
+26-02-2019 22:17:28.94349[4][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+26-02-2019 22:17:28.94352[4][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+26-02-2019 22:17:28.94354[4][4] - Elapsed time: 0.017 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+26-02-2019 22:17:28.94356[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+26-02-2019 22:17:28.94358[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+26-02-2019 22:17:28.94360[2][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [parsed_template] array 
+-----------------------
+26-02-2019 22:17:28.94362[4][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+26-02-2019 22:17:28.94364[2][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [template] array 
+-----------------------
+26-02-2019 22:17:28.94366[4][4] - Elapsed time: 0.019 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+26-02-2019 22:17:28.94369[2][4] - Elapsed time: 0.024 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+26-02-2019 22:17:28.94372[3][4] - Elapsed time: 0.030 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `devncom_net_iaoficial`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      '[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: Tudo bem
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: E você
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: ?',
+      'SEM RESPOSTA',
+      257,
+      554198395145,
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+26-02-2019 22:17:28.94555[4][4] - Elapsed time: 1.835 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+26-02-2019 22:17:28.94570[3][4] - Elapsed time: 0.148 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `devncom_net_iaoficial`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  LIMIT 1 
+-----------------------
+26-02-2019 22:17:28.94588[2][4] - Elapsed time: 0.184 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '1' lines of conversation 
+-----------------------
+26-02-2019 22:17:28.94591[4][4] - Elapsed time: 0.029 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as html 
+-----------------------
+26-02-2019 22:17:28.94594[4][4] - Elapsed time: 0.026 milliseconds
+[display_conversation.php][get_html][135]
+Returning HTML 
+-----------------------
+26-02-2019 22:17:28.94691[2][4] - Elapsed time: 0.969 milliseconds
+[conversation_start.php][Called outside of function][266]
+Closing Database 
+-----------------------
+26-02-2019 22:17:28.94697[0][4] - Elapsed time: 0.058 milliseconds
+[conversation_start.php][Called outside of function][272]
+Conversation Ending. Elapsed time: 24.423 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => [7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: Tudo bem
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: E você
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: ?
+    [conversation] => Array
+        (
+            [convo_id] => 554198395145
+            [bot_name] => Net Bot
+            [bot_id] => 1
+            [format] => html
+            [unknown_user] => Entrou
+            [user_id] => 257
+            [totallines] => 1
+            [user_name] => Entrou
+            [rawSay] => [7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: Tudo bem
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: E você
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: ?
+            [conversation_lines] => 1
+            [remember_up_to] => 10
+            [debugemail] => contato@devn1.com.br
+            [debug_level] => 4
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => LINHA DE RECOLHA ALEATÓRIA2
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [aiml_id] => -1
+                    [bot_id] => 1
+                    [pattern] => no results
+                    [thatpattern] => 
+                    [template] => SEM RESPOSTA
+                    [topic] => 
+                    [score] => 261
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => [7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: Tudo bem
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: E você
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: ?
+            [lookingfor] => 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ TUDO BEM 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ E VOCÊ 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [html_template] => 
+            [topic] => 
+            [score] => 261
+            [aiml_id] => -1
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => SEM RESPOSTA
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 168.194.160.117
+            [name] => Entrou
+        )
+
+    [time_start] => 1551219448.9225
+    [user_say] => Array
+        (
+            [1] => 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ TUDO BEM 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬ E VOCÊ 7 15PM 26 DIVIDEDBY 02 2019 ‪ 55 41 9839 MINUS 5145‬
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [input] => Array
+        (
+            [1] => [7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: Tudo bem [7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: E você [7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: ?
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => <div class="usersay">Entrou: [7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: Tudo bem
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: E você
+
+[7:15pm, 26/02/2019] ‪+55 41 9839-5145‬: ?</div><div class="botsay">Net Bot: SEM RESPOSTA</div>
+)
+
+-----------------------
+Total execution time: 24.423 Milliseconds. Goodbye.

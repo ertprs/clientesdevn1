@@ -1,0 +1,1702 @@
+12-02-2019 17:33:52.61521[0][4] - Elapsed time: 2.880 milliseconds
+[conversation_start.php][Called outside of function][56]
+Conversation starting. Current system specs:
+Program O version:            2.6.11
+Server Software:              Apache
+PHP Version:                  5.6.40
+OS:                           Linux
+OS Version:                   #1 SMP Wed Sep 26 15:12:11 UTC 2018
+MySQL Version:                5.7.25
+Multi-byte functions enabled: true 
+-----------------------
+12-02-2019 17:33:52.62116[4][4] - Elapsed time: 5.952 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+12-02-2019 17:33:52.62328[4][4] - Elapsed time: 2.119 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+12-02-2019 17:33:52.62365[4][4] - Elapsed time: 0.367 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+12-02-2019 17:33:52.62526[4][4] - Elapsed time: 1.612 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+12-02-2019 17:33:52.62528[4][4] - Elapsed time: 0.019 milliseconds
+[conversation_start.php][Called outside of function][69]
+Loaded all Includes 
+-----------------------
+12-02-2019 17:33:52.62543[0][4] - Elapsed time: 0.152 milliseconds
+[conversation_start.php][Called outside of function][122]
+Debug level: 4
+session ID = ab77bb397dc2a806eea00f1f6887c06f 
+-----------------------
+12-02-2019 17:33:52.62544[4][4] - Elapsed time: 0.013 milliseconds
+[conversation_start.php][Called outside of function][125]
+Conversation continuing. User said 'nao'. 
+-----------------------
+12-02-2019 17:33:52.62548[4][4] - Elapsed time: 0.040 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+12-02-2019 17:33:52.62549[4][4] - Elapsed time: 0.011 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+12-02-2019 17:33:52.62551[3][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `devncom_net_iaoficial`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+12-02-2019 17:33:52.62580[4][4] - Elapsed time: 0.291 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: ab77bb397dc2a806eea00f1f6887c06f 
+-----------------------
+12-02-2019 17:33:52.62582[2][4] - Elapsed time: 0.023 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+12-02-2019 17:33:52.62584[3][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `devncom_net_iaoficial`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+12-02-2019 17:33:52.62606[2][4] - Elapsed time: 0.217 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+12-02-2019 17:33:52.62608[2][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+12-02-2019 17:33:52.62621[3][4] - Elapsed time: 0.131 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `devncom_net_iaoficial`.`client_properties` WHERE `user_id` = 41 AND `bot_id` = 1; 
+-----------------------
+12-02-2019 17:33:52.62638[2][4] - Elapsed time: 0.175 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+12-02-2019 17:33:52.62644[2][4] - Elapsed time: 0.060 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on nao. 
+-----------------------
+12-02-2019 17:33:52.62647[2][4] - Elapsed time: 0.022 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+12-02-2019 17:33:52.62700[4][4] - Elapsed time: 0.536 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'nao' 
+-----------------------
+12-02-2019 17:33:52.62705[4][4] - Elapsed time: 0.052 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'NAO' 
+-----------------------
+12-02-2019 17:33:52.62707[2][4] - Elapsed time: 0.012 milliseconds
+[conversation_start.php][Called outside of function][200]
+Details:
+User say: NAO
+Convo id: ab77bb397dc2a806eea00f1f6887c06f
+Bot id: 1
+Format: html 
+-----------------------
+12-02-2019 17:33:52.62708[4][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: html 
+-----------------------
+12-02-2019 17:33:52.62709[2][4] - Elapsed time: 0.009 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+12-02-2019 17:33:52.62710[3][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `devncom_net_iaoficial`.`conversation_log` WHERE `user_id` = 41 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+12-02-2019 17:33:52.62808[1][4] - Elapsed time: 0.982 milliseconds
+[intialise_conversation.php][load_that][804]
+Inputs returned:Array
+(
+    [0] => sim
+    [1] => iniciar teste
+    [2] => não sou
+    [3] => sim
+    [4] => iniciar teste
+    [5] => sou
+    [6] => pode
+    [7] => iniciar teste
+)
+ 
+-----------------------
+12-02-2019 17:33:52.62810[4][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][load_that][805]
+Loading previous responses into the ~THAT~ array. 
+-----------------------
+12-02-2019 17:33:52.62811[1][4] - Elapsed time: 0.012 milliseconds
+[intialise_conversation.php][load_that][806]
+Responses returned:Array
+(
+    [0] => Me diz, você já é cliente NET?
+    [1] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0A%0A+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0A%0A+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0A%0A+ Nessa promoção eu também consigo pra você isenção da taxa de instalação... %0A%0APosso te passar mais informações sobre disponibilidade e contratação?
+    [2] => SEM RESPOSTA
+    [3] => Me diz, você já é cliente NET?
+    [4] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0A%0A+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0A%0A+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0A%0A+ Nessa promoção eu também consigo pra você isenção da taxa de instalação... %0A%0APosso te passar mais informações sobre disponibilidade e contratação?
+    [5] => Nesse caso não consigo te atender pois não temos acesso a contratos de clientes. Agradeço pela atenção.
+    [6] => Me diz, você já é cliente NET?
+    [7] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019. %0A%0A+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta. Este valor fica fixo por 12 meses. %0A%0A+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados. %0A%0A+ Nessa promoção eu também consigo pra você isenção da taxa de instalação... %0A%0APosso te passar mais informações sobre disponibilidade e contratação?
+)
+ 
+-----------------------
+12-02-2019 17:33:52.62815[2][4] - Elapsed time: 0.039 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 17:33:52.62816[2][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019
+    [1] =>  %0A%0A+ Internet de 120 megas para você navegar à jato por apenas R$ 99
+    [2] => 90 no debito em conta
+    [3] =>  Este valor fica fixo por 12 meses
+    [4] =>  %0A%0A+ Internet WI-FI em casa
+    [5] =>  e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil
+    [6] =>  assim você ainda economiza em seu pacote de dados
+    [7] =>  %0A%0A+ Nessa promoção eu também consigo pra você isenção da taxa de instalação
+    [8] => 
+    [9] => 
+    [10] =>  %0A%0APosso te passar mais informações sobre disponibilidade e contratação
+    [11] => 
+)
+
+ 
+-----------------------
+12-02-2019 17:33:52.62817[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 17:33:52.62819[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019 %0A%0A+ Internet de 120 megas para você navegar à jato por apenas R$ 99 90 no debito em conta Este valor fica fixo por 12 meses %0A%0A+ Internet WI-FI em casa e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil assim você ainda economiza em seu pacote de dados %0A%0A+ Nessa promoção eu também consigo pra você isenção da taxa de instalação  %0A%0APosso te passar mais informações sobre disponibilidade e contratação ' 
+-----------------------
+12-02-2019 17:33:52.62820[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019 %0A%0A+ Internet de 120 megas para você navegar à jato por apenas R$ 99 90 no debito em conta Este valor fica fixo por 12 meses %0A%0A+ Internet WI-FI em casa e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil assim você ainda economiza em seu pacote de dados %0A%0A+ Nessa promoção eu também consigo pra você isenção da taxa de instalação  %0A%0APosso te passar mais informações sobre disponibilidade e contratação ' 
+-----------------------
+12-02-2019 17:33:52.62821[4][4] - Elapsed time: 0.012 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019 %0A%0A+ Internet de 120 megas para você navegar à jato por apenas R$ 99 90 no debito em conta Este valor fica fixo por 12 meses %0A%0A+ Internet WI-FI em casa e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil assim você ainda economiza em seu pacote de dados %0A%0A+ Nessa promoção eu também consigo pra você isenção da taxa de instalação  %0A%0APosso te passar mais informações sobre disponibilidade e contratação ' 
+-----------------------
+12-02-2019 17:33:52.62836[4][4] - Elapsed time: 0.153 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62837[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62838[2][4] - Elapsed time: 0.009 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' to the front of the [that] array 
+-----------------------
+12-02-2019 17:33:52.62841[4][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+12-02-2019 17:33:52.62844[4][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62845[4][4] - Elapsed time: 0.012 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62852[4][4] - Elapsed time: 0.067 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62853[4][4] - Elapsed time: 0.008 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62856[2][4] - Elapsed time: 0.030 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 17:33:52.62857[2][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Me diz
+    [1] =>  você já é cliente NET
+    [2] => 
+)
+
+ 
+-----------------------
+12-02-2019 17:33:52.62858[4][4] - Elapsed time: 0.008 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 17:33:52.62859[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Me diz você já é cliente NET ' 
+-----------------------
+12-02-2019 17:33:52.62860[4][4] - Elapsed time: 0.008 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Me diz você já é cliente NET ' 
+-----------------------
+12-02-2019 17:33:52.62860[4][4] - Elapsed time: 0.008 milliseconds 
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Me diz você já é cliente NET ' 
+-----------------------
+12-02-2019 17:33:52.62863[4][4] - Elapsed time: 0.023 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ME DIZ VOCÊ JÁ É CLIENTE NET' 
+-----------------------
+12-02-2019 17:33:52.62864[4][4] - Elapsed time: 0.008 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'ME DIZ VOCÊ JÁ É CLIENTE NET' 
+-----------------------
+12-02-2019 17:33:52.62864[2][4] - Elapsed time: 0.008 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'ME DIZ VOCÊ JÁ É CLIENTE NET' to the front of the [that] array 
+-----------------------
+12-02-2019 17:33:52.62866[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'ME DIZ VOCÊ JÁ É CLIENTE NET' 
+-----------------------
+12-02-2019 17:33:52.62867[4][4] - Elapsed time: 0.009 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'ME DIZ VOCÊ JÁ É CLIENTE NET' 
+-----------------------
+12-02-2019 17:33:52.62869[4][4] - Elapsed time: 0.017 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ME DIZ VOCÊ JÁ É CLIENTE NET' 
+-----------------------
+12-02-2019 17:33:52.62870[4][4] - Elapsed time: 0.008 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'ME DIZ VOCÊ JÁ É CLIENTE NET' 
+-----------------------
+12-02-2019 17:33:52.62871[2][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 17:33:52.62872[2][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Nesse caso não consigo te atender pois não temos acesso a contratos de clientes
+    [1] =>  Agradeço pela atenção
+    [2] => 
+)
+
+ 
+-----------------------
+12-02-2019 17:33:52.62873[4][4] - Elapsed time: 0.008 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 17:33:52.62874[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Nesse caso não consigo te atender pois não temos acesso a contratos de clientes Agradeço pela atenção ' 
+-----------------------
+12-02-2019 17:33:52.62875[4][4] - Elapsed time: 0.008 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Nesse caso não consigo te atender pois não temos acesso a contratos de clientes Agradeço pela atenção ' 
+-----------------------
+12-02-2019 17:33:52.62876[4][4] - Elapsed time: 0.009 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Nesse caso não consigo te atender pois não temos acesso a contratos de clientes Agradeço pela atenção ' 
+-----------------------
+12-02-2019 17:33:52.62879[4][4] - Elapsed time: 0.032 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'NESSE CASO NÃO CONSIGO TE ATENDER POIS NÃO TEMOS ACESSO A CONTRATOS DE CLIENTES AGRADEÇO PELA ATENÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62880[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'NESSE CASO NÃO CONSIGO TE ATENDER POIS NÃO TEMOS ACESSO A CONTRATOS DE CLIENTES AGRADEÇO PELA ATENÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62880[2][4] - Elapsed time: 0.008 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'NESSE CASO NÃO CONSIGO TE ATENDER POIS NÃO TEMOS ACESSO A CONTRATOS DE CLIENTES AGRADEÇO PELA ATENÇÃO' to the front of the [that] array 
+-----------------------
+12-02-2019 17:33:52.62882[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'NESSE CASO NÃO CONSIGO TE ATENDER POIS NÃO TEMOS ACESSO A CONTRATOS DE CLIENTES AGRADEÇO PELA ATENÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62883[4][4] - Elapsed time: 0.010 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'NESSE CASO NÃO CONSIGO TE ATENDER POIS NÃO TEMOS ACESSO A CONTRATOS DE CLIENTES AGRADEÇO PELA ATENÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62886[4][4] - Elapsed time: 0.024 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'NESSE CASO NÃO CONSIGO TE ATENDER POIS NÃO TEMOS ACESSO A CONTRATOS DE CLIENTES AGRADEÇO PELA ATENÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62887[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'NESSE CASO NÃO CONSIGO TE ATENDER POIS NÃO TEMOS ACESSO A CONTRATOS DE CLIENTES AGRADEÇO PELA ATENÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62888[2][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 17:33:52.62890[2][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019
+    [1] =>  %0A%0A+ Internet de 120 megas para você navegar à jato por apenas R$ 99
+    [2] => 90 no debito em conta
+    [3] =>  Este valor fica fixo por 12 meses
+    [4] =>  %0A%0A+ Internet WI-FI em casa
+    [5] =>  e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil
+    [6] =>  assim você ainda economiza em seu pacote de dados
+    [7] =>  %0A%0A+ Nessa promoção eu também consigo pra você isenção da taxa de instalação
+    [8] => 
+    [9] => 
+    [10] =>  %0A%0APosso te passar mais informações sobre disponibilidade e contratação
+    [11] => 
+)
+
+ 
+-----------------------
+12-02-2019 17:33:52.62891[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 17:33:52.62892[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019 %0A%0A+ Internet de 120 megas para você navegar à jato por apenas R$ 99 90 no debito em conta Este valor fica fixo por 12 meses %0A%0A+ Internet WI-FI em casa e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil assim você ainda economiza em seu pacote de dados %0A%0A+ Nessa promoção eu também consigo pra você isenção da taxa de instalação  %0A%0APosso te passar mais informações sobre disponibilidade e contratação ' 
+-----------------------
+12-02-2019 17:33:52.62893[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019 %0A%0A+ Internet de 120 megas para você navegar à jato por apenas R$ 99 90 no debito em conta Este valor fica fixo por 12 meses %0A%0A+ Internet WI-FI em casa e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil assim você ainda economiza em seu pacote de dados %0A%0A+ Nessa promoção eu também consigo pra você isenção da taxa de instalação  %0A%0APosso te passar mais informações sobre disponibilidade e contratação ' 
+-----------------------
+12-02-2019 17:33:52.62894[4][4] - Elapsed time: 0.012 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019 %0A%0A+ Internet de 120 megas para você navegar à jato por apenas R$ 99 90 no debito em conta Este valor fica fixo por 12 meses %0A%0A+ Internet WI-FI em casa e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil assim você ainda economiza em seu pacote de dados %0A%0A+ Nessa promoção eu também consigo pra você isenção da taxa de instalação  %0A%0APosso te passar mais informações sobre disponibilidade e contratação ' 
+-----------------------
+12-02-2019 17:33:52.62907[4][4] - Elapsed time: 0.129 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62908[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62909[2][4] - Elapsed time: 0.009 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' to the front of the [that] array 
+-----------------------
+12-02-2019 17:33:52.62912[4][4] - Elapsed time: 0.029 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62913[4][4] - Elapsed time: 0.012 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62919[4][4] - Elapsed time: 0.067 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62920[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62922[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 17:33:52.62923[2][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Me diz
+    [1] =>  você já é cliente NET
+    [2] => 
+)
+
+ 
+-----------------------
+12-02-2019 17:33:52.62924[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 17:33:52.62925[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Me diz você já é cliente NET ' 
+-----------------------
+12-02-2019 17:33:52.62926[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Me diz você já é cliente NET ' 
+-----------------------
+12-02-2019 17:33:52.62927[4][4] - Elapsed time: 0.010 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Me diz você já é cliente NET ' 
+-----------------------
+12-02-2019 17:33:52.62929[4][4] - Elapsed time: 0.022 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ME DIZ VOCÊ JÁ É CLIENTE NET' 
+-----------------------
+12-02-2019 17:33:52.62930[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'ME DIZ VOCÊ JÁ É CLIENTE NET' 
+-----------------------
+12-02-2019 17:33:52.62931[2][4] - Elapsed time: 0.009 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'ME DIZ VOCÊ JÁ É CLIENTE NET' to the front of the [that] array 
+-----------------------
+12-02-2019 17:33:52.62933[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'ME DIZ VOCÊ JÁ É CLIENTE NET' 
+-----------------------
+12-02-2019 17:33:52.62934[4][4] - Elapsed time: 0.010 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'ME DIZ VOCÊ JÁ É CLIENTE NET' 
+-----------------------
+12-02-2019 17:33:52.62937[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ME DIZ VOCÊ JÁ É CLIENTE NET' 
+-----------------------
+12-02-2019 17:33:52.62938[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'ME DIZ VOCÊ JÁ É CLIENTE NET' 
+-----------------------
+12-02-2019 17:33:52.62939[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 17:33:52.62941[2][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+12-02-2019 17:33:52.62941[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 17:33:52.62943[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+12-02-2019 17:33:52.62943[4][4] - Elapsed time: 0.009 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+12-02-2019 17:33:52.62944[4][4] - Elapsed time: 0.010 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+12-02-2019 17:33:52.62946[4][4] - Elapsed time: 0.017 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+12-02-2019 17:33:52.62947[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+12-02-2019 17:33:52.62948[2][4] - Elapsed time: 0.010 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that] array 
+-----------------------
+12-02-2019 17:33:52.62950[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+12-02-2019 17:33:52.62951[4][4] - Elapsed time: 0.011 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+12-02-2019 17:33:52.62953[4][4] - Elapsed time: 0.017 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+12-02-2019 17:33:52.62954[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+12-02-2019 17:33:52.62956[2][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 17:33:52.62958[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019
+    [1] =>  %0A%0A+ Internet de 120 megas para você navegar à jato por apenas R$ 99
+    [2] => 90 no debito em conta
+    [3] =>  Este valor fica fixo por 12 meses
+    [4] =>  %0A%0A+ Internet WI-FI em casa
+    [5] =>  e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil
+    [6] =>  assim você ainda economiza em seu pacote de dados
+    [7] =>  %0A%0A+ Nessa promoção eu também consigo pra você isenção da taxa de instalação
+    [8] => 
+    [9] => 
+    [10] =>  %0A%0APosso te passar mais informações sobre disponibilidade e contratação
+    [11] => 
+)
+
+ 
+-----------------------
+12-02-2019 17:33:52.62959[4][4] - Elapsed time: 0.010 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 17:33:52.62960[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019 %0A%0A+ Internet de 120 megas para você navegar à jato por apenas R$ 99 90 no debito em conta Este valor fica fixo por 12 meses %0A%0A+ Internet WI-FI em casa e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil assim você ainda economiza em seu pacote de dados %0A%0A+ Nessa promoção eu também consigo pra você isenção da taxa de instalação  %0A%0APosso te passar mais informações sobre disponibilidade e contratação ' 
+-----------------------
+12-02-2019 17:33:52.62962[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019 %0A%0A+ Internet de 120 megas para você navegar à jato por apenas R$ 99 90 no debito em conta Este valor fica fixo por 12 meses %0A%0A+ Internet WI-FI em casa e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil assim você ainda economiza em seu pacote de dados %0A%0A+ Nessa promoção eu também consigo pra você isenção da taxa de instalação  %0A%0APosso te passar mais informações sobre disponibilidade e contratação ' 
+-----------------------
+12-02-2019 17:33:52.62963[4][4] - Elapsed time: 0.014 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019 %0A%0A+ Internet de 120 megas para você navegar à jato por apenas R$ 99 90 no debito em conta Este valor fica fixo por 12 meses %0A%0A+ Internet WI-FI em casa e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil assim você ainda economiza em seu pacote de dados %0A%0A+ Nessa promoção eu também consigo pra você isenção da taxa de instalação  %0A%0APosso te passar mais informações sobre disponibilidade e contratação ' 
+-----------------------
+12-02-2019 17:33:52.62977[4][4] - Elapsed time: 0.134 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62978[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62979[2][4] - Elapsed time: 0.011 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' to the front of the [that] array 
+-----------------------
+12-02-2019 17:33:52.62982[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62984[4][4] - Elapsed time: 0.014 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62990[4][4] - Elapsed time: 0.069 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62992[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO' 
+-----------------------
+12-02-2019 17:33:52.62993[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 17:33:52.62995[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => Me diz
+    [1] =>  você já é cliente NET
+    [2] => 
+)
+
+ 
+-----------------------
+12-02-2019 17:33:52.62996[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 17:33:52.62998[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'Me diz você já é cliente NET ' 
+-----------------------
+12-02-2019 17:33:52.62999[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'Me diz você já é cliente NET ' 
+-----------------------
+12-02-2019 17:33:52.63000[4][4] - Elapsed time: 0.011 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'Me diz você já é cliente NET ' 
+-----------------------
+12-02-2019 17:33:52.63002[4][4] - Elapsed time: 0.023 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ME DIZ VOCÊ JÁ É CLIENTE NET' 
+-----------------------
+12-02-2019 17:33:52.63003[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'ME DIZ VOCÊ JÁ É CLIENTE NET' 
+-----------------------
+12-02-2019 17:33:52.63004[2][4] - Elapsed time: 0.012 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'ME DIZ VOCÊ JÁ É CLIENTE NET' to the front of the [that] array 
+-----------------------
+12-02-2019 17:33:52.63006[4][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'ME DIZ VOCÊ JÁ É CLIENTE NET' 
+-----------------------
+12-02-2019 17:33:52.63008[4][4] - Elapsed time: 0.012 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'ME DIZ VOCÊ JÁ É CLIENTE NET' 
+-----------------------
+12-02-2019 17:33:52.63010[4][4] - Elapsed time: 0.021 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'ME DIZ VOCÊ JÁ É CLIENTE NET' 
+-----------------------
+12-02-2019 17:33:52.63011[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'ME DIZ VOCÊ JÁ É CLIENTE NET' 
+-----------------------
+12-02-2019 17:33:52.63013[4][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][load_that][835]
+Loading previous user inputs into the ~INPUT~ array. 
+-----------------------
+12-02-2019 17:33:52.63015[2][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 17:33:52.63017[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => iniciar teste
+)
+
+ 
+-----------------------
+12-02-2019 17:33:52.63018[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 17:33:52.63019[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'iniciar teste' 
+-----------------------
+12-02-2019 17:33:52.63020[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'iniciar teste' 
+-----------------------
+12-02-2019 17:33:52.63021[4][4] - Elapsed time: 0.011 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'iniciar teste' 
+-----------------------
+12-02-2019 17:33:52.63023[4][4] - Elapsed time: 0.021 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'INICIAR TESTE' 
+-----------------------
+12-02-2019 17:33:52.63025[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'INICIAR TESTE' 
+-----------------------
+12-02-2019 17:33:52.63026[2][4] - Elapsed time: 0.011 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'INICIAR TESTE' to the front of the [input] array 
+-----------------------
+12-02-2019 17:33:52.63027[4][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+12-02-2019 17:33:52.63029[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 17:33:52.63030[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => pode
+)
+
+ 
+-----------------------
+12-02-2019 17:33:52.63032[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 17:33:52.63033[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'pode' 
+-----------------------
+12-02-2019 17:33:52.63034[4][4] - Elapsed time: 0.011 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'pode' 
+-----------------------
+12-02-2019 17:33:52.63037[4][4] - Elapsed time: 0.028 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'pode' 
+-----------------------
+12-02-2019 17:33:52.63039[4][4] - Elapsed time: 0.020 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'PODE' 
+-----------------------
+12-02-2019 17:33:52.63040[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'PODE' 
+-----------------------
+12-02-2019 17:33:52.63041[2][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'PODE' to the front of the [input] array 
+-----------------------
+12-02-2019 17:33:52.63043[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 17:33:52.63045[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => sou
+)
+
+ 
+-----------------------
+12-02-2019 17:33:52.63046[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 17:33:52.63047[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'sou' 
+-----------------------
+12-02-2019 17:33:52.63049[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'sou' 
+-----------------------
+12-02-2019 17:33:52.63050[4][4] - Elapsed time: 0.012 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'sou' 
+-----------------------
+12-02-2019 17:33:52.63052[4][4] - Elapsed time: 0.018 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SOU' 
+-----------------------
+12-02-2019 17:33:52.63053[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SOU' 
+-----------------------
+12-02-2019 17:33:52.63055[2][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SOU' to the front of the [input] array 
+-----------------------
+12-02-2019 17:33:52.63057[2][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 17:33:52.63059[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => iniciar teste
+)
+
+ 
+-----------------------
+12-02-2019 17:33:52.63060[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 17:33:52.63061[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'iniciar teste' 
+-----------------------
+12-02-2019 17:33:52.63063[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'iniciar teste' 
+-----------------------
+12-02-2019 17:33:52.63064[4][4] - Elapsed time: 0.012 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'iniciar teste' 
+-----------------------
+12-02-2019 17:33:52.63066[4][4] - Elapsed time: 0.024 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'INICIAR TESTE' 
+-----------------------
+12-02-2019 17:33:52.63068[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'INICIAR TESTE' 
+-----------------------
+12-02-2019 17:33:52.63069[2][4] - Elapsed time: 0.012 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'INICIAR TESTE' to the front of the [input] array 
+-----------------------
+12-02-2019 17:33:52.63071[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 17:33:52.63072[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => sim
+)
+
+ 
+-----------------------
+12-02-2019 17:33:52.63074[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 17:33:52.63075[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'sim' 
+-----------------------
+12-02-2019 17:33:52.63076[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'sim' 
+-----------------------
+12-02-2019 17:33:52.63078[4][4] - Elapsed time: 0.013 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'sim' 
+-----------------------
+12-02-2019 17:33:52.63080[4][4] - Elapsed time: 0.021 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SIM' 
+-----------------------
+12-02-2019 17:33:52.63081[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SIM' 
+-----------------------
+12-02-2019 17:33:52.63082[2][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SIM' to the front of the [input] array 
+-----------------------
+12-02-2019 17:33:52.63084[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 17:33:52.63086[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => não sou
+)
+
+ 
+-----------------------
+12-02-2019 17:33:52.63087[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 17:33:52.63088[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'não sou' 
+-----------------------
+12-02-2019 17:33:52.63090[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'não sou' 
+-----------------------
+12-02-2019 17:33:52.63091[4][4] - Elapsed time: 0.013 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'não sou' 
+-----------------------
+12-02-2019 17:33:52.63093[4][4] - Elapsed time: 0.021 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'NÃO SOU' 
+-----------------------
+12-02-2019 17:33:52.63095[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'NÃO SOU' 
+-----------------------
+12-02-2019 17:33:52.63096[2][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'NÃO SOU' to the front of the [input] array 
+-----------------------
+12-02-2019 17:33:52.63098[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 17:33:52.63100[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => iniciar teste
+)
+
+ 
+-----------------------
+12-02-2019 17:33:52.63101[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 17:33:52.63103[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'iniciar teste' 
+-----------------------
+12-02-2019 17:33:52.63104[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'iniciar teste' 
+-----------------------
+12-02-2019 17:33:52.63105[4][4] - Elapsed time: 0.013 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'iniciar teste' 
+-----------------------
+12-02-2019 17:33:52.63108[4][4] - Elapsed time: 0.025 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'INICIAR TESTE' 
+-----------------------
+12-02-2019 17:33:52.63109[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'INICIAR TESTE' 
+-----------------------
+12-02-2019 17:33:52.63110[2][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'INICIAR TESTE' to the front of the [input] array 
+-----------------------
+12-02-2019 17:33:52.63113[2][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 17:33:52.63114[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => sim
+)
+
+ 
+-----------------------
+12-02-2019 17:33:52.63116[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 17:33:52.63117[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'sim' 
+-----------------------
+12-02-2019 17:33:52.63119[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'sim' 
+-----------------------
+12-02-2019 17:33:52.63120[4][4] - Elapsed time: 0.014 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'sim' 
+-----------------------
+12-02-2019 17:33:52.63122[4][4] - Elapsed time: 0.023 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SIM' 
+-----------------------
+12-02-2019 17:33:52.63124[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SIM' 
+-----------------------
+12-02-2019 17:33:52.63125[2][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SIM' to the front of the [input] array 
+-----------------------
+12-02-2019 17:33:52.63236[2][4] - Elapsed time: 1.104 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+12-02-2019 17:33:52.63239[3][4] - Elapsed time: 0.029 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `devncom_net_iaoficial`.`bots` WHERE bot_id = 1; 
+-----------------------
+12-02-2019 17:33:52.63259[4][4] - Elapsed time: 0.203 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+12-02-2019 17:33:52.63262[0][4] - Elapsed time: 0.029 milliseconds
+[conversation_start.php][Called outside of function][220]
+Default debug level = 4 
+-----------------------
+12-02-2019 17:33:52.63264[0][4] - Elapsed time: 0.017 milliseconds
+[conversation_start.php][Called outside of function][222]
+Current debug level = 4 
+-----------------------
+12-02-2019 17:33:52.63265[0][4] - Elapsed time: 0.015 milliseconds
+[conversation_start.php][Called outside of function][235]
+Say = NAO: raw say = nao 
+-----------------------
+12-02-2019 17:33:52.63267[4][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+12-02-2019 17:33:52.63268[2][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'NAO' to the front of the [user_say] array 
+-----------------------
+12-02-2019 17:33:52.63270[4][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+12-02-2019 17:33:52.63273[0][4] - Elapsed time: 0.025 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = nao, RAW say = nao 
+-----------------------
+12-02-2019 17:33:52.63274[2][4] - Elapsed time: 0.015 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'nao' to the front of the [input] array 
+-----------------------
+12-02-2019 17:33:52.63277[4][4] - Elapsed time: 0.023 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+12-02-2019 17:33:52.63279[4][4] - Elapsed time: 0.020 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'NAO' 
+-----------------------
+12-02-2019 17:33:52.63281[4][4] - Elapsed time: 0.026 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'NAO' 
+-----------------------
+12-02-2019 17:33:52.63283[4][4] - Elapsed time: 0.017 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+12-02-2019 17:33:52.63299[4][4] - Elapsed time: 0.166 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+12-02-2019 17:33:52.63304[3][4] - Elapsed time: 0.043 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `devncom_net_iaoficial`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = 'ab77bb397dc2a806eea00f1f6887c06f'
+    AND (
+        'NAO' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR 'ME DIZ VOCÊ JÁ É CLIENTE NET' LIKE (REPLACE(REPLACE(`thatpattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+12-02-2019 17:33:52.63319[2][4] - Elapsed time: 0.149 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+12-02-2019 17:33:52.63321[4][4] - Elapsed time: 0.026 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+12-02-2019 17:33:52.63323[4][4] - Elapsed time: 0.018 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = 1. 
+-----------------------
+12-02-2019 17:33:52.63338[4][4] - Elapsed time: 0.146 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+12-02-2019 17:33:52.63342[3][4] - Elapsed time: 0.041 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `devncom_net_iaoficial`.`aiml` WHERE
+    bot_id = 1 AND (
+        'NAO' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR 'ME DIZ VOCÊ JÁ É CLIENTE NET' LIKE (REPLACE(REPLACE(`thatpattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE 'LINHA DE RECOLHA ALEATÓRIA2'
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+12-02-2019 17:33:52.63368[3][4] - Elapsed time: 0.264 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+12-02-2019 17:33:52.63371[2][4] - Elapsed time: 0.027 milliseconds
+[find_aiml.php][find_aiml_matches][1061]
+FOUND: (5) potential AIML matches 
+-----------------------
+12-02-2019 17:33:52.63388[1][4] - Elapsed time: 0.175 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][35]
+Current THAT = ME DIZ VOCÊ JÁ É CLIENTE NET 
+-----------------------
+12-02-2019 17:33:52.63392[4][4] - Elapsed time: 0.033 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 5 rows to unset bad matches 
+-----------------------
+12-02-2019 17:33:52.63394[4][4] - Elapsed time: 0.019 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][62]
+Blue 5 to Blue leader. Starting my run now! Looking for 'NAO' 
+-----------------------
+12-02-2019 17:33:52.63411[1][4] - Elapsed time: 0.173 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][182]
+Error: FOUND NO AIML matches in DB 
+-----------------------
+12-02-2019 17:33:52.63414[4][4] - Elapsed time: 0.030 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][195]
+Found 1 relevant rows 
+-----------------------
+12-02-2019 17:33:52.63416[4][4] - Elapsed time: 0.022 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+12-02-2019 17:33:52.63432[1][4] - Elapsed time: 0.155 milliseconds
+[find_aiml.php][score_matches][329]
+Found an error trying to identify the chatbot. 
+-----------------------
+12-02-2019 17:33:52.63436[4][4] - Elapsed time: 0.040 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+)
+ 
+-----------------------
+12-02-2019 17:33:52.63438[2][4] - Elapsed time: 0.025 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+)
+
+ 
+-----------------------
+12-02-2019 17:33:52.63486[4][4] - Elapsed time: 0.482 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [id] => -1
+    [aiml_id] => -1
+    [bot_id] => 1
+    [pattern] => no results
+    [thatpattern] => 
+    [topic] => 
+    [template] => SEM RESPOSTA
+    [score] => 0
+    [track_score] => No Match Found!
+)
+ 
+-----------------------
+12-02-2019 17:33:52.63489[2][4] - Elapsed time: 0.023 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+12-02-2019 17:33:52.63498[4][4] - Elapsed time: 0.094 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:-1 (no results) 
+-----------------------
+12-02-2019 17:33:52.63500[3][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+12-02-2019 17:33:52.63502[2][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = 'no results' 
+-----------------------
+12-02-2019 17:33:52.63504[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+12-02-2019 17:33:52.63506[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+12-02-2019 17:33:52.63509[2][4] - Elapsed time: 0.034 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => -1
+    [category_id] => -1
+    [html_template] => 
+    [lookingfor] => NAO
+    [pattern] => no results
+    [score] => 0
+    [stars] => Array
+        (
+        )
+
+    [template] => SEM RESPOSTA
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => nao
+)
+ 
+-----------------------
+12-02-2019 17:33:52.63511[2][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+12-02-2019 17:33:52.63513[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+12-02-2019 17:33:52.63516[4][4] - Elapsed time: 0.031 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>SEM RESPOSTA</text></template> 
+-----------------------
+12-02-2019 17:33:52.63528[2][4] - Elapsed time: 0.117 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+12-02-2019 17:33:52.63536[4][4] - Elapsed time: 0.081 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>SEM RESPOSTA</text></template>
+ 
+-----------------------
+12-02-2019 17:33:52.63538[4][4] - Elapsed time: 0.025 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+12-02-2019 17:33:52.63541[2][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+12-02-2019 17:33:52.63544[4][4] - Elapsed time: 0.033 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>SEM RESPOSTA</text> 
+-----------------------
+12-02-2019 17:33:52.63547[4][4] - Elapsed time: 0.026 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+12-02-2019 17:33:52.63549[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+12-02-2019 17:33:52.63551[2][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+12-02-2019 17:33:52.63552[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'SEM RESPOSTA' to the response array. tag name is text 
+-----------------------
+12-02-2019 17:33:52.63555[2][4] - Elapsed time: 0.026 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 17:33:52.63558[2][4] - Elapsed time: 0.027 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+12-02-2019 17:33:52.63559[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 17:33:52.63561[4][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+12-02-2019 17:33:52.63563[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'SEM RESPOSTA' to the response array. tag name is template. 
+-----------------------
+12-02-2019 17:33:52.63566[2][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+12-02-2019 17:33:52.63567[2][4] - Elapsed time: 0.019 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+12-02-2019 17:33:52.63569[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+12-02-2019 17:33:52.63571[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+12-02-2019 17:33:52.63573[4][4] - Elapsed time: 0.020 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: SEM RESPOSTA 
+-----------------------
+12-02-2019 17:33:52.63575[4][4] - Elapsed time: 0.021 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+12-02-2019 17:33:52.63577[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+12-02-2019 17:33:52.63579[2][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that_raw] array 
+-----------------------
+12-02-2019 17:33:52.63581[4][4] - Elapsed time: 0.022 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+12-02-2019 17:33:52.63584[2][4] - Elapsed time: 0.036 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that] array 
+-----------------------
+12-02-2019 17:33:52.63587[4][4] - Elapsed time: 0.026 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+12-02-2019 17:33:52.63589[4][4] - Elapsed time: 0.019 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+12-02-2019 17:33:52.63592[4][4] - Elapsed time: 0.029 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+12-02-2019 17:33:52.63593[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+12-02-2019 17:33:52.63596[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [parsed_template] array 
+-----------------------
+12-02-2019 17:33:52.63598[4][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+12-02-2019 17:33:52.63600[2][4] - Elapsed time: 0.024 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [template] array 
+-----------------------
+12-02-2019 17:33:52.63603[4][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+12-02-2019 17:33:52.63605[2][4] - Elapsed time: 0.028 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+12-02-2019 17:33:52.63608[3][4] - Elapsed time: 0.027 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `devncom_net_iaoficial`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      'nao',
+      'SEM RESPOSTA',
+      41,
+      'ab77bb397dc2a806eea00f1f6887c06f',
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+12-02-2019 17:33:52.63702[4][4] - Elapsed time: 0.940 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+12-02-2019 17:33:52.63715[3][4] - Elapsed time: 0.132 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `devncom_net_iaoficial`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  LIMIT 1 
+-----------------------
+12-02-2019 17:33:52.63731[2][4] - Elapsed time: 0.153 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '1' lines of conversation 
+-----------------------
+12-02-2019 17:33:52.63733[4][4] - Elapsed time: 0.028 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as html 
+-----------------------
+12-02-2019 17:33:52.63737[4][4] - Elapsed time: 0.038 milliseconds
+[display_conversation.php][get_html][135]
+Returning HTML 
+-----------------------
+12-02-2019 17:33:52.63819[2][4] - Elapsed time: 0.821 milliseconds
+[conversation_start.php][Called outside of function][260]
+Closing Database 
+-----------------------
+12-02-2019 17:33:52.63823[0][4] - Elapsed time: 0.040 milliseconds
+[conversation_start.php][Called outside of function][266]
+Conversation Ending. Elapsed time: 25.891 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => nao
+    [conversation] => Array
+        (
+            [convo_id] => ab77bb397dc2a806eea00f1f6887c06f
+            [bot_name] => Net Bot
+            [bot_id] => 1
+            [format] => html
+            [unknown_user] => Entrou
+            [user_name] => Entrou
+            [user_id] => 41
+            [totallines] => 1
+            [rawSay] => nao
+            [conversation_lines] => 1
+            [remember_up_to] => 10
+            [debugemail] => contato@devn1.com.br
+            [debug_level] => 4
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => LINHA DE RECOLHA ALEATÓRIA2
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [id] => -1
+                    [aiml_id] => -1
+                    [bot_id] => 1
+                    [pattern] => no results
+                    [thatpattern] => 
+                    [topic] => 
+                    [template] => SEM RESPOSTA
+                    [score] => 0
+                    [track_score] => No Match Found!
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => nao
+            [lookingfor] => NAO
+            [category_id] => -1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [html_template] => 
+            [topic] => 
+            [score] => 0
+            [aiml_id] => -1
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => SEM RESPOSTA
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 191.177.181.19
+            [name] => Entrou
+        )
+
+    [raw_that] => Array
+        (
+            [1] => Array
+                (
+                    [0] => Me diz, você já é cliente NET?
+                )
+
+            [2] => Array
+                (
+                    [0] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019
+                    [1] =>  %0A%0A+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta
+                    [2] =>  Este valor fica fixo por 12 meses
+                    [3] =>  %0A%0A+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados
+                    [4] =>  %0A%0A+ Nessa promoção eu também consigo pra você isenção da taxa de instalação
+                    [5] => 
+                    [6] => 
+                    [7] =>  %0A%0APosso te passar mais informações sobre disponibilidade e contratação?
+                )
+
+            [3] => Array
+                (
+                    [0] => SEM RESPOSTA
+                )
+
+            [4] => Array
+                (
+                    [0] => Me diz, você já é cliente NET?
+                )
+
+            [5] => Array
+                (
+                    [0] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019
+                    [1] =>  %0A%0A+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta
+                    [2] =>  Este valor fica fixo por 12 meses
+                    [3] =>  %0A%0A+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados
+                    [4] =>  %0A%0A+ Nessa promoção eu também consigo pra você isenção da taxa de instalação
+                    [5] => 
+                    [6] => 
+                    [7] =>  %0A%0APosso te passar mais informações sobre disponibilidade e contratação?
+                )
+
+            [6] => Array
+                (
+                    [0] => Nesse caso não consigo te atender pois não temos acesso a contratos de clientes
+                    [1] =>  Agradeço pela atenção
+                    [2] => 
+                )
+
+            [7] => Array
+                (
+                    [0] => Me diz, você já é cliente NET?
+                )
+
+            [8] => Array
+                (
+                    [0] => Queria te dizer que a NET está com uma promoção especial até dia 28/02/2019
+                    [1] =>  %0A%0A+ Internet de 120 megas para você navegar à jato por apenas R$ 99,90 no debito em conta
+                    [2] =>  Este valor fica fixo por 12 meses
+                    [3] =>  %0A%0A+ Internet WI-FI em casa, e na rua usando os hotspots da NET e da Claro instalados em postes em todo o Brasil, assim você ainda economiza em seu pacote de dados
+                    [4] =>  %0A%0A+ Nessa promoção eu também consigo pra você isenção da taxa de instalação
+                    [5] => 
+                    [6] => 
+                    [7] =>  %0A%0APosso te passar mais informações sobre disponibilidade e contratação?
+                )
+
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => SEM RESPOSTA
+                )
+
+            [2] => Array
+                (
+                    [1] => ME DIZ VOCÊ JÁ É CLIENTE NET
+                )
+
+            [3] => Array
+                (
+                    [1] => QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO
+                )
+
+            [4] => Array
+                (
+                    [1] => SEM RESPOSTA
+                )
+
+            [5] => Array
+                (
+                    [1] => ME DIZ VOCÊ JÁ É CLIENTE NET
+                )
+
+            [6] => Array
+                (
+                    [1] => QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO
+                )
+
+            [7] => Array
+                (
+                    [1] => NESSE CASO NÃO CONSIGO TE ATENDER POIS NÃO TEMOS ACESSO A CONTRATOS DE CLIENTES AGRADEÇO PELA ATENÇÃO
+                )
+
+            [8] => Array
+                (
+                    [1] => ME DIZ VOCÊ JÁ É CLIENTE NET
+                )
+
+            [9] => Array
+                (
+                    [1] => QUERIA TE DIZER QUE A NET ESTÁ COM UMA PROMOÇÃO ESPECIAL ATÉ DIA 28 DIVIDEDBY 02 2019 0A 0A INTERNET DE 120 MEGAS PARA VOCÊ NAVEGAR À JATO POR APENAS R 99 90 NO DEBITO EM CONTA ESTE VALOR FICA FIXO POR 12 MESES 0A 0A INTERNET WI FI EM CASA E NA RUA USANDO OS HOTSPOTS DA NET E DA CLARO INSTALADOS EM POSTES EM TODO O BRASIL ASSIM VOCÊ AINDA ECONOMIZA EM SEU PACOTE DE DADOS 0A 0A NESSA PROMOÇÃO EU TAMBÉM CONSIGO PRA VOCÊ ISENÇÃO DA TAXA DE INSTALAÇÃO 0A 0APOSSO TE PASSAR MAIS INFORMAÇÕES SOBRE DISPONIBILIDADE E CONTRATAÇÃO
+                )
+
+            [10] => 
+            [12] => 
+        )
+
+    [input] => Array
+        (
+            [1] => nao
+            [2] => SIM
+            [3] => INICIAR TESTE
+            [4] => NÃO SOU
+            [5] => SIM
+            [6] => INICIAR TESTE
+            [7] => SOU
+            [8] => PODE
+            [9] => INICIAR TESTE
+            [10] => 
+        )
+
+    [time_start] => 1549992832.6123
+    [user_say] => Array
+        (
+            [1] => NAO
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => <div class="usersay">Entrou: nao</div><div class="botsay">Net Bot: SEM RESPOSTA</div>
+)
+
+-----------------------
+Total execution time: 25.891 Milliseconds. Goodbye.

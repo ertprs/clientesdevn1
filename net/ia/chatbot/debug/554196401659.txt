@@ -1,0 +1,986 @@
+08-05-2019 18:04:47.12853[0][4] - Elapsed time: 2.846 milliseconds
+[conversation_start.php][Called outside of function][91]
+Conversation starting. Current system specs:
+Program O version:            2.6.11
+Server Software:              Apache
+PHP Version:                  5.6.40
+OS:                           Linux
+OS Version:                   #1 SMP Wed Sep 26 15:12:11 UTC 2018
+MySQL Version:                5.7.26
+Multi-byte functions enabled: true 
+-----------------------
+08-05-2019 18:04:47.13302[4][4] - Elapsed time: 4.488 milliseconds
+[load_aimlfunctions.php][Called outside of function][16]
+AIML function include files loaded 
+-----------------------
+08-05-2019 18:04:47.13491[4][4] - Elapsed time: 1.896 milliseconds
+[load_convofunctions.php][Called outside of function][16]
+Convofunction include files loaded 
+-----------------------
+08-05-2019 18:04:47.13525[4][4] - Elapsed time: 0.333 milliseconds
+[load_userfunctions.php][Called outside of function][14]
+userfunctions include files loaded 
+-----------------------
+08-05-2019 18:04:47.13674[4][4] - Elapsed time: 1.491 milliseconds
+[load_addons.php][Called outside of function][19]
+Loading addons 
+-----------------------
+08-05-2019 18:04:47.13678[4][4] - Elapsed time: 0.048 milliseconds
+[conversation_start.php][Called outside of function][104]
+Loaded all Includes 
+-----------------------
+08-05-2019 18:04:47.13697[0][4] - Elapsed time: 0.189 milliseconds
+[conversation_start.php][Called outside of function][159]
+Debug level: 4
+session ID = 554196401659 
+-----------------------
+08-05-2019 18:04:47.13699[4][4] - Elapsed time: 0.020 milliseconds
+[conversation_start.php][Called outside of function][162]
+Conversation continuing. User said '[18:04, 8/5/2019] JEFERSON MENDES: Paga hj
+[18:04, 8/5/2019] JEFERSON MENDES: Entrada'. 
+-----------------------
+08-05-2019 18:04:47.13704[4][4] - Elapsed time: 0.046 milliseconds
+[intialise_conversation.php][read_from_session][155]
+Reading from session 
+-----------------------
+08-05-2019 18:04:47.13706[4][4] - Elapsed time: 0.021 milliseconds
+[intialise_conversation.php][load_default_bot_values][110]
+Loading db bot personality properties 
+-----------------------
+08-05-2019 18:04:47.13709[3][4] - Elapsed time: 0.030 milliseconds
+[intialise_conversation.php][load_default_bot_values][118]
+load db bot personality values SQL: SELECT * FROM `devncom_ia_golden`.`botpersonality` WHERE `bot_id` = 1; 
+-----------------------
+08-05-2019 18:04:47.13741[4][4] - Elapsed time: 0.319 milliseconds
+[intialise_conversation.php][check_set_convo_id][643]
+Obtaining the convo id from form vars. Value: 554196401659 
+-----------------------
+08-05-2019 18:04:47.13743[2][4] - Elapsed time: 0.025 milliseconds
+[intialise_conversation.php][check_set_bot][581]
+Checking and/or setting the current bot. 
+-----------------------
+08-05-2019 18:04:47.13746[3][4] - Elapsed time: 0.022 milliseconds
+[intialise_conversation.php][check_set_bot][599]
+Making sure the bot exists. SQL = SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1 AND `bot_active` = 1; 
+-----------------------
+08-05-2019 18:04:47.13769[2][4] - Elapsed time: 0.237 milliseconds
+[intialise_conversation.php][check_set_bot][616]
+BOT ID: 1 
+-----------------------
+08-05-2019 18:04:47.13772[2][4] - Elapsed time: 0.026 milliseconds
+[intialise_conversation.php][check_set_user][672]
+Checking and setting the user info, as needed. 
+-----------------------
+08-05-2019 18:04:47.13828[2][4] - Elapsed time: 0.561 milliseconds
+[handle_user.php][intisaliseUser][82]
+Initializing user. 
+-----------------------
+08-05-2019 18:04:47.13853[3][4] - Elapsed time: 0.252 milliseconds
+[handle_user.php][intisaliseUser][128]
+intisaliseUser #1124 SQL: INSERT INTO `users`
+        (`id`, `user_name`, `session_id`, `bot_id`, `chatlines`,`ip`, `referer`, `browser`, `date_logged_on` , `last_update`    , `state`)
+ VALUES (NULL, 'Entrou'  , 554196401659   , 1 , '0'        , '34.83.229.23', ''      , 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0)'      , CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ''     ); 
+-----------------------
+08-05-2019 18:04:47.13869[3][4] - Elapsed time: 0.156 milliseconds
+[intialise_conversation.php][check_set_user][705]
+Loading client properties from the DB - sql:
+SELECT `name`, `value` FROM `devncom_ia_golden`.`client_properties` WHERE `user_id` = 1124 AND `bot_id` = 1; 
+-----------------------
+08-05-2019 18:04:47.14511[2][4] - Elapsed time: 6.419 milliseconds
+[spell_checker.php][run_spell_checker_say][36]
+Starting function and setting timestamp. 
+-----------------------
+08-05-2019 18:04:47.14519[2][4] - Elapsed time: 0.084 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+08-05-2019 18:04:47.14522[2][4] - Elapsed time: 0.025 milliseconds
+[spell_checker.php][load_spelling_list][117]
+Loading the spellcheck list from the DB. 
+-----------------------
+08-05-2019 18:04:47.14539[2][4] - Elapsed time: 0.173 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+08-05-2019 18:04:47.14547[2][4] - Elapsed time: 0.079 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 8. 
+-----------------------
+08-05-2019 18:04:47.14554[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+08-05-2019 18:04:47.14559[2][4] - Elapsed time: 0.055 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+08-05-2019 18:04:47.14566[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+08-05-2019 18:04:47.14573[2][4] - Elapsed time: 0.068 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+08-05-2019 18:04:47.14579[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+08-05-2019 18:04:47.14584[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 8. 
+-----------------------
+08-05-2019 18:04:47.14591[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+08-05-2019 18:04:47.14596[2][4] - Elapsed time: 0.051 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 5. 
+-----------------------
+08-05-2019 18:04:47.14602[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+08-05-2019 18:04:47.14607[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+08-05-2019 18:04:47.14613[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+08-05-2019 18:04:47.14619[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+08-05-2019 18:04:47.14626[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+08-05-2019 18:04:47.14632[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+08-05-2019 18:04:47.14637[2][4] - Elapsed time: 0.051 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+08-05-2019 18:04:47.14642[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on JEFERSON. 
+-----------------------
+08-05-2019 18:04:47.14649[2][4] - Elapsed time: 0.070 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+08-05-2019 18:04:47.14654[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on MENDES. 
+-----------------------
+08-05-2019 18:04:47.14661[2][4] - Elapsed time: 0.065 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+08-05-2019 18:04:47.14666[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+08-05-2019 18:04:47.14671[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Paga. 
+-----------------------
+08-05-2019 18:04:47.14679[2][4] - Elapsed time: 0.078 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+08-05-2019 18:04:47.14692[2][4] - Elapsed time: 0.132 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on hj. 
+-----------------------
+08-05-2019 18:04:47.14698[2][4] - Elapsed time: 0.057 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 
+. 
+-----------------------
+08-05-2019 18:04:47.14706[2][4] - Elapsed time: 0.075 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on [. 
+-----------------------
+08-05-2019 18:04:47.14711[2][4] - Elapsed time: 0.058 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+08-05-2019 18:04:47.14718[2][4] - Elapsed time: 0.064 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 8. 
+-----------------------
+08-05-2019 18:04:47.14724[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+08-05-2019 18:04:47.14729[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+08-05-2019 18:04:47.14735[2][4] - Elapsed time: 0.061 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 4. 
+-----------------------
+08-05-2019 18:04:47.14742[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ,. 
+-----------------------
+08-05-2019 18:04:47.14747[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+08-05-2019 18:04:47.14752[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 8. 
+-----------------------
+08-05-2019 18:04:47.14758[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+08-05-2019 18:04:47.14764[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 5. 
+-----------------------
+08-05-2019 18:04:47.14770[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on /. 
+-----------------------
+08-05-2019 18:04:47.14775[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 2. 
+-----------------------
+08-05-2019 18:04:47.14782[2][4] - Elapsed time: 0.072 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 0. 
+-----------------------
+08-05-2019 18:04:47.14789[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 1. 
+-----------------------
+08-05-2019 18:04:47.14795[2][4] - Elapsed time: 0.062 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on 9. 
+-----------------------
+08-05-2019 18:04:47.14801[2][4] - Elapsed time: 0.063 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on ]. 
+-----------------------
+08-05-2019 18:04:47.14807[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+08-05-2019 18:04:47.14812[2][4] - Elapsed time: 0.052 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on JEFERSON. 
+-----------------------
+08-05-2019 18:04:47.14818[2][4] - Elapsed time: 0.067 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+08-05-2019 18:04:47.14824[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on MENDES. 
+-----------------------
+08-05-2019 18:04:47.14830[2][4] - Elapsed time: 0.066 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on :. 
+-----------------------
+08-05-2019 18:04:47.14836[2][4] - Elapsed time: 0.054 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on  . 
+-----------------------
+08-05-2019 18:04:47.14841[2][4] - Elapsed time: 0.053 milliseconds
+[spell_checker.php][spell_check][60]
+Preforming a spel chek on Entrada. 
+-----------------------
+08-05-2019 18:04:47.14849[4][4] - Elapsed time: 0.077 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '[18:04, 8/5/2019] JEFERSON MENDES: Paga hj
+[18:04, 8/5/2019] JEFERSON MENDES: Entrada' 
+-----------------------
+08-05-2019 18:04:47.14857[4][4] - Elapsed time: 0.086 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES PAGA HJ 18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES ENTRADA' 
+-----------------------
+08-05-2019 18:04:47.14859[2][4] - Elapsed time: 0.015 milliseconds
+[conversation_start.php][Called outside of function][237]
+Details:
+User say: 18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES PAGA HJ 18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES ENTRADA
+Convo id: 554196401659
+Bot id: 1
+Format: html 
+-----------------------
+08-05-2019 18:04:47.14861[4][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][check_set_format][752]
+Using format: html 
+-----------------------
+08-05-2019 18:04:47.14862[2][4] - Elapsed time: 0.012 milliseconds
+[intialise_conversation.php][load_that][769]
+Loading the THAT array. 
+-----------------------
+08-05-2019 18:04:47.14863[3][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][load_that][784]
+Getting conversation log entries for the current user. SQL:
+SELECT `input`, `response` FROM `devncom_ia_golden`.`conversation_log` WHERE `user_id` = 1124 AND `bot_id` = 1 ORDER BY `id` DESC limit 10; 
+-----------------------
+08-05-2019 18:04:47.27730[4][4] - Elapsed time: 128.661 milliseconds
+[intialise_conversation.php][load_that][856]
+Couldn't find any previous inputs or responses. 
+-----------------------
+08-05-2019 18:04:47.27785[2][4] - Elapsed time: 0.551 milliseconds
+[intialise_conversation.php][load_bot_config][343]
+Loading config data for the current bot. 
+-----------------------
+08-05-2019 18:04:47.27787[3][4] - Elapsed time: 0.029 milliseconds
+[intialise_conversation.php][load_bot_config][352]
+load bot config SQL: SELECT * FROM `devncom_ia_golden`.`bots` WHERE bot_id = 1; 
+-----------------------
+08-05-2019 18:04:47.27804[4][4] - Elapsed time: 0.163 milliseconds
+[intialise_conversation.php][load_bot_config][357]
+Loading bot details from the database. 
+-----------------------
+08-05-2019 18:04:47.27807[0][4] - Elapsed time: 0.030 milliseconds
+[conversation_start.php][Called outside of function][257]
+Default debug level = 4 
+-----------------------
+08-05-2019 18:04:47.27808[0][4] - Elapsed time: 0.013 milliseconds
+[conversation_start.php][Called outside of function][259]
+Current debug level = 4 
+-----------------------
+08-05-2019 18:04:47.27809[0][4] - Elapsed time: 0.013 milliseconds
+[conversation_start.php][Called outside of function][272]
+Say = 18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES PAGA HJ 18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES ENTRADA: raw say = [18:04, 8/5/2019] JEFERSON MENDES: Paga hj
+[18:04, 8/5/2019] JEFERSON MENDES: Entrada 
+-----------------------
+08-05-2019 18:04:47.27811[4][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][184]
+New conversation vars 
+-----------------------
+08-05-2019 18:04:47.27813[2][4] - Elapsed time: 0.014 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES PAGA HJ 18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES ENTRADA' to the front of the [user_say] array 
+-----------------------
+08-05-2019 18:04:47.27817[4][4] - Elapsed time: 0.039 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank user_say array 
+-----------------------
+08-05-2019 18:04:47.27819[0][4] - Elapsed time: 0.028 milliseconds
+[intialise_conversation.php][add_new_conversation_vars][188]
+User RAW = [18:04, 8/5/2019] JEFERSON MENDES: Paga hj
+[18:04, 8/5/2019] JEFERSON MENDES: Entrada, RAW say = [18:04, 8/5/2019] JEFERSON MENDES: Paga hj
+[18:04, 8/5/2019] JEFERSON MENDES: Entrada 
+-----------------------
+08-05-2019 18:04:47.27821[2][4] - Elapsed time: 0.012 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing '[18:04, 8/5/2019] JEFERSON MENDES: Paga hj
+[18:04, 8/5/2019] JEFERSON MENDES: Entrada' to the front of the [input] array 
+-----------------------
+08-05-2019 18:04:47.27822[4][4] - Elapsed time: 0.017 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank input array 
+-----------------------
+08-05-2019 18:04:47.27824[4][4] - Elapsed time: 0.019 milliseconds
+[make_conversation.php][make_conversation][22]
+Making conversation 
+-----------------------
+08-05-2019 18:04:47.27825[4][4] - Elapsed time: 0.012 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = '18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES PAGA HJ 18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES ENTRADA' 
+-----------------------
+08-05-2019 18:04:47.27830[4][4] - Elapsed time: 0.040 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = '18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES PAGA HJ 18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES ENTRADA' 
+-----------------------
+08-05-2019 18:04:47.27831[4][4] - Elapsed time: 0.014 milliseconds
+[find_aiml.php][get_aiml_to_parse][909]
+Running all functions to get the correct aiml from the DB 
+-----------------------
+08-05-2019 18:04:47.28358[4][4] - Elapsed time: 5.266 milliseconds
+[find_aiml.php][find_userdefined_aiml][821]
+Looking for user defined responses 
+-----------------------
+08-05-2019 18:04:47.28364[3][4] - Elapsed time: 0.068 milliseconds
+[find_aiml.php][find_userdefined_aiml][870]
+User defined SQL:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `template` FROM `devncom_ia_golden`.`aiml_userdefined` WHERE
+    `bot_id` = 1 AND
+    `user_id` = 554196401659
+    AND (
+        '18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES PAGA HJ 18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES ENTRADA' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%')))
+   ORDER BY `id` ASC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+08-05-2019 18:04:47.28385[2][4] - Elapsed time: 0.212 milliseconds
+[find_aiml.php][find_userdefined_aiml][896]
+User defined rows found: '0' 
+-----------------------
+08-05-2019 18:04:47.28388[4][4] - Elapsed time: 0.028 milliseconds
+[find_aiml.php][find_aiml_matches][975]
+Finding the aiml matches from the DB 
+-----------------------
+08-05-2019 18:04:47.28390[4][4] - Elapsed time: 0.013 milliseconds
+[find_aiml.php][find_aiml_matches][981]
+Bot ID = 1. Bot Parent ID = 1. 
+-----------------------
+08-05-2019 18:04:47.28950[4][4] - Elapsed time: 5.600 milliseconds
+[find_aiml.php][find_aiml_matches][992]
+Stored topic = '' 
+-----------------------
+08-05-2019 18:04:47.28955[3][4] - Elapsed time: 0.056 milliseconds
+[find_aiml.php][find_aiml_matches][1052]
+Core Match AIML sql:
+SELECT `id`, `bot_id`, `pattern`, `thatpattern`, `topic`, `filename`, `template` FROM `devncom_ia_golden`.`aiml` WHERE
+    bot_id = 1 AND (
+        '18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES PAGA HJ 18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES ENTRADA' LIKE (REPLACE(REPLACE(`pattern`, '*', '%'), '_', '%'))
+        OR `pattern` LIKE 'LINHA DE RECOLHA ALEATÓRIA2'
+    )
+    # ORDER BY `id` ASC, `topic` DESC, `pattern` ASC, `thatpattern` ASC; 
+-----------------------
+08-05-2019 18:04:47.28973[3][4] - Elapsed time: 0.180 milliseconds
+[find_aiml.php][find_aiml_matches][1054]
+Query Process time... 
+-----------------------
+08-05-2019 18:04:47.28975[1][4] - Elapsed time: 0.022 milliseconds
+[find_aiml.php][find_aiml_matches][1082]
+Error: FOUND NO AIML matches in DB. 
+-----------------------
+08-05-2019 18:04:47.28979[4][4] - Elapsed time: 0.033 milliseconds
+[find_aiml.php][get_convo_var][727]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] 
+-----------------------
+08-05-2019 18:04:47.28980[4][4] - Elapsed time: 0.018 milliseconds
+[find_aiml.php][get_convo_var][757]
+Get from ConvoArr [conversation][default_aiml_pattern][1][1] FOUND: ConvoArr Value = 'LINHA DE RECOLHA ALEATÓRIA2' 
+-----------------------
+08-05-2019 18:04:47.28997[2][4] - Elapsed time: 0.169 milliseconds
+[misc_functions.php][addUnknownInput][232]
+Entry successfully added! 
+-----------------------
+08-05-2019 18:04:47.28999[1][4] - Elapsed time: 0.021 milliseconds
+[find_aiml.php][find_aiml_matches][1084]
+Added input '18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES PAGA HJ 18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES ENTRADA' to the unknown_inputs table. 
+-----------------------
+08-05-2019 18:04:47.29519[4][4] - Elapsed time: 5.195 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][48]
+NEW FUNC Searching through 1 rows to unset bad matches 
+-----------------------
+08-05-2019 18:04:47.29522[1][4] - Elapsed time: 0.031 milliseconds
+[find_aiml.php][unset_all_bad_pattern_matches][56]
+Returning error as no results where found 
+-----------------------
+08-05-2019 18:04:47.29524[4][4] - Elapsed time: 0.017 milliseconds
+[find_aiml.php][score_matches][255]
+Scoring the matches. 
+-----------------------
+08-05-2019 18:04:47.30080[4][4] - Elapsed time: 5.563 milliseconds
+[find_aiml.php][score_matches][548]
+Sorted array $allrows:
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+ 
+-----------------------
+08-05-2019 18:04:47.30085[2][4] - Elapsed time: 0.050 milliseconds
+[find_aiml.php][get_highest_scoring_row][642]
+Final candidates:
+
+Array
+(
+    [0] => Array
+        (
+            [aiml_id] => -1
+            [bot_id] => 1
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [topic] => 
+            [score] => 261
+            [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+        )
+
+)
+
+ 
+-----------------------
+08-05-2019 18:04:47.30142[4][4] - Elapsed time: 0.571 milliseconds
+[find_aiml.php][get_highest_scoring_row][697]
+Best Response: Array
+(
+    [aiml_id] => -1
+    [bot_id] => 1
+    [pattern] => no results
+    [thatpattern] => 
+    [template] => SEM RESPOSTA
+    [topic] => 
+    [score] => 261
+    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+)
+ 
+-----------------------
+08-05-2019 18:04:47.30144[2][4] - Elapsed time: 0.022 milliseconds
+[find_aiml.php][get_highest_scoring_row][698]
+No results found, so none to pick from. 
+-----------------------
+08-05-2019 18:04:47.30153[4][4] - Elapsed time: 0.086 milliseconds
+[find_aiml.php][get_aiml_to_parse][960]
+Will be parsing id:-1 (no results) 
+-----------------------
+08-05-2019 18:04:47.30155[3][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][parse_matched_aiml][213]
+Run the aiml parse in normal mode (normal or srai) 
+-----------------------
+08-05-2019 18:04:47.30156[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml.php][set_wildcards][297]
+Setting Wildcards. Pattern = 'no results' 
+-----------------------
+08-05-2019 18:04:47.30158[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][set_wildcards][329]
+Checking for wildcards in pattern-side THAT 
+-----------------------
+08-05-2019 18:04:47.30159[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][set_wildcards][361]
+Checking for wildcards in pattern-side TOPIC 
+-----------------------
+08-05-2019 18:04:47.30161[2][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml.php][set_wildcards][394]
+AIML array now = Array
+(
+    [aiml_id] => -1
+    [html_template] => 
+    [lookingfor] => 18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES PAGA HJ 18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES ENTRADA
+    [pattern] => no results
+    [score] => 261
+    [stars] => Array
+        (
+        )
+
+    [template] => SEM RESPOSTA
+    [thatpattern] => 
+    [that_stars] => Array
+        (
+            [1] => 
+        )
+
+    [topic] => 
+    [topic_stars] => Array
+        (
+        )
+
+    [user_raw] => [18:04, 8/5/2019] JEFERSON MENDES: Paga hj
+[18:04, 8/5/2019] JEFERSON MENDES: Entrada
+)
+ 
+-----------------------
+08-05-2019 18:04:47.30163[2][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][22]
+Parsing the AIML template as XML 
+-----------------------
+08-05-2019 18:04:47.30164[2][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][93]
+Adding some TEXT tags into the template, just because I can... 
+-----------------------
+08-05-2019 18:04:47.30168[4][4] - Elapsed time: 0.038 milliseconds
+[parse_aiml_as_XML.php][add_text_tags][120]
+Returning template:
+<template><text>SEM RESPOSTA</text></template> 
+-----------------------
+08-05-2019 18:04:47.30187[2][4] - Elapsed time: 0.190 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+08-05-2019 18:04:47.30194[4][4] - Elapsed time: 0.074 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element template at level 0. element XML = <?xml version="1.0"?>
+<template><text>SEM RESPOSTA</text></template>
+ 
+-----------------------
+08-05-2019 18:04:47.30196[4][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][242]
+function parse_template_tag does not exist. Parsing tag as text. 
+-----------------------
+08-05-2019 18:04:47.30199[2][4] - Elapsed time: 0.023 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][201]
+Recursively parsing the AIML template. 
+-----------------------
+08-05-2019 18:04:47.30201[4][4] - Elapsed time: 0.028 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][214]
+Processing element text at level 1. element XML = <text>SEM RESPOSTA</text> 
+-----------------------
+08-05-2019 18:04:47.30203[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][225]
+Function parse_text_tag does exist. Processing now. 
+-----------------------
+08-05-2019 18:04:47.30204[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][229]
+Passing element text to the parse_text_tag function 
+-----------------------
+08-05-2019 18:04:47.30205[2][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][parse_text_tag][281]
+Parsing a TEXT tag. 
+-----------------------
+08-05-2019 18:04:47.30207[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][234]
+Adding 'SEM RESPOSTA' to the response array. tag name is text 
+-----------------------
+08-05-2019 18:04:47.30208[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+08-05-2019 18:04:47.30210[2][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+08-05-2019 18:04:47.30211[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+08-05-2019 18:04:47.30213[4][4] - Elapsed time: 0.015 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+08-05-2019 18:04:47.30214[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][parseTemplateRecursive][262]
+Adding 'SEM RESPOSTA' to the response array. tag name is template. 
+-----------------------
+08-05-2019 18:04:47.30216[2][4] - Elapsed time: 0.018 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][137]
+Imploding an array into a string. (recursively, if necessary) 
+-----------------------
+08-05-2019 18:04:47.30217[2][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][138]
+Input: Array
+(
+    [0] => SEM RESPOSTA
+)
+
+ 
+-----------------------
+08-05-2019 18:04:47.30218[4][4] - Elapsed time: 0.012 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][155]
+The variable $input is of type array 
+-----------------------
+08-05-2019 18:04:47.30220[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml_as_XML.php][implode_recursive][185]
+Imploding complete. Returning 'SEM RESPOSTA' 
+-----------------------
+08-05-2019 18:04:47.30221[4][4] - Elapsed time: 0.016 milliseconds
+[parse_aiml_as_XML.php][parse_aiml_as_XML][47]
+Completed parsing the template. The bot will say: SEM RESPOSTA 
+-----------------------
+08-05-2019 18:04:47.30223[4][4] - Elapsed time: 0.017 milliseconds
+[parse_aiml.php][parse_matched_aiml][227]
+normal - Saving for next turn 
+-----------------------
+08-05-2019 18:04:47.30224[4][4] - Elapsed time: 0.013 milliseconds
+[parse_aiml.php][save_for_nextturn][271]
+Saving that and that_raw for next turn 
+-----------------------
+08-05-2019 18:04:47.30226[2][4] - Elapsed time: 0.013 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that_raw] array 
+-----------------------
+08-05-2019 18:04:47.30228[4][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that_raw array 
+-----------------------
+08-05-2019 18:04:47.30232[2][4] - Elapsed time: 0.045 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [that] array 
+-----------------------
+08-05-2019 18:04:47.30234[4][4] - Elapsed time: 0.018 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank that array 
+-----------------------
+08-05-2019 18:04:47.30236[4][4] - Elapsed time: 0.022 milliseconds
+[parse_aiml.php][clean_that][251]
+Cleaning up the ~THAT~ tag: 'SEM RESPOSTA' 
+-----------------------
+08-05-2019 18:04:47.30238[4][4] - Elapsed time: 0.015 milliseconds
+[misc_functions.php][normalize_text][125]
+Begin normalization - text = 'SEM RESPOSTA' 
+-----------------------
+08-05-2019 18:04:47.30240[4][4] - Elapsed time: 0.026 milliseconds
+[misc_functions.php][normalize_text][150]
+Normalization complete. Text = 'SEM RESPOSTA' 
+-----------------------
+08-05-2019 18:04:47.30242[4][4] - Elapsed time: 0.014 milliseconds
+[parse_aiml.php][clean_that][258]
+Cleaning Complete. output = 'SEM RESPOSTA' 
+-----------------------
+08-05-2019 18:04:47.30244[2][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [parsed_template] array 
+-----------------------
+08-05-2019 18:04:47.30245[4][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank parsed_template array 
+-----------------------
+08-05-2019 18:04:47.30247[2][4] - Elapsed time: 0.020 milliseconds
+[intialise_conversation.php][push_on_front_convoArr][226]
+Pushing 'SEM RESPOSTA' to the front of the [template] array 
+-----------------------
+08-05-2019 18:04:47.30249[4][4] - Elapsed time: 0.016 milliseconds
+[intialise_conversation.php][load_blank_array_element][62]
+Loading blank template array 
+-----------------------
+08-05-2019 18:04:47.30251[2][4] - Elapsed time: 0.022 milliseconds
+[intialise_conversation.php][log_conversation][403]
+Saving the conversation to the DB. 
+-----------------------
+08-05-2019 18:04:47.30254[3][4] - Elapsed time: 0.025 milliseconds
+[intialise_conversation.php][log_conversation][442]
+Saving conservation SQL: INSERT INTO `devncom_ia_golden`.`conversation_log` (
+      `id` ,
+      `input` ,
+      `response` ,
+      `user_id` ,
+      `convo_id` ,
+      `bot_id` ,
+      `timestamp`
+    )
+    VALUES (
+      NULL ,
+      '[18:04, 8/5/2019] JEFERSON MENDES: Paga hj
+[18:04, 8/5/2019] JEFERSON MENDES: Entrada',
+      'SEM RESPOSTA',
+      1124,
+      554196401659,
+      1,
+      CURRENT_TIMESTAMP
+    ) 
+-----------------------
+08-05-2019 18:04:47.41182[4][4] - Elapsed time: 109.288 milliseconds
+[intialise_conversation.php][write_to_session][140]
+Saving to session 
+-----------------------
+08-05-2019 18:04:47.41206[3][4] - Elapsed time: 0.236 milliseconds
+[display_conversation.php][get_conversation_to_display][59]
+get_conversation SQL: SELECT * FROM `devncom_ia_golden`.`conversation_log` WHERE
+        `user_id` = :user_id
+        AND `bot_id` = :bot_id
+        AND `convo_id` = :convo_id
+        ORDER BY id DESC  LIMIT 1 
+-----------------------
+08-05-2019 18:04:47.41230[2][4] - Elapsed time: 0.236 milliseconds
+[display_conversation.php][get_conversation_to_display][77]
+Found '1' lines of conversation 
+-----------------------
+08-05-2019 18:04:47.41232[4][4] - Elapsed time: 0.029 milliseconds
+[display_conversation.php][get_conversation][92]
+Processing conversation as html 
+-----------------------
+08-05-2019 18:04:47.41235[4][4] - Elapsed time: 0.023 milliseconds
+[display_conversation.php][get_html][135]
+Returning HTML 
+-----------------------
+08-05-2019 18:04:47.41332[2][4] - Elapsed time: 0.974 milliseconds
+[conversation_start.php][Called outside of function][297]
+Closing Database 
+-----------------------
+08-05-2019 18:04:47.41336[0][4] - Elapsed time: 0.036 milliseconds
+[conversation_start.php][Called outside of function][303]
+Conversation Ending. Elapsed time: 287.660 milliseconds. 
+-----------------------
+Debug Level: 4
+-----------------------
+Debug Mode: 1
+-----------------------
+CONVERSATION ARRAY
+-----------------------
+Array
+(
+    [say] => [18:04, 8/5/2019] JEFERSON MENDES: Paga hj
+[18:04, 8/5/2019] JEFERSON MENDES: Entrada
+    [conversation] => Array
+        (
+            [convo_id] => 554196401659
+            [bot_name] => Net Bot
+            [bot_id] => 1
+            [format] => html
+            [unknown_user] => Entrou
+            [user_id] => 1124
+            [totallines] => 1
+            [user_name] => Entrou
+            [rawSay] => [18:04, 8/5/2019] JEFERSON MENDES: Paga hj
+[18:04, 8/5/2019] JEFERSON MENDES: Entrada
+            [conversation_lines] => 1
+            [remember_up_to] => 10
+            [debugemail] => contato@devn1.com.br
+            [debug_level] => 4
+            [debugmode] => 1
+            [save_state] => database
+            [default_aiml_pattern] => LINHA DE RECOLHA ALEATÓRIA2
+            [bot_parent_id] => 1
+            [aimlData] => Array
+                (
+                    [aiml_id] => -1
+                    [bot_id] => 1
+                    [pattern] => no results
+                    [thatpattern] => 
+                    [template] => SEM RESPOSTA
+                    [topic] => 
+                    [score] => 261
+                    [track_score] => current bot (250 points), no thatpattern to match (1 point), common word match: no (1 points), uncommon word match: results (8 points)
+                )
+
+        )
+
+    [aiml] => Array
+        (
+            [user_raw] => [18:04, 8/5/2019] JEFERSON MENDES: Paga hj
+[18:04, 8/5/2019] JEFERSON MENDES: Entrada
+            [lookingfor] => 18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES PAGA HJ 18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES ENTRADA
+            [pattern] => no results
+            [thatpattern] => 
+            [template] => SEM RESPOSTA
+            [html_template] => 
+            [topic] => 
+            [score] => 261
+            [aiml_id] => -1
+            [stars] => Array
+                (
+                )
+
+            [that_stars] => Array
+                (
+                    [1] => 
+                )
+
+            [topic_stars] => Array
+                (
+                )
+
+            [parsed_template] => SEM RESPOSTA
+        )
+
+    [client_properties] => Array
+        (
+            [ip_address] => 34.83.229.23
+            [name] => Entrou
+        )
+
+    [time_start] => 1557349487.1257
+    [user_say] => Array
+        (
+            [1] => 18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES PAGA HJ 18 04 8 DIVIDEDBY 5 2019 JEFERSON MENDES ENTRADA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [input] => Array
+        (
+            [1] => [18:04, 8/5/2019] JEFERSON MENDES: Paga hj
+[18:04, 8/5/2019] JEFERSON MENDES: Entrada
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [that_raw] => Array
+        (
+            [1] => Array
+                (
+                    [1] => 
+                    [2] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [that] => Array
+        (
+            [1] => Array
+                (
+                    [1] => SEM RESPOSTA
+                )
+
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [12] => 
+        )
+
+    [parsed_template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [template] => Array
+        (
+            [1] => SEM RESPOSTA
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+        )
+
+    [send_to_user] => <div class="usersay">Entrou: [18:04, 8/5/2019] JEFERSON MENDES: Paga hj
+[18:04, 8/5/2019] JEFERSON MENDES: Entrada</div><div class="botsay">Net Bot: SEM RESPOSTA</div>
+)
+
+-----------------------
+Total execution time: 287.660 Milliseconds. Goodbye.
